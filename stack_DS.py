@@ -6,7 +6,7 @@ B
 A
 '''
 
-class stack():
+class Stack():
     
     def __init__(self):
         self.items = []
@@ -27,7 +27,7 @@ class stack():
     def get_Stack(self):
         return self.items
 
-s = stack()
+s = Stack()
 s.push("A")
 s.push("B")
 s.push("C")
@@ -40,7 +40,7 @@ print(s.peek())
 
 print("\n")
 
-s2 = stack()
+s2 = Stack()
 s2.push(1)
 s2.push(2)
 s2.push(3)
