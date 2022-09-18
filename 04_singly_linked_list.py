@@ -1,3 +1,6 @@
+from itertools import count
+
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -32,7 +35,6 @@ class SinglyLinkedList:
         new_node.next = cur_node
 
     def insert_after(self, key, data):
-
         cur = self.head
         while cur:
             if cur.next is None and cur.data == key:
@@ -48,6 +50,53 @@ class SinglyLinkedList:
                 print("previous node is not present in the list")
                 return
 
+    def delete_node(self, key):
+
+        # Case 1
+        cur_node = self.head
+        if cur_node and cur_node.data == key:
+            self.head = cur_node.next
+            cur_node = None
+            return
+
+        # Case 2
+        prev = None
+        while cur_node and cur_node.data != key:
+            prev = cur_node
+            cur_node = cur_node.next
+
+        if cur_node is None:
+            print("The Node is not present in the list")
+            return
+
+        prev.next = cur_node.next
+        cur_node = None
+
+    
+    def delete_node_at_pos(self, pos):
+        cur_node = self.head
+        if pos == 0:
+            self.head = cur_node.next
+            cur_node = None
+            return
+
+        prev = None
+        count = 0
+        while cur_node and count != pos:
+            prev = cur_node
+            count += 1
+            cur_node = cur_node.next
+
+        if cur_node is None:
+            print("The Node is not present in the list")
+            return
+
+        prev.next = cur_node.next
+        cur_node = None
+
+
+        
+
     def print_list(self):
         cur_node = self.head
         while cur_node:
@@ -61,8 +110,11 @@ llist.append("B")
 llist.append("C")
 llist.append("D")
 
-llist.insert_after("B", "S")
+# llist.insert_after("B", "S")
 
 # llist.prepend("E")
+
+llist.delete_node("G")
+# llist.delete_node_at_pos(1)
 
 llist.print_list()
