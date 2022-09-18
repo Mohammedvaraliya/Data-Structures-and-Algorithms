@@ -1,6 +1,3 @@
-from itertools import count
-
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -46,9 +43,10 @@ class SinglyLinkedList:
                 new_node.next = nxt
                 cur.next = new_node
             cur = cur.next
-            if cur is None:
-                print("previous node is not present in the list")
-                return
+
+        if cur is None:
+            print("Previous Node is not present in the list")
+            return
 
     def delete_node(self, key):
 
@@ -72,7 +70,6 @@ class SinglyLinkedList:
         prev.next = cur_node.next
         cur_node = None
 
-    
     def delete_node_at_pos(self, pos):
         cur_node = self.head
         if pos == 0:
@@ -94,14 +91,26 @@ class SinglyLinkedList:
         prev.next = cur_node.next
         cur_node = None
 
-
-        
-
     def print_list(self):
         cur_node = self.head
         while cur_node:
             print(cur_node.data)
             cur_node = cur_node.next
+
+    def len_iterative(self):
+
+        count = 0
+        cur_node = self.head
+        while cur_node:
+            count += 1
+            cur_node = cur_node.next
+        return count
+
+    def len_recursive(self, node):
+        if node is None:
+            return 0
+        return 1 + self.len_recursive(node.next)
+
 
 
 llist = SinglyLinkedList()
@@ -110,11 +119,15 @@ llist.append("B")
 llist.append("C")
 llist.append("D")
 
-# llist.insert_after("B", "S")
+llist.insert_after("D", "S")
 
-# llist.prepend("E")
+print(llist.len_iterative())
 
-llist.delete_node("G")
-# llist.delete_node_at_pos(1)
+llist.prepend("E")
+
+llist.delete_node("A")
+llist.delete_node_at_pos(1)
 
 llist.print_list()
+
+print(llist.len_recursive(llist.head))
