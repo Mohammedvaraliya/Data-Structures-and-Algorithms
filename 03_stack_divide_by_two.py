@@ -14,7 +14,27 @@ Example : 242
 
 '''
 
-from stack_DS import Stack
+class Stack():
+    
+    def __init__(self):
+        self.items = []
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        return self.items.pop()
+
+    def is_empty(self):
+        return self.items == []
+
+    def peek(self):
+        if not self.is_empty():
+            return self.items[-1]   
+
+    def get_Stack(self):
+        return self.items
+
 
 def div_by_2(dec_num):
     s = Stack()
