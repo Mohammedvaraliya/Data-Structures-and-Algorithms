@@ -61,7 +61,7 @@ llist.append("B")
 llist.append("C")
 llist.append("D")
 
-llist.insert_after("D", "S")
+llist.insert_after("B", "S")
 
 # llist.prepend("E")
 
