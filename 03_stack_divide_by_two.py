@@ -51,5 +51,4 @@ def div_by_2(dec_num):
     return bin_num
 
 
-
 print(div_by_2(242))
