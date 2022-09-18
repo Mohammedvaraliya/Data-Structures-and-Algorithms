@@ -1,0 +1,68 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+class SinglyLinkedList:
+    def __init__(self):
+        self.head = None
+
+    def append(self, data):
+        new_node = Node(data)
+
+        if self.head is None:
+            self.head = new_node
+            return
+
+        last_node = self.head
+        while last_node.next:
+            last_node = last_node.next
+        last_node.next = new_node
+
+    def prepend(self, data):
+        new_node = Node(data)
+
+        if self.head is None:
+            self.head = new_node
+            return
+
+        cur_node = self.head
+        self.head = new_node
+        new_node.next = cur_node
+
+    def insert_after(self, key, data):
+
+        cur = self.head
+        while cur:
+            if cur.next is None and cur.data == key:
+                self.append(data)
+                return
+            elif cur.data == key:
+                new_node = Node(data)
+                nxt = cur.next
+                new_node.next = nxt
+                cur.next = new_node
+            cur = cur.next
+            if cur is None:
+                print("previous node is not present in the list")
+                return
+
+    def print_list(self):
+        cur_node = self.head
+        while cur_node:
+            print(cur_node.data)
+            cur_node = cur_node.next
+
+
+llist = SinglyLinkedList()
+llist.append("A")
+llist.append("B")
+llist.append("C")
+llist.append("D")
+
+llist.insert_after("D", "S")
+
+# llist.prepend("E")
+
+llist.print_list()
