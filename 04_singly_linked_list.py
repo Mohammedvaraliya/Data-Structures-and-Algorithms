@@ -112,7 +112,7 @@ class SinglyLinkedList:
         return 1 + self.len_recursive(node.next)
 
     def swap_nodes(self, key_1, key_2):
-        
+
         if key_1 == key_2:
             return
 
@@ -144,6 +144,33 @@ class SinglyLinkedList:
 
         curr_1.next, curr_2.next = curr_2.next, curr_1.next
 
+    def print_holder(self, node, name):
+        if node is None:
+            print(name + " : None ")
+        else:
+            print(name + " : " + node.data)
+
+    def reverse_iterative(self):
+
+        prev = None
+        cur = self.head
+        while cur:
+            nxt = cur.next
+            cur.next = prev
+
+            self.print_holder(prev, "PREV")
+            self.print_holder(cur, "CUR")
+            self.print_holder(nxt, "NXT")
+            print("\n")
+
+            prev = cur
+            cur = nxt
+
+        self.head = prev
+
+    # def reverse_recursive(self):
+
+    #     def _reverse_recursive(cur, prev):
 
 
 
@@ -178,3 +205,13 @@ swappingNode.swap_nodes("A", "D")
 
 swappingNode.print_list()
 
+print("\n\n")
+
+llist3 = SinglyLinkedList()
+llist3.append("A")
+llist3.append("B")
+llist3.append("C")
+llist3.append("D")
+
+llist3.reverse_iterative()
+llist3.print_list()
