@@ -168,9 +168,19 @@ class SinglyLinkedList:
 
         self.head = prev
 
-    # def reverse_recursive(self):
+    def reverse_recursive(self):
 
-    #     def _reverse_recursive(cur, prev):
+        def _reverse_recursive(cur, prev):
+            if not cur:
+                return prev
+
+            nxt = cur.next
+            cur.next = prev
+            prev = cur
+            cur = nxt
+            return _reverse_recursive(cur, prev)
+
+        self.head = _reverse_recursive(cur = self.head, prev = None)
 
 
 
@@ -214,4 +224,7 @@ llist3.append("C")
 llist3.append("D")
 
 llist3.reverse_iterative()
+llist3.print_list()
+print("\n")
+llist3.reverse_recursive()
 llist3.print_list()
