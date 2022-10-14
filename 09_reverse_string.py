@@ -14,7 +14,7 @@ class Stack():
 
     def peek(self):
         if not self.is_empty():
-            return self.items[-1]   
+            return self.items[-1]
 
     def get_Stack(self):
         return self.items
