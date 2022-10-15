@@ -63,6 +63,7 @@ class SinglyLinkedList:
 
     def print_nth_from_last_method2(self, n):
         
+        # method-2
         p = self.head
         q = self.head
 
