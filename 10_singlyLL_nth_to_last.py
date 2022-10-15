@@ -72,7 +72,7 @@ class SinglyLinkedList:
             count += 1
 
 
-        if not q:
+        if not q and count < n:
             print(str(n) + " is greater than the number of nodes in list. ")
             return
 
