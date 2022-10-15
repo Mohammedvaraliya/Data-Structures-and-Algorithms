@@ -96,4 +96,4 @@ print("\n")
 
 print(llist.print_nth_from_last_method1(3))
 print("\n")
-print(llist.print_nth_from_last_method2(6))
+print(llist.print_nth_from_last_method2(3))
