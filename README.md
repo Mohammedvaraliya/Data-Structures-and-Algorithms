@@ -11,4 +11,5 @@
 9. Singly Linked Lists -- Remove Duplicates
 10. Singly Linked Lists -- Nth-to-Last Node
 11. Singly Linked Lists -- Count Occurrences
+12. Singly Linked Lists -- Rotate
 16. Reverse String
