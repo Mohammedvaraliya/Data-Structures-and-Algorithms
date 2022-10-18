@@ -12,4 +12,5 @@
 10. Singly Linked Lists -- Nth-to-Last Node
 11. Singly Linked Lists -- Count Occurrences
 12. Singly Linked Lists -- Rotate
+13. Singly Linked Lists -- Is Palindrome
 16. Reverse String
