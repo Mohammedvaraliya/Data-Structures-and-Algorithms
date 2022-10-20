@@ -1,9 +1,5 @@
 '''
 Singly Linked Lists -- Move Tail to Head
-
-Example - singly LL is : A B C D E F
-
-Ater move tail to head : F A B C D E
 '''
 
 
@@ -46,19 +42,6 @@ class SinglyLinkedList:
             print(cur_node.data)
             cur_node = cur_node.next
 
-    def move_tail_to_head(self):
-
-        last = self.head
-        second_to_last = None
-        
-        while last.next:
-            second_to_last = last
-            last = last.next
-            
-        last.next = self.head
-        second_to_last.next = None
-        self.head = last
-
 
     
 llist = SinglyLinkedList()
@@ -71,6 +54,3 @@ llist.append("F")
 
 llist.print_list()
 print("\n")
-
-llist.move_tail_to_head()
-llist.print_list()
