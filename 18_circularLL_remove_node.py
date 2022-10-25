@@ -53,10 +53,9 @@ class CircularLinkedList:
             prev = None
             while cur.next != self.head:
                 prev = cur
-                cur = cur.next
                 if cur.data == key:
                     prev.next = cur.next
-                    cur = cur.next
+                cur = cur.next
 
     def print_list(self):
 
