@@ -58,7 +58,6 @@ class CircularLinkedList:
                     prev.next = cur.next
                     cur = cur.next
 
-
     def print_list(self):
 
         cur = self.head
@@ -75,9 +74,10 @@ cllist.append("B")
 cllist.append("C")
 cllist.append("D")
 
-
 cllist.print_list()
 print("\n")
 
+cllist.remove("A")
 cllist.remove("B")
+cllist.remove("C")
 cllist.print_list()
