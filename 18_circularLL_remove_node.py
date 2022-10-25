@@ -79,5 +79,8 @@ print("\n")
 
 cllist.remove("A")
 cllist.remove("B")
-cllist.remove("C")
+cllist.print_list()
+print("\n")
+
+cllist.remove("F") # the element does not exist
 cllist.print_list()
