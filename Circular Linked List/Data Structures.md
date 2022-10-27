@@ -4,3 +4,4 @@
 02. Circular Linked Lists -- Remove Node
 03. Circular Linked Lists -- Split List
 04. Circular Linked Lists -- Josephus Problem
+05. Circular Linked Lists -- Is Circular Linked List
