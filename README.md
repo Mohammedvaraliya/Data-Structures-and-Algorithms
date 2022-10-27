@@ -37,3 +37,4 @@
 10. String Processing: Is Unique
 11. Greedy Algorithms: Optimal Task Assignment
 12. Sorting Algorithms: Intersection of Two Sorted Arrays
+13. Product of Two Numbers
