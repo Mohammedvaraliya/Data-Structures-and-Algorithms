@@ -1,4 +1,4 @@
-# Data-Structure
+# Data-Structures
 
 01. The Stack data Structure
 02. Determine if parenthesis are balanced
