@@ -15,7 +15,6 @@
 13. Singly Linked Lists -- Is Palindrome
 14. Singly Linked Lists -- Move Tail to Head
 15. Singly Linked Lists -- Sum Two Lists
-16. Reverse String
 17. Circular Linked Lists -- Append and Prepend
 18. Circular Linked Lists -- Remove Node
 19. Circular Linked Lists -- Split List
@@ -27,8 +26,11 @@
 # Algorithms
 
 01. Binary search
-02. Count Consonants in String
-03. Look-and-Say Sequence
-04. String Processing: Spreadsheet Encoding
-05. String Processing: Is Palindrome
-06. String Processing: Is Anagram
+02. Reverse String
+03. Count Consonants in String
+04. Look-and-Say Sequence
+05. String Processing: Spreadsheet Encoding
+06. String Processing: Is Palindrome
+07. String Processing: Is Anagram
+08. Greedy Algorithms: Optimal Task Assignment
+09. Sorting Algorithms: Intersection of Two Sorted Arrays
