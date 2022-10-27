@@ -32,5 +32,8 @@
 05. String Processing: Spreadsheet Encoding
 06. String Processing: Is Palindrome
 07. String Processing: Is Anagram
-08. Greedy Algorithms: Optimal Task Assignment
-09. Sorting Algorithms: Intersection of Two Sorted Arrays
+08. String Processing: Is Palindrome Permutation
+09. String Processing: Check Permutation
+10. String Processing: Is Unique
+11. Greedy Algorithms: Optimal Task Assignment
+12. Sorting Algorithms: Intersection of Two Sorted Arrays
