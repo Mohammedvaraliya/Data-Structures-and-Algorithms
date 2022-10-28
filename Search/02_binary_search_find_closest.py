@@ -40,7 +40,7 @@ def find_cosest_num(array, target):
     while low <= high:
         mid = (low + high) // 2
 
-        # Ensure that we don't ready beyond the bound of the list
+        # Ensure that we don't read beyond the bound of the list
         # And obtain the left and right difference values 
         if mid + 1 < len(array):
             min_diff_right = abs(array[mid + 1] - target)
