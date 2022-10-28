@@ -15,9 +15,6 @@ Example 2:
     Output : 5
 '''
 
-A = [1, 2, 4, 5, 6, 6, 8, 9]
-B = [2, 5, 6, 7, 8, 8, 9]
-
 def find_cosest_num(array, target):
 
     min_diff = float("inf")
