@@ -20,6 +20,7 @@
 19. Circular Linked Lists -- Split List
 20. Circular Linked Lists -- Josephus Problem
 21. Circular Linked Lists -- Is Circular Linked List
+22. Doubly Linked Lists -- Append and Prepend
 
 
 
