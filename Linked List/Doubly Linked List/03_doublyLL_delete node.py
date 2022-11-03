@@ -42,14 +42,53 @@ class DoublyLinkedList:
             cur = cur.next
 
     def delete(self, key):
-        pass
+        cur = self.head
+        while cur:
+            if cur.data == key and cur == self.head:
+                # Case 1:
+                if not cur.next:
+                    cur = None
+                    self.head = None
+                    return
+                
+                # Case 2:
+                else:
+                    nxt = cur.next
+                    cur.next = None
+                    cur = None
+                    nxt.prev = None
+                    self.head = nxt
+                    return
+
+            elif cur.data == key:
+                # Case 3:
+                if cur.next:
+                    nxt = cur.next
+                    prev = cur.prev
+                    prev.next = nxt
+                    nxt.prev = prev
+                    cur.next = None
+                    cur.prev = None
+                    cur = None
+                    return
+
+                # Case 4:
+                else:
+                    prev = cur.prev
+                    prev.next = None
+                    cur.prev = None
+                    cur = None
+                    return
+            cur = cur.next
+
 
 
 dllist = DoublyLinkedList()
-dllist.prepend(0)
 dllist.append(1)
 dllist.append(2)
 dllist.append(3)
 dllist.append(4)
+
+dllist.delete(1)
 
 dllist.print_list()
