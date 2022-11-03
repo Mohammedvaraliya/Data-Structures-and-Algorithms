@@ -23,6 +23,7 @@
 22. Doubly Linked Lists -- Append and Prepend
 23. Doubly Linked Lists -- Add Node Before/After
 24. Doubly Linked Lists -- Delete Node
+25. Doubly Linked Lists -- Reverse
 
 
 
