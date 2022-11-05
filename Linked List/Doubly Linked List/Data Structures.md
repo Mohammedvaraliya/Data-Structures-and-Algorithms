@@ -4,3 +4,4 @@
 02. Doubly Linked Lists -- Add Node Before/After
 03. Doubly Linked Lists -- Delete Node
 04. Doubly Linked Lists -- Reverse
+05. Doubly Linked Lists -- Remove Duplicates
