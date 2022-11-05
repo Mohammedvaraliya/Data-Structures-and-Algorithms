@@ -46,4 +46,5 @@
 14. Binary Search: Find Closest Number
 15. Binary Search: Find Fixed Point
 16. Binary Search: Find Bitonic Peak
+17. Binary Search: Find First Entry in List with Duplicates
 
