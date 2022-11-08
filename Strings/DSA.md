@@ -1,4 +1,5 @@
-# Algorithms
+# Data-Structures And Algorithms
+
 
 01. Reverse String
 02. Count Consonants in String
