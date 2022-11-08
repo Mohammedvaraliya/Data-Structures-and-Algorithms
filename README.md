@@ -25,6 +25,8 @@
 24. Doubly Linked Lists -- Delete Node
 25. Doubly Linked Lists -- Reverse
 26. Doubly Linked Lists -- Remove Duplicates
+27. Doubly Linked Lists -- Pairs with Sum
+
 
 
 
