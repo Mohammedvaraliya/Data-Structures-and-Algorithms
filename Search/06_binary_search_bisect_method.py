@@ -1,8 +1,8 @@
-"""
+'''
 Bisect:
     -"Built-in" binary search method in Python.
     -Can be used to search for an element in a sorted list.
-"""
+'''
 
 # Import allows us to make use of the bisect module.
 import bisect
