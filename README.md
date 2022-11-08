@@ -1,4 +1,4 @@
-# Data-Structures
+# Data-Structures And Algorithms
 
 01. The Stack data Structure
 02. Determine if parenthesis are balanced
@@ -15,6 +15,7 @@
 13. Singly Linked Lists -- Is Palindrome
 14. Singly Linked Lists -- Move Tail to Head
 15. Singly Linked Lists -- Sum Two Lists
+16. Arrays: Array Advance Game
 17. Circular Linked Lists -- Append and Prepend
 18. Circular Linked Lists -- Remove Node
 19. Circular Linked Lists -- Split List
@@ -26,27 +27,21 @@
 25. Doubly Linked Lists -- Reverse
 26. Doubly Linked Lists -- Remove Duplicates
 27. Doubly Linked Lists -- Pairs with Sum
-
-
-
-
-# Algorithms
-
-01. Binary search
-02. Reverse String
-03. Count Consonants in String
-04. Look-and-Say Sequence
-05. String Processing: Spreadsheet Encoding
-06. String Processing: Is Palindrome
-07. String Processing: Is Anagram
-08. String Processing: Is Palindrome Permutation
-09. String Processing: Check Permutation
-10. String Processing: Is Unique
-11. Greedy Algorithms: Optimal Task Assignment
-12. Sorting Algorithms: Intersection of Two Sorted Arrays
-13. Product of Two Numbers
-14. Binary Search: Find Closest Number
-15. Binary Search: Find Fixed Point
-16. Binary Search: Find Bitonic Peak
-17. Binary Search: Find First Entry in List with Duplicates
+28. Binary search
+29. Reverse String
+30. Count Consonants in String
+31. Look-and-Say Sequence
+32. String Processing: Spreadsheet Encoding
+33. String Processing: Is Palindrome
+34. String Processing: Is Anagram
+35. String Processing: Is Palindrome Permutation
+36. String Processing: Check Permutation
+37. String Processing: Is Unique
+38. Greedy Algorithms: Optimal Task Assignment
+39. Sorting Algorithms: Intersection of Two Sorted Arrays
+40. Product of Two Numbers
+41. Binary Search: Find Closest Number
+42. Binary Search: Find Fixed Point
+43. Binary Search: Find Bitonic Peak
+44. Binary Search: Find First Entry in List with Duplicates
 
