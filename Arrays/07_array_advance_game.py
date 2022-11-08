@@ -25,3 +25,6 @@ def array_advance(array):
 if __name__ == "__main__":
     A = [3, 3, 1, 0, 2, 0 , 1]
     print(array_advance(A))
+
+    B = [3, 2, 0, 0, 2, 0, 1]
+    print(array_advance(B))
