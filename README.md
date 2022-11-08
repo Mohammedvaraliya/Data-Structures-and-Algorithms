@@ -44,4 +44,5 @@
 42. Binary Search: Find Fixed Point
 43. Binary Search: Find Bitonic Peak
 44. Binary Search: Find First Entry in List with Duplicates
+45. Binary Search: Python's Bisect Method
 
