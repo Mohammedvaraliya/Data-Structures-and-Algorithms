@@ -8,3 +8,5 @@
 05. Binary Search: Find Bitonic Peak
 06. Binary Search: Find First Entry in List with Duplicates
 07. Arrays: Array Advance Game
+08. Arrays: Arbitrary Precision Increment
+
