@@ -44,10 +44,10 @@ print(bisect.bisect(A, 285))
 # "insort_right" behave in a similar way to "bisect_left" and "bisect_right",
 # only the insort functions insert at the index positions.
 print(A)
-bisect.insort_left(A, 108)
+bisect.insort_left(A, 107)
 print(A)
 print("\n")
 
 print(A)
-bisect.insort_right(A, 108)
+bisect.insort_right(A, 109)
 print(A)
