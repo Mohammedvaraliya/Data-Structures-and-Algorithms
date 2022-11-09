@@ -5,12 +5,17 @@ Given:
 Problem:
     Add one to the integer. Assume the solution still works even if implemented in a language with finite-precision arithmetic.
 '''
-
+ 
 A = [1, 4, 9]
-
-S = ''.join(map(str, A))
-print(S)
-print(int(S) + 1)
+B = [9, 9, 9]
+ex1 = ''.join(map(str, A))
+print(ex1)
+print(int(ex1) + 1)
+print("\n")
+ex2 = ''.join(map(str, B))
+print(ex2)
+print(int(ex2) + 1)
+print("\n")
 
 
 def plus_one(array):
@@ -26,6 +31,14 @@ def plus_one(array):
     return array
 
 
-print(plus_one(A))
+if __name__ == "__main__":
+    A = [1, 4, 9]
+    B = [9, 9, 9]
+
+    X = plus_one(A)
+    print(X)
+
+    Y = plus_one(B)
+    print(Y)
 
 
