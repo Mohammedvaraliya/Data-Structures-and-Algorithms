@@ -8,8 +8,31 @@ Example:
     Then the expected output of the function should be 17 since 17 squared is 289 which is strictly less than 300. Note that 18 squared is 324 which is strictly greater than 300, so the number 17 is the correct response.
 '''
 
-k = 300
+
  
 def integer_square_root(number):
-    pass
+    
+    low = 0
+    high = number
 
+    while low <= high:
+        mid = (low + high) // 2
+        mid_squared = mid * mid
+
+        if mid_squared <= number:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+    return low - 1
+
+if __name__ == "__main__":
+    
+    K = 300
+    L = 20
+
+    X = integer_square_root(K)
+    print(X)
+
+    Y = integer_square_root(L)
+    print(Y)
