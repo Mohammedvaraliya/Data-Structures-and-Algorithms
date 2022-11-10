@@ -46,5 +46,6 @@
 44. Binary Search: Find First Entry in List with Duplicates
 45. Binary Search: Python's Bisect Method
 46. Arrays: Arbitrary Precision Increment
+47. Binary Search: Integer Square Root
 
 
