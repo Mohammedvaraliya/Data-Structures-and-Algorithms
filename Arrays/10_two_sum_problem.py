@@ -14,6 +14,9 @@ def two_sum_bruteforce(array, target):
                 return True
     return False
 
+
+# Time Complexity : O(n)
+# Space Complexity : O(n)
 def two_sum_hash_table(array, target):
     ht = dict()
     for i in range(len(array)):
@@ -26,18 +29,40 @@ def two_sum_hash_table(array, target):
     return False
 
 
+# Time Complexity : O(n)
+# Space Complexity : O(1)
+def two_sum(array, target):
+    i = 0
+    j = len(array) - 1
+    
+    while i <= j:
+        if array[i] + array[j] == target:
+            print(f"[{array[i]}, {array[j]}]")
+            return True
+        elif array[i] + array[j] < target:
+            i += 1
+        else:
+            # the case where array[i] + array[j] > target:
+            j -= 1
+
+    return False
+
+
 
 if __name__ == "__main__":
 
     A = [-2, 1, 2, 4, 7, 11]
-    B = [2, 4, 6]
     target = 13
 
     X = two_sum_bruteforce(A, target)
     print(X)
     print("\n")
 
-    Y = two_sum_hash_table(B, target)
+    Y = two_sum_hash_table(A, target)
     print(Y)
+    print("\n")
+
+    Z = two_sum(A, target)
+    print(Z)
     print("\n")
 
