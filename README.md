@@ -48,5 +48,6 @@
 46. Arrays: Arbitrary Precision Increment
 47. Binary Search: Integer Square Root
 48. Binary Search: Cyclically Shifted Array
+49. Arrays: Two Sum Problem
 
 

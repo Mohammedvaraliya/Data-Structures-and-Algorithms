@@ -10,4 +10,5 @@
 07. Arrays: Array Advance Game
 08. Arrays: Arbitrary Precision Increment
 09. Binary Search: Cyclically Shifted Array
+10. Arrays: Two Sum Problem
 
