@@ -1,6 +1,6 @@
 # Data-Structures And Algorithms
 
-01. #### The Stack data Structure
+01. ### The Stack data Structure
     - #### [Click To see](./Stack/01_stack_DS.py)
 
 02. Determine if parenthesis are balanced
