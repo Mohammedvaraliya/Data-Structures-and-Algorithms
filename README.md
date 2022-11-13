@@ -70,19 +70,19 @@
     - [Click To see](./Linked%20List/Doubly%20Linked%20List/02_soublyLL_add_before_after.py)
     
 24. Doubly Linked Lists -- Delete Node
-    - [Click To see]()
+    - [Click To see](./Linked%20List/Doubly%20Linked%20List/03_doublyLL_delete%20node.py)
     
 25. Doubly Linked Lists -- Reverse
-    - [Click To see]()
+    - [Click To see](./Linked%20List/Doubly%20Linked%20List/04_doublyLL_reverse.py)
     
 26. Doubly Linked Lists -- Remove Duplicates
-    - [Click To see]()
+    - [Click To see](./Linked%20List/Doubly%20Linked%20List/05_doublyLL_remove_duplicates.py)
     
 27. Doubly Linked Lists -- Pairs with Sum
-    - [Click To see]()
+    - [Click To see](./Linked%20List/Doubly%20Linked%20List/06_doublyLL_pairs_with_sum.py)
     
 28. Binary search
-    - [Click To see]()
+    - [Click To see](./)
     
 29. Reverse String
     - [Click To see]()
