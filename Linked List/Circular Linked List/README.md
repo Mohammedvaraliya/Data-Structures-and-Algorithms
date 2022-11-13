@@ -20,7 +20,7 @@
 ### 04. Circular Linked Lists -- Josephus Problem
 
     Circular Linked Lists -- Josephus Problem
-    Josephus problem will remove every node for the given step until only one element left in the list
+    Josephus problem will remove every node from the given Circular Linked List of the given step until only one element left in the list
 
     Example:
 
