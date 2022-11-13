@@ -1,22 +1,35 @@
 # Data-Structures And Algorithms
 
 01. The Stack data Structure
-    - [Click To see](Arrays/01_optimal_task_assignment.py)
-    
+    - [Click To see](./Stack/01_stack_DS.py)
+
 02. Determine if parenthesis are balanced
-    - [Click To see](Arrays/02_intersect_sorted_array.py)
+    - [Click To see](./Stack/02_stack_balance_paran.py)
 
 03. Convert integer to binary
-    - [Click To see](Arrays/03_find_closest_number.py)
+    - [Click To see](./Stack/03_stack_divide_by_two.py)
 
 04. Singly Liked List
-    - [Click To see](Arrays/01_optimal_task_assignment.py)
+    - [Click To see](./Linked%20List/Singly%20Linked%20List/01_singly_linked_list.py)
+
 05. Singly Linked Lists -- Length of List
+    - [Click To see](./Linked%20List/Singly%20Linked%20List/02_singlyLL_length_of_list.py)
+
 06. Singly Linked Lists -- Node Swap
+    - [Click To see](./Linked%20List/Singly%20Linked%20List/03_singlyLL_swap_nodes.py)
+
 07. Singly Linked Lists -- Reverse
+    - [Click To see](./Linked%20List/Singly%20Linked%20List/04_singlyLL_reverse_list.py)
+    
 08. Singly Linked Lists -- Merge Two Sorted Lists
+    - [Click To see](./Linked%20List/Singly%20Linked%20List/05_singlyLL_merge.py)
+    
 09. Singly Linked Lists -- Remove Duplicates
+    - [Click To see](./Linked%20List/Singly%20Linked%20List/06_singlyLL_remove_dup.py)
+    
 10. Singly Linked Lists -- Nth-to-Last Node
+    - [Click To see](./Linked%20List/Singly%20Linked%20List/07_singlyLL_nth_to_last.py)
+    
 11. Singly Linked Lists -- Count Occurrences
 12. Singly Linked Lists -- Rotate
 13. Singly Linked Lists -- Is Palindrome
