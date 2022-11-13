@@ -1,8 +1,62 @@
 # Data-Structures And Algorithms
 
 
-01. Circular Linked Lists -- Append and Prepend
-02. Circular Linked Lists -- Remove Node
-03. Circular Linked Lists -- Split List
-04. Circular Linked Lists -- Josephus Problem
-05. Circular Linked Lists -- Is Circular Linked List
+### 01. Circular Linked Lists -- Append and Prepend
+
+    Circular Linked List append and prepend method 
+    Append - Add the element from end of list
+    Prepend - Add the element from front of the list
+
+### 02. Circular Linked Lists -- Remove Node
+
+    Circular Linked Lists -- Remove Node
+    It will remove the element from the list
+
+### 03. Circular Linked Lists -- Split List
+
+    Circular Linked Lists -- Split List
+    It will split the Circular Linked List into two Circular Linked List
+
+### 04. Circular Linked Lists -- Josephus Problem
+
+    Circular Linked Lists -- Josephus Problem
+    Josephus problem will remove every node for the given step until only one element left in the list
+
+    Example:
+
+    Circular Linked List :
+                            1
+                            2
+                            3
+                            4
+                            5
+                            6
+    
+    step = 2
+
+    so the step start from head of the list 
+
+    2 is element where step meet
+    remove : 2
+
+    4 is element where step meet
+    remove : 4
+
+    6 is element where step meet
+    remove : 6
+
+    since, it is cicular linked list it will circular again and remove the step element until only one element left
+
+    3 is element where step meet
+    remove : 3
+
+    Only one element left : which is 5
+
+### 05. Circular Linked Lists -- Is Circular Linked List
+
+    Circular Linked Lists -- Is Circular Linked List
+    
+    It will check the list which is given is circular or not
+
+    we can check this by giving Singly and Doubly linked list to verify Circular Linked List
+
