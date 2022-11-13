@@ -4,10 +4,10 @@
 
 * The Stack data Structure [Click To see](./Stack/01_stack_DS.py)
 
-### Determine if parenthesis are balanced
+* Determine if parenthesis are balanced
 - [Click To see](./Stack/02_stack_balance_paran.py)
 
-### Convert integer to binary
+* Convert integer to binary
 - [Click To see](./Stack/03_stack_divide_by_two.py)
 
 ### Singly Liked List
