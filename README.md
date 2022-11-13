@@ -4,47 +4,35 @@
 
 * The Stack data Structure [Click To see](./Stack/01_stack_DS.py)
 
-* Determine if parenthesis are balanced
-- [Click To see](./Stack/02_stack_balance_paran.py)
+* Determine if parenthesis are balanced [Click To see](./Stack/02_stack_balance_paran.py)
 
-* Convert integer to binary
-- [Click To see](./Stack/03_stack_divide_by_two.py)
+* Convert integer to binary [Click To see](./Stack/03_stack_divide_by_two.py)
 
-### Singly Liked List
-- [Click To see](./Linked%20List/Singly%20Linked%20List/01_singly_linked_list.py)
+### Linked List
 
-### Singly Linked Lists -- Length of List
-- [Click To see](./Linked%20List/Singly%20Linked%20List/02_singlyLL_length_of_list.py)
+* Singly Liked List [Click To see](./Linked%20List/Singly%20Linked%20List/01_singly_linked_list.py)
 
-### Singly Linked Lists -- Node Swap
-- [Click To see](./Linked%20List/Singly%20Linked%20List/03_singlyLL_swap_nodes.py)
+* Singly Linked Lists -- Length of List [Click To see](./Linked%20List/Singly%20Linked%20List/02_singlyLL_length_of_list.py)
 
-### Singly Linked Lists -- Reverse
-- [Click To see](./Linked%20List/Singly%20Linked%20List/04_singlyLL_reverse_list.py)
+* Singly Linked Lists -- Node Swap [Click To see](./Linked%20List/Singly%20Linked%20List/03_singlyLL_swap_nodes.py)
+
+* Singly Linked Lists -- Reverse [Click To see](./Linked%20List/Singly%20Linked%20List/04_singlyLL_reverse_list.py)
     
-### Singly Linked Lists -- Merge Two Sorted Lists
-- [Click To see](./Linked%20List/Singly%20Linked%20List/05_singlyLL_merge.py)
+* Singly Linked Lists -- Merge Two Sorted Lists [Click To see](./Linked%20List/Singly%20Linked%20List/05_singlyLL_merge.py)
 
-### Singly Linked Lists -- Remove Duplicates
-- [Click To see](./Linked%20List/Singly%20Linked%20List/06_singlyLL_remove_dup.py)
+* Singly Linked Lists -- Remove Duplicates [Click To see](./Linked%20List/Singly%20Linked%20List/06_singlyLL_remove_dup.py)
 
-### Singly Linked Lists -- Nth-to-Last Node
-- [Click To see](./Linked%20List/Singly%20Linked%20List/07_singlyLL_nth_to_last.py)
+* Singly Linked Lists -- Nth-to-Last Node [Click To see](./Linked%20List/Singly%20Linked%20List/07_singlyLL_nth_to_last.py)
 
-### Singly Linked Lists -- Count Occurrences
-- [Click To see](./Linked%20List/Singly%20Linked%20List/08_singlyLL_count_occurences.py)
+* Singly Linked Lists -- Count Occurrences [Click To see](./Linked%20List/Singly%20Linked%20List/08_singlyLL_count_occurences.py)
 
-### Singly Linked Lists -- Rotate
-- [Click To see](./Linked%20List/Singly%20Linked%20List/09_singlyLL_rotate.py)
+* Singly Linked Lists -- Rotate [Click To see](./Linked%20List/Singly%20Linked%20List/09_singlyLL_rotate.py)
 
-### Singly Linked Lists -- Is Palindrome
-- [Click To see](./Linked%20List/Singly%20Linked%20List/10_singlyLL_is_palindrome.py)
+* Singly Linked Lists -- Is Palindrome [Click To see](./Linked%20List/Singly%20Linked%20List/10_singlyLL_is_palindrome.py)
 
-### Singly Linked Lists -- Move Tail to Head
-- [Click To see](./Linked%20List/Singly%20Linked%20List/11_singyLL_move_tail_to_head.py)
+* Singly Linked Lists -- Move Tail to Head [Click To see](./Linked%20List/Singly%20Linked%20List/11_singyLL_move_tail_to_head.py)
 
-### Singly Linked Lists -- Sum Two Lists
-- [Click To see](./Linked%20List/Singly%20Linked%20List/12_singlyLL_sum_two_lists.py)
+* Singly Linked Lists -- Sum Two Lists [Click To see](./Linked%20List/Singly%20Linked%20List/12_singlyLL_sum_two_lists.py)
 
 ### Arrays: Array Advance Game
 - [Click To see](./Arrays/07_array_advance_game.py)
