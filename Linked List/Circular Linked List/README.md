@@ -4,13 +4,13 @@
 ### 01. Circular Linked Lists -- Append and Prepend
 
     Circular Linked List append and prepend method 
-    Append - Add the element from end of list
-    Prepend - Add the element from front of the list
+    Append - Add the Node from end of list
+    Prepend - Add the Node from front of the list
 
 ### 02. Circular Linked Lists -- Remove Node
 
     Circular Linked Lists -- Remove Node
-    It will remove the element from the list
+    It will remove the Node from the list
 
 ### 03. Circular Linked Lists -- Split List
 
@@ -20,7 +20,7 @@
 ### 04. Circular Linked Lists -- Josephus Problem
 
     Circular Linked Lists -- Josephus Problem
-    Josephus problem will remove every node from the given Circular Linked List of the given step until only one element left in the list
+    Josephus problem will remove every node from the given Circular Linked List of the given step until only one Node left in the list
 
     Example:
 
@@ -36,21 +36,21 @@
 
     so the step start from head of the list 
 
-    2 is element where step meet
+    2 is Node where step meet
     remove : 2
 
-    4 is element where step meet
+    4 is Node where step meet
     remove : 4
 
-    6 is element where step meet
+    6 is Node where step meet
     remove : 6
 
-    since, it is cicular linked list it will circular again and remove the step element until only one element left
+    since, it is cicular linked list it will circular again and remove the step Node until only one Node left
 
-    3 is element where step meet
+    3 is Node where step meet
     remove : 3
 
-    Only one element left : which is 5
+    Only one Node left : which is 5
 
 ### 05. Circular Linked Lists -- Is Circular Linked List
 

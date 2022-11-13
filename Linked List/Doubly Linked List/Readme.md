@@ -4,8 +4,8 @@
 ### 01. Doubly Linked Lists -- Append and Prepend
 
     Doubly Linked Lists -- Append and Prepend
-    Append - Add the element from end of the list
-    Prepend - Add the element from front of the list
+    Append - Add the Node from end of the list
+    Prepend - Add the Node from front of the list
 
 ### 02. Doubly Linked Lists -- Add Node Before/After
 
@@ -70,7 +70,7 @@
 ### 05. Doubly Linked Lists -- Remove Duplicates
 
     Doubly Linked Lists -- Remove Duplicates
-    It will remove the duplicate element from the list
+    It will remove the duplicate Node from the list
 
     Example:
             1
@@ -92,7 +92,7 @@
 ### 06. Doubly Linked Lists -- Pairs with Sum
 
     Doubly Linked Lists -- Pairs with Sum
-    It will return the pair of data element where the sum of 2 data element is equal to the given number
+    It will return the pair of data of Node where the sum of 2 data of Node is equal to the given number
 
     Example:
     Doubly Linked List:
