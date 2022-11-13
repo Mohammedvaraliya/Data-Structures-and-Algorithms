@@ -1,9 +1,11 @@
 # Data-Structures And Algorithms
 
 01. The Stack data Structure
-    [a link](Arrays/01_optimal_task_assignment.py)
+    - [Click To see](Arrays/01_optimal_task_assignment.py)
 02. Determine if parenthesis are balanced
+    - [Click To see](Arrays/02_intersect_sorted_array.py)
 03. Convert integer to binary
+    - [Click To see](Arrays/03_find_closest_number.py)
 04. Singly Liked List
 05. Singly Linked Lists -- Length of List
 06. Singly Linked Lists -- Node Swap
