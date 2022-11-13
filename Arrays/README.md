@@ -1,17 +1,17 @@
 # Data-Structures And Algorithms
 
 
-## 01. Greedy Algorithms: Optimal Task Assignment
+### 01. Greedy Algorithms: Optimal Task Assignment
 
     Assign tasks to workers such that the time it takes to complete all tasks is minimized.
     here, the elements in an array is duration of time
 
-## 02. Sorting Algorithms: Intersection of Two Sorted Arrays
+### 02. Sorting Algorithms: Intersection of Two Sorted Arrays
 
     Given two arrays, A and B, determine their intersection. That is, what elements are common to A and B?
 
 
-## 03. Binary Search: Find Closest Number
+### 03. Binary Search: Find Closest Number
 
     given a sorted array and a target number. we need to find a number in the array that is closest to the target number.
 
@@ -28,7 +28,7 @@
         Target number = 4
         Output : 5
 
-## 04. Binary Search: Find Fixed Point
+### 04. Binary Search: Find Fixed Point
 
     A fixed point in an array "A" is an index "i" such that A[i] is equal to "i".
 
@@ -47,7 +47,7 @@
         # No fixed point. Return "None":
         A = [-10, -5, 3, 4, 7, 9]
 
-## 05. Binary Search: Find Bitonic Peak
+### 05. Binary Search: Find Bitonic Peak
 
     Define a bitonic sequence as a sequence of integers such that:
         x_1 <= ... <= x_k >= ... >= x_n-1 for some k, 0 <= k < n.
@@ -60,7 +60,7 @@
 
     we assume that such a peak element exists.
 
-## 06. Binary Search: Find First Entry in List with Duplicates
+### 06. Binary Search: Find First Entry in List with Duplicates
 
     writing a function that takes an array of sorted integers and a key and returns the index of the first occurrence of that key from the array.
 
@@ -71,7 +71,7 @@
 
         Returns index 3 since 108 appear for the first time at index 3.
 
-## 07. Arrays: Array Advance Game
+### 07. Arrays: Array Advance Game
 
     "array advance game"
 
@@ -84,7 +84,7 @@
     Question:
     Is it possible to advance from the start of the array to the last element?
 
-## 08. Arrays: Arbitrary Precision Increment
+### 08. Arrays: Arbitrary Precision Increment
 
     Given:
         An array of non-negative digits that represent a decimal integer.
@@ -92,7 +92,7 @@
     Problem:
         Add one to the integer. Assume the solution still works even if implemented in a language with finite-precision arithmetic.
 
-## 09. Binary Search: Cyclically Shifted Array
+### 09. Binary Search: Cyclically Shifted Array
 
     An array is "cyclically sorted" if it is possible to cyclically shift
     its entries so that it becomes sorted.
@@ -104,11 +104,11 @@
     Write a function that determines the index of the smallest element
     of the cyclically sorted array.
 
-## 10. Arrays: Two Sum Problem
+### 10. Arrays: Two Sum Problem
 
     Problem: Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
-## 11. Arrays: Buy and Sell Stock
+### 11. Arrays: Buy and Sell Stock
 
     Problem:
         Given an array of numbers consisting of daily stock prices, calculate the maximum amount of profit that can be made from buying on one day and selling on another day.
