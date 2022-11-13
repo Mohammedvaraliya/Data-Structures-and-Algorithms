@@ -2,8 +2,8 @@
 
 
 ## 01. Greedy Algorithms: Optimal Task Assignment
-    - Assign tasks to workers such that the time it takes to complete all tasks is minimized.
-        here, the elements in an array is duration of time
+    Assign tasks to workers such that the time it takes to complete all tasks is minimized.
+    here, the elements in an array is duration of time
 ## 02. Sorting Algorithms: Intersection of Two Sorted Arrays
 ## 03. Binary Search: Find Closest Number
 ## 04. Binary Search: Find Fixed Point
