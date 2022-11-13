@@ -9,7 +9,23 @@
 
 ### 02. Singly Linked Lists -- Length of List
 
+    Singly Linked Lists -- Length of List
+    It will return the length of the Singly Linked List 
+
+    Example:
+    Singly Linked List:
+                        "A"
+                        "B"
+                        "C"
+                        "D"
+
+    length of Singly Linked List is : 4
+
 ### 03. Singly Linked Lists -- Node Swap
+
+    Singly Linked Lists -- Node Swap
+    It will swap the node from Singly Linked List
+    
 
 ### 04. Singly Linked Lists -- Reverse
 
