@@ -113,7 +113,6 @@
 
     because 1 + 4 = 5
             2 + 3 = 5
-            2 + 4 = 6
 
     pair_with_sum(0) will return Emplty List
                                          []
