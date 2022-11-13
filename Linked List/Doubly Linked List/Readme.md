@@ -70,7 +70,7 @@
 ### 05. Doubly Linked Lists -- Remove Duplicates
 
     Doubly Linked Lists -- Remove Duplicates
-    It will remove the duplicate Node from the list
+    It will remove the duplicate Node from the Doubly Linked list
 
     Example:
             1
@@ -81,7 +81,7 @@
             4
             5
     
-    After removing the duplicate from the Doubly Linked list
+    After removing the duplicate Node from the Doubly Linked list
     Doubly Linked List will be:
                                 1
                                 2
