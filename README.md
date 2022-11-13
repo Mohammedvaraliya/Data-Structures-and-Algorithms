@@ -82,76 +82,76 @@
     - [Click To see](./Linked%20List/Doubly%20Linked%20List/06_doublyLL_pairs_with_sum.py)
     
 28. Binary search
-    - [Click To see](./)
+    - [Click To see](./Search/01_Binary_Search.py)
     
 29. Reverse String
-    - [Click To see]()
+    - [Click To see](./Strings/01_reverse_string.py)
     
 30. Count Consonants in String
-    - [Click To see]()
+    - [Click To see](./Strings/02_Count_Consonants_in_String.py)
     
 31. Look-and-Say Sequence
-    - [Click To see]()
+    - [Click To see](./Strings/03_look_n_say_sequence.py)
     
 32. String Processing: Spreadsheet Encoding
-    - [Click To see]()
+    - [Click To see](./Strings/04_spreadsheet_encoding.py)
     
 33. String Processing: Is Palindrome
-    - [Click To see]()
+    - [Click To see](./Strings/05_is_palindrome.py)
     
 34. String Processing: Is Anagram
-    - [Click To see]()
+    - [Click To see](./Strings/06_is_anagram.py)
     
 35. String Processing: Is Palindrome Permutation
-    - [Click To see]()
+    - [Click To see](./Strings/07_is_palindrome_permutation.py)
     
 36. String Processing: Check Permutation
-    - [Click To see]()
+    - [Click To see](./Strings/08_is_permutation.py)
     
 37. String Processing: Is Unique
-    - [Click To see]()
+    - [Click To see](./Strings/09_is_unique.py)
     
 38. Greedy Algorithms: Optimal Task Assignment
-    - [Click To see]()
+    - [Click To see](./Arrays/01_optimal_task_assignment.py)
     
 39. Sorting Algorithms: Intersection of Two Sorted Arrays
-    - [Click To see]()
+    - [Click To see](./Arrays/02_intersect_sorted_array.py)
     
 40. Product of Two Numbers
-    - [Click To see]()
+    - [Click To see](./Numbers/01_Product_of_Two_Numbers.py)
     
 41. Binary Search: Find Closest Number
-    - [Click To see]()
+    - [Click To see](./Search/02_binary_search_find_closest.py)
     
 42. Binary Search: Find Fixed Point
-    - [Click To see]()
+    - [Click To see](./Search/03_binary_search_find_fixed_point.py)
     
 43. Binary Search: Find Bitonic Peak
-    - [Click To see]()
+    - [Click To see](./Search/04_binary%20search_find_bitonic_peak.py)
     
 44. Binary Search: Find First Entry in List with Duplicates
-    - [Click To see]()
+    - [Click To see](./Search/05_binary%20search_find_first_dup_entry.py)
     
 45. Binary Search: Python's Bisect Method
-    - [Click To see]()
+    - [Click To see](./Search/06_binary_search_bisect_method.py)
     
 46. Arrays: Arbitrary Precision Increment
-    - [Click To see]()
+    - [Click To see](./Arrays/08_arbitrary_precision_increment.py)
     
 47. Binary Search: Integer Square Root
-    - [Click To see]()
+    - [Click To see](./Search/07_binary_search_integer_square_root.py)
     
 48. Binary Search: Cyclically Shifted Array
-    - [Click To see]()
+    - [Click To see](./Search/08_binary_search_cyclically_shifted.py)
     
 49. Arrays: Two Sum Problem
-    - [Click To see]()
+    - [Click To see](./Arrays/10_two_sum_problem.py)
     
 50. Arrays: Buy and Sell Stock
-    - [Click To see]()
+    - [Click To see](./Arrays/11_buy_and_sell_stock.py)
     
 51. String Processing: Integer to String
-    - [Click To see]()
+    - [Click To see](./Strings/10_integer_to_string.py)
     
 
 
