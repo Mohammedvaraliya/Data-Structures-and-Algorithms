@@ -150,7 +150,7 @@
 50. Arrays: Buy and Sell Stock
     - [Click To see](./Arrays/11_buy_and_sell_stock.py)
     
-51. String Processing: Integer to String
+## 51. String Processing: Integer to String
     - [Click To see](./Strings/10_integer_to_string.py)
     
 
