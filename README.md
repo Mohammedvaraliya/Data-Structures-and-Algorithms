@@ -1,6 +1,7 @@
 # Data-Structures And Algorithms
 
 01. The Stack data Structure
+    [a link](https://github.com/Mohammedvaraliya/Data-Structures-And-Algorithms/blob/master/Arrays/01_optimal_task_assignment.py)
 02. Determine if parenthesis are balanced
 03. Convert integer to binary
 04. Singly Liked List
