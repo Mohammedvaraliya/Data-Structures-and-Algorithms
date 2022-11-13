@@ -10,6 +10,8 @@
 
 ### Linked List
 
+#### Singly Linked List
+
 * Singly Liked List [Click To see](./Linked%20List/Singly%20Linked%20List/01_singly_linked_list.py)
 
 * Singly Linked Lists -- Length of List [Click To see](./Linked%20List/Singly%20Linked%20List/02_singlyLL_length_of_list.py)
@@ -34,41 +36,42 @@
 
 * Singly Linked Lists -- Sum Two Lists [Click To see](./Linked%20List/Singly%20Linked%20List/12_singlyLL_sum_two_lists.py)
 
+#### Doubly Linked List
+
+* Doubly Linked Lists -- Append and Prepend [Click To see](./Linked%20List/Doubly%20Linked%20List/01_doubly_linked_list.py)
+
+* Doubly Linked Lists -- Add Node Before/After [Click To see](./Linked%20List/Doubly%20Linked%20List/02_soublyLL_add_before_after.py)
+
+* Doubly Linked Lists -- Delete Node [Click To see](./Linked%20List/Doubly%20Linked%20List/03_doublyLL_delete%20node.py)
+
+* Doubly Linked Lists -- Reverse [Click To see](./Linked%20List/Doubly%20Linked%20List/04_doublyLL_reverse.py)
+
+* Doubly Linked Lists -- Remove Duplicates [Click To see](./Linked%20List/Doubly%20Linked%20List/05_doublyLL_remove_duplicates.py)
+
+* Doubly Linked Lists -- Pairs with Sum [Click To see](./Linked%20List/Doubly%20Linked%20List/06_doublyLL_pairs_with_sum.py)
+
+#### Circular Linked List
+
+* Circular Linked Lists -- Append and Prepend [Click To see](./Linked%20List/Circular%20Linked%20List/01_circular_linked_list.py)
+
+* Circular Linked Lists -- Remove Node [Click To see](./Linked%20List/Circular%20Linked%20List/02_circularLL_remove_node.py)
+
+* Circular Linked Lists -- Split List [Click To see](./Linked%20List/Circular%20Linked%20List/03_circularLL_split_list.py)
+
+* Circular Linked Lists -- Josephus Problem [Click To see](./Linked%20List/Circular%20Linked%20List/04_circularLL_josephus.py)
+
+* Circular Linked Lists -- Is Circular Linked List [Click To see](./Linked%20List/Circular%20Linked%20List/05_circularLL_is_circularLL.py)
+
+
+
+
+
 ### Arrays: Array Advance Game
 - [Click To see](./Arrays/07_array_advance_game.py)
 
-### Circular Linked Lists -- Append and Prepend
-- [Click To see](./Linked%20List/Circular%20Linked%20List/01_circular_linked_list.py)
 
-### Circular Linked Lists -- Remove Node
-- [Click To see](./Linked%20List/Circular%20Linked%20List/02_circularLL_remove_node.py)
 
-### Circular Linked Lists -- Split List
-- [Click To see](./Linked%20List/Circular%20Linked%20List/03_circularLL_split_list.py)
 
-### Circular Linked Lists -- Josephus Problem
-- [Click To see](./Linked%20List/Circular%20Linked%20List/04_circularLL_josephus.py)
-
-### Circular Linked Lists -- Is Circular Linked List
-- [Click To see](./Linked%20List/Circular%20Linked%20List/05_circularLL_is_circularLL.py)
-
-### Doubly Linked Lists -- Append and Prepend
-- [Click To see](./Linked%20List/Doubly%20Linked%20List/01_doubly_linked_list.py)
-
-### Doubly Linked Lists -- Add Node Before/After
-- [Click To see](./Linked%20List/Doubly%20Linked%20List/02_soublyLL_add_before_after.py)
-
-### Doubly Linked Lists -- Delete Node
-- [Click To see](./Linked%20List/Doubly%20Linked%20List/03_doublyLL_delete%20node.py)
-
-### Doubly Linked Lists -- Reverse
-- [Click To see](./Linked%20List/Doubly%20Linked%20List/04_doublyLL_reverse.py)
-
-### Doubly Linked Lists -- Remove Duplicates
-- [Click To see](./Linked%20List/Doubly%20Linked%20List/05_doublyLL_remove_duplicates.py)
-
-### Doubly Linked Lists -- Pairs with Sum
-- [Click To see](./Linked%20List/Doubly%20Linked%20List/06_doublyLL_pairs_with_sum.py)
 
 ### Binary search
 - [Click To see](./Search/01_Binary_Search.py)
