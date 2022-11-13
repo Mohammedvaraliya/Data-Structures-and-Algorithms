@@ -8,6 +8,7 @@
 
 * Convert integer to binary [Click To see](./Stack/03_stack_divide_by_two.py)
 
+
 ### Linked List
 
 #### Singly Linked List
@@ -63,87 +64,74 @@
 * Circular Linked Lists -- Is Circular Linked List [Click To see](./Linked%20List/Circular%20Linked%20List/05_circularLL_is_circularLL.py)
 
 
+### Arrays
+
+* Arrays: Array Advance Game [Click To see](./Arrays/07_array_advance_game.py)
+
+* Greedy Algorithms: Optimal Task Assignment [Click To see](./Arrays/01_optimal_task_assignment.py)
+
+* Sorting Algorithms: Intersection of Two Sorted Arrays [Click To see](./Arrays/02_intersect_sorted_array.py)
+
+* Arrays: Arbitrary Precision Increment [Click To see](./Arrays/08_arbitrary_precision_increment.py)
+
+* Arrays: Two Sum Problem [Click To see](./Arrays/10_two_sum_problem.py)
+
+* Arrays: Buy and Sell Stock [Click To see](./Arrays/11_buy_and_sell_stock.py)
+
+
+### Search
+
+#### Binary Search
+
+* Binary search [Click To see](./Search/01_Binary_Search.py)
+
+* Binary Search: Find Closest Number [Click To see](./Search/02_binary_search_find_closest.py)
+
+* Binary Search: Find Fixed Point [Click To see](./Search/03_binary_search_find_fixed_point.py)
+
+* Binary Search: Find Bitonic Peak [Click To see](./Search/04_binary%20search_find_bitonic_peak.py)
+
+* Binary Search: Find First Entry in List with Duplicates [Click To see](./Search/05_binary%20search_find_first_dup_entry.py)
+
+* Binary Search: Python's Bisect Method [Click To see](./Search/06_binary_search_bisect_method.py)
+
+* Binary Search: Integer Square Root [Click To see](./Search/07_binary_search_integer_square_root.py)
+
+* Binary Search: Cyclically Shifted Array [Click To see](./Search/08_binary_search_cyclically_shifted.py)
+
+
+### Strings
+
+* Reverse String [Click To see](./Strings/01_reverse_string.py)
+
+* Count Consonants in String [Click To see](./Strings/02_Count_Consonants_in_String.py)
+
+* Look-and-Say Sequence [Click To see](./Strings/03_look_n_say_sequence.py)
+
+* String Processing: Spreadsheet Encoding [Click To see](./Strings/04_spreadsheet_encoding.py)
+
+* String Processing: Is Palindrome [Click To see](./Strings/05_is_palindrome.py)
+
+* String Processing: Is Anagram [Click To see](./Strings/06_is_anagram.py)
+
+* String Processing: Is Palindrome Permutation [Click To see](./Strings/07_is_palindrome_permutation.py)
+
+* String Processing: Check Permutation [Click To see](./Strings/08_is_permutation.py)
+
+* String Processing: Is Unique [Click To see](./Strings/09_is_unique.py)
+
+* String Processing: Integer to String [Click To see](./Strings/10_integer_to_string.py)
+
+
+### Numbers
+
+* Product of Two Numbers [Click To see](./Numbers/01_Product_of_Two_Numbers.py)
 
 
 
-### Arrays: Array Advance Game
-- [Click To see](./Arrays/07_array_advance_game.py)
 
 
 
-
-
-### Binary search
-- [Click To see](./Search/01_Binary_Search.py)
-
-### Reverse String
-- [Click To see](./Strings/01_reverse_string.py)
-
-### Count Consonants in String
-- [Click To see](./Strings/02_Count_Consonants_in_String.py)
-
-### Look-and-Say Sequence
-- [Click To see](./Strings/03_look_n_say_sequence.py)
-
-### String Processing: Spreadsheet Encoding
-- [Click To see](./Strings/04_spreadsheet_encoding.py)
-
-### String Processing: Is Palindrome
-- [Click To see](./Strings/05_is_palindrome.py)
-
-### String Processing: Is Anagram
-- [Click To see](./Strings/06_is_anagram.py)
-
-### String Processing: Is Palindrome Permutation
-- [Click To see](./Strings/07_is_palindrome_permutation.py)
-
-### String Processing: Check Permutation
-- [Click To see](./Strings/08_is_permutation.py)
-
-### String Processing: Is Unique
-- [Click To see](./Strings/09_is_unique.py)
-
-### Greedy Algorithms: Optimal Task Assignment
-- [Click To see](./Arrays/01_optimal_task_assignment.py)
-
-### Sorting Algorithms: Intersection of Two Sorted Arrays
-- [Click To see](./Arrays/02_intersect_sorted_array.py)
-
-### Product of Two Numbers
-- [Click To see](./Numbers/01_Product_of_Two_Numbers.py)
-
-### Binary Search: Find Closest Number
-- [Click To see](./Search/02_binary_search_find_closest.py)
-
-### Binary Search: Find Fixed Point
-- [Click To see](./Search/03_binary_search_find_fixed_point.py)
-
-### Binary Search: Find Bitonic Peak
-- [Click To see](./Search/04_binary%20search_find_bitonic_peak.py)
-
-### Binary Search: Find First Entry in List with Duplicates
-- [Click To see](./Search/05_binary%20search_find_first_dup_entry.py)
-
-### Binary Search: Python's Bisect Method
-- [Click To see](./Search/06_binary_search_bisect_method.py)
-
-### Arrays: Arbitrary Precision Increment
-- [Click To see](./Arrays/08_arbitrary_precision_increment.py)
-
-### Binary Search: Integer Square Root
-- [Click To see](./Search/07_binary_search_integer_square_root.py)
-
-### Binary Search: Cyclically Shifted Array
-- [Click To see](./Search/08_binary_search_cyclically_shifted.py)
-
-### Arrays: Two Sum Problem
-- [Click To see](./Arrays/10_two_sum_problem.py)
-
-### Arrays: Buy and Sell Stock
-- [Click To see](./Arrays/11_buy_and_sell_stock.py)
-
-### String Processing: Integer to String
-- [Click To see](./Strings/10_integer_to_string.py)
 
 
 
