@@ -143,7 +143,7 @@
         Input: -123
         Output: "-123"
 
-### String Processing: String to Integer
+### 11. String Processing: String to Integer
 
     String Processing: String to Integer
 
