@@ -159,10 +159,18 @@
         
         etc.
 
+    ord('0') = 48
+
     ord('1') = 49
     we want an integer 1 from given str '1', so
 
-    ord('1') - 48 = 1
+    ord('1') - ord('0') = 1
+    
+    like other integers,
+    ord('2') - ord('0') = 2
+    ord('3') - ord('0') = 3
+    ord('4') - ord('0') = 4
+
     hence, we get our number
 
 
