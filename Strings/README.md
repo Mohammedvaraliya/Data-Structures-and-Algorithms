@@ -74,9 +74,17 @@
 
     s = "Was it a cat I saw?"  # This is true
     b = "Testing"              # This is false
-\] 
+ 
 ### 06. String Processing: Is Anagram
 
+    String Processing: Is Anagram
+
+    Anagram is a word or phrase that is made by arranging the letters of another word or phrase in a different order
+
+    Example:
+            below = elbow.
+            study = dusty.
+            night = thing.
 
 ### 07. String Processing: Is Palindrome Permutation
 
