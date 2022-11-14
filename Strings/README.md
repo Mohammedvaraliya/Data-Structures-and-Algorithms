@@ -88,13 +88,59 @@
 
 ### 07. String Processing: Is Palindrome Permutation
 
+    String Processing: Is Palindrome Permutation
+
+    Given a String, write a function to check if it is a permutation of a palindrome.
+
+    A palindrome is a word or phrase that is the same forward and backwards.
+
+    A permutation is a rearrangement of a letters. The palindrome does not need
+    to be limited to just dictionary words.
+
+    Example:
+            palin_perm = "Tact Coa" #Taco Cat
+            not_palin_perm = "This is not a palindrome permutation"
 
 ### 08. String Processing: Check Permutation
 
+    String Processing: Check Permutation
+
+    Given two strings, write a method to decide if 
+    one is a prmutation of the other.
+
+    Example:
+            permutation example:
+                                is_permutation_1 = "God"
+                                is_permutation_2 = "dog"
+
+            no-permutation example:
+                                not_permutation_1 = "Not"
+                                not_permutation_2 = "got"
 
 ### 09. String Processing: Is Unique
 
+    String Processing: Is Unique
+
+    Implement an algorithm to determine if a string 
+    has all unique characters.
+    Example:    
+                unique_str_1 = 'ABCdefg'
+                non_unique_str_1 = 'non unique STR'
 
 ### 10. String Processing: Integer to String
+
+    String Processing: Integer to String
+
+    You are given some integer as input, (i.e. ... -3, -2, -1, 0, 1, 2, 3 ...)
+    Convert the integer you are given to a string. 
+    Do not make use of the built-in "str" function.
+
+    Examples:
+
+        Input: 123
+        Output: "123"
+
+        Input: -123
+        Output: "-123"
 
 
