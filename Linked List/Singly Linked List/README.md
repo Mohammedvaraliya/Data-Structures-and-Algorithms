@@ -117,7 +117,7 @@
 ### 08. Singly Linked Lists -- Count Occurrences
 
     Singly Linked Lists -- Count Occurrences
-    It will return the number of Node present in the list of given Data.
+    It will return the number of Node present in the Singly Linked list of given Data.
 
     Example:
             1
@@ -132,10 +132,96 @@
     count_occurences_iterative(1):
                                     4
 
+    because 4 occurences of Node with data (1) available in the Singly Linked List 
+
 ### 09. Singly Linked Lists -- Rotate
+
+    Singly Linked Lists -- Rotate
+    It will rotate the Singly linked List of given index number.
+
+    Example:
+            1
+            2
+            3
+            4
+            5
+            6
+            7
+            8
+
+    rotate_list(4):
+                    5
+                    6
+                    7
+                    8
+                    1
+                    2
+                    3
+                    4
 
 ### 10. Singly Linked Lists -- Is Palindrome
 
+    Singly Linked Lists -- Is Palindrome
+    A palindrome is a word or phrase that is the same forward and backwards.
+
+    Example:
+            R
+            A
+            C
+            E
+            C
+            A
+            R
+
+    RACEDAR can be same when read forward and backwards so this will return True.
+
+    Example:
+            H
+            E
+            L
+            L
+            O
+
+    HELLO cannot be read be same when read forward and backwards so this will return False.
+
 ### 11. Singly Linked Lists -- Move Tail to Head
 
+    Singly Linked Lists -- Move Tail to Head
+    It will move the last node to head of the Singly Linked list.
+
+    Example - singly LL is : 
+                            A
+                            B 
+                            C 
+                            D 
+                            E 
+                            F
+
+    Ater move tail to head : 
+                                F 
+                                A 
+                                B 
+                                C 
+                                D 
+                                E
+
 ### 12. Singly Linked Lists -- Sum Two Lists
+
+    Singly Linked Lists -- Sum Two Lists
+
+    llist 1 : 
+            3 
+            6 
+            5 
+            
+            and
+
+    llist 2 : 
+            2 
+            4 
+            8
+
+    365 + 248 = 613
+
+    
+
