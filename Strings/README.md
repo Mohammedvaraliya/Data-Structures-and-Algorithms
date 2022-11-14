@@ -143,4 +143,27 @@
         Input: -123
         Output: "-123"
 
+### String Processing: String to Integer
+
+    String Processing: String to Integer
+
+    You are given some numeric string as input. Convert the string you are
+    given to an integer. Do not make use of the built-in "int" function.
+
+    Example:
+        "123" : 123
+
+        "-12332" : -12332
+        
+        "554" : 554
+        
+        etc.
+
+    ord('1') = 49
+    we want an integer 1 from given str '1', so
+
+    ord('1') - 48 = 1
+    hence, we get our number
+
+
 

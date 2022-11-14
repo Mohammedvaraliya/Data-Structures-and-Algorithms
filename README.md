@@ -122,6 +122,8 @@
 
 * String Processing: Integer to String [View Code](./Strings/10_integer_to_string.py)
 
+* String Processing: String to Integer [View Code](./Strings/11_string_to_integer.py)
+
 
 ### Numbers
 
