@@ -101,9 +101,36 @@
 ### 07. Singly Linked Lists -- Nth-to-Last Node
 
     Singly Linked List -- Nth-to-Last Node
+    It will return the Node from last index number.
+
+    Example:
+            A
+            B
+            C
+            D
+            E
+            F
     
+    print_nth_from_last_method2(3):
+                                    D
 
 ### 08. Singly Linked Lists -- Count Occurrences
+
+    Singly Linked Lists -- Count Occurrences
+    It will return the number of Node present in the list of given Data.
+
+    Example:
+            1
+            1
+            2
+            3
+            1
+            4
+            1
+            2
+        
+    count_occurences_iterative(1):
+                                    4
 
 ### 09. Singly Linked Lists -- Rotate
 
