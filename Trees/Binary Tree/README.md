@@ -15,10 +15,11 @@
              /   \       /  \  
             4      5    6     7
 
-    In preorder traversal, first, root node is visited, then left sub-tree and after that 
-    right sub-tree is visited. The process of preorder traversal can be represented as -
+    This technique follows the 'root left right' policy. It means that, first root node is visited after that the left subtree is traversed recursively, and finally, right subtree is recursively traversed. As the root node is traversed before (or pre) the left and right subtree, it is called preorder traversal.
 
-                              (root → left → right)
+    So, in a preorder traversal, each node is visited before both of its subtrees.
+
+                              (root -> left -> right)
 
     so, above preorder traversal output will be : 
                                             1-2-4-5-3-6-7
@@ -41,8 +42,31 @@
 
     So, in the inorder traversal, each node is visited in between of its subtrees.
 
-                              (root → left → right)
+                              (root -> left -> right)
 
     so, above inorder traversal output will be : 
                                             4-2-5-1-6-3-7-
+
+### 03. Binary Trees: Traversal Algorithms Post-order
+
+    Binary Trees: Traversal Algorithms
+
+    There are three recursive depth-first search traversal algorithms (preorder, inorder, and postorder) and implement those recursively in Python.
+
+    Post-Order Traversal:
+    
+                    1
+                /       \
+               2          3
+             /   \       /  \  
+            4      5    6     7
+
+    This technique follows the 'left-right root' policy. It means that the first left subtree of the root node is traversed, after that recursively traverses the right subtree, and finally, the root node is traversed. As the root node is traversed after (or post) the left and right subtree, it is called postorder traversal.
+
+    So, in a postorder traversal, each node is visited after both of its subtrees.
+
+                              (left -> right -> root)
+
+    so, above postorder traversal output will be : 
+                                            4-2-5-6-3-7-1-
     
