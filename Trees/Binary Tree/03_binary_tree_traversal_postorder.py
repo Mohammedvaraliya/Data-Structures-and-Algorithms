@@ -47,8 +47,8 @@ class BinaryTree(object):
         # Left -> Right -> Root
 
         if start:
-            traversal = self.inorder_print(start.left, traversal)
-            traversal = self.inorder_print(start.right, traversal)
+            traversal = self.postorder_print(start.left, traversal)
+            traversal = self.postorder_print(start.right, traversal)
             traversal += (str(start.value) + "-")
         
         return traversal
@@ -65,7 +65,7 @@ class BinaryTree(object):
              /   \       /  \  
             4      5    6     7
 
-    4-2-5-6-3-7-1-
+    4-5-2-6-7-3-1-
 '''
 
         

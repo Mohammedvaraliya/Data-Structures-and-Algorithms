@@ -68,5 +68,5 @@
                               (left -> right -> root)
 
     so, above postorder traversal output will be : 
-                                            4-2-5-6-3-7-1-
+                                            4-5-2-6-7-3-1-
     
