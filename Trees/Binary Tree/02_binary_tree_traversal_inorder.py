@@ -67,4 +67,5 @@ if __name__ == "__main__":
     tree.root.right.left = Node(6)
     tree.root.right.right = Node(7)
 
-    print(tree.print_tree("inorder"))
+    X = tree.print_tree("inorder")
+    print(X)
