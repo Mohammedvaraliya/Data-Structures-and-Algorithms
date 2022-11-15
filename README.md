@@ -130,7 +130,11 @@
 * Product of Two Numbers [View Code](./Numbers/01_Product_of_Two_Numbers.py)
 
 
+### Tree Data Structure
 
+#### Binary Trees
+
+* Binary Trees: Traversal Algorithms [View Code](./Trees/Binary%20Trees/01_traversal_algorithm.py)
 
 
 
