@@ -134,7 +134,11 @@
 
 #### Binary Trees
 
-* Binary Trees: Traversal Algorithms [View Code](./Trees/Binary%20Tree/01_traversal_algorithm.py)
+* Binary Trees: Traversal Algorithms Pre-Order [View Code](./Trees/Binary%20Tree/01_binary_tree_traversal_preorder.py)
+
+* Binary Trees: Traversal Algorithms In-Order [View Code](./Trees/Binary%20Tree/02_binary_tree_traversal_inorder.py)
+
+* Binary Trees: Traversal Algorithms Post-Order [View Code](./Trees/Binary%20Tree/03_binary_tree_traversal_postorder.py)
 
 
 
