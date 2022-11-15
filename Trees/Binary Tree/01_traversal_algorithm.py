@@ -34,8 +34,6 @@ class BinaryTree(object):
                2          3
              /   \       /  \  
             4      5    6     7
-                                \
-                                  8   
 
 '''
 
@@ -50,6 +48,5 @@ if __name__ == "__main__":
     tree.root.left.right = Node(5)
     tree.root.right.left = Node(6)
     tree.root.right.right = Node(7)
-    tree.root.right.right.right = Node(8)
 
     print(tree.print_tree("preorder"))

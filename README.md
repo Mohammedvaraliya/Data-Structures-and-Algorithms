@@ -134,7 +134,7 @@
 
 #### Binary Trees
 
-* Binary Trees: Traversal Algorithms [View Code](./Trees/Binary%20Trees/01_traversal_algorithm.py)
+* Binary Trees: Traversal Algorithms [View Code](./Trees/Binary%20Tree/01_traversal_algorithm.py)
 
 
 
