@@ -11,6 +11,18 @@ class Stack(object):
         
     def is_empty(self):
         return len(self.items) == 0
+    
+    def peek(self):
+        if not self.is_empty():
+            return self.items[-1]
+        
+    def size(self):
+        return len(self.items)
+    
+    def __len__(self):
+        return self.size()
+    
+
 
 class Queue(object):
     def __init__(self):
@@ -51,6 +63,9 @@ class BinaryTree(object):
         
         if traversal_type == "levelorder":
             return self.levelorder_print(self.root)
+
+        elif traversal_type == "reverse levelorder":
+            return self.reverse_levelorder_print(self.root)
         
         else:
             print("Traversal type " + str(traversal_type) + " is not supported.")
@@ -74,6 +89,31 @@ class BinaryTree(object):
                 queue.enqueue(node.right)
 
         return traversal
+    
+    def reverse_levelorder_print(self, start):
+        if start is None:
+            return
+        
+        queue = Queue()
+        stack = Stack()
+        queue.enqueue(start)
+
+        traversal = ""
+        while len(queue) > 0:
+            node = queue.dequeue()
+            stack.push(node)
+
+            if node.right:
+                queue.enqueue(node.right)
+            if node.left:
+                queue.enqueue(node.left)
+
+        while len(stack) > 0:
+            traversal += str(stack.peek().value) + "-"
+            stack.pop()
+
+        return traversal
+
         
 
 
@@ -100,5 +140,5 @@ if __name__ == "__main__":
     tree.root.left.left = Node(4)
     tree.root.left.right = Node(5)
 
-    X = tree.print_tree("levelorder")
+    X = tree.print_tree("reverse levelorder")
     print(X)
