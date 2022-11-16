@@ -86,6 +86,8 @@
 
     Level Order Traversal is the algorithm to process all nodes of a tree by traversing through depth, first the root, then the child of the root, etc.
 
+    In simple word level-order traversal will print the node according to level.
+
     so, above level-order traversal output will be : 
                                             1-2-3-4-5-
     
