@@ -77,17 +77,15 @@
     Level-Order Traversal:
     
                    1
-                /       \
-               2          3
+                /     \
+               2        3
              /  \          
             4    5     
 
-    This technique follows the 'left-right root' policy. It means that the first left subtree of the root node is traversed, after that recursively traverses the right subtree, and finally, the root node is traversed. As the root node is traversed after (or post) the left and right subtree, it is called postorder traversal.
+    Given a binary tree, the task is to print the level order traversal line by line of the tree
 
-    So, in a postorder traversal, each node is visited after both of its subtrees.
+    Level Order Traversal is the algorithm to process all nodes of a tree by traversing through depth, first the root, then the child of the root, etc.
 
-                              (left -> right -> root)
-
-    so, above postorder traversal output will be : 
-                                            4-5-2-6-7-3-1-
+    so, above level-order traversal output will be : 
+                                            1-2-3-4-5-
     
