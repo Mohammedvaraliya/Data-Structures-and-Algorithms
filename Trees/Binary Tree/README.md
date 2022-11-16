@@ -70,7 +70,7 @@
     so, above postorder traversal output will be : 
                                             4-5-2-6-7-3-1-
     
-### 03. Binary Trees: Traversal Algorithms Level-order
+### 04. Binary Trees: Traversal Algorithms Level-order
 
     Binary Trees: Traversal Algorithms Level-order
 
@@ -90,4 +90,23 @@
 
     so, above level-order traversal output will be : 
                                             1-2-3-4-5-
+    
+### 05. Binary Trees: Traversal Algorithms Reverse Level-order
+
+    Binary Trees: Traversal Algorithms Reverse Level-order
+
+    Level-Order Traversal:
+    
+                   1
+                /     \
+               2        3
+             /  \          
+            4    5     
+
+    Given a binary tree, the task is to print the reverse level order traversal line by line of the tree
+
+    The idea is to print the last level first, then the second last level, and so on. Like Level order traversal, every level is printed from left to right.
+
+    so, above reverse level-order traversal output will be : 
+                                                            4-5-2-3-1-
     
