@@ -65,7 +65,7 @@ class BinaryTree(object):
 
     
 '''
-    Post-Order Traversal
+    Level-Order Traversal
     
                     1
                 /       \

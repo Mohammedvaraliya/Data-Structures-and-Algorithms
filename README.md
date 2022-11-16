@@ -140,6 +140,8 @@
 
 * Binary Trees: Traversal Algorithms Post-Order [View Code](./Trees/Binary%20Tree/03_binary_tree_traversal_postorder.py)
 
+* Binary Trees: Traversal Algorithms Level-Order [View Code](./Trees/Binary%20Tree/04_binary_tree_traversal_levelorder.py)
+
 
 
 

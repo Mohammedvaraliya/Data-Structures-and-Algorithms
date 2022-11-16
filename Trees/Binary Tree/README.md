@@ -76,11 +76,11 @@
 
     Level-Order Traversal:
     
-                    1
+                   1
                 /       \
                2          3
-             /   \       /  \  
-            4      5    6     7
+             /  \          
+            4    5     
 
     This technique follows the 'left-right root' policy. It means that the first left subtree of the root node is traversed, after that recursively traverses the right subtree, and finally, the root node is traversed. As the root node is traversed after (or post) the left and right subtree, it is called postorder traversal.
 
