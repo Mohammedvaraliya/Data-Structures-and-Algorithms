@@ -3,7 +3,7 @@
 
 ### 01. Binary Trees: Traversal Algorithms Pre-order
 
-    Binary Trees: Traversal Algorithms
+    Binary Trees: Traversal Algorithms Pre-order
 
     There are three recursive depth-first search traversal algorithms (preorder, inorder, and postorder) and implement those recursively in Python.
 
@@ -26,7 +26,7 @@
                                             
 ### 02. Binary Trees: Traversal Algorithms In-order
 
-    Binary Trees: Traversal Algorithms
+    Binary Trees: Traversal Algorithms In-order
 
     There are three recursive depth-first search traversal algorithms (preorder, inorder, and postorder) and implement those recursively in Python.
 
@@ -49,11 +49,32 @@
 
 ### 03. Binary Trees: Traversal Algorithms Post-order
 
-    Binary Trees: Traversal Algorithms
+    Binary Trees: Traversal Algorithms Post-order
 
     There are three recursive depth-first search traversal algorithms (preorder, inorder, and postorder) and implement those recursively in Python.
 
     Post-Order Traversal:
+    
+                    1
+                /       \
+               2          3
+             /   \       /  \  
+            4      5    6     7
+
+    This technique follows the 'left-right root' policy. It means that the first left subtree of the root node is traversed, after that recursively traverses the right subtree, and finally, the root node is traversed. As the root node is traversed after (or post) the left and right subtree, it is called postorder traversal.
+
+    So, in a postorder traversal, each node is visited after both of its subtrees.
+
+                              (left -> right -> root)
+
+    so, above postorder traversal output will be : 
+                                            4-5-2-6-7-3-1-
+    
+### 03. Binary Trees: Traversal Algorithms Level-order
+
+    Binary Trees: Traversal Algorithms Level-order
+
+    Level-Order Traversal:
     
                     1
                 /       \
