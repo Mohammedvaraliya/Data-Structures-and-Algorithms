@@ -144,6 +144,8 @@
 
 * Binary Trees: Traversal Algorithms Reverse Level-Order [View Code](./Trees/Binary%20Tree/05_binary_tree_traversal_reverse_levelorder.py)
 
+* Binary Trees: Calculating Height of Tree [View Code](./Trees/Binary%20Tree/06_binary_tree_calculating_height_of_tree.py)
+
 
 
 
