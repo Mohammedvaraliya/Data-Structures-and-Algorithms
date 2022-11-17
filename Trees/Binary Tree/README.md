@@ -114,7 +114,38 @@
 
     Binary Trees: Calculating Height of Tree
 
-    It will return the height of the binary tree 
+    It will return the height of the binary tree
+                    
+                    (1) 
+                      1       
+                (1)  /   \ (0)  
+                   2      3
+              (0)  /  \  (0)        
+                 4     5  
+
+    The height of leaf node with data 4 is 0 because there is no child node present
+    The height of leaf node with data 5 is 0 because there is no child node present
+    The height of leaf node with data 3 is 0 because there is no child node present
+
+    The height of node with data 2 is 1 becase the max between two child node + 1 is the height of node
+    example:
+            1 + max(left_child, right_child)
+            1 + max(0, 0)
+            1 + 0
+            1
+
+    The height of node with data 1 is 2 becase the max between two child node + 1 is the height of node
+    example:
+            1 + max(left_child, right_child)
+            1 + max(1, 0)
+            1 + 1
+            1
+
+    max will return the maximum number of given 2 numbers
+
+    so, the height of this binary tree is: 2
+
+
 
 
     
