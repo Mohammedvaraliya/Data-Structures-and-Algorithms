@@ -114,6 +114,8 @@
 
     Binary Trees: Calculating Height of Tree
 
-    
+    It will return the height of the binary tree 
+
+
     
     

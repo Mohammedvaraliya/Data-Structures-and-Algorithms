@@ -7,33 +7,33 @@ class Node(object):
 class BinaryTree(object):
     def __init__(self, root):
         self.root = Node(root)
-
-    def print_tree(self, traversal_type):
         
-        if traversal_type == "levelorder":
-            return self.levelorder_print(self.root)
-
-        elif traversal_type == "reverse levelorder":
-            return self.reverse_levelorder_print(self.root)
+    def height(self, node):
+        if node is None:
+            return -1
         
-        else:
-            print("Traversal type " + str(traversal_type) + " is not supported.")
-            return False
+        left_height = self.height(node.left)
+        right_height = self.height(node.right)
+
+        return 1 + max(left_height, right_height)
+
 
         
 
 
     
 '''
-    Reverse Level-Order Traversal
+    Calculating Height of Tree
     
-                    1
-                  /   \
-                 2      3
-                /  \          
-               4    5     
+                    (1) 
+                      1       
+                (1)  /   \ (0)  
+                   2      3
+              (0)  /  \  (0)        
+                 4     5     
 
-    1-2-3-4-5-
+    2
+    
 '''
 
         
@@ -46,5 +46,5 @@ if __name__ == "__main__":
     tree.root.left.left = Node(4)
     tree.root.left.right = Node(5)
 
-    X = tree.print_tree("reverse levelorder")
+    X = tree.height(tree.root)
     print(X)
