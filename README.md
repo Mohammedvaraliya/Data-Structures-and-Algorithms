@@ -146,6 +146,8 @@
 
 * Binary Trees: Calculating Height of Tree [View Code](./Trees/Binary%20Tree/06_binary_tree_calculating_height_of_tree.py)
 
+* Binary Trees: Calculating Size of Tree [View Code](./Trees/Binary%20Tree/07_binary_tree_calculating_size_of_tree.py)
+
 
 
 
