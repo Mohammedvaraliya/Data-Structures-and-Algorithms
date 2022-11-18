@@ -151,34 +151,45 @@
 
     It will return the size of the binary tree
                     
-                    (1) 
-                      1       
-                (1)  /   \ (0)  
-                   2      3
-              (0)  /  \  (0)        
+                     1       
+                    /  \    
+                   2     3
+                  /  \           
                  4     5  
 
-    The height of leaf node with data 4 is 0 because there is no child node present
-    The height of leaf node with data 5 is 0 because there is no child node present
-    The height of leaf node with data 3 is 0 because there is no child node present
+    To calculate the size of the binary tree we use stack data structure to keep record of the nodes 
+    by push and pop operations.
 
-    The height of node with data 2 is 1 becase the max between two child node + 1 is the height of node
-    example:
-            1 + max(left_child, right_child)
-            1 + max(0, 0)
-            1 + 0
-            1
+    Example:
+                start from root node
 
-    The height of node with data 1 is 2 becase the max between two child node + 1 is the height of node
-    example:
-            1 + max(left_child, right_child)
-            1 + max(1, 0)
-            1 + 1
-            1
+                1
 
-    max will return the maximum number of given 2 numbers
+                push onto stack
 
-    so, the height of this binary tree is: 2
+                stack : [1]
+
+                make size 1
+
+                pop from the stack and check if root node have childrens, so push childrens onto the stack.
+
+                stack : [2, 3]
+
+                size = 3
+
+                pop one by one and check if popped node have any children, if yes push, otherwize make size ++
+
+                stack : [4, 5, 3]
+
+                size = 5
+
+                stack : [5, 3]
+
+                stack : [3]
+
+                stack : []
+
+    so, the size of this binary tree is: 5
 
 
 
