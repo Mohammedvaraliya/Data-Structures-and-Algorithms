@@ -61,7 +61,7 @@ class BinarySearchTree:
                 return self._is_bst_satisfied(cur_node.right, cur_node.right.data)
             else:
                 return False
-                
+
         return True
 
 
