@@ -99,3 +99,4 @@
 
     return True
 
+    if we cant find the data equal to node: return False
