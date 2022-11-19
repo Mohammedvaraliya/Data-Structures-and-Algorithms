@@ -148,6 +148,9 @@
 
 * Binary Trees: Calculating Size of Tree [View Code](./Trees/Binary%20Tree/07_binary_tree_calculating_size_of_tree.py)
 
+#### Binary Search Trees
+
+* Binary Search Trees: Insertion and Search [View Code](./Trees/Binary%20Search%20Tree/01_binary_search_tree_insertion.py)
 
 
 
