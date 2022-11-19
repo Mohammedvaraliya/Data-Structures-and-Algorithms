@@ -104,3 +104,48 @@
 ### 03. Binary Search Trees: Checking the BST Property
 
     Binary Search Trees: Checking the BST Property
+    Specifically, we will be solving the problem of determining whether or not a given tree we are given as input abides by the so-called binary search tree (BST) property. 
+
+    The BST property states that every node on the right subtree has to be larger than the current node and every
+    node on the left subtree has to be smaller than the current node. Is determines whether a given tree satisfies
+    the BST property.
+
+    Example:
+    
+    satisfied property tree:
+
+            In-Order Traversal
+    
+                    8
+                /       \
+               3          10
+             /   \       /  \  
+            1      6    9     11
+
+            1
+            3
+            6
+            8
+            9
+            10
+            11
+    
+    return True
+
+    unsatisfied property tree:
+
+            In-Order Traversal
+    
+                    1
+                  /   \
+                2       3
+
+            2
+            1
+            3
+    
+    return False
+
+
+    
+
