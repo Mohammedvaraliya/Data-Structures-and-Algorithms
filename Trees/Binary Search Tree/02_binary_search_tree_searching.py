@@ -11,8 +11,8 @@ class BinarySearchTree:
     def insert(self, data):
         if self.root is None:
             self.root = Node(data)
-
-        self._insert(data, self.root)
+        else:
+            self._insert(data, self.root)
 
     def _insert(self, data, cur_node):
         if data < cur_node.data:
@@ -59,7 +59,7 @@ bst.insert(8)
 bst.insert(5)
 bst.insert(10)
 
-X = bst.find(10)
+X = bst.find(8)
 print(X)
 
 

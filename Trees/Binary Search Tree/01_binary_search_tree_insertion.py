@@ -11,8 +11,8 @@ class BinarySearchTree:
     def insert(self, data):
         if self.root is None:
             self.root = Node(data)
-
-        self._insert(data, self.root)
+        else:
+            self._insert(data, self.root)
 
     def _insert(self, data, cur_node):
         if data < cur_node.data:
@@ -26,7 +26,6 @@ class BinarySearchTree:
                 cur_node.right = Node(data)
             else:
                 self._insert(data, cur_node.right)
-        
         else:
             print("Value already present in the tree.")
         
