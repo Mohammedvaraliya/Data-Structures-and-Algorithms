@@ -1,5 +1,6 @@
 # Data-Structures And Algorithms
 
+##### Note. The name of function which is same but _ before name is helper function.
 
 ### 01. Binary Search Trees: Insertion
 
