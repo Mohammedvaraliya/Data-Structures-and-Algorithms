@@ -150,7 +150,9 @@
 
 #### Binary Search Trees
 
-* Binary Search Trees: Insertion and Search [View Code](./Trees/Binary%20Search%20Tree/01_binary_search_tree_insertion.py)
+* Binary Search Trees: Insertion [View Code](./Trees/Binary%20Search%20Tree/01_binary_search_tree_insertion.py)
+
+* Binary Search Trees: Searching [View Code](./Trees/Binary%20Search%20Tree/02_binary_search_tree_searching.py)
 
 
 
