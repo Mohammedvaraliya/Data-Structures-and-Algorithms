@@ -31,6 +31,38 @@ class BinarySearchTree:
             print("Value already present in the tree.")
 
     def find(self, data):
-        pass
+        if self.root:
+            is_found = self._find(data, self.root)
+            if is_found:
+                return True
+            return False
+        
+        else:
+            return None
+
+    def _find(self, data, cur_node):
+        if data < cur_node.data and cur_node.left:
+            return self._find(data, cur_node.left)
+        elif data > cur_node.data and cur_node.right:
+            return self._find(data, cur_node.right)
+        
+        if data == cur_node.data:
+            return True
+            
+
+
+
+bst = BinarySearchTree()
+bst.insert(4)
+bst.insert(2)
+bst.insert(8)
+bst.insert(5)
+bst.insert(10)
+
+X = bst.find(10)
+print(X)
+
+
+            
         
 

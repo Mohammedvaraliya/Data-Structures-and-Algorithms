@@ -31,3 +31,12 @@ class BinarySearchTree:
             print("Value already present in the tree.")
         
 
+
+
+bst = BinarySearchTree()
+bst.insert(4)
+bst.insert(2)
+bst.insert(8)
+bst.insert(5)
+bst.insert(10)
+
