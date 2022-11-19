@@ -48,7 +48,7 @@
                  /
                4    
 
-### 01. Binary Search Trees: Searching
+### 02. Binary Search Trees: Searching
 
     Binary Search Trees: Searching
     It will give result after searching the node throughout the Binary Search Tree.
@@ -100,3 +100,7 @@
     return True
 
     if we cant find the data equal to node: return False
+
+### 03. Binary Search Trees: Checking the BST Property
+
+    Binary Search Trees: Checking the BST Property
