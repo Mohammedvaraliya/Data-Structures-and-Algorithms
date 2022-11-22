@@ -79,6 +79,13 @@
 * Arrays: Buy and Sell Stock [View Code](./Arrays/11_buy_and_sell_stock.py)
 
 
+### Hash Table
+
+* Hash Table Implementation [View Code](./Hash%20Table/01_hash_table_implementation.ipynb)
+
+* Hash Table Implementation : Get Hash [View Code](./Hash%20Table/02_hash_table_get_hash.ipynb)
+
+
 ### Search
 
 #### Binary Search
