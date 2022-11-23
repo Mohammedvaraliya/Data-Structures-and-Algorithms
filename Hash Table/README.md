@@ -43,4 +43,37 @@
 ### 03. Hash Table Implementation : Collision Handling In Hash Table
 
     Hash Table Implementation : Collision Handling In Hash Table
+    In collision handling the value can be stored in a multiple key value format on the same index number.
+
+    Example:
+            get_hash() functions return the hash value of given string
+
+            obj.get_hash("122-Mar") return hash value 82
+
+                it means '122-Mar' is index number 82
+
+            obj.get_hash("1-Mar") return hash value 82
+
+                it means '1-Mar' is index number 82
+
+            Now, Assign values
+            
+            obj["122-Mar"] = 550
+            obj["1-Mar"] = 220
+
+            if you check the value of obj["122-Mar"], it will return 220, because at the given index number the
+            value is overriding
+
+            Hash Table Collision Handling Using Chaining
+
+            using linked list or linear probing
+
+            replace None with empty list 
+
+            and if new key come append it on the same index number 
+
+            array will look like this
+
+            [[], [], [('1-Mar', 550), ('122-Mar', 120)], [], [], [], [], [], [], []]
+
 
