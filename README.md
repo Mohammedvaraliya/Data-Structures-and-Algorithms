@@ -15,7 +15,9 @@
 
 ### Queue
 
-* The Queue Data Structure [View Code](./Queue/01_queue_data_structure.py)
+* The Queue Data Structure [View Code](./Queue/01_queue.ipynb)
+
+* The Queue Data Structure [View Code](./Queue/02_queue_data_structure.py)
 
 
 ### Linked List
