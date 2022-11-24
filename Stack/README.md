@@ -43,6 +43,43 @@
 ### 02. The Stack data Structure : Understanding Stack
 
     The Stack data Structure : Understanding Stack
+    deque is using Doubly Linked List data structure to store the element.
+    
+    Stack in FILO(First In Last Out) or LIFO(Last In First Out) Data structure
+        
+       | D |
+       | C |
+       | B |
+       | A |
+       -----
+    
+    Example:
+    This is stack
+
+            |   |
+            -----
+    
+    When you push an element 'A' to stack 
+    stack will look like
+
+                        | A |
+                        -----
+    
+    Now if you add some more element, it will add one above one
+    final stack:
+
+                | D |
+                | C |
+                | B |
+                | A |
+                -----
+
+    When you to pop the element from stack, it will pop from top of the stack or the recent pushed element 
+
+                | C |
+                | B |
+                | A |
+                -----
 
 ### 03. Determine if parenthesis are balanced
 
@@ -81,3 +118,17 @@
 ### 05. The Stack data Structure : Reverse String
 
     The Stack data Structure : Reverse String
+    It will return the reverse string from given string.
+
+    Example:
+            str = "You can do it."
+        output: 
+                .ti od nac uoY
+
+    First push() all the characters from str to stack.
+
+    declare an empty string variable
+
+    Now, pop() one by one and add it to an empty string variable 
+
+    return empty string variable
