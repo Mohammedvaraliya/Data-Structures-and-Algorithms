@@ -40,7 +40,7 @@
                 | A |
                 -----
 
-### 02. Determine if parenthesis are balanced
+### 03. Determine if parenthesis are balanced
 
     Determine if parenthesis are balanced
     Use a stack to check whether or not a string has
@@ -56,7 +56,7 @@
 
     Non-Balanced Example: ]]
 
-### 03. Convert integer to binary
+### 04. Convert integer to binary
 
     Convert integer to binary
     Use a stack data structure to convert integer values to binary.

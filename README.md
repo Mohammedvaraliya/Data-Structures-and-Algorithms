@@ -4,9 +4,9 @@
 
 * The Stack data Structure [View Code](./Stack/01_stack_DS.py)
 
-* Determine if parenthesis are balanced [View Code](./Stack/02_stack_balance_paran.py)
+* Determine if parenthesis are balanced [View Code](./Stack/03_stack_balance_paran.py)
 
-* Convert integer to binary [View Code](./Stack/03_stack_divide_by_two.py)
+* Convert integer to binary [View Code](./Stack/04_stack_divide_by_two.py)
 
 
 ### Linked List
