@@ -19,6 +19,8 @@
 
 * The Queue Data Structure [View Code](./Queue/02_queue_data_structure.py)
 
+* Queue Data Structure : Producer Consumer Problem [View Code](./Queue/03_queue_producer_consumer.py)
+
 
 ### Linked List
 
