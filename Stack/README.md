@@ -4,13 +4,41 @@
 ### 01. The Stack data Structure
 
     Stack Data Structure
-    Stack in FILO(First In Last Out) Data structure
+    Stack in FILO(First In Last Out) or LIFO(Last In First Out) Data structure
         
        | D |
        | C |
        | B |
        | A |
        -----
+    
+    Example:
+    This is stack
+
+            |   |
+            -----
+    
+    When you push an element 'A' to stack 
+    stack will look like
+
+                        | A |
+                        -----
+    
+    Now if you add some more element, it will add one above one
+    final stack:
+
+                | D |
+                | C |
+                | B |
+                | A |
+                -----
+
+    When you to pop the element from stack, it will pop from top of the stack or the recent pushed element 
+
+                | C |
+                | B |
+                | A |
+                -----
 
 ### 02. Determine if parenthesis are balanced
 
