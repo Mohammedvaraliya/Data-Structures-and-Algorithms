@@ -1,6 +1,6 @@
 # Data-Structures And Algorithms
 
-### The Stack data Structure
+### Stack
 
 * The Stack data Structure [View Code](./Stack/01_stack_DS.py)
 
@@ -11,6 +11,11 @@
 * Convert integer to binary [View Code](./Stack/04_stack_divide_by_two.py)
 
 * The Stack data Structure : Reverse String [View Code](./Stack/05_stack_reverse_string.py)
+
+
+### Queue
+
+* The Queue Data Structure [View Code](./Queue/01_queue_data_structure.py)
 
 
 ### Linked List
