@@ -4,7 +4,7 @@
 ### 01. The Stack data Structure
 
     Stack Data Structure
-    Stack in FILO(First In Last Out) or LIFO(Last In First Out) Data structure
+    Stack is FILO(First In Last Out) or LIFO(Last In First Out) Data structure
         
        | D |
        | C |
@@ -18,13 +18,13 @@
             |   |
             -----
     
-    When you push an element 'A' to stack 
+    When you push() an element 'A' to stack 
     stack will look like
 
                         | A |
                         -----
     
-    Now if you add some more element, it will add one above one
+    Now if you push() some more elements, it will place one above one
     final stack:
 
                 | D |
@@ -33,7 +33,7 @@
                 | A |
                 -----
 
-    When you to pop the element from stack, it will pop from top of the stack or the recent pushed element 
+    When you pop() the element from stack, it will pop() from top of the stack or the recent pushed element 
 
                 | C |
                 | B |
@@ -44,8 +44,8 @@
 
     The Stack data Structure : Understanding Stack
     deque is using Doubly Linked List data structure to store the element.
-    
-    Stack in FILO(First In Last Out) or LIFO(Last In First Out) Data structure
+
+    Stack is FILO(First In Last Out) or LIFO(Last In First Out) Data structure
         
        | D |
        | C |
@@ -59,13 +59,13 @@
             |   |
             -----
     
-    When you push an element 'A' to stack 
+    When you push() an element 'A' to stack 
     stack will look like
 
                         | A |
                         -----
     
-    Now if you add some more element, it will add one above one
+    Now if you push() some more elements, it will place one above one
     final stack:
 
                 | D |
@@ -74,7 +74,7 @@
                 | A |
                 -----
 
-    When you to pop the element from stack, it will pop from top of the stack or the recent pushed element 
+    When you pop() the element from stack, it will pop() from top of the stack or the recent pushed element 
 
                 | C |
                 | B |
