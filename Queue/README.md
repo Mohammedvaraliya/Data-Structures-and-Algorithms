@@ -25,5 +25,12 @@
 ### 02. Queue Data Structure : Using dequeue
 
     Queue Data Structure : Using dequeue
-    
+    deque is using Doubly Linked List data structure to store the element.
+
+### 03. Queue Data Structure : Producer Consumer Problem
+
+    Queue Data Structure : Producer Consumer Problem
+    This problem is a producer,consumer problem where producer thread is producing data whereas consumer 
+    thread is consuming the data which has already produced.
+
             
