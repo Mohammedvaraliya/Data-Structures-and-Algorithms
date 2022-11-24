@@ -10,6 +10,8 @@
 
 * Convert integer to binary [View Code](./Stack/04_stack_divide_by_two.py)
 
+* The Stack data Structure : Reverse String [View Code](./Stack/05_stack_reverse_string.py)
+
 
 ### Linked List
 
