@@ -129,6 +129,6 @@
 
     declare an empty string variable
 
-    Now, pop() one by one and add it to an empty string variable 
+    Now, pop() characters one by one and add it to an empty string variable 
 
     return empty string variable
