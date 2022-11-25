@@ -33,4 +33,8 @@
     This problem is a producer,consumer problem where producer thread is producing data whereas consumer 
     thread is consuming the data which has already produced.
 
-            
+### 04. Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue
+
+    Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue
+
+    
