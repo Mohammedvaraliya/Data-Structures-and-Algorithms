@@ -36,5 +36,35 @@
 ### 04. Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue
 
     Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue
+    The binary number In mathematics and in computing systems, a binary digit, or bit, is the smallest unit of data.
+
+    declare two different stings
+    s1 = "0"
+    s2 = "1"
+
+    enqueue() elemnt "1" to queue and print front() of queue which returns [-1] element from the queue.
+
+    Now, enqueue() front + s1, and front + s2 to th queue.
+
+    Now dequeue() the element from queue which removes the first entered element.
+
+    print the front of the queue
+
+    repeat above steps to nth times.
+
+    Output:
+
+        The 0 number is :  1
+        The 1 number is :  10
+        The 2 number is :  11
+        The 3 number is :  100
+        The 4 number is :  101
+        The 5 number is :  110
+        The 6 number is :  111
+        The 7 number is :  1000
+        The 8 number is :  1001
+        The 9 number is :  1010
+
+    For more clarification, please take a look on my code.     
 
     
