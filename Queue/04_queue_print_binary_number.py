@@ -40,9 +40,3 @@ def produce_binary_numbers(n):
 if __name__ == "__main__":
     produce_binary_numbers(10)
 
-    # q = Queue()
-    # q.enqueue("1")
-    # q.enqueue("2")
-    # q.enqueue("3")
-    # print(q.front())
-    # print(q.front())
