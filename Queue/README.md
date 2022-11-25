@@ -65,6 +65,9 @@
         The 8 number is :  1001
         The 9 number is :  1010
 
+    Notice a pattern above. After 1 second and third number is 1+0 and 1+1. 4th and 5th number are second number (i.e. 10) + 0 and second
+    number (i.e. 10) + 1.    
+
     For more clarification, please take a look on my code.     
 
     
