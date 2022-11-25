@@ -10,7 +10,7 @@ class Queue:
     def dequeue(self):
         return self.buffer.pop()
 
-    def peek(self):
+    def front(self):
         return self.buffer[-1]
 
     def is_empty(self):
