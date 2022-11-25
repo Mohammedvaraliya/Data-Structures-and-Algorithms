@@ -21,6 +21,8 @@
 
 * Queue Data Structure : Producer Consumer Problem [View Code](./Queue/03_queue_producer_consumer.py)
 
+* Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue [View Code](./Queue/04_queue_print_binary_number.py)
+
 
 ### Linked List
 
