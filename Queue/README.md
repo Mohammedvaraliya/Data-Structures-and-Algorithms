@@ -42,7 +42,7 @@
     s1 = "0"
     s2 = "1"
 
-    enqueue() elemnt "1" to queue and print front() of queue which returns [-1] element from the queue.
+    enqueue() element "1" to queue and print front() of queue which returns [-1] element from the queue.
 
     Now, enqueue() front + s1, and front + s2 to th queue.
 
