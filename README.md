@@ -156,6 +156,11 @@
 
 ### Tree Data Structure
 
+### General Trees
+
+* General Tree [View Code](./Trees/General%20Tree/01_general_tree.py)
+
+
 #### Binary Trees
 
 * Binary Trees: Traversal Algorithms Pre-Order [View Code](./Trees/Binary%20Tree/01_binary_tree_traversal_preorder.py)
