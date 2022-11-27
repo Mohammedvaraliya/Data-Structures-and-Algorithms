@@ -17,7 +17,7 @@ class TreeNode:
         return level
 
     def print_tree(self):
-        spaces = ' ' * self.get_level()
+        spaces = ' ' * self.get_level() * 3
         prefix = spaces + "|__" if self.parent else ""
 
         print(prefix + self.data)
