@@ -2,7 +2,7 @@
 
 ##### Note. The name of function which is same but _ before name is helper function.
 
-### 02. Binary Trees: Traversal Algorithms Pre-order
+### 01. Binary Trees: Traversal Algorithms Pre-order
 
     Binary Trees: Traversal Algorithms Pre-order
 
@@ -25,7 +25,7 @@
     so, above preorder traversal output will be : 
                                             1-2-4-5-3-6-7
                                             
-### 03. Binary Trees: Traversal Algorithms In-order
+### 02. Binary Trees: Traversal Algorithms In-order
 
     Binary Trees: Traversal Algorithms In-order
 
@@ -48,7 +48,7 @@
     so, above inorder traversal output will be : 
                                             4-2-5-1-6-3-7-
 
-### 04. Binary Trees: Traversal Algorithms Post-order
+### 03. Binary Trees: Traversal Algorithms Post-order
 
     Binary Trees: Traversal Algorithms Post-order
 
@@ -71,7 +71,7 @@
     so, above postorder traversal output will be : 
                                             4-5-2-6-7-3-1-
     
-### 05. Binary Trees: Traversal Algorithms Level-order
+### 04. Binary Trees: Traversal Algorithms Level-order
 
     Binary Trees: Traversal Algorithms Level-order
 
@@ -92,7 +92,7 @@
     so, above level-order traversal output will be : 
                                             1-2-3-4-5-
     
-### 06. Binary Trees: Traversal Algorithms Reverse Level-order
+### 05. Binary Trees: Traversal Algorithms Reverse Level-order
 
     Binary Trees: Traversal Algorithms Reverse Level-order
 
@@ -111,7 +111,7 @@
     so, above reverse level-order traversal output will be : 
                                                             4-5-2-3-1-
 
-### 07. Binary Trees: Calculating Height of Tree
+### 06. Binary Trees: Calculating Height of Tree
 
     Binary Trees: Calculating Height of Tree
 
@@ -146,7 +146,7 @@
 
     so, the height of this binary tree is: 2
 
-### 08. Binary Trees: Calculating Size of Tree
+### 07. Binary Trees: Calculating Size of Tree
 
     Binary Trees: Calculating Size of Tree
 

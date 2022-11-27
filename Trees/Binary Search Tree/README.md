@@ -2,7 +2,7 @@
 
 ##### Note. The name of function which is same but _ before name is helper function.
 
-### 01. Binary Search Trees: Insertion
+### 02. Binary Search Trees: Insertion
 
     Binary Search Trees: Insertion
     It will insert the Node to the Binary Search Tree
@@ -49,7 +49,7 @@
                  /
                4    
 
-### 02. Binary Search Trees: Searching
+### 03. Binary Search Trees: Searching
 
     Binary Search Trees: Searching
     It will give result after searching the node throughout the Binary Search Tree.
@@ -102,7 +102,7 @@
 
     if we cant find the data equal to node: return False
 
-### 03. Binary Search Trees: Checking the BST Property
+### 04. Binary Search Trees: Checking the BST Property
 
     Binary Search Trees: Checking the BST Property
     Specifically, we will be solving the problem of determining whether or not a given tree we are given as input abides by the so-called binary search tree (BST) property. 
