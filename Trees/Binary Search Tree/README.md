@@ -2,7 +2,7 @@
 
 ##### Note. The name of function which is same but _ before name is helper function.
 
-### 02. Binary Search Trees: Insertion
+### 01. Binary Search Trees: Insertion
 
     Binary Search Trees: Insertion
     It will insert the Node to the Binary Search Tree
@@ -48,6 +48,11 @@
             1      6
                  /
                4    
+
+### 02. Binary Search Trees: Insertion with the help of list
+
+    Binary Search Trees: Insertion with the help of list
+    ....
 
 ### 03. Binary Search Trees: Searching
 
