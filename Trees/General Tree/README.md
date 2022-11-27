@@ -9,12 +9,6 @@
     There are many subtrees in a general tree.
 
     Example:
-                                           Electronics
-                                       /        |         \
-                                      /         |          \
-                                Laptop     Cell Phone       TV
-                               /  |  \
-                              /   |   \
 
     Electronics
        |__Laptop
