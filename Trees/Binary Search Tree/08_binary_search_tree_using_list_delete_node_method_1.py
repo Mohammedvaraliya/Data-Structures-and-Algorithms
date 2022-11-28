@@ -90,11 +90,11 @@ if __name__ == "__main__":
     print("\n")
 
     bst.delete(20)
-    print("After deleting 20 : ",bst.in_order_traversal())
+    print("After deleting 20 : ",bst.in_order_traversal()) # this should print [1, 4, 9, 17, 18, 23, 34]
     print("\n")
 
     bst.delete(1)
-    print("After deleting 1 : ",bst.in_order_traversal())
+    print("After deleting 1 : ",bst.in_order_traversal()) # this should print [4, 9, 17, 18, 23, 34]
     print("\n")
 
     

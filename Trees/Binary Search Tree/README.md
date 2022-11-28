@@ -258,9 +258,9 @@
 
     finalList = [17, 4, 1, 9, 20, 18, 23, 34]
 
-### 08. Binary Search Trees: Using list - Delete Node
+### 08. Binary Search Trees: Using list - Delete Node Method 1
 
-    Binary Search Trees: Using list - Delete Node
+    Binary Search Trees: Using list - Delete Node Method 1
     It will delete the node from binary search tree of given data
 
     Example:
@@ -306,6 +306,60 @@
                                          / \     /  \
                                         /   \   /    \
                                        1     9  18    34
+
+### 02. Binary Search Trees: Using list - Delete Node Method 2
+
+    Binary Search Trees: Using list - Delete Node Method 2
+    It will delete the node from binary search tree of given data
+
+    Example:
+    Binary Search Tree
+
+                                              17
+                                            /   \
+                                           /     \
+                                          4       20
+                                         / \     /  \
+                                        /   \   /    \
+                                       1     9  18    23
+                                                       \
+                                                        \
+                                                        34
+
+    delete(20)
+
+    To delete the node with value 20,
+    start from root node
+    is the 20 less than or greater than root node value
+
+    20 is greater value 
+
+    decline the left side of tree and traverse right side
+
+    if the value is equal to the cur node
+
+    find max value of left sub tree from cur node i.e max(18)
+
+    there is only one node in the left sub tree.
+
+    max is 18
+
+    copy the value and update to the cur node
+
+    now remove duplicate.
+
+    Final BST will look like:
+
+                                              17
+                                            /   \
+                                           /     \
+                                          4       18
+                                         / \        \
+                                        /   \        \
+                                       1     9        23
+                                                       \
+                                                        \
+                                                         34
 
     
 

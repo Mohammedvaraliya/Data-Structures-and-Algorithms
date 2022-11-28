@@ -193,7 +193,9 @@
 
 * Binary Search Trees: Using list - Pre-Order-Traversal [View Code](./Trees/Binary%20Search%20Tree/07_binary_search_tree_using_list_pre_order_traversal.py)
 
-* Binary Search Trees: Using list - Delete Node [View Code](./Trees/Binary%20Search%20Tree/08_binary_search_tree_using_list_delete_node.py)
+* Binary Search Trees: Using list - Delete Node Method 1 [View Code](./Trees/Binary%20Search%20Tree/08_binary_search_tree_using_list_delete_node_method_1.py)
+
+* Binary Search Trees: Using list - Delete Node Method 2 [View Code](./Trees/Binary%20Search%20Tree/09_binary_search_tree_using_list_delete_node_method_2.py)
 
 
 
