@@ -181,8 +181,8 @@
                                                         \
                                                         34
 
-    Note: The Left Side of the Binary Search Tree should be less than the root node.
-          The Right Side of the Binary Search Tree should be greater than the root node.
+    Note: The Left Side of the Binary Search Tree vlaues should be less than the root node value.
+          The Right Side of the Binary Search Tree values should be greater than the root node value.
           
           * For more clarification, please [See the code](./02_binary_search_tree_using_list.py.py)
 
