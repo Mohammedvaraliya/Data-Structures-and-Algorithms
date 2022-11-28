@@ -234,7 +234,7 @@
 
     finalList = [1, 9, 4, 18, 34, 23, 20, 17]
 
-### 06. Binary Search Trees: Using list - Pre-Order-Traversal
+### 07. Binary Search Trees: Using list - Pre-Order-Traversal
 
     Pre-Order-Traversal
 
@@ -258,6 +258,54 @@
 
     finalList = [17, 4, 1, 9, 20, 18, 23, 34]
 
+### 08. Binary Search Trees: Using list - Delete Node
+
+    Binary Search Trees: Using list - Delete Node
+    It will delete the node from binary search tree of given data
+
+    Example:
+    Binary Search Tree
+
+                                              17
+                                            /   \
+                                           /     \
+                                          4       20
+                                         / \     /  \
+                                        /   \   /    \
+                                       1     9  18    23
+                                                       \
+                                                        \
+                                                        34
+
+    delete(20)
+
+    To delete the node with value 20,
+    start from root node
+    is the 20 less than or greater than root node value
+
+    20 is greater value 
+
+    decline the left side of tree and traverse right side
+
+    if the value is equal to the cur node
+
+    find min value of right sub tree from cur node i.e min(23, 34)
+
+    min is 23
+
+    copy the value and update to the cur node
+
+    now remove duplicate.
+
+    Final BST will look like:
+
+                                              17
+                                            /   \
+                                           /     \
+                                          4       23
+                                         / \     /  \
+                                        /   \   /    \
+                                       1     9  18    34
 
     
 
