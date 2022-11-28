@@ -52,7 +52,41 @@
 ### 02. Binary Search Trees: Insertion with the help of list
 
     Binary Search Trees: Insertion with the help of list
-    ....
+    Binary Search Tree will build with the help of list
+
+    Example:
+
+            list = [17, 4, 1, 20, 9, 23, 18, 34]
+
+    let make 1st element of the list to root of the list.
+    root node : (17)
+
+    Traverse the list from 1st element to last i.e (4 to 34).
+    i = If the data is less than root node, try to add the child to the left side
+    if the left child already present there, so repeat the step i.
+    if the data is less and left child is None, simply add the child over there.
+
+    j = If the data is greater than root node, try to add the child to the right side
+    if the right child already present there, so repeat the step j.
+    if the data is greater and right child is None, simply add the child over there.
+
+    Final Binary Search Tree will look like:
+
+                                              17
+                                            /   \
+                                           /     \
+                                          4       20
+                                         / \     /  \
+                                        /   \   /    \
+                                       1     9  18    23
+                                                       \
+                                                        \
+                                                        34
+
+    Note: The Left Side of the Binary Search Tree should be less than the root node.
+          The Right Side of the Binary Search Tree should be greater than the root node.
+          
+          * For more clarification, please [See the code](./02_binary_search_tree_using_list.py.py)
 
 ### 03. Binary Search Trees: Searching
 
