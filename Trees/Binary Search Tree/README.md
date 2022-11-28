@@ -186,5 +186,78 @@
           
           * For more clarification, please [See the code](./02_binary_search_tree_using_list.py.py)
 
+### 05. Binary Search Trees: Using list - In-Order-Traversal
+
+    In-Order-Traversal
+
+                                              17
+                                            /   \
+                                           /     \
+                                          4       20
+                                         / \     /  \
+                                        /   \   /    \
+                                       1     9  18    23
+                                                       \
+                                                        \
+                                                        34
+    
+    In depth-first traversal: in-order is the traversal algorithm which is used to traverse the tree.
+    This methods follows the step
+
+    It will first traverse the left sub-tree, then root node, and then right sub tree.
+    
+    Start from root node i.e 17.
+
+    finalList = [1, 4, 9, 17, 18, 20, 23, 34]
+
+### 06. Binary Search Trees: Using list - Post-Order-Traversal
+
+    Post-Order-Traversal
+
+                                              17
+                                            /   \
+                                           /     \
+                                          4       20
+                                         / \     /  \
+                                        /   \   /    \
+                                       1     9  18    23
+                                                       \
+                                                        \
+                                                        34
+    
+    In depth-first traversal: post-order is the traversal algorithm which is used to traverse the tree.
+    This methods follows the step
+
+    It will first traverse the left sub-tree, then right sub-tree, and then root node.
+    
+    Start from root node i.e 17.
+
+    finalList = [1, 9, 4, 18, 34, 23, 20, 17]
+
+### 06. Binary Search Trees: Using list - Pre-Order-Traversal
+
+    Pre-Order-Traversal
+
+                                              17
+                                            /   \
+                                           /     \
+                                          4       20
+                                         / \     /  \
+                                        /   \   /    \
+                                       1     9  18    23
+                                                       \
+                                                        \
+                                                        34
+    
+    In depth-first traversal: pre-order is the traversal algorithm which is used to traverse the tree.
+    This methods follows the step
+
+    It will first traverse the root node, then left sub-tree, and then right sub tree.
+    
+    Start from root node i.e 17.
+
+    finalList = [17, 4, 1, 9, 20, 18, 23, 34]
+
+
     
 

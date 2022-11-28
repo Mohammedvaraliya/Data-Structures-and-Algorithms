@@ -187,6 +187,13 @@
 
 * Binary Search Trees: Using list [View Code](./Trees/Binary%20Search%20Tree/02_binary_search_tree_using_list.py)
 
+* Binary Search Trees: Using list - In-Order-Traversal [View Code](./Trees/Binary%20Search%20Tree/05_binary_search_tree_using_list_in_order_traversal.py)
+
+* Binary Search Trees: Using list - Post-Order-Traversal [View Code](./Trees/Binary%20Search%20Tree/06_binary_search_tree_using_list_post_order_traversal.py)
+
+* Binary Search Trees: Using list - Pre-Order-Traversal [View Code](./Trees/Binary%20Search%20Tree/07_binary_search_tree_using_list_pre_order_traversal.py)
+
+
 
 
 
