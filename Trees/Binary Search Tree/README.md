@@ -49,7 +49,7 @@
                  /
                4    
 
-### 02. Binary Search Trees: Insertion with the help of list
+### 02. Binary Search Trees: Using list
 
     Binary Search Trees: Insertion with the help of list
     Binary Search Tree will build with the help of list
