@@ -181,11 +181,11 @@
 
 * Binary Search Trees: Insertion [View Code](./Trees/Binary%20Search%20Tree/01_binary_search_tree_insertion.py)
 
-* Binary Search Trees: Using list [View Code](./Trees/Binary%20Search%20Tree/02_binary_search_tree_using_list.py)
-
 * Binary Search Trees: Searching [View Code](./Trees/Binary%20Search%20Tree/02_binary_search_tree_searching.py)
 
 * Binary Search Trees: Checking the BST Property [View Code](./Trees/Binary%20Search%20Tree/03_binary_search_tree_checking.py)
+
+* Binary Search Trees: Using list [View Code](./Trees/Binary%20Search%20Tree/02_binary_search_tree_using_list.py)
 
 
 
