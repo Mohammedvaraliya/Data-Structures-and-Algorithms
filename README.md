@@ -1,6 +1,6 @@
 # Data-Structures And Algorithms
 
-### Stack
+# Stack
 
 * The Stack data Structure [View Code](./Stack/01_stack_DS.py)
 
