@@ -129,6 +129,8 @@
 
 * Binary Search: Cyclically Shifted Array [View Code](./Search/08_binary_search_cyclically_shifted.py)
 
+* Binary Search: Find Index Of All Occurances [View Code](./Search/Binary%20Search/09_binary_search_find_all_occurences.py)
+
 
 ### Strings
 
