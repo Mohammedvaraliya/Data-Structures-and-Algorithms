@@ -134,4 +134,24 @@
     Write a function that determines the index of the smallest element
     of the cyclically sorted array.
 
+### 09. Binary Search: Find Index Of All Occurances
 
+    Binary Search: Find Index Of All Occurances
+    Now since the list is sorted,
+    
+    It can do left and right scan from the initial index to find all occurances of a given element.
+
+    Example:
+    A sortedd array
+
+                    data = [1, 4, 6, 9, 11, 15, 15, 15, 17, 21, 34, 34, 56]
+                    target = 15
+
+    Here, we have the target element 15
+    so, we have to find how many 15 are there in data list
+
+    index number starts from 0
+
+    Three 15 are there in the data list at respective index number
+
+                    Indices of occurences of 15 are [5, 6, 7]  
