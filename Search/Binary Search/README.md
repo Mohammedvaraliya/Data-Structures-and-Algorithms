@@ -154,4 +154,4 @@
 
     Three 15 are there in the data list at respective index number
 
-                    Indices of occurences of 15 are [5, 6, 7]  
+                    Indices of occurences of number 15 are [5, 6, 7] 

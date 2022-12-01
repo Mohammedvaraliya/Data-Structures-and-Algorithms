@@ -40,7 +40,7 @@ if __name__ == "__main__":
     data = [1, 4, 6, 9, 11, 15, 15, 15, 17, 21, 34, 34, 56]
     target = 15
 
-    print(binary_search(data, target))
+    print("Index number is :", binary_search(data, target))
 
     indices = find_all_occurances(data, target)
-    print(f"Indices of occurences of {target} are {indices}")
+    print(f"Indices of occurences of number {target} are {indices}")
