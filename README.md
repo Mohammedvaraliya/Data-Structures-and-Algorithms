@@ -105,6 +105,12 @@
 
 ### Search
 
+#### Linear Search
+
+* Linear Search [View Code](./Search/Linear%20Search/01_linear_search.py)
+
+* Linear Search : Find Elements [View Code](./Search/Linear%20Search/02_linear_search.py)
+
 #### Binary Search
 
 * Binary search [View Code](./Search/01_Binary_Search.py)
