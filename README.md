@@ -132,6 +132,13 @@
 * Binary Search: Find Index Of All Occurances [View Code](./Search/Binary%20Search/09_binary_search_find_all_occurences.py)
 
 
+### Sorting Algorithms
+
+#### Bubble Sort
+
+* Bubble Sort [View Code](./Sort/Bubble%20Sort/01_bubble_sort.py)
+
+
 ### Strings
 
 * Reverse String [View Code](./Strings/01_reverse_string.py)
