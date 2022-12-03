@@ -138,6 +138,10 @@
 
 * Bubble Sort [View Code](./Sort/Bubble%20Sort/01_bubble_sort.py)
 
+#### Quick Sort
+
+* Quick Sort [View Code](./Sort/Bubble%20Sort/01_bubble_sort.py)
+
 
 ### Strings
 
