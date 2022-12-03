@@ -15,11 +15,11 @@
 
                 elements = [11, 9, 29, 7, 2, 15, 28]
             
-    let pivot is the first element of the array i.e pivot = 11
+    let pivot is the first element of the array i.e index of pivot = 0 and value is 11
     let initialize two pointer start and end.
 
-    start is the pointer after the pivot i.e start = 9
-    end is the last element from the array i.e end = 28
+    start is the pointer after the pivot i.e index of start = 0 
+    end is the last element from the array i.e index of end = 6
 
     perform while loop such that start is less than end.
 
