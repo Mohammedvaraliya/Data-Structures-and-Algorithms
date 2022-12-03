@@ -140,7 +140,9 @@
 
 #### Quick Sort
 
-* Quick Sort [View Code](./Sort/Bubble%20Sort/01_bubble_sort.py)
+* Quick Sort: Hoare Partition [View Code](./Sort/Quick%20Sort/01_quick_sort_hoare_partition.py)
+
+* Quick Sort: Lomuto Partition [View Code](./Sort/Quick%20Sort/02_quick_sort_lomuto_partition.py)
 
 
 ### Strings
