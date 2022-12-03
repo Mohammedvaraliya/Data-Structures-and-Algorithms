@@ -49,8 +49,8 @@
 
     repeat above till start < end
 
-    final sorted will look like:
-    
+    final sorted array will look like:
+
                            [2, 7, 9, 11, 15, 28, 29]
 
 
