@@ -27,11 +27,51 @@
             ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) 
             ( 1 2 4 5 8 ) –>  ( 1 2 4 5 8 )
 
-    Third Pass: 
+### 02. Bubble Sort Using Key
 
-        Now, the array is already sorted, but our algorithm does not know if it is completed.
-        The algorithm needs one whole pass without any swap to know it is sorted.
-            ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) 
-            ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) 
-            ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) 
-            ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) 
+    Bubble Sort Using Key
+
+    Implement bubble_sort function such that it can sort following list of transactions,
+
+    elements = [
+        { 'name': 'varaliya',   'amount': 1000, 'device': 'iphone-14'},
+        { 'name': 'mohammed', 'amount': 400,  'device': 'google pixel'},
+        { 'name': 'sameer',  'amount': 200,  'device': 'vivo'},
+        { 'name': 'subhashish',  'amount': 800,  'device': 'iphone-12'},
+    ]
+
+    bubble_sort function should take key from an elements record and sort the list as per that key. For example,
+
+    bubble_sort(elements, key='amount')
+    This will sort elements by amount and your sorted list will look like,
+
+    elements = [
+        { 'name': 'sameer',  'amount': 200,  'device': 'vivo'},
+        { 'name': 'mohammed', 'amount': 400,  'device': 'google pixel'},
+        { 'name': 'subhashish',  'amount': 800,  'device': 'iphone-12'},
+        { 'name': 'varaliya',   'amount': 1000, 'device': 'iphone-14'},
+    ]
+
+    But if you call it like this,
+
+    bubble_sort(elements, key='name')
+    This will sort elements by name and your sorted list will look like,
+
+    elements = [
+        { 'name': 'mohammed', 'amount': 400,  'device': 'google pixel'},
+        { 'name': 'sameer',  'amount': 200,  'device': 'vivo'},
+        { 'name': 'subhashish',  'amount': 800,  'device': 'iphone-12'},
+        { 'name': 'varaliya',   'amount': 1000, 'device': 'iphone-14'},
+    ]
+
+    and if you call it like this,
+
+    bubble_sort(elements, key='device')
+    This will sort elements by device and your sorted list will look like,
+
+    elements = [
+        { 'name': 'mohammed', 'amount': 400,  'device': 'google pixel'},
+        { 'name': 'varaliya',   'amount': 1000, 'device': 'iphone-14'},
+        { 'name': 'subhashish',  'amount': 800,  'device': 'iphone-12'},
+        { 'name': 'sameer',  'amount': 200,  'device': 'vivo'},
+    ]
