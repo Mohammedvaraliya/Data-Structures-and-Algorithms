@@ -26,6 +26,8 @@ def partition(elements, start, end):
 
 
 def quick_sort(elements, start, end):
+    if len(elements)== 1:
+        return
     if start < end:
         partition_index = partition(elements, start, end)
         quick_sort(elements, start, partition_index-1) # Left partition
