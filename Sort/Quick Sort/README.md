@@ -21,16 +21,37 @@
     start is the pointer after the pivot i.e start = 9
     end is the last element from the array i.e end = 28
 
-    perform while loop such as start is less than end.
-    a = check if element[start] <= pivot
-            i.e 11 is less or equal to 11 -> yes it is equal
+    perform while loop such that start is less than end.
 
-    b = increment start with 1
+        i)  perform while loop such that start is less than or equal to pivot.
+            a = check if element[start] <= pivot
+                    i.e 11 is less or equal to 11 -> yes it is equal
 
-    now start is 1
+            b = increment start with 1
 
-    repeat step a and b until start > pivot
+            now start is 1
 
+            repeat step a and b until start <= pivot
+
+        ii) perform while loop such that end is greater than pivot.
+            a = check if element[start] <= pivot
+                    i.e 11 is less or equal to 11 -> yes it is equal
+
+            b = decrement end with 1
+
+            now end is 5
+
+            repeat step a and b until end > pivot
+
+    break the loop
+
+    And swap start with end
+
+    repeat above till start < end
+
+    final sorted will look like:
+    
+                           [2, 7, 9, 11, 15, 28, 29]
 
 
 ### 02. Quick Sort: Lomuto Partition
