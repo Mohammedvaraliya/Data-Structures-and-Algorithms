@@ -138,7 +138,7 @@
 
 * Bubble Sort [View Code](./Sort/Bubble%20Sort/01_bubble_sort.py)
 
-* ##### [Bubble Sort : Using Key](./Sort/Bubble%20Sort/02_bubble_sort_using_key.py)
+* ### [Bubble Sort : Using Key](./Sort/Bubble%20Sort/02_bubble_sort_using_key.py)
 
 
 #### Quick Sort
