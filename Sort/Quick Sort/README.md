@@ -61,3 +61,14 @@
     It is an algorithm to partition an array into two parts based on a given condition.
 
     In the Lomuto partition scheme, usually the last element of the list is chosen as the pivot element.
+
+    Example:
+    given array:
+
+                elements = [11, 9, 29, 7, 2, 15, 28]
+            
+    let pivot is the last element of the array i.e index of pivot = 6 and value is 28
+    let initialize two pointer start and end.
+
+    start is the pointer after the pivot i.e index of start = 0 
+    end is the last element from the array i.e index of end = 6
