@@ -152,7 +152,12 @@
 
 * Insertion Sort [View Code](./Sort/Insertion%20Sort/01_insertion_sort.py)
 
-* ......... [View Code](./Sort/Quick%20Sort/02_quick_sort_lomuto_partition.py)
+
+#### Merge Sort
+
+* Merge Sort Two Sorted List [View Code](./Sort/Merge%20Sort/01_merge_two_sorted_list.py)
+
+* Merge Sort: One Unsorted List [View Code](./Sort/Merge%20Sort/02_merge_sort_one_unsorted_list.py)
 
 
 ### Strings
