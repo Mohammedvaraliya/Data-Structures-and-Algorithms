@@ -21,7 +21,7 @@
         Pointer i points to the first array, whereas pointer j points to the second array.
 
         Traverse both the array simultaneously using the pointers, and pick the smallest elements 
-        among both the array and insert in into the auxiliary array.
+        among both the array and append it into the auxiliary array.
 
         Increment the pointers.
 
