@@ -138,6 +138,9 @@
 
 * Bubble Sort [View Code](./Sort/Bubble%20Sort/01_bubble_sort.py)
 
+* ##### [Bubble Sort : Using Key](./Sort/Bubble%20Sort/02_bubble_sort_using_key.py)
+
+
 #### Quick Sort
 
 * Quick Sort: Hoare Partition [View Code](./Sort/Quick%20Sort/01_quick_sort_hoare_partition.py)
