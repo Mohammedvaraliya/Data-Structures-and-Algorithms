@@ -44,4 +44,4 @@
     Then we combine the pair of one element lists into two-element lists, sorting them in the process. 
     The sorted two-element pairs is merged into the four-element lists, and so on until we get the sorted list.
 
-    
+    Example:
