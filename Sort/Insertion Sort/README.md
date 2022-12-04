@@ -10,7 +10,7 @@
     
     Consider an example: arr[]: [12, 11, 13, 5, 6]
 
-                        12   	   11   	   13   	   5   	   6   
+                        **12   	   11**   	   13   	   5   	   6   
 
     First Pass:
 
