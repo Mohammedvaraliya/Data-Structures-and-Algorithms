@@ -148,6 +148,13 @@
 * Quick Sort: Lomuto Partition [View Code](./Sort/Quick%20Sort/02_quick_sort_lomuto_partition.py)
 
 
+#### Insertion Sort
+
+* Insertion Sort [View Code](./Sort/Insertion%20Sort/01_insertion_sort.py)
+
+* ......... [View Code](./Sort/Quick%20Sort/02_quick_sort_lomuto_partition.py)
+
+
 ### Strings
 
 * Reverse String [View Code](./Strings/01_reverse_string.py)
