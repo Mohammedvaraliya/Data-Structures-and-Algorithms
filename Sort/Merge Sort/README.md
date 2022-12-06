@@ -45,3 +45,23 @@
     The sorted two-element pairs is merged into the four-element lists, and so on until we get the sorted list.
 
     Example:
+
+                arr = [10, 3, 15, 7, 8, 23, 98, 29]
+
+    make the halft list until only one elements left
+
+                      [10, 3, 15, 7]             [8, 23, 98, 29]  
+
+                     [10, 3]    [15, 7]        [8, 23]     [98, 29]  
+
+                 [10]   [3]   [15]   [7]   [8]   [23]   [98]    [29]
+
+    Now every single array is sorted.
+    After dividing the array into smallest units, start merging the elements again based on comparison of size of elements
+    Firstly, compare the element for each list and then combine them into another list in a sorted manner.
+
+                       [3, 10]   [7, 15]    [8, 23]   [29, 98]
+
+                       [3, 7, 10, 15]             [8, 23. 29, 98]
+
+                            [3, 7, 8, 10, 15, 23, 29, 98]
