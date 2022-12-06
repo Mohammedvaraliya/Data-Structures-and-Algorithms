@@ -31,7 +31,7 @@
 
                 [5, 7, 8, 9, 12, 45, 51, 56]
     
-### 01. Merge Sort: One Unsorted List
+### 02. Merge Sort: One Unsorted List
 
     Merge Sort: One Unsorted List
 
@@ -65,3 +65,39 @@
                        [3, 7, 10, 15]             [8, 23. 29, 98]
 
                             [3, 7, 8, 10, 15, 23, 29, 98]
+
+### 03. Merge Sort: Using Key
+
+    Merge Sort: Using Key
+
+    Modify merge_sort function such that it can sort following list of athletes as per the key given,
+
+    elements = [
+        {'name': 'varaliya',   'age': 17, 'time_hours': 1},
+        {'name': 'mohammed', 'age': 12,  'time_hours': 3},
+        {'name': 'sameer',  'age': 21,  'time_hours': 2.5},
+        {'name': 'subhashish',  'age': 24,  'time_hours': 1.5},
+    ]
+
+    merge_sort function should take key from an elements and sort the list as per that key. For example,
+
+    merge_sort(elements, key='time_hours', descending=True)
+    This will sort elements by time_hours and your sorted list will look like,
+
+    elements = [
+        {'name': 'mohammed', 'age': 12,  'time_hours': 3},
+        {'name': 'sameer',  'age': 21,  'time_hours': 2.5},
+        {'name': 'subhashish',  'age': 24,  'time_hours': 1.5},
+        {'name': 'varaliya',   'age': 17, 'time_hours': 1},
+    ]
+    But if you call it like this,
+
+    merge_sort(elements, key='time_hours')
+    output will be,
+
+    elements = [
+            { 'name': 'vedanth',  'age': 17,  'time_hours': 1},
+            { 'name': 'chinmay',   'age': 24, 'time_hours': 1.5},
+            { 'name': 'vignesh',  'age': 21,  'time_hours': 2.5},
+            { 'name': 'rajab', 'age': 12,  'time_hours': 3},
+        ]   
