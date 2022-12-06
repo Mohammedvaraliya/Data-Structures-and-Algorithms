@@ -159,6 +159,8 @@
 
 * Merge Sort: One Unsorted List [View Code](./Sort/Merge%20Sort/02_merge_sort_one_unsorted_list.py)
 
+* Merge Sort: Using Key [View Code](./Sort/Merge%20Sort/03_merge_Sort_using_key.py)
+
 
 ### Strings
 
