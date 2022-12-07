@@ -162,6 +162,13 @@
 * Merge Sort: Using Key [View Code](./Sort/Merge%20Sort/03_merge_Sort_using_key.py)
 
 
+#### Shell Sort
+
+* Shell Sort [View Code](./Sort/Shell%20Sort/01_shell_sort.py)
+
+* Shell Sort: Remove Duplicates [View Code](./Sort/Shell%20Sort/02_shell_sort_remove_duplicates.py)
+
+
 ### Strings
 
 * Reverse String [View Code](./Strings/01_reverse_string.py)
