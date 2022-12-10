@@ -169,6 +169,13 @@
 * Shell Sort: Remove Duplicates [View Code](./Sort/Shell%20Sort/02_shell_sort_remove_duplicates.py)
 
 
+#### Selection Sort
+
+* Selection Sort [View Code](./Sort/Selection%20Sort/01_selection_sort.py)
+
+* Selection Sort: Dictionary [View Code](./Sort/Selection%20Sort/02_selection_sort_on_dictionary.py)
+
+
 ### Strings
 
 * Reverse String [View Code](./Strings/01_reverse_string.py)
