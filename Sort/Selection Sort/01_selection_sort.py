@@ -1,9 +1,12 @@
+'''
+# Function to find minimum element from array
 def find_min_element(arr):
     min = float('inf')
     for i in range(len(arr)):
         if arr[i] < min:
             min = arr[i]
     return min
+'''
 
 
 
