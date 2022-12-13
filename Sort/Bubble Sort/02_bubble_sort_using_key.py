@@ -28,13 +28,13 @@ if __name__ == '__main__':
     ]
 
     bubble_sort(elements, key='amount') # This will sort elements by taking key as amount
-    print(elements)
+    print(*elements, sep='\n')
     print("\n")
 
     bubble_sort(elements, key='name') # This will sort elements by taking key as name
-    print(elements)
+    print(*elements, sep='\n')
     print("\n")
 
     bubble_sort(elements, key='device') # This will sort elements by taking key as device
-    print(elements)
+    print(*elements, sep='\n')
 

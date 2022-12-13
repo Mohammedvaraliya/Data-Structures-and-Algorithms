@@ -41,8 +41,8 @@ if __name__ == '__main__':
     ]
 
     sorted_list = merge_sort(elements, key='time_hours', descending=True) # In Descending Order
-    print(sorted_list)
+    print(*sorted_list, sep='\n')
     print("\n")
 
     sorted_list = merge_sort(elements, key='time_hours') # In Ascending Order
-    print(sorted_list)
+    print(*sorted_list, sep='\n')
