@@ -6,4 +6,4 @@ def find_sum(n):
 
 
 if __name__ == "__main__":
-    print(find_sum(18))
+    print(find_sum(5))
