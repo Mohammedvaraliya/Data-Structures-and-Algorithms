@@ -7,6 +7,7 @@ first 6 fibonacci number is:
                 fibo_num:    0, 1, 1, 2, 3, 5, 8
 '''
 
+# Iterative approach
 def fib_iterative(n):
     
     num = [0, 1]
@@ -18,7 +19,7 @@ def fib_iterative(n):
     
     return num[n]
 
-
+# Recursive Approach
 def fib_recursive(n):
 
     if n == 0 or n == 1:
