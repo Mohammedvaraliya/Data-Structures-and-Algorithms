@@ -57,3 +57,100 @@
 
     Fibonacci Number Using Recursion
     ...
+
+### 03. Recursion: List sum
+
+    Recursion: List sum
+    To find the sum of list recursively
+
+    Example:
+
+            list = [1, 2, [3,4],[5,6]]
+    
+    Initialize variable: total = 0
+        
+    Here the program iterate through each element of the list and add the element value to a variable (total).
+    If the element exist where the another list found
+
+    Call that element as recursively, so the above step will execute again for that list
+
+    Example:
+
+        1st iteration:
+
+            element = 1
+
+            so, add element to the (total) variable 
+
+            total = 1
+
+        2nd iteration:
+
+            element = 2
+
+            so, add element to the (total) variable 
+
+            total = 3
+        
+        3rd iteration:
+
+            element = [3, 4]
+
+            here, we found element with another list
+
+            call recursively, so we get total number
+
+            1st iteration:
+
+                element = 3
+
+                so, add element to the (total) variable
+
+                total = 3
+            
+            2nd iteration:
+
+                element = 4
+
+                so, add element to the (total) variable
+
+                total = 7
+
+            total = 3 + 7
+            total = 10
+
+        4th iteration:
+
+            element = [5, 6]
+
+            here, we found element with another list
+
+            call recursively, so we get total number
+
+            1st iteration:
+
+                element = 5
+
+                so, add element to the (total) variable
+
+                total = 5
+            
+            2nd iteration:
+
+                element = 6
+
+                so, add element to the (total) variable
+
+                total = 11
+
+            total = 11 + 10
+            total = 21
+
+    The final output of the sum_of_list is 21
+
+
+
+
+
+
+
