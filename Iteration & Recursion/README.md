@@ -58,7 +58,7 @@
     Fibonacci Number Using Recursion
     ...
 
-### 03. Recursion: List sum
+### 04. Recursion: List sum
 
     Recursion: List sum
     To find the sum of list recursively
