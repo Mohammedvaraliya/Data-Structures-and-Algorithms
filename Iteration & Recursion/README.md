@@ -175,7 +175,34 @@
 ### 05. Recursion: Get Sum Of Integer
 
     Recursion: Get Sum Of Integer
-    ...
+    Given a number, the sum of its digits.
+
+    Examples : 
+
+            Input: n = 345
+            Output: 12
+
+            Input: n = 687
+            Output: 21
+
+            Input: n = 12
+            Output: 3
+
+    The below steps to solve the problem:
+
+    1. Get the number
+
+    2. Declare a variable to store the sum and set it to 0
+
+    3. Repeat the next two steps till the number is not 0
+
+    4. Get the rightmost digit of the number with help of the remainder ‘%’ operator by dividing it 
+       by 10 and adding it to the sum.
+
+    5. Divide the number by 10 with help of ‘/’ operator to remove the rightmost digit.
+
+    6. Print or return the sum
+
 
 
 
