@@ -1,18 +1,20 @@
 | # | Title | Solution | 
 |---| ----- | -------- |
+|  | <h2>Stack</h2> |  
 |01| Stack |  [The Stack data Structure](./Stack/01_stack_DS.py) |
 |02| Stack |  [The Stack data Structure : Understanding Stack](./Stack/02_stack_DS.ipynb) |
 |03| Stack |  [Determine if parenthesis are balanced](./Stack/03_stack_balance_paran.py) |
 |04| Stack |  [Convert integer to binary](./Stack/04_stack_divide_by_two.py) |
 |05| Stack |  [The Stack data Structure : Reverse String](./Stack/05_stack_reverse_string.py) |
 |  |    
+|  | <h2>Queue</h2> |  
 |01| Queue |  [The Queue Data Structure](./Queue/01_queue.ipynb) |
 |02| Queue | [The Queue Data Structure](./Queue/02_queue_data_structure.py) |
 |03| Queue | [Queue Data Structure : Producer Consumer Problem](./Queue/03_queue_producer_consumer.py) |
 |04| Queue | [Queue Data Structure : Producer Consumer Problem](./Queue/03_queue_producer_consumer.py) |
 |05| Queue | [Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue](./Queue/04_queue_print_binary_number.py) |
 |  |
-|  | Linked List |  
+|  | <h2>Linked List</h2> |  
 |01| Singly Linked List |  [Singly Liked List](./Linked%20List/Singly%20Linked%20List/01_singly_linked_list.py) |
 |02| Singly Linked List |  [Singly Linked Lists -- Length of List](./Linked%20List/Singly%20Linked%20List/02_singlyLL_length_of_list.py) |
 |03| Singly Linked List |  [Singly Linked Lists -- Node Swap](./Linked%20List/Singly%20Linked%20List/03_singlyLL_swap_nodes.py) |
@@ -38,7 +40,15 @@
 |03| Circular Linked List |  [Circular Linked Lists -- Split List](./Linked%20List/Circular%20Linked%20List/03_circularLL_split_list.py) |
 |04| Circular Linked List |  [Circular Linked Lists -- Josephus Problem](./Linked%20List/Circular%20Linked%20List/04_circularLL_josephus.py) |
 |05| Circular Linked List |  [Circular Linked Lists -- Is Circular Linked List](./Linked%20List/Circular%20Linked%20List/05_circularLL_is_circularLL.py) |
+|| 
+|  | <h2>Iteration & Recursion</h2> |  
+|01| Iteration & Recursion |  [Iterative Method](./Iteration%20%26%20Recursion/01_iterative.py) |
+|02| Iteration & Recursion |  [Recursive Method](./Iteration%20%26%20Recursion/02_recursive.py) |
+|03| Iteration & Recursion |  [Recursive Method: Fibonacci Number](./Iteration%20%26%20Recursion/03_fibonacci.py) |
+|04| Iteration & Recursion |  [Recursive Method: List Sum](./Iteration%20%26%20Recursion/04_recursion_list_sum.py) |
+|05| Iteration & Recursion |  [Recursive Method: Sum Of Integer](./Iteration%20%26%20Recursion/05_recurion_get_sum_of_integer.py) |
 ||
+|  | <h2>Arrays</h2> |  
 |01| Arrays |  [Arrays: Array Advance Game](./Arrays/07_array_advance_game.py) |
 |02| Arrays |  [Greedy Algorithms: Optimal Task Assignment](./Arrays/01_optimal_task_assignment.py) |
 |03| Arrays |  [Sorting Algorithms: Intersection of Two Sorted Arrays](./Arrays/02_intersect_sorted_array.py) |
@@ -46,11 +56,12 @@
 |05| Arrays |  [Arrays: Two Sum Problem](./Arrays/10_two_sum_problem.py) |
 |06| Arrays |  [Arrays: Buy and Sell Stock](./Arrays/11_buy_and_sell_stock.py) |
 ||
+|  | <h2>Hash Table</h2> |  
 |01| Hash Table |  [Hash Table Implementation](./Hash%20Table/01_hash_table_implementation.ipynb) |
 |02| Hash Table |  [Hash Table Implementation : Get Hash](./Hash%20Table/02_hash_table_get_hash.ipynb) |
 |03| Hash Table |  [Hash Table Implementation : Collision Handling In Hash Table](./Hash%20Table/03_collision_Handling_In_hash_table.ipynb) |
 ||
-|  | Search |  
+|  | <h2>Search</h2> |  
 |01| Linear Search |  [Linear Search](./Search/Linear%20Search/01_linear_search.py) |
 |02| Linear Search |  [Linear Search : Find Elements](./Search/Linear%20Search/02_linear_search.py) |
 ||
@@ -64,7 +75,7 @@
 |08| Binary Search |  [Binary Search: Cyclically Shifted Array](./Search/08_binary_search_cyclically_shifted.py) |
 |09| Binary Search |  [Binary Search: Find Index Of All Occurances](./Search/Binary%20Search/09_binary_search_find_all_occurences.py) |
 ||
-|01| Sorting Algorithms |  
+|  | <h2>Sorting Algorithms</h2> |  
 |02| Bubble Sort |  [Bubble Sort](./Sort/Bubble%20Sort/01_bubble_sort.py) |
 |03| Bubble Sort |  [Bubble Sort : Using Key](./Sort/Bubble%20Sort/02_bubble_sort_using_key.py) |
 ||
@@ -83,6 +94,7 @@
 |01| Selection Sort |  [Selection Sort](./Sort/Selection%20Sort/01_selection_sort.py) |
 |02| Selection Sort |  [Selection Sort: Dictionary](./Sort/Selection%20Sort/02_selection_sort_on_dictionary.py) |
 ||
+|  | <h2>Strings</h2> |  
 |01| Strings |  [Reverse String](./Strings/01_reverse_string.py) |
 |02| Strings |  [Count Consonants in String](./Strings/02_Count_Consonants_in_String.py) |
 |03| Strings |  [Look-and-Say Sequence](./Strings/03_look_n_say_sequence.py) |
@@ -95,9 +107,10 @@
 |10| Strings |  [String Processing: Integer to String](./Strings/10_integer_to_string.py) |
 |11| Strings |  [String Processing: String to Integer](./Strings/11_string_to_integer.py) |
 ||
+|  | <h2>Numbers</h2> |  
 |01| Numbers |  [Product of Two Numbers](./Numbers/01_Product_of_Two_Numbers.py) |
 ||
-|  | Tree Data Structure |  
+|  | <h2>Tree Data Structures</h2> |  
 |01| General Trees |  [General Trees](./Trees/General%20Tree/01_general_tree.py) |
 ||
 |01| Binary Trees |  [Binary Trees: Traversal Algorithms Pre-Order](./Trees/Binary%20Tree/01_binary_tree_traversal_preorder.py) |
@@ -118,6 +131,7 @@
 |08| Binary Search Trees |  [Binary Search Trees: Using list - Delete Node Method 1](./Trees/Binary%20Search%20Tree/08_binary_search_tree_using_list_delete_node_method_1.py) |
 |09| Binary Search Trees |  [Binary Search Trees: Using list - Delete Node Method 2](./Trees/Binary%20Search%20Tree/09_binary_search_tree_using_list_delete_node_method_2.py) |
 ||
+|  | <h2>Graph Data Structure</h2> |  
 |01| Graph Data Structure |  [Graph Data Structure](./Graph/01_graph_data_structure.py) |
 
 
