@@ -230,7 +230,7 @@
                     2 + 4 = 6
                     6 + 6 = 12
 
-            12 is the output
+            => 12 is the output
 
     sum_series of number 10 will be
     n = 10
@@ -254,7 +254,7 @@
                     12 + 8 = 20
                     20 + 10 = 30 
 
-            30 is the output
+            => 30 is the output
 
 
 
