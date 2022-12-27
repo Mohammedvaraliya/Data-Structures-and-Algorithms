@@ -203,6 +203,59 @@
 
     6. Print or return the sum
 
+### 06. Recursion: Sum Of Positive Integer
+
+    Recursion: Sum Of Positive Integer
+    Sum of positive integer
+
+    Example:
+            sum_series(6) -> 12
+            sum_series(10) -> 30
+
+    sum_series of number 6 will be
+    n = 6
+    when n == 0 
+    return 0
+
+    Otherwise, n+(n-2)+(n-4)... (until n-x =< 0)
+    The following step to get the sum of intefer
+                    n = 6
+                    n = 4
+                    n = 2
+                    n = 0
+
+                    return 0
+                    
+                    0 + 2 = 2
+                    2 + 4 = 6
+                    6 + 6 = 12
+
+            12 is the output
+
+    sum_series of number 10 will be
+    n = 10
+    when n == 0 
+    return 0
+
+    Otherwise, n+(n-2)+(n-4)... (until n-x =< 0)
+    The following step to get the sum of intefer
+                    n = 10
+                    n = 8
+                    n = 6
+                    n = 4
+                    n = 2
+                    n = 0
+
+                    return 0
+                    
+                    0 + 2 = 2
+                    2 + 4 = 6
+                    6 + 6 = 12
+                    12 + 8 = 20
+                    20 + 10 = 30 
+
+            30 is the output
+
 
 
 
