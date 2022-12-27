@@ -47,6 +47,7 @@
 |03| Iteration & Recursion |  [Recursive Method: Fibonacci Number](./Iteration%20%26%20Recursion/03_fibonacci.py) |
 |04| Iteration & Recursion |  [Recursive Method: List Sum](./Iteration%20%26%20Recursion/04_recursion_list_sum.py) |
 |05| Iteration & Recursion |  [Recursive Method: Sum Of Integer](./Iteration%20%26%20Recursion/05_recurion_get_sum_of_integer.py) |
+|06| Iteration & Recursion |  [Recursion: Sum Of Positive Integer](./Iteration%20%26%20Recursion/06_recursion_sum_of_positive_int.py) |
 ||
 |  | <h2>Arrays</h2> |  
 |01| Arrays |  [Arrays: Array Advance Game](./Arrays/07_array_advance_game.py) |
