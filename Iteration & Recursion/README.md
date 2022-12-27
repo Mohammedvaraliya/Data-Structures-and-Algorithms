@@ -218,7 +218,7 @@
     return 0
 
     Otherwise, n+(n-2)+(n-4)... (until n-x =< 0)
-    The following step to get the sum of intefer
+    The following step to get the sum of integer
                     n = 6
                     n = 4
                     n = 2
@@ -238,7 +238,7 @@
     return 0
 
     Otherwise, n+(n-2)+(n-4)... (until n-x =< 0)
-    The following step to get the sum of intefer
+    The following step to get the sum of integer
                     n = 10
                     n = 8
                     n = 6
