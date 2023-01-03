@@ -20,7 +20,7 @@
 
     5 + 5 + 5 + 5 = 20
 
-### 02. Numbers: Convert Integer To Binary Number
+### 02. Numbers: Convert Integer To Binary
 
     Numbers: Convert Integer To Binary Number
     The algorithm works by repeatedly doubling a variable power until it is greater than the integer n. 
@@ -52,6 +52,29 @@
                         result:  1   0   1    0                    
 
         final binary string is : "1010" of integer 10 
+
+### 03. Numbers: Convert Binary To Integer
+
+        Numbers: Convert Binary To Integer
+        Initialize a variable result to 0. 
+        This will be used to store the integer representation of the binary number.
+
+        Initialize a variable power to 1. 
+        This will be used to keep track of the current power of 2.
+
+        Initialize a variable i to the length of the binary number minus 1. 
+        This will be used as an index to iterate through the binary number from least significant digit to most significant digit.
+
+        While i is greater than or equal to 0, do the following:
+
+                If the i-th digit of the binary number is 1, add power to result.
+                Multiply power by 2.
+                Decrement i by 1.
+                Return result as the integer representation of the binary number.
+
+        Example:
+                
+
 
 
 
