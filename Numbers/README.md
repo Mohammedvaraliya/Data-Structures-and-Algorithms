@@ -19,3 +19,10 @@
             y = 4
 
     5 + 5 + 5 + 5 = 20
+
+### 02. Numbers: Convert Integer To Binary Number
+
+    Numbers: Convert Integer To Binary Number
+    ...
+
+

@@ -127,6 +127,7 @@
 ||
 |  | <h3>Numbers</h3> |  
 |01| Numbers |  [Product of Two Numbers](./Numbers/01_Product_of_Two_Numbers.py) |
+|01| Numbers |  [Numbers: Convert Integer To Binary Number](./Numbers/02_convert_integer_to_binary.py) |
 |02| Numbers |  [Explanation](./Numbers/README.md) |
 ||
 |  | <h3>Tree Data Structures</h3> |  
