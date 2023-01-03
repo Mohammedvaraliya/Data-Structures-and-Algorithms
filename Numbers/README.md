@@ -36,6 +36,7 @@
 
                 n = 10
                 power = 1
+                result = ""
 
         Everytime double the power varibale until the n is greater
         power = 2
