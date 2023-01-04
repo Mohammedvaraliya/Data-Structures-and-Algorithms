@@ -11,5 +11,5 @@ def binary_to_int(binary):
 
 
 if __name__ == "__main__":
-    a = binary_to_int("1010")
-    print(a)
+    a = binary_to_int("1011")
+    print(a) # 11
