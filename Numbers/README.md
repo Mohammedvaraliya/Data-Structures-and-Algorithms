@@ -74,6 +74,68 @@
 
         Example:
                 
+                bunary_number = "1010"
+
+                result = 0
+                power = 1
+                i = len(binary_number) - 1
+            i.e i = 4 - 1
+                i = 3
+
+                While i is greater than or equal to 0, do the following:
+                        
+                ----->  if the number at index bunary_number[i] is 1 so:
+                                add the value of power to result
+                                i.e result = 0 + 1
+                                    result = 1
+                        
+                        And make the power double:
+                        i.e power = 1*1
+                            power = 2
+                        and decrement the value of i so we get all the indexes
+                        i = 3 - 1
+                        i = 2
+
+                ----->  Now check again
+
+                        if the number at index bunary_number[i] is 1 so:
+                                add the value of power to result
+                                i.e result = 1 + 2
+                                    result = 3
+                        
+                        And make the power double:
+                        i.e power = 2*2
+                            power = 4
+                        and decrement the value of i so we get all the indexes
+                        i = 2 - 1
+                        i = 1
+
+                ----->  Now check again
+
+                        if the number at index bunary_number[i] is 0 so:
+                        
+                        make the power double:
+                        i.e power = 4*2
+                            power = 8
+                        and decrement the value of i so we get all the indexes
+                        i = 1 - 1
+                        i = 0 
+
+                ----->  Now check again
+
+                        if the number at index bunary_number[i] is 1 so:
+                                add the value of power to result
+                                i.e result = 3 + 8
+                                    result = 11
+                        
+                
+                return reseult
+
+                The integer of binary number 1011 is 11
+
+
+
+
 
 
 
