@@ -130,7 +130,6 @@
                         
                 
                 return reseult
-
                 The integer of binary number 1011 is 11
 
 
