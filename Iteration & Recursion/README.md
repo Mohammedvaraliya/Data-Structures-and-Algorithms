@@ -256,7 +256,17 @@
 
             => 30 is the output
 
+### 07. Recursion: Calculate The Harmonic Sum
 
+    Recursion: Calculate The Harmonic Sum
+    The harmonic sum is the sum of the reciprocals of the positive integers. 
+    It is represented by the symbol Hn and can be written as the infinite series: Hn = 1 + 1/2 + 1/3 + ... + 1/n. 
+
+    The value of the harmonic sum for the first 10 positive integers is approximately 2.9289682539682538.
+
+    It can be calculated using the formula H10 = 1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6 + 1/7 + 1/8 + 1/9 + 1/10 = 2.9289682539682538
+    
+    Note that the value of the harmonic sum becomes closer to log(n) as n increases, but it never reaches it as the harmonic series diverges.
 
 
 

@@ -53,6 +53,7 @@
 |04| Iteration & Recursion |  [Recursive Method: List Sum](./Iteration%20%26%20Recursion/04_recursion_list_sum.py) |
 |05| Iteration & Recursion |  [Recursive Method: Sum Of Integer](./Iteration%20%26%20Recursion/05_recurion_get_sum_of_integer.py) |
 |06| Iteration & Recursion |  [Recursion: Sum Of Positive Integer](./Iteration%20%26%20Recursion/06_recursion_sum_of_positive_int.py) |
+|06| Iteration & Recursion |  [Recursion: Calculate The Harmonic Sum](./Iteration%20%26%20Recursion/07_recursion_calculate_harmonic_sum.py) |
 |07| Iteration & Recursion |  [Explanation](./Iteration%20%26%20Recursion/README.md) |
 ||
 |  | <h3>Arrays</h3> |  
