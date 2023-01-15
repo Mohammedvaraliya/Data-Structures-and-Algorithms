@@ -265,7 +265,11 @@
     The value of the harmonic sum for the first 10 positive integers is approximately 2.9289682539682538.
 
     It can be calculated using the formula H10 = 1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6 + 1/7 + 1/8 + 1/9 + 1/10 = 2.9289682539682538
-    
+
+    Similarly,
+
+    H7 = 1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6 + 1/7 = 2.5928571428571425
+
     Note that the value of the harmonic sum becomes closer to log(n) as n increases, but it never reaches it as the harmonic series diverges.
 
 
