@@ -1,12 +1,12 @@
 | # | Title | Solution | 
 |---| ----- | -------- |
 |  | <h3>Stack</h3> |  
-|01|  |  [The Stack data Structure](./Stack/01_stack_DS.py) |
-|02|  |  [The Stack data Structure : Understanding Stack](./Stack/02_stack_DS.ipynb) |
-|03|  |  [Determine if parenthesis are balanced](./Stack/03_stack_balance_paran.py) |
-|04|  |  [Convert integer to binary](./Stack/04_stack_divide_by_two.py) |
-|05|  |  [The Stack data Structure : Reverse String](./Stack/05_stack_reverse_string.py) |
-|06|  |  [Explanation](./Stack/README.md) |
+|01| [The Stack data Structure](./Stack/01_stack_DS.py) |
+|02| [The Stack data Structure : Understanding Stack](./Stack/02_stack_DS.ipynb) |
+|03| [Determine if parenthesis are balanced](./Stack/03_stack_balance_paran.py) |
+|04| [Convert integer to binary](./Stack/04_stack_divide_by_two.py) |
+|05| [The Stack data Structure : Reverse String](./Stack/05_stack_reverse_string.py) |
+|06| [Explanation](./Stack/README.md) |
 |  |    
 |  | <h3>Queue</h3> |  
 |01| Queue |  [The Queue Data Structure](./Queue/01_queue.ipynb) |
