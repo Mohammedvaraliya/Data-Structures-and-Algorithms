@@ -124,6 +124,7 @@
 |09| Strings |  [String Processing: Is Unique](./Strings/09_is_unique.py) |
 |10| Strings |  [String Processing: Integer to String](./Strings/10_integer_to_string.py) |
 |11| Strings |  [String Processing: String to Integer](./Strings/11_string_to_integer.py) |
+|11| Strings |  [Longest Substring Without Repeating Characters](./Strings/12_longest_substring_without_repeating_char.py) |
 |12| Strings |  [Explanation](./Strings/README.md) |
 ||
 |  | <h3>Numbers</h3> |  
