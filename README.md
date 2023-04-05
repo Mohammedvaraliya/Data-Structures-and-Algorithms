@@ -6,7 +6,7 @@
 |03| Stack |  [Determine if parenthesis are balanced](./Stack/03_stack_balance_paran.py) |
 |04| Stack |  [Convert integer to binary](./Stack/04_stack_divide_by_two.py) |
 |05| Stack |  [The Stack data Structure : Reverse String](./Stack/05_stack_reverse_string.py) |
-|06| Stack |  [Explanation](./Stack/README.md) |
+|00| Stack |  [Explanation](./Stack/README.md) |
 |  |    
 |  | <h3>Queue</h3> |  
 |01| Queue |  [The Queue Data Structure](./Queue/01_queue.ipynb) |
@@ -14,7 +14,7 @@
 |03| Queue | [Queue Data Structure : Producer Consumer Problem](./Queue/03_queue_producer_consumer.py) |
 |04| Queue | [Queue Data Structure : Producer Consumer Problem](./Queue/03_queue_producer_consumer.py) |
 |05| Queue | [Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue](./Queue/04_queue_print_binary_number.py) |
-|06| Queue | [Explanation](./Queue/README.md) |
+|00| Queue | [Explanation](./Queue/README.md) |
 |  |
 |  | <h3>Linked List</h3> |  
 |01| Singly Linked List |  [Singly Liked List](./Linked%20List/Singly%20Linked%20List/01_singly_linked_list.py) |
@@ -29,7 +29,7 @@
 |10| Singly Linked List |  [Singly Linked Lists -- Is Palindrome](./Linked%20List/Singly%20Linked%20List/10_singlyLL_is_palindrome.py) |
 |11| Singly Linked List |  [Singly Linked Lists -- Move Tail to Head](./Linked%20List/Singly%20Linked%20List/11_singyLL_move_tail_to_head.py) |
 |12| Singly Linked List |  [Singly Linked Lists -- Sum Two Lists](./Linked%20List/Singly%20Linked%20List/12_singlyLL_sum_two_lists.py) |
-|13| Singly Linked List |  [Explanation](./Linked%20List/Singly%20Linked%20List/README.md) |
+|00| Singly Linked List |  [Explanation](./Linked%20List/Singly%20Linked%20List/README.md) |
 ||
 |01| Doubly Linked List |  [Doubly Linked Lists -- Append and Prepend](./Linked%20List/Doubly%20Linked%20List/01_doubly_linked_list.py) |
 |02| Doubly Linked List |  [Doubly Linked Lists -- Add Node Before/After](./Linked%20List/Doubly%20Linked%20List/02_soublyLL_add_before_after.py) |
@@ -37,14 +37,14 @@
 |04| Doubly Linked List |  [Doubly Linked Lists -- Reverse](./Linked%20List/Doubly%20Linked%20List/04_doublyLL_reverse.py) |
 |05| Doubly Linked List |  [Doubly Linked Lists -- Remove Duplicates](./Linked%20List/Doubly%20Linked%20List/05_doublyLL_remove_duplicates.py) |
 |06| Doubly Linked List |  [Doubly Linked Lists -- Pairs with Sum](./Linked%20List/Doubly%20Linked%20List/06_doublyLL_pairs_with_sum.py) |
-|07| Doubly Linked List |  [Explanation](./Linked%20List/Doubly%20Linked%20List/Readme.md) |
+|00| Doubly Linked List |  [Explanation](./Linked%20List/Doubly%20Linked%20List/Readme.md) |
 ||
 |01| Circular Linked List |  [Circular Linked Lists -- Append and Prepend](./Linked%20List/Circular%20Linked%20List/01_circular_linked_list.py) |
 |02| Circular Linked List |  [Circular Linked Lists -- Remove Node](./Linked%20List/Circular%20Linked%20List/02_circularLL_remove_node.py) |
 |03| Circular Linked List |  [Circular Linked Lists -- Split List](./Linked%20List/Circular%20Linked%20List/03_circularLL_split_list.py) |
 |04| Circular Linked List |  [Circular Linked Lists -- Josephus Problem](./Linked%20List/Circular%20Linked%20List/04_circularLL_josephus.py) |
 |05| Circular Linked List |  [Circular Linked Lists -- Is Circular Linked List](./Linked%20List/Circular%20Linked%20List/05_circularLL_is_circularLL.py) |
-|06| Circular Linked List |  [Explanation](./Linked%20List/Circular%20Linked%20List/README.md) |
+|00| Circular Linked List |  [Explanation](./Linked%20List/Circular%20Linked%20List/README.md) |
 || 
 |  | <h3>Iteration & Recursion</h3> |  
 |01| Iteration & Recursion |  [Iterative Method](./Iteration%20%26%20Recursion/01_iterative.py) |
@@ -54,7 +54,7 @@
 |05| Iteration & Recursion |  [Recursive Method: Sum Of Integer](./Iteration%20%26%20Recursion/05_recurion_get_sum_of_integer.py) |
 |06| Iteration & Recursion |  [Recursion: Sum Of Positive Integer](./Iteration%20%26%20Recursion/06_recursion_sum_of_positive_int.py) |
 |06| Iteration & Recursion |  [Recursion: Calculate The Harmonic Sum](./Iteration%20%26%20Recursion/07_recursion_calculate_harmonic_sum.py) |
-|07| Iteration & Recursion |  [Explanation](./Iteration%20%26%20Recursion/README.md) |
+|00| Iteration & Recursion |  [Explanation](./Iteration%20%26%20Recursion/README.md) |
 ||
 |  | <h3>Arrays</h3> |  
 |01| Arrays |  [Arrays: Array Advance Game](./Arrays/07_array_advance_game.py) |
@@ -63,19 +63,19 @@
 |04| Arrays |  [Arrays: Arbitrary Precision Increment](./Arrays/08_arbitrary_precision_increment.py) |
 |05| Arrays |  [Arrays: Two Sum Problem](./Arrays/10_two_sum_problem.py) |
 |06| Arrays |  [Arrays: Buy and Sell Stock](./Arrays/11_buy_and_sell_stock.py) |
-|06| Arrays |  [Subarray Sum Equals K](./Arrays/12_subarray_sum_equals_k.py) |
-|07| Arrays |  [Explanation](./Arrays/README.md) |
+|07| Arrays |  [Subarray Sum Equals K](./Arrays/12_subarray_sum_equals_k.py) |
+|00| Arrays |  [Explanation](./Arrays/README.md) |
 ||
 |  | <h3>Hash Table</h3> |  
 |01| Hash Table |  [Hash Table Implementation](./Hash%20Table/01_hash_table_implementation.ipynb) |
 |02| Hash Table |  [Hash Table Implementation : Get Hash](./Hash%20Table/02_hash_table_get_hash.ipynb) |
 |03| Hash Table |  [Hash Table Implementation : Collision Handling In Hash Table](./Hash%20Table/03_collision_Handling_In_hash_table.ipynb) |
-|04| Hash Table |  [Explanation](./Hash%20Table/README.md) |
+|00| Hash Table |  [Explanation](./Hash%20Table/README.md) |
 ||
 |  | <h3>Search</h3> |  
 |01| Linear Search |  [Linear Search](./Search/Linear%20Search/01_linear_search.py) |
 |02| Linear Search |  [Linear Search : Find Elements](./Search/Linear%20Search/02_linear_search.py) |
-|03| Linear Search |  [Explanation](./Search/Linear%20Search/README.md) |
+|00| Linear Search |  [Explanation](./Search/Linear%20Search/README.md) |
 ||
 |01| Binary Search |  [Binary search](./Search/01_Binary_Search.py) |
 |02| Binary Search |  [Binary Search: Find Closest Number](./Search/02_binary_search_find_closest.py) |
@@ -91,27 +91,27 @@
 |  | <h3>Sorting Algorithms</h3> |  
 |02| Bubble Sort |  [Bubble Sort](./Sort/Bubble%20Sort/01_bubble_sort.py) |
 |03| Bubble Sort |  [Bubble Sort : Using Key](./Sort/Bubble%20Sort/02_bubble_sort_using_key.py) |
-|04| Bubble Sort |  [Explanation](./Sort/Bubble%20Sort/README.md) |
+|00| Bubble Sort |  [Explanation](./Sort/Bubble%20Sort/README.md) |
 ||
 |01| Quick Sort |  [Quick Sort: Hoare Partition](./Sort/Quick%20Sort/01_quick_sort_hoare_partition.py) |
 |02| Quick Sort |  [Quick Sort: Lomuto Partition](./Sort/Quick%20Sort/02_quick_sort_lomuto_partition.py) |
-|03| Quick Sort |  [Explanation](./Sort/Quick%20Sort/README.md) |
+|00| Quick Sort |  [Explanation](./Sort/Quick%20Sort/README.md) |
 ||
 |01| Insertion Sort |  [Insertion Sort](./Sort/Insertion%20Sort/01_insertion_sort.py) |
-|02| Insertion Sort |  [Explanation](./Sort/Insertion%20Sort/README.md) |
+|00| Insertion Sort |  [Explanation](./Sort/Insertion%20Sort/README.md) |
 ||
 |01| Merge Sort |  [Merge Sort Two Sorted List](./Sort/Merge%20Sort/01_merge_two_sorted_list.py) |
 |02| Merge Sort |  [Merge Sort: One Unsorted List](./Sort/Merge%20Sort/02_merge_sort_one_unsorted_list.py) |
 |03| Merge Sort |  [Merge Sort: Using Key](./Sort/Merge%20Sort/03_merge_Sort_using_key.py) |
-|04| Merge Sort |  [Explanation](./Sort/Merge%20Sort/README.md) |
+|00| Merge Sort |  [Explanation](./Sort/Merge%20Sort/README.md) |
 ||
 |01| Shell Sort |  [Shell Sort](./Sort/Shell%20Sort/01_shell_sort.py) |
 |02| Shell Sort |  [Shell Sort: Remove Duplicates](./Sort/Shell%20Sort/02_shell_sort_remove_duplicates.py) |
-|03| Shell Sort |  [Explanation](./Sort/Shell%20Sort/README.md) |
+|00| Shell Sort |  [Explanation](./Sort/Shell%20Sort/README.md) |
 ||
 |01| Selection Sort |  [Selection Sort](./Sort/Selection%20Sort/01_selection_sort.py) |
 |02| Selection Sort |  [Selection Sort: Dictionary](./Sort/Selection%20Sort/02_selection_sort_on_dictionary.py) |
-|03| Selection Sort |  [Explanation](./Sort/Selection%20Sort/README.md) |
+|00| Selection Sort |  [Explanation](./Sort/Selection%20Sort/README.md) |
 ||
 |  | <h3>Strings</h3> |  
 |01| Strings |  [Reverse String](./Strings/01_reverse_string.py) |
@@ -125,18 +125,19 @@
 |09| Strings |  [String Processing: Is Unique](./Strings/09_is_unique.py) |
 |10| Strings |  [String Processing: Integer to String](./Strings/10_integer_to_string.py) |
 |11| Strings |  [String Processing: String to Integer](./Strings/11_string_to_integer.py) |
-|11| Strings |  [Longest Substring Without Repeating Characters](./Strings/12_longest_substring_without_repeating_char.py) |
-|12| Strings |  [Explanation](./Strings/README.md) |
+|12| Strings |  [Longest Substring Without Repeating Characters](./Strings/12_longest_substring_without_repeating_char.py) |
+|00| Strings |  [Explanation](./Strings/README.md) |
 ||
 |  | <h3>Numbers</h3> |  
 |01| Numbers |  [Product of Two Numbers](./Numbers/01_Product_of_Two_Numbers.py) |
 |02| Numbers |  [Numbers: Convert Integer To Binary](./Numbers/02_convert_integer_to_binary.py) |
 |03| Numbers |  [Numbers: Convert Binary To Integer](./Numbers/03_convert_binary_to_integer.py) |
-|02| Numbers |  [Explanation](./Numbers/README.md) |
+|04| Numbers |  [Roman to Integer](./Numbers/04_roman_to_integer.py) |
+|00| Numbers |  [Explanation](./Numbers/README.md) |
 ||
 |  | <h3>Tree Data Structures</h3> |  
 |01| General Trees |  [General Trees](./Trees/General%20Tree/01_general_tree.py) |
-|02| General Trees |  [Explanation](./Trees/General%20Tree/README.md) |
+|00| General Trees |  [Explanation](./Trees/General%20Tree/README.md) |
 ||
 |01| Binary Trees |  [Binary Trees: Traversal Algorithms Pre-Order](./Trees/Binary%20Tree/01_binary_tree_traversal_preorder.py) |
 |02| Binary Trees |  [Binary Trees: Traversal Algorithms In-Order](./Trees/Binary%20Tree/02_binary_tree_traversal_inorder.py) |
@@ -145,7 +146,7 @@
 |05| Binary Trees |  [Binary Trees: Traversal Algorithms Reverse Level-Order](./Trees/Binary%20Tree/05_binary_tree_traversal_reverse_levelorder.py) |
 |06| Binary Trees |  [Binary Trees: Calculating Height of Tree](./Trees/Binary%20Tree/06_binary_tree_calculating_height_of_tree.py) |
 |07| Binary Trees |  [Binary Trees: Calculating Size of Tree](./Trees/Binary%20Tree/07_binary_tree_calculating_size_of_tree.py) |
-|08| Binary Trees |  [Explanation](./Trees/Binary%20Tree/README.md) |
+|00| Binary Trees |  [Explanation](./Trees/Binary%20Tree/README.md) |
 || 
 |01| Binary Search Trees |  [Binary Search Trees: Insertion](./Trees/Binary%20Search%20Tree/01_binary_search_tree_insertion.py) |
 |02| Binary Search Trees |  [Binary Search Trees: Searching](./Trees/Binary%20Search%20Tree/02_binary_search_tree_searching.py) |
@@ -156,10 +157,10 @@
 |07| Binary Search Trees |  [Binary Search Trees: Using list - Pre-Order-Traversal](./Trees/Binary%20Search%20Tree/07_binary_search_tree_using_list_pre_order_traversal.py) |
 |08| Binary Search Trees |  [Binary Search Trees: Using list - Delete Node Method 1](./Trees/Binary%20Search%20Tree/08_binary_search_tree_using_list_delete_node_method_1.py) |
 |09| Binary Search Trees |  [Binary Search Trees: Using list - Delete Node Method 2](./Trees/Binary%20Search%20Tree/09_binary_search_tree_using_list_delete_node_method_2.py) |
-|10| Binary Search Trees |  [Explanation](./Trees/Binary%20Search%20Tree/README.md) |
+|00| Binary Search Trees |  [Explanation](./Trees/Binary%20Search%20Tree/README.md) |
 ||
 |  | <h3>Graph Data Structure</h3> |  
 |01| Graph Data Structure |  [Graph Data Structure](./Graph/01_graph_data_structure.py) |
-|02| Graph Data Structure |  [Explanation](./Graph/README.md) |
+|00| Graph Data Structure |  [Explanation](./Graph/README.md) |
 
 
