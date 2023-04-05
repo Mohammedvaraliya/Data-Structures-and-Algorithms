@@ -63,6 +63,7 @@
 |04| Arrays |  [Arrays: Arbitrary Precision Increment](./Arrays/08_arbitrary_precision_increment.py) |
 |05| Arrays |  [Arrays: Two Sum Problem](./Arrays/10_two_sum_problem.py) |
 |06| Arrays |  [Arrays: Buy and Sell Stock](./Arrays/11_buy_and_sell_stock.py) |
+|06| Arrays |  [Subarray Sum Equals K](./Arrays/12_subarray_sum_equals_k.py) |
 |07| Arrays |  [Explanation](./Arrays/README.md) |
 ||
 |  | <h3>Hash Table</h3> |  
