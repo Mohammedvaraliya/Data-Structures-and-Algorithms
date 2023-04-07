@@ -47,7 +47,7 @@ def buy_and_sell_once_meth3(array):
             profit = array[r] - array[l]
             max_profit = max(max_profit, profit)
         else:
-            l += 1
+            l = r
         r += 1
 
     return max_profit
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     
     A = [310, 315, 275, 295, 260, 270, 290, 230, 255, 250]
     B = [7, 1, 5, 3, 6, 4]
-    C = [7, 6, 4, 3, 1]
+    C = [1,2,4,2,5,7,2,4,9,0,9]
     
     X = buy_and_sell_once_meth1(A)
     print(X)
