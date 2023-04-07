@@ -45,7 +45,7 @@ def myAtoi(str: str) -> int:
         negative = True
     elif str[0] == '+':
         negative = False
-    elif not str[0].isnumeric:
+    elif not str[0].isnumeric():
         return 0
     else:
         output_int = ord(str[0]) - ord('0')
@@ -53,10 +53,10 @@ def myAtoi(str: str) -> int:
     for i in range(1, len(str)):
         if str[i].isnumeric():
             output_int = output_int*10 + (ord(str[i]) - ord('0'))
-            if not negative and output_int >= 2147483647:
+            if not negative and output_int >= 2147483648:
                 return 2147483647
-            if negative and output_int >= 2147483647:
-                return -2147483647
+            if negative and output_int >= 2147483648:
+                return -2147483648
         else:
             break
     
@@ -103,6 +103,12 @@ if __name__ == "__main__":
     C = myAtoi(str_6)
     print(C)
     print(type(C))
+    print("\n")
+
+    str_7 = "words and 987"
+    D = myAtoi(str_7)
+    print(D)
+    print(type(D))
     print("\n")
 
 
