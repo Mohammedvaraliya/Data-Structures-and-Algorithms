@@ -35,12 +35,32 @@ def buy_and_sell_once_meth2(array):
     return max_profit
 
 
+# Time Complexity : O(n)
+# Space Complexity : O(1)
+def buy_and_sell_once_meth3(array):
+    l, r = 0, 1 # left=buy, right=sell
+    max_profit = 0
+
+    while r < len(array):
+        # Profitable
+        if array[l] < array[r]:
+            profit = array[r] - array[l]
+            max_profit = max(max_profit, profit)
+        else:
+            l += 1
+        r += 1
+
+    return max_profit
+
+
 
 
 if __name__ == "__main__":
 
     
     A = [310, 315, 275, 295, 260, 270, 290, 230, 255, 250]
+    B = [7, 1, 5, 3, 6, 4]
+    C = [7, 6, 4, 3, 1]
     
     X = buy_and_sell_once_meth1(A)
     print(X)
@@ -48,5 +68,13 @@ if __name__ == "__main__":
 
     Y = buy_and_sell_once_meth2(A)
     print(Y)
+    print("\n")
+
+    Z = buy_and_sell_once_meth3(B)
+    print(Z)
+    print("\n")
+
+    print(buy_and_sell_once_meth3(C))
+
 
 

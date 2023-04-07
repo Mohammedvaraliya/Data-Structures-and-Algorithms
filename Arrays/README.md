@@ -136,10 +136,31 @@ Output: [0,1]
 
 ### 11. Arrays: Buy and Sell Stock
 
-    Problem:
-        Given an array of numbers consisting of daily stock prices, calculate the maximum amount of profit that can be made from buying on one day and selling on another day.
+[Leetcode Problem URL](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
-        We consider two approaches to this problem. In the first, we consider a brute force approach that solves the problem in O(N^2), where N is the size of the array of numbers. We then improve upon this solution to take our solution to a time complexity of O(N).
+```bash
+Problem:
+    Given an array of numbers consisting of daily stock prices, calculate the maximum amount of profit that can be made from buying on one day and selling on another day.
+
+    We consider two approaches to this problem. In the first, we consider a brute force approach that solves the problem in O(N^2), where N is the size of the array of numbers. We then improve upon this solution to take our solution to a time complexity of O(N).
+
+    You are given an array prices where prices[i] is the price of a given stock on the ith day.
+
+    You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+
+    Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+    Example 1:
+    Input: prices = [7,1,5,3,6,4]
+    Output: 5
+    Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+    Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+
+    Example 2:
+    Input: prices = [7,6,4,3,1]
+    Output: 0
+    Explanation: In this case, no transactions are done and the max profit = 0.
+```
 
 ### 12. Subarray Sum Equals K
 
