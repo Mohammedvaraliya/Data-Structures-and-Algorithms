@@ -165,6 +165,7 @@ Problem:
 ### 12. Subarray Sum Equals K
 
 [Leetcode Problem URL](https://leetcode.com/problems/subarray-sum-equals-k/)
+
 ```bash
 Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
 
@@ -177,4 +178,25 @@ Output: 2
 Example 2:
 Input: nums = [1,2,3], k = 3
 Output: 2
+```
+
+### 13. Contains Duplicate
+
+[Leetcode Problem URL](https://leetcode.com/problems/contains-duplicate/)
+
+```bash
+Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+
+Example 1:
+Input: nums = [1,2,3,1]
+Output: true
+
+Example 2:
+Input: nums = [1,2,3,4]
+Output: false
+
+Example 3:
+Input: nums = [1,1,1,3,3,4,3,2,4,2]
+Output: true
 ```
