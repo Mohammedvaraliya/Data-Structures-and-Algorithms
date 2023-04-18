@@ -77,14 +77,32 @@
  
 ### 06. String Processing: Is Anagram
 
-    String Processing: Is Anagram
+[Leetcode Solution URL](https://leetcode.com/problems/valid-anagram/)
 
-    Anagram is a word or phrase that is made by arranging the letters of another word or phrase in a different order
+```bash
+String Processing: Is Anagram
 
-    Example:
-            below = elbow.
-            study = dusty.
-            night = thing.
+Anagram is a word or phrase that is made by arranging the letters of another word or phrase in a different order
+
+Example:
+        below = elbow.
+        study = dusty.
+        night = thing.
+
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+Example 1:
+
+Input: s = "anagram", t = "nagaram"
+Output: true
+
+Example 2:
+
+Input: s = "rat", t = "car"
+Output: false
+```        
 
 ### 07. String Processing: Is Palindrome Permutation
 

@@ -43,4 +43,7 @@ def is_anagram(s1, s2):
     return True
         
 
-print(is_anagram(s1, s2))
+if __name__ == "__main__":
+
+    X = is_anagram(s1, s2)
+    print(X)
