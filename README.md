@@ -65,6 +65,7 @@
 |06| Arrays |  [Arrays: Buy and Sell Stock](./Arrays/11_buy_and_sell_stock.py) |
 |07| Arrays |  [Subarray Sum Equals K](./Arrays/12_subarray_sum_equals_k.py) |
 |08| Arrays |  [Contains Duplicate](./Arrays/13_contains_duplicate.py) |
+|08| Arrays |  [Group Anagrams](./Arrays/14_group_anagrams.py) |
 |00| Arrays |  [Explanation](./Arrays/README.md) |
 ||
 |  | <h3>Hash Table</h3> |  
