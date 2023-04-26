@@ -131,6 +131,10 @@
 |12| Strings |  [Longest Substring Without Repeating Characters](./Strings/12_longest_substring_without_repeating_char.py) |
 |00| Strings |  [Explanation](./Strings/README.md) |
 ||
+|  | <h3>Integers</h3> |  
+|01| Integers |  [Add Digits](./Integer/1_add_digit.py) |
+|00| Integers |  [Explanation](./Integer/README.md) |
+||
 |  | <h3>Numbers</h3> |  
 |01| Numbers |  [Product of Two Numbers](./Numbers/01_Product_of_Two_Numbers.py) |
 |02| Numbers |  [Numbers: Convert Integer To Binary](./Numbers/02_convert_integer_to_binary.py) |
