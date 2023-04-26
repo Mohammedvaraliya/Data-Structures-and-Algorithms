@@ -222,3 +222,21 @@ Example 3:
 Input: strs = ["a"]
 Output: [["a"]]
 ```
+
+### 14. Top K Frequent Elements - Bucket Sort
+
+[Leetcode Problem URL](https://leetcode.com/problems/top-k-frequent-elements/)
+
+```bash
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
+Example 1:
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+
+Example 2:
+Input: nums = [1], k = 1
+Output: [1]
+
+Time coplexity of this solution which i solved is O(n)
+```
