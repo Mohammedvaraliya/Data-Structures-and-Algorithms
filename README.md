@@ -130,6 +130,7 @@
 |10| Strings |  [String Processing: Integer to String](./Strings/10_integer_to_string.py) |
 |11| Strings |  [String Processing: String to Integer](./Strings/11_string_to_integer.py) |
 |12| Strings |  [Longest Substring Without Repeating Characters](./Strings/12_longest_substring_without_repeating_char.py) |
+|13| Strings |  [Encode and Decode Strings](./Strings/13_encode_and_decode_string.py) |
 |00| Strings |  [Explanation](./Strings/README.md) |
 ||
 |  | <h3>Integers</h3> |  

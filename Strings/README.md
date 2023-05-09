@@ -256,6 +256,7 @@ Example 3:
 ### 12. Longest Substring Without Repeating Characters
 
 [Leetcode Solution URL](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+
 ```bash
 Longest Substring Without Repeating Characters
 
@@ -279,4 +280,26 @@ Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 ```
 
+### 13. Encode and Decode Strings
 
+[Leetcode Solution URL](https://leetcode.com/problems/encode-and-decode-strings/)
+
+```bash
+Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
+
+Please implement encode and decode
+
+Example
+
+Example1:
+    Input: ["Hello","everyone","have","a", "great", "day"]
+    Output: ["Hello","everyone","have","a", "great", "day"]
+    Explanation:
+    One possible encode method is: "5#Hello8#everyone4#have1#a5#great3#day"
+
+Example2:
+    Input: ["we", "say", ":", "yes"]
+    Output: ["we", "say", ":", "yes"]
+    Explanation:
+    One possible encode method is: "2#we3#say1#:3#yes"
+```
