@@ -241,7 +241,7 @@ Output: [1]
 Time coplexity of this solution which i solved is O(n)
 ```
 
-### 14. Product of Array Except Self
+### 15. Product of Array Except Self
 
 [Leetcode Problem URL](https://leetcode.com/problems/product-of-array-except-self/)
 
@@ -259,4 +259,23 @@ Output: [24,12,8,6]
 Example 2:
 Input: nums = [-1,1,0,-3,3]
 Output: [0,0,9,0,0]
+```
+
+### 16. Product of Array Except Self
+
+[Leetcode Problem URL](https://leetcode.com/problems/longest-consecutive-sequence/)
+
+```bash
+Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+
+You must write an algorithm that runs in O(n) time.
+
+Example 1:
+Input: nums = [100,4,200,1,3,2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+
+Example 2:
+Input: nums = [0,3,7,2,5,8,4,6,0,1]
+Output: 9
 ```
