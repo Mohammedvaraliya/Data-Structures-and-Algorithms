@@ -67,14 +67,36 @@
 
 ### 05. String Processing: Is Palindrome
 
-    String Processing: Is Palindrome
+[Leetcode Solution URL](https://leetcode.com/problems/valid-palindrome/)
 
-    A palindrome is a word or phrase that is the same forward and backwards.
+```bash
+String Processing: Is Palindrome
 
+A palindrome is a word or phrase that is the same forward and backwards.
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
 
-    s = "Was it a cat I saw?"  # This is true
-    b = "Testing"              # This is false
- 
+s = "Was it a cat I saw?"  # This is true
+b = "Testing"              # This is false
+
+Given a string s, return true if it is a palindrome, or false otherwise.
+
+Example 1:
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+
+Example 2:
+Input: s = "race a car"
+Output: false
+Explanation: "raceacar" is not a palindrome.
+
+Example 3:
+Input: s = " "
+Output: true
+Explanation: s is an empty string "" after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
+```
+
 ### 06. String Processing: Is Anagram
 
 [Leetcode Solution URL](https://leetcode.com/problems/valid-anagram/)
