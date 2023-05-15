@@ -31,7 +31,12 @@ def is_palin_perm(input_str):
             return False
     return True
 
+if __name__ == "__main__":
 
+    A = 'Tact Coa' #Taco Cat
+    B = 'This is not a palindrome permutation'
+    C = 'race car'
 
-print(is_palin_perm(palin_perm))
-print(is_palin_perm(not_palin_perm))
+    print(is_palin_perm(A))
+    print(is_palin_perm(B))
+    print(is_palin_perm(C))
