@@ -135,6 +135,7 @@
 |12| Strings |  [Longest Substring Without Repeating Characters](./Strings/12_longest_substring_without_repeating_char.py) |
 |13| Strings |  [Encode and Decode Strings](./Strings/13_encode_and_decode_string.py) |
 |14| Strings |  [Longest Repeating Character Replacement](./Strings/14_longest_repeating%20character_replacement.py) |
+|15| Strings |  [Minimum Window Substring](./Strings/15_minimum_window_substring.py) |
 |00| Strings |  [Explanation](./Strings/README.md) |
 ||
 |  | <h3>Integers</h3> |  
