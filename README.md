@@ -91,7 +91,7 @@
 |05| Binary Search |  [Binary Search: Find First Entry in List with Duplicates](./Search/05_binary%20search_find_first_dup_entry.py) |
 |06| Binary Search |  [Binary Search: Python's Bisect Method](./Search/06_binary_search_bisect_method.py) |
 |07| Binary Search |  [Binary Search: Integer Square Root](./Search/07_binary_search_integer_square_root.py) |
-|08| Binary Search |  [Binary Search: Cyclically Shifted Array](./Search/08_binary_search_cyclically_shifted.py) |
+|08| Binary Search |  [Find Minimum in Rotated Sorted Array](./Search/Binary%20Search/08_binary_search_find_minimum_in_rotated_sorted_array.py) |
 |09| Binary Search |  [Binary Search: Find Index Of All Occurances](./Search/Binary%20Search/09_binary_search_find_all_occurences.py) |
 |10| Binary Search |  [Explanation](./Search/Binary%20Search/README.md) |
 ||
