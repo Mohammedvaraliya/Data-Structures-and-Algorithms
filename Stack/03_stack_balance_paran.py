@@ -77,9 +77,48 @@ def is_paren_balanced(paren_string):
         return False
 
 
-print(is_paren_balanced("()")) # Balanced paran
-print(is_paren_balanced("(([{{{([])}}}]))")) # this is also balanced but complicated
+def is_paren_balanced_2nd_approach(s: str) -> bool:
+    Map = {
+        ")": "(", 
+        "]": "[", 
+        "}": "{"
+    }
+    stack = []
 
-print(is_paren_balanced("[[}")) # its Not Balanced
-print(is_paren_balanced("(([[])}[}]))")) # this is Not Balanced
+    for c in s:
+        if c in Map:
+            if stack and stack[-1] == Map[c]:
+                stack.pop()
+            else:
+                return False
+        else:
+            stack.append(c)
+
+    return True if not stack else False
+
+
+if __name__ == "__main__":
+
+    print(is_paren_balanced("()")) # Balanced paran
+    print(is_paren_balanced_2nd_approach("()")) # Balanced paran
+    print("\n")
+
+    print(is_paren_balanced("(([{{{([])}}}]))")) # this is also balanced but complicated
+    print(is_paren_balanced_2nd_approach("(([{{{([])}}}]))")) # this is also balanced but complicated
+    print("\n")
+
+    print(is_paren_balanced("[[}")) # its Not Balanced
+    print(is_paren_balanced_2nd_approach("[[}")) # its Not Balanced
+    print("\n")
+
+    print(is_paren_balanced("(([[])}[}]))")) # this is Not Balanced
+    print(is_paren_balanced_2nd_approach("(([[])}[}]))")) # this is Not Balanced
+    print("\n")
+
+    print(is_paren_balanced("()[]{}")) # this is Not Balanced
+    print(is_paren_balanced_2nd_approach("()[]{}")) # this is Not Balanced
+    print("\n")
+
+    print(is_paren_balanced("(]")) # this is Not Balanced
+    print(is_paren_balanced_2nd_approach("(]")) # this is Not Balanced
 
