@@ -161,22 +161,45 @@ Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 
 ### 09. Binary Search: Find Index Of All Occurances
 
-    Binary Search: Find Index Of All Occurances
-    Now since the list is sorted,
-    
-    It can do left and right scan from the initial index to find all occurances of a given element.
+```bash
+Binary Search: Find Index Of All Occurances
+Now since the list is sorted,
 
-    Example:
-    A sortedd array
+It can do left and right scan from the initial index to find all occurances of a given element.
 
-                    data = [1, 4, 6, 9, 11, 15, 15, 15, 17, 21, 34, 34, 56]
-                    target = 15
+Example:
+A sortedd array
 
-    Here, we have the target element 15
-    so, we have to find how many 15 are there in data list
+                data = [1, 4, 6, 9, 11, 15, 15, 15, 17, 21, 34, 34, 56]
+                target = 15
 
-    index number starts from 0
+Here, we have the target element 15
+so, we have to find how many 15 are there in data list
 
-    Three 15 are there in the data list at respective index number
+index number starts from 0
 
-                    Indices of occurences of number 15 are [5, 6, 7] 
+Three 15 are there in the data list at respective index number
+
+                Indices of occurences of number 15 are [5, 6, 7] 
+```
+
+### 10. Binary Search: Search in Rotated Sorted Array
+
+```bash
+There is an integer array nums sorted in ascending order (with distinct values).
+Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
+Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+You must write an algorithm with O(log n) runtime complexity.
+
+Example 1:
+Input: nums = [4,5,6,7,0,1,2], target = 0
+Output: 4
+
+Example 2:
+Input: nums = [4,5,6,7,0,1,2], target = 3
+Output: -1
+
+Example 3:
+Input: nums = [1], target = 0
+Output: -1
+```

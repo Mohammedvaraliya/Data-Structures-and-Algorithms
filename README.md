@@ -93,7 +93,8 @@
 |07| Binary Search |  [Binary Search: Integer Square Root](./Search/07_binary_search_integer_square_root.py) |
 |08| Binary Search |  [Find Minimum in Rotated Sorted Array](./Search/Binary%20Search/08_binary_search_find_minimum_in_rotated_sorted_array.py) |
 |09| Binary Search |  [Binary Search: Find Index Of All Occurances](./Search/Binary%20Search/09_binary_search_find_all_occurences.py) |
-|10| Binary Search |  [Explanation](./Search/Binary%20Search/README.md) |
+|10| Binary Search |  [Binary Search: Search in Rotated Sorted Array](./Search/Binary%20Search/10_binary_search_in_rotated_sorted_array.py) |
+|00| Binary Search |  [Explanation](./Search/Binary%20Search/README.md) |
 ||
 |  | <h3>Sorting Algorithms</h3> |  
 |02| Bubble Sort |  [Bubble Sort](./Sort/Bubble%20Sort/01_bubble_sort.py) |
