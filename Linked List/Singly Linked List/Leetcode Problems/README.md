@@ -2,7 +2,7 @@
 
 ### 01. Singly Linked Lists -- Reverse
 
-[Leetcode Solution URL](https://leetcode.com/problems/reverse-linked-list/)
+[Leetcode Problem URL](https://leetcode.com/problems/reverse-linked-list/)
 
 ```bash
 Singly Linked Lists -- Reverse
@@ -39,7 +39,7 @@ Output: []
 
 ### 02. Singly Linked Lists -- Merge Two Sorted Lists
 
-[Leetcode Solution URL](https://leetcode.com/problems/merge-two-sorted-lists/)
+[Leetcode Problem URL](https://leetcode.com/problems/merge-two-sorted-lists/)
 
 ```bash
 You are given the heads of two sorted linked lists list1 and list2.

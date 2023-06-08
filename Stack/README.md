@@ -83,7 +83,7 @@
 
 ### 03. Determine if parenthesis are balanced
 
-[Leetcode Solution URL](https://leetcode.com/problems/valid-parentheses/)
+[Leetcode Problem URL](https://leetcode.com/problems/valid-parentheses/)
 
 ```bash
 Determine if parenthesis are balanced

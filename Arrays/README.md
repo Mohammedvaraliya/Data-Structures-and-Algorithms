@@ -94,7 +94,7 @@
 
 ### 09. Binary Search: Cyclically Shifted Array
 
-[Leetcode Solution URL](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+[Leetcode Problem URL](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
 ```bash
 Binary Search: Cyclically Shifted Array

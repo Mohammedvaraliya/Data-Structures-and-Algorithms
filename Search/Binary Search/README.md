@@ -123,7 +123,7 @@
 
 ### 08. Binary Search: Cyclically Shifted Array
 
-[Leetcode Solution URL](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+[Leetcode Problem URL](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
 ```bash
 Binary Search: Cyclically Shifted Array
@@ -185,7 +185,7 @@ Three 15 are there in the data list at respective index number
 
 ### 10. Binary Search: Search in Rotated Sorted Array
 
-[Leetcode Solution URL](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+[Leetcode Problem URL](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 ```bash
 There is an integer array nums sorted in ascending order (with distinct values).

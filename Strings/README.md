@@ -67,7 +67,7 @@
 
 ### 05. String Processing: Is Palindrome
 
-[Leetcode Solution URL](https://leetcode.com/problems/valid-palindrome/)
+[Leetcode Problem URL](https://leetcode.com/problems/valid-palindrome/)
 
 ```bash
 String Processing: Is Palindrome
@@ -99,7 +99,7 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 
 ### 06. String Processing: Is Anagram
 
-[Leetcode Solution URL](https://leetcode.com/problems/valid-anagram/)
+[Leetcode Problem URL](https://leetcode.com/problems/valid-anagram/)
 
 ```bash
 String Processing: Is Anagram
@@ -185,7 +185,7 @@ Output: false
 
 ### 11. String Processing: String to Integer
 
-[Leetcode Solution URL](https://leetcode.com/problems/string-to-integer-atoi/)
+[Leetcode Problem URL](https://leetcode.com/problems/string-to-integer-atoi/)
 
 ```bash
 String Processing: String to Integer
@@ -277,7 +277,7 @@ Example 3:
 
 ### 12. Longest Substring Without Repeating Characters
 
-[Leetcode Solution URL](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+[Leetcode Problem URL](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 ```bash
 Longest Substring Without Repeating Characters
@@ -304,7 +304,7 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 
 ### 13. Encode and Decode Strings
 
-[Leetcode Solution URL](https://leetcode.com/problems/encode-and-decode-strings/)
+[Leetcode Problem URL](https://leetcode.com/problems/encode-and-decode-strings/)
 
 ```bash
 Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
@@ -328,7 +328,7 @@ Example2:
 
 ### 14. Longest Repeating Character Replacement
 
-[Leetcode Solution URL](https://leetcode.com/problems/longest-repeating-character-replacement/)
+[Leetcode Problem URL](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
 ```bash
 You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.
@@ -350,7 +350,7 @@ There may exists other ways to achive this answer too.
 
 ### 15. Minimum Window Substring
 
-[Leetcode Solution URL](https://leetcode.com/problems/minimum-window-substring/)
+[Leetcode Problem URL](https://leetcode.com/problems/minimum-window-substring/)
 
 ```bash
 Given two strings s and t of lengths m and n respectively, return the minimum window 

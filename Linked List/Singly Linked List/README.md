@@ -29,7 +29,7 @@
 
 ### 04. Singly Linked Lists -- Reverse
 
-[Leetcode Solution URL](https://leetcode.com/problems/reverse-linked-list/)
+[Leetcode Problem URL](https://leetcode.com/problems/reverse-linked-list/)
 
 ```bash
 Singly Linked Lists -- Reverse
