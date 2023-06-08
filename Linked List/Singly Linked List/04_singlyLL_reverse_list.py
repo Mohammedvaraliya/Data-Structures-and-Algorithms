@@ -136,14 +136,16 @@ class SinglyLinkedList:
         self.head = _reverse_recursive(cur = self.head, prev = None)
 
 
-llist = SinglyLinkedList()
-llist.append("A")
-llist.append("B")
-llist.append("C")
-llist.append("D")
+if __name__ == "__main__":
 
-llist.reverse_iterative()
-llist.print_list()
-print("\n")
-llist.reverse_recursive()
-llist.print_list()
+    llist = SinglyLinkedList()
+    llist.append("A")
+    llist.append("B")
+    llist.append("C")
+    llist.append("D")
+
+    llist.reverse_iterative()
+    llist.print_list()
+    print("\n")
+    llist.reverse_recursive()
+    llist.print_list()
