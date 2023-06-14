@@ -83,17 +83,20 @@ class SinglyLinkedList:
         return p.data
 
 
-llist = SinglyLinkedList()
-llist.append("A")
-llist.append("B")
-llist.append("C")
-llist.append("D")
-llist.append("E")
-llist.append("F")
 
-llist.print_list()
-print("\n")
+if __name__ == "__main__":
 
-print(llist.print_nth_from_last_method1(3))
-print("\n")
-print(llist.print_nth_from_last_method2(3))
+    llist = SinglyLinkedList()
+    llist.append("A")
+    llist.append("B")
+    llist.append("C")
+    llist.append("D")
+    llist.append("E")
+    llist.append("F")
+
+    llist.print_list()
+    print("\n")
+
+    print(llist.print_nth_from_last_method1(3))
+    print("\n")
+    print(llist.print_nth_from_last_method2(3))
