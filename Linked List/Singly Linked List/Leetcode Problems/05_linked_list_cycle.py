@@ -26,8 +26,27 @@ class SinglyLinkedList:
             print(cur_node.data)
             cur_node = cur_node.next
 
-    def hasCycle(self):
-        pass
+    def hasCycle(self, pos):
+        slow, fast = self.head, self.head
+
+        node = self.head
+        for _ in range(pos):
+            node = node.next
+
+        # Connect the last node to the pos node
+        last_node = llist.head
+        while last_node.next:
+            last_node = last_node.next
+        
+        last_node.next = node
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                return True
+
+        return False
 
 
 
@@ -36,13 +55,13 @@ if __name__ == "__main__":
     llist = SinglyLinkedList()
     llist.append(1)
     llist.append(2)
-    llist.append(3)
-    llist.append(4)
-    llist.append(5)
+    llist.append(0)
+    llist.append(-4)
 
     llist.print_list()
     print("\n")
 
+    print(llist.hasCycle(1))
     
 
     
