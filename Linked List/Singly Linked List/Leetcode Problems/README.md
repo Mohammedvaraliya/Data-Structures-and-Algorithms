@@ -130,7 +130,7 @@ Output: false
 Explanation: There is no cycle in the linked list.
 ```
 
-### 06. Singly Linked Lists -- Linked List Cycle
+### 06. Singly Linked Lists -- Merge k Sorted Lists
 
 [Leetcode Problem URL](https://leetcode.com/problems/merge-k-sorted-lists/)
 

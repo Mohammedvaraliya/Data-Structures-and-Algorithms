@@ -29,7 +29,7 @@ def mergeTwoLists(list1, list2):
 
 if __name__ == "__main__":
 
-     # Create the first sorted linked list: [1 -> 2 -> 4]
+    # Create the first sorted linked list: [1 -> 2 -> 4]
     list1 = ListNode(1)
     list1.next = ListNode(2)
     list1.next.next = ListNode(4)
