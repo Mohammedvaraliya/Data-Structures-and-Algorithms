@@ -1,59 +1,55 @@
+import heapq
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
-def mergeTwoLists(list1, list2):
-
-    dummy = ListNode()
-    tail = dummy
-
-    while list1 and list2:
-        if list1.val < list2.val:
-            tail.next = list1
-            list1 = list1.next
-        else:
-            tail.next = list2
-            list2 = list2.next
-        tail = tail.next
+def mergeKLists(lists):
+    heap = []
     
-    if list1:
-        tail.next = list1
-    elif list2:
-        tail.next = list2
-
+    # Add the first node of each linked list to the min heap
+    for i in range(len(lists)):
+        if lists[i]:
+            heapq.heappush(heap, (lists[i].val, i))
+            lists[i] = lists[i].next
+    
+    dummy = ListNode()
+    curr = dummy
+    
+    # Process the nodes from the min heap until it's empty
+    while heap:
+        val, idx = heapq.heappop(heap)
+        curr.next = ListNode(val)
+        curr = curr.next
+        
+        # Move to the next node in the linked list from which the current node was extracted
+        if lists[idx]:
+            heapq.heappush(heap, (lists[idx].val, idx))
+            lists[idx] = lists[idx].next
+    
     return dummy.next
 
 
-def mergeKLists(self, lists):
-    if not lists or len(lists) == 0:
-        return None
-    
-    while len(lists) > 1:
-        mergedLists = []
-        for i in range(0, len(lists), 2):
-            l1 = lists[i].head  # Access the head of the linked list
-            l2 = lists[i + 1].head if (i + 1) < len(lists) else None  # Access the head of the linked list
-            mergedLists.append(self.mergeList(l1, l2))
-        lists = mergedLists
-    return lists[0]
-
-
 if __name__ == "__main__":
-    input_list = []
+        
+    # Example 1
+    l1 = ListNode(1)
+    l1.next = ListNode(4)
+    l1.next.next = ListNode(5)
 
-    list1 = ListNode(1)
-    list1.next = ListNode(4)
-    list1.next.next = ListNode(5)
-    input_list.append(list1)
+    l2 = ListNode(1)
+    l2.next = ListNode(3)
+    l2.next.next = ListNode(4)
 
-    list2 = ListNode(1)
-    list2.next = ListNode(3)
-    list2.next.next = ListNode(4)
-    input_list.append(list2)
+    l3 = ListNode(2)
+    l3.next = ListNode(6)
 
-    list3 = ListNode(2)
-    list3.next = ListNode(6)
-    input_list.append(list3)
+    lists = [l1, l2, l3]
+    result = mergeKLists(lists)
 
-    print(input_list)
+    # Print the merged linked list
+    while result:
+        print(result.val, end=" ")
+        result = result.next
+    # Output: 1 1 2 3 4 4 5 6
