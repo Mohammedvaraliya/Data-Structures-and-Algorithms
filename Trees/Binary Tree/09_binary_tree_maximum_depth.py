@@ -27,11 +27,19 @@ class BinaryTree(object):
 
 if __name__ == "__main__":
 
-    tree = BinaryTree(3)
-    tree.root.left = Node(9)
-    tree.root.right = Node(20)
-    tree.root.right.left = Node(15)
-    tree.root.right.right = Node(7)
+    tree1 = BinaryTree(3)
+    tree1.root.left = Node(9)
+    tree1.root.right = Node(20)
+    tree1.root.right.left = Node(15)
+    tree1.root.right.right = Node(7)
 
-    X = tree.print_max_dept("maximum _depth")
+    X = tree1.print_max_dept("maximum _depth")
     print(X)
+
+    tree2 = BinaryTree(1)
+    tree2.root.right = Node(2)
+
+    Y = tree2.print_max_dept("maximum _depth")
+    print(Y)
+
+    
