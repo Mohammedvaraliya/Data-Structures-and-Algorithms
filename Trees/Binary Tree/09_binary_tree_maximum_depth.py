@@ -13,8 +13,10 @@ class BinaryTree(object):
     def print_max_dept(self, traversal_type):
         if traversal_type == "maximum_depth":
             return self.maxDepth(self.root)
-        elif traversal_type == "maximum_depth_BFS":
+        elif traversal_type == "maxDepth_BFS":
             return self.maxDepth_BFS(self.root)
+        elif traversal_type == "maxDepth_DFS_iterative":
+            return self.maxDepth_DFS_iterative(self.root)
         else:
             print("Depth type " + str(traversal_type) + " is not supported.")
             return False
@@ -41,6 +43,23 @@ class BinaryTree(object):
             
             level += 1
         return level
+    
+    def maxDepth_DFS_iterative(self, root):
+        if not root:
+            return 0
+        
+        stack = [[root, 1]]
+        res = 1
+
+        while stack:
+            node, depth = stack.pop()
+            
+            if node:
+                res = max(res, depth)
+                stack.append([node.left, depth + 1])
+                stack.append([node.right, depth + 1])
+
+        return res
 
 
 
@@ -54,13 +73,13 @@ if __name__ == "__main__":
     tree1.root.right.left = Node(15)
     tree1.root.right.right = Node(7)
 
-    X = tree1.print_max_dept("maximum_depth_BFS")
+    X = tree1.print_max_dept("maxDepth_DFS_iterative")
     print(X)
 
     tree2 = BinaryTree(1)
     tree2.root.right = Node(2)
 
-    Y = tree2.print_max_dept("maximum_depth")
+    Y = tree2.print_max_dept("maxDepth_BFS")
     print(Y)
 
     
