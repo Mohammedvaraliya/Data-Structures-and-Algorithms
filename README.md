@@ -172,6 +172,7 @@
 |06| Binary Trees |  [Binary Trees: Calculating Height of Tree](./Trees/Binary%20Tree/06_binary_tree_calculating_height_of_tree.py) |
 |07| Binary Trees |  [Binary Trees: Calculating Size of Tree](./Trees/Binary%20Tree/07_binary_tree_calculating_size_of_tree.py) |
 |08| Binary Trees |  [Binary Trees: Invert Binary Tree](./Trees/Binary%20Tree/08_binary_tree_invert.py) |
+|09| Binary Trees |  [Binary Trees: Maximum Depth of Binary Tree](./Trees/Binary%20Tree/09_binary_tree_maximum_depth.py) |
 |00| Binary Trees |  [Problem Statements](./Trees/Binary%20Tree/README.md) |
 || 
 |01| Binary Search Trees |  [Binary Search Trees: Insertion](./Trees/Binary%20Search%20Tree/01_binary_search_tree_insertion.py) |
