@@ -265,6 +265,28 @@ Input: root = [1,null,2]
 Output: 2
 ```
 
+### 10. Binary Trees: Subtree Of Another Tree
+
+[Leetcode Problem URL](https://leetcode.com/problems/subtree-of-another-tree/)
+
+```bash
+Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.
+
+A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself.
+
+Example 1:
+```
+  ![Alt text](assets/subtree1-tree.jpg)
+```bash
+Input: root = [3,4,5,1,2], subRoot = [4,1,2]
+Output: true
+```
+
+  ![Alt text](assets/subtree2-tree.jpg)
+```bash
+Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
+Output: false
+```
 
     
     
