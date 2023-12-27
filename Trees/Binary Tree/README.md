@@ -265,6 +265,7 @@ Input: root = [1,null,2]
 Output: 2
 ```
 
+<<<<<<< HEAD
 ### 10. Binary Trees: Subtree Of Another Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/subtree-of-another-tree/)
@@ -287,6 +288,28 @@ Output: true
 Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
 Output: false
 ```
+=======
+### 10. Binary Trees: Same Tree
+>>>>>>> ac36a3ccc0eee3568788744650a8178a4aad1267
 
+[Leetcode Problem URL](https://leetcode.com/problems/same-tree/)
+
+```bash
+Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+
+Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+
+Example 1:
+Input: p = [1,2,3], q = [1,2,3]
+Output: true
+
+Example 2:
+Input: p = [1,2], q = [1,null,2]
+Output: false
+
+Example 3:
+Input: p = [1,2,1], q = [1,1,2]
+Output: false
+```
     
     
