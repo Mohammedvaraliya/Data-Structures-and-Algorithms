@@ -185,6 +185,7 @@
 |07| Binary Search Trees |  [Binary Search Trees: Using list - Pre-Order-Traversal](./Trees/Binary%20Search%20Tree/07_binary_search_tree_using_list_pre_order_traversal.py) |
 |08| Binary Search Trees |  [Binary Search Trees: Using list - Delete Node Method 1](./Trees/Binary%20Search%20Tree/08_binary_search_tree_using_list_delete_node_method_1.py) |
 |09| Binary Search Trees |  [Binary Search Trees: Using list - Delete Node Method 2](./Trees/Binary%20Search%20Tree/09_binary_search_tree_using_list_delete_node_method_2.py) |
+|10| Binary Search Trees |  [Binary Search Trees: Lowest Common Ancestor of a Binary Search Tree](./Trees/Binary%20Search%20Tree/10_binary_search_tree_lowest_common_ancestor.py) |
 |00| Binary Search Trees |  [Problem Statements](./Trees/Binary%20Search%20Tree/README.md) |
 ||
 |  | <h3>Graph Data Structure</h3> |  
