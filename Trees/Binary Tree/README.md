@@ -273,15 +273,16 @@ Output: 2
 Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.
 
 A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself.
-
-Example 1:
 ```
+
+#### Example 1:
   ![Alt text](assets/subtree1-tree.jpg)
 ```bash
 Input: root = [3,4,5,1,2], subRoot = [4,1,2]
 Output: true
 ```
 
+#### Example 2:
   ![Alt text](assets/subtree2-tree.jpg)
 ```bash
 Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
@@ -296,20 +297,20 @@ Output: false
 Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
 ```
 
-Example 1:
+#### Example 1:
   ![Alt text](assets/tree1.jpg)
 ```bash
 Input: root = [3,9,20,null,null,15,7]
 Output: [[3],[9,20],[15,7]]
 ```
 
-Example 2:
+#### Example 2:
 ```bash
 Input: root = [1]
 Output: [[1]]
 ```
 
-Example 3:
+#### Example 3:
 ```bash
 Input: root = []
 Output: []
