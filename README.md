@@ -1,4 +1,4 @@
-## Table of Contents
+# 📚 Table of Contents
 
 - [Stack](#stack)
 - [Queue](#queue)
