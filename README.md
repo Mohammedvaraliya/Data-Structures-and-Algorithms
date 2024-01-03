@@ -297,6 +297,7 @@
 |08| Binary Search Trees: Using list - Delete Node Method 1 |  [Solution](./Trees/Binary%20Search%20Tree/08_binary_search_tree_using_list_delete_node_method_1.py) |
 |09| Binary Search Trees: Using list - Delete Node Method 2 |  [Solution](./Trees/Binary%20Search%20Tree/09_binary_search_tree_using_list_delete_node_method_2.py) |
 |10| Binary Search Trees: Lowest Common Ancestor of a Binary Search Tree |  [Solution](./Trees/Binary%20Search%20Tree/10_binary_search_tree_lowest_common_ancestor.py) |
+|10| Binary Search Trees: Validate |  [Solution](./Trees/Binary%20Search%20Tree/11_binary_search_tree_validate.py) |
 |00| Readme |  [Problem Statements](./Trees/Binary%20Search%20Tree/README.md) |
 
 ## Graph Data Structure
