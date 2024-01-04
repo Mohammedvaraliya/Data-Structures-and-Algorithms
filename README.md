@@ -1,8 +1,10 @@
-<style>
-  table {
-    width: 100%
-  }
-</style>
+<head>
+  <style>
+    table {
+      width: 100%;
+    }
+  </style>
+</head>
 
 # 📚 Table of Contents
 
