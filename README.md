@@ -1,11 +1,3 @@
-<head>
-  <style>
-    table {
-      width: 100%;
-    }
-  </style>
-</head>
-
 # 📚 Table of Contents
 
 - [Stack](#stack)
@@ -39,6 +31,12 @@
 
 ## Stack
 
+<style>
+  table {
+    width: 100%;
+  }
+</style>
+
 | # | Title | Solution | 
 |---| ----- | -------- |
 |01| The Stack data Structure |  [Solution](./Stack/01_stack_DS.py) |
@@ -49,6 +47,12 @@
 |00| Readme |  [Problem Statements](./Stack/README.md) |
 
 ## Queue
+
+<style>
+  table {
+    width: 100%;
+  }
+</style>
 
 | # | Title | Solution | 
 |---| ----- | -------- |
@@ -62,6 +66,12 @@
 ## Linked List
 
 ### Singly Linked List
+
+<style>
+  table {
+    width: 100%;
+  }
+</style>
 
 | # | Title | Solution | 
 |---| ----- | -------- |
@@ -87,6 +97,12 @@
 |00| Readme (Leetcode Problems) |  [Problem Statements](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/README.md) |
 
 ### Doubly Linked List
+
+<style>
+  table {
+    width: 100%;
+  }
+</style>
 
 | # | Title | Solution | 
 |---| ----- | -------- |
