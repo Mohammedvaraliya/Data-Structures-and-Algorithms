@@ -281,6 +281,7 @@
 |09| Binary Trees: Maximum Depth of Binary Tree |  [Solution](./Trees/Binary%20Tree/09_binary_tree_maximum_depth.py) |
 |10| Binary Trees: Subtree Of Another Tree |  [Solution](./Trees/Binary%20Tree/10_binary_tree_subtree_of_another_tree.py) |
 |11| Binary Trees: Level Order Traversal |  [Solution](./Trees/Binary%20Tree/11_binary_tree_levelorder_traversal.py) |
+|12| Binary Trees: Construct Binary Tree from Preorder and Inorder Traversal |  [Solution](./Trees/Binary%20Tree/12_binary_tree_construct_from_inorder_&_preorder_traversal.py) |
 |00| Readme |  [Problem Statements](./Trees/Binary%20Tree/README.md) |
  
 ### Binary Search Trees
