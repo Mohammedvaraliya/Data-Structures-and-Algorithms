@@ -283,6 +283,7 @@
 |11| Binary Trees: Level Order Traversal |  [Solution](./Trees/Binary%20Tree/11_binary_tree_levelorder_traversal.py) |
 |12| Binary Trees: Construct Binary Tree from Preorder and Inorder Traversal |  [Solution](./Trees/Binary%20Tree/12_binary_tree_construct_from_inorder_&_preorder_traversal.py) |
 |13| Binary Trees: Construct Binary Tree from Inorder and Postorder Traversal |  [Solution](./Trees/Binary%20Tree/13_binary_tree_construct_from_inorder_&_postorder_traversal.py) |
+|14| Binary Trees: Maximum Path Sum |  [Solution](./Trees/Binary%20Tree/14_binary_tree_maximum_path_sum.py) |
 |00| Readme |  [Problem Statements](./Trees/Binary%20Tree/README.md) |
 
 ### Binary Search Trees
