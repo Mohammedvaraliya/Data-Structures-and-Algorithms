@@ -239,6 +239,7 @@
 |14| Longest Repeating Character Replacement |  [Solution](./Strings/14_longest_repeating%20character_replacement.py) |
 |15| Minimum Window Substring |  [Solution](./Strings/15_minimum_window_substring.py) |
 |16| First Letter to Appear Twice |  [Solution](./Strings/16_first_letter_to_appear_twice.py) |
+|17| First Unique Character in a String |  [Solution](./Strings/17_first_unique_character_in_a_string.py) |
 |00| Readme |  [Problem Statements](./Strings/README.md) |
 
 ## Integers
