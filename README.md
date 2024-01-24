@@ -238,6 +238,7 @@
 |13| Encode and Decode Strings |  [Solution](./Strings/13_encode_and_decode_string.py) |
 |14| Longest Repeating Character Replacement |  [Solution](./Strings/14_longest_repeating%20character_replacement.py) |
 |15| Minimum Window Substring |  [Solution](./Strings/15_minimum_window_substring.py) |
+|16| First Letter to Appear Twice |  [Solution](./Strings/16_first_letter_to_appear_twice.py) |
 |00| Readme |  [Problem Statements](./Strings/README.md) |
 
 ## Integers
