@@ -1,8 +1,7 @@
 '''
 Given a String, write a function to check if it is a permutation of a palindrome.
 A palindrome is a word or phrase that is the same forward and backwards.
-A permutation is a rearrangement of a letters. The palindrome does not need
-to be limited to just dictionary words. 
+A permutation is a rearrangement of a letters. The palindrome does not need to be limited to just dictionary words. 
 '''
 
 palin_perm = "Tact Coa" #Taco Cat
