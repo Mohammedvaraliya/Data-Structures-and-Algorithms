@@ -132,6 +132,7 @@
 |12| Longest Consecutive Sequence |  [Solution](./Arrays/17_longest_consecutive_sequence.py) |
 |13| 3Sum |  [Solution](./Arrays/18_three_sum.py) |
 |14| Container With Most Water |  [Solution](./Arrays/19_container_with_most_water.py) |
+|15| Unique Number of Occurrences |  [Solution](./Arrays/20_unique_number_of_occurence.py) |
 |00| Readme |  [Problem Statements](./Arrays/README.md) |
 
 ## Hash Table
