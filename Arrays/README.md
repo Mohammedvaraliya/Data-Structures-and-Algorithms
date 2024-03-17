@@ -383,3 +383,37 @@ Example 3:
 Input: arr = [-3,0,1,-3,1,1,1,-3,10,0]
 Output: true
 ```
+
+### 21. Split the Array
+
+[Leetcode Problem URL](https://leetcode.com/problems/split-the-array/)
+
+```bash
+You are given an integer array nums of even length. You have to split the array into two parts `nums1` and `nums2` such that:
+
+`nums1.length == nums2.length == nums.length / 2`.
+`nums1` should contain distinct elements.
+`nums2` should also contain distinct elements.
+
+Return `true` if it is possible to split the array, and `false` otherwise.
+
+Example 1:
+Input: nums = [1,1,2,2,3,4]
+Output: true
+Explanation: One of the possible ways to split nums is nums1 = [1,2,3] and nums2 = [1,2,4].
+
+Example 2:
+Input: nums = [1,1,1,1]
+Output: false
+Explanation: The only possible way to split nums is nums1 = [1,1] and nums2 = [1,1]. Both nums1 and nums2 do not contain distinct elements. Therefore, we return false.
+```
+```text
+The provided solution tackles the problem of splitting an even-length integer array (nums) into two equal-sized sub-arrays that could potentially fulfill the conditions: nums1 and nums2 having distinct elements. While we don't explicitly create these sub-arrays in the code, the logic ensures that a valid split is possible.
+
+The key lies in utilizing a dictionary, named counter, to efficiently track the frequency of each number encountered in nums. By iterating through the array, we check if the current number (num) already exists in counter.
+
+If it's present, its count is incremented. However, if the count goes beyond 2 (meaning more than two occurrences), it violates the distinct element requirement for a valid split, and the function returns False.
+If the number is not yet encountered, a new entry is created in counter with a count of 1.
+
+Since the array has an even length and we require distinct elements in each sub-array (implicit in the problem statement), allowing more than two occurrences of any number would prevent a valid split. Therefore, this approach efficiently determines if a valid split is possible based on the frequency of elements in the array, without explicitly creating the sub-arrays.
+```

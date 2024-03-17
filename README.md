@@ -133,6 +133,7 @@
 |13| 3Sum |  [Solution](./Arrays/18_three_sum.py) |
 |14| Container With Most Water |  [Solution](./Arrays/19_container_with_most_water.py) |
 |15| Unique Number of Occurrences |  [Solution](./Arrays/20_unique_number_of_occurence.py) |
+|16| Split the Array |  [Solution](./Arrays/21_split_the_array.py) |
 |00| Readme |  [Problem Statements](./Arrays/README.md) |
 
 ## Hash Table
