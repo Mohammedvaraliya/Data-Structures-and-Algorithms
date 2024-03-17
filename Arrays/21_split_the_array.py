@@ -13,6 +13,11 @@ def isPossibleToSplit(nums: list[int]) -> bool:
 
 if __name__ == "__main__":
     
-    nums = [1,1,2,2,3,4]
-    print(isPossibleToSplit(nums))
+    x = [1,1,2,2,3,4]
+    print(isPossibleToSplit(x))
+    
+    y = [1,1,1,1]
+    print(isPossibleToSplit(y))
+    
+    
     
