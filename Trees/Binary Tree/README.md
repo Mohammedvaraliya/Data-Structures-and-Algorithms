@@ -1,6 +1,6 @@
 # Data-Structures And Algorithms
 
-##### Note. The name of function which is same but _ before name is helper function.
+##### Note. The name of function which is same but \_ before name is helper function.
 
 ### 01. Binary Trees: Traversal Algorithms Pre-order
 
@@ -14,7 +14,7 @@ Pre-Order Traversal:
                 1
             /       \
             2          3
-          /   \       /  \  
+          /   \       /  \
         4      5    6     7
 
 This technique follows the 'root left right' policy. It means that, first root node is visited after that the left subtree is traversed recursively, and finally, right subtree is recursively traversed. As the root node is traversed before (or pre) the left and right subtree, it is called preorder traversal.
@@ -23,7 +23,7 @@ So, in a preorder traversal, each node is visited before both of its subtrees.
 
                           (root -> left -> right)
 
-so, above preorder traversal output will be : 
+so, above preorder traversal output will be :
                                         1-2-4-5-3-6-7
 ```
 
@@ -39,7 +39,7 @@ In-Order Traversal:
             1
         /       \
         2          3
-      /   \       /  \  
+      /   \       /  \
     4      5    6     7
 
 This technique follows the 'left root right' policy. It means that first left subtree is visited after that root node is traversed, and finally, the right subtree is traversed. As the root node is traversed between the left and right subtree, it is named inorder traversal.
@@ -48,7 +48,7 @@ So, in the inorder traversal, each node is visited in between of its subtrees.
 
                       (root -> left -> right)
 
-so, above inorder traversal output will be : 
+so, above inorder traversal output will be :
                                     4-2-5-1-6-3-7-
 ```
 
@@ -64,7 +64,7 @@ Post-Order Traversal:
                 1
             /       \
             2          3
-          /   \       /  \  
+          /   \       /  \
         4      5    6     7
 
 This technique follows the 'left-right root' policy. It means that the first left subtree of the root node is traversed, after that recursively traverses the right subtree, and finally, the root node is traversed. As the root node is traversed after (or post) the left and right subtree, it is called postorder traversal.
@@ -73,7 +73,7 @@ So, in a postorder traversal, each node is visited after both of its subtrees.
 
                           (left -> right -> root)
 
-so, above postorder traversal output will be : 
+so, above postorder traversal output will be :
                                         4-5-2-6-7-3-1-
 ```
 
@@ -87,8 +87,8 @@ Level-Order Traversal:
                 1
             /     \
             2        3
-          /  \          
-        4    5     
+          /  \
+        4    5
 
 Given a binary tree, the task is to print the level order traversal line by line of the tree
 
@@ -96,7 +96,7 @@ Level Order Traversal is the algorithm to process all nodes of a tree by travers
 
 In simple word level-order traversal will print the node according to level.
 
-so, above level-order traversal output will be : 
+so, above level-order traversal output will be :
                                         1-2-3-4-5-
 ```
 
@@ -110,14 +110,14 @@ Level-Order Traversal:
                 1
             /     \
             2        3
-          /  \          
-        4    5     
+          /  \
+        4    5
 
 Given a binary tree, the task is to print the reverse level order traversal line by line of the tree
 
 The idea is to print the last level first, then the second last level, and so on. Like Level order traversal, every level is printed from left to right.
 
-so, above reverse level-order traversal output will be : 
+so, above reverse level-order traversal output will be :
                                                         4-5-2-3-1-
 ```
 
@@ -127,13 +127,13 @@ so, above reverse level-order traversal output will be :
 Binary Trees: Calculating Height of Tree
 
 It will return the height of the binary tree
-                
-                (1) 
-                  1       
-            (1)  /   \ (0)  
+
+                (1)
+                  1
+            (1)  /   \ (0)
                 2      3
-          (0)  /  \  (0)        
-              4     5  
+          (0)  /  \  (0)
+              4     5
 
 The height of leaf node with data 4 is 0 because there is no child node present
 The height of leaf node with data 5 is 0 because there is no child node present
@@ -164,14 +164,14 @@ so, the height of this binary tree is: 2
 Binary Trees: Calculating Size of Tree
 
 It will return the size of the binary tree
-                
-                  1       
-                /  \    
-                2     3
-              /  \           
-              4     5  
 
-To calculate the size of the binary tree we use stack data structure to keep record of the nodes 
+                  1
+                /  \
+                2     3
+              /  \
+              4     5
+
+To calculate the size of the binary tree we use stack data structure to keep record of the nodes
 by push and pop operations.
 
 Example:
@@ -220,7 +220,7 @@ Input :
               / \   / \
              1   3 6    9
 
-Output : 
+Output :
                   4
                 /   \
                7     2
@@ -276,14 +276,18 @@ A subtree of a binary tree tree is a tree that consists of a node in tree and al
 ```
 
 #### Example 1:
-  ![Alt text](assets/subtree1-tree.jpg)
+
+![Alt text](assets/subtree1-tree.jpg)
+
 ```bash
 Input: root = [3,4,5,1,2], subRoot = [4,1,2]
 Output: true
 ```
 
 #### Example 2:
-  ![Alt text](assets/subtree2-tree.jpg)
+
+![Alt text](assets/subtree2-tree.jpg)
+
 ```bash
 Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
 Output: false
@@ -298,19 +302,23 @@ Given the root of a binary tree, return the level order traversal of its nodes' 
 ```
 
 #### Example 1:
-  ![Alt text](assets/tree1.jpg)
+
+![Alt text](assets/tree1.jpg)
+
 ```bash
 Input: root = [3,9,20,null,null,15,7]
 Output: [[3],[9,20],[15,7]]
 ```
 
 #### Example 2:
+
 ```bash
 Input: root = [1]
 Output: [[1]]
 ```
 
 #### Example 3:
+
 ```bash
 Input: root = []
 Output: []
@@ -321,47 +329,53 @@ Output: []
 [Leetcode Problem URL](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
 ```bash
-Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the 
+Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the
 inorder traversal of the same tree, construct and return the binary tree.
 ```
 
 #### Example 1:
-  ![Alt text](assets/tree.jpg)
+
+![Alt text](assets/tree.jpg)
+
 ```bash
 Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
 Output: [3,9,20,null,null,15,7]
 ```
 
 #### Example 2:
+
 ```bash
 Input: preorder = [-1], inorder = [-1]
 Output: [-1]
 ```
 
 #### Example 3:
+
 ```bash
 Input: root = []
 Output: []
 ```
-
 
 ### 13. Binary Trees: Construct Binary Tree from Inorder and Postorder Traversal
 
 [Leetcode Problem URL](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 
 ```bash
-Given two integer arrays inorder and postorder where inorder is the inorder traversal of a binary tree and postorder 
+Given two integer arrays inorder and postorder where inorder is the inorder traversal of a binary tree and postorder
 is the postorder traversal of the same tree, construct and return the binary tree.
 ```
 
 #### Example 1:
-  ![Alt text](assets/tree.jpg)
+
+![Alt text](assets/tree.jpg)
+
 ```bash
 Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]
 Output: [3,9,20,null,null,15,7]
 ```
 
 #### Example 2:
+
 ```bash
 Input: inorder = [-1], postorder = [-1]
 Output: [-1]
@@ -372,7 +386,7 @@ Output: [-1]
 [Leetcode Problem URL](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 
 ```bash
-A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. 
+A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them.
 A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.
 
 The path sum of a path is the sum of the node's values in the path.
@@ -381,7 +395,9 @@ Given the root of a binary tree, return the maximum path sum of any non-empty pa
 ```
 
 #### Example 1:
-  ![Alt text](assets/exx1.jpg)
+
+![Alt text](assets/exx1.jpg)
+
 ```bash
 Input: root = [1,2,3]
 Output: 6
@@ -389,10 +405,39 @@ Explanation: The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6.
 ```
 
 #### Example 2:
-  ![Alt text](assets/exx2.jpg)
+
+![Alt text](assets/exx2.jpg)
+
 ```bash
 Input: root = [-10,9,20,null,null,15,7]
 Output: 42
 Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42.
 ```
-    
+
+### 15. Binary Trees: Serialize and Deserialize
+
+[Leetcode Problem URL](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+
+```bash
+Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
+
+Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.
+
+Clarification: The input/output format is the same as how LeetCode serializes a binary tree. You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.
+```
+
+#### Example 1:
+
+![Alt text](https://assets.leetcode.com/uploads/2020/09/15/serdeser.jpg)
+
+```bash
+Input: root = [1,2,3,null,null,4,5]
+Output: [1,2,3,null,null,4,5]
+```
+
+#### Example 2:
+
+```bash
+Input: root = []
+Output: []
+```
