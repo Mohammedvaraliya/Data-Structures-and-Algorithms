@@ -428,18 +428,164 @@ Clarification: The input/output format is the same as how LeetCode serializes a 
 
 </summary>
 
+As stated explicitly in the clarification above, I can also come up with alternative approaches, therefore I implemented this problem with depth first search (preorder) traversal.
+
 #### Example 1:
 
 ![Alt text](https://assets.leetcode.com/uploads/2020/09/15/serdeser.jpg)
 
 ```bash
-Input: root = [1,2,3,null,null,4,5]
-Output: [1,2,3,null,null,4,5]
+Input: root = [1,2,Null,Null,3,4,Null,Null,5,Null,Null]
+Output: Serialized: 1,2,Null,Null,3,4,Null,Null,5,Null,Null
+        Deserialized: 1,2,Null,Null,3,4,Null,Null,5,Null,Null
 ```
+
+**Explaination**
+
+Certainly! Here is a step-by-step explanation of how the implemented code works using the first input `nums1 = [1, 2, None, None, 3, 4, None, None, 5, None, None]`.
+
+#### 1. Building the Binary Tree
+
+- **Input**: `nums1 = [1, 2, None, None, 3, 4, None, None, 5, None, None]`
+- **Function**: `buildBT(nums)`
+- **Purpose**: Construct a binary tree using preorder traversal from the given list.
+
+The `buildBT` function defines a helper function `build` that recursively constructs the tree in a preorder manner.
+
+**Construction Steps**:
+
+1. Start with `index = 0`, which corresponds to the root node value `1`.
+
+   - Create a `TreeNode` with value `1`.
+   - Recursively build the left subtree starting from `index = 1`.
+
+2. At `index = 1`, value is `2`.
+
+   - Create a `TreeNode` with value `2`.
+   - Recursively build the left subtree starting from `index = 2`.
+
+3. At `index = 2`, value is `None`.
+
+   - Return `None` and move to `index = 3`.
+
+4. At `index = 3`, value is `None`.
+
+   - Return `None` and move to `index = 4`.
+   - The left subtree of node `2` is `None` and the right subtree is `None`.
+
+5. Back to node `1`, recursively build the right subtree starting from `index = 4`.
+
+6. At `index = 4`, value is `3`.
+
+   - Create a `TreeNode` with value `3`.
+   - Recursively build the left subtree starting from `index = 5`.
+
+7. At `index = 5`, value is `4`.
+
+   - Create a `TreeNode` with value `4`.
+   - Recursively build the left subtree starting from `index = 6`.
+
+8. At `index = 6`, value is `None`.
+
+   - Return `None` and move to `index = 7`.
+
+9. At `index = 7`, value is `None`.
+
+   - Return `None` and move to `index = 8`.
+   - The left subtree of node `4` is `None` and the right subtree is `None`.
+
+10. Back to node `3`, recursively build the right subtree starting from `index = 8`.
+
+11. At `index = 8`, value is `5`.
+
+    - Create a `TreeNode` with value `5`.
+    - Recursively build the left subtree starting from `index = 9`.
+
+12. At `index = 9`, value is `None`.
+
+    - Return `None` and move to `index = 10`.
+
+13. At `index = 10`, value is `None`.
+    - Return `None` and move to `index = 11`.
+    - The left subtree of node `5` is `None` and the right subtree is `None`.
+
+The constructed binary tree is:
+
+```
+    1
+   / \
+  2   3
+     / \
+    4   5
+```
+
+#### 2. Serializing the Binary Tree
+
+- **Function**: `serialize(self, root)`
+- **Purpose**: Convert the binary tree into a string using preorder traversal.
+
+**Serialization Steps**:
+
+1. Initialize an empty list `res`.
+2. Define a recursive helper function `preorder_dfs(node)` to perform preorder traversal.
+3. Traverse the tree and append node values to `res`:
+   - Visit root node `1` and append `"1"`.
+   - Visit left child `2` and append `"2"`.
+   - Left and right children of `2` are `None`, append `"Null"` twice.
+   - Visit right child `3` and append `"3"`.
+   - Visit left child `4` and append `"4"`.
+   - Left and right children of `4` are `None`, append `"Null"` twice.
+   - Visit right child `5` and append `"5"`.
+   - Left and right children of `5` are `None`, append `"Null"` twice.
+4. Join `res` with commas to form the serialized string: `"1,2,Null,Null,3,4,Null,Null,5,Null,Null"`.
+
+#### 3. Deserializing the String
+
+- **Function**: `deserialize(self, data)`
+- **Purpose**: Reconstruct the binary tree from the serialized string.
+
+**Deserialization Steps**:
+
+1. Split the serialized string into a list `vals`.
+2. Initialize an index pointer `self.i` to `0`.
+3. Define a recursive helper function `preorder_dfs()` to perform preorder reconstruction.
+4. Reconstruct the tree:
+   - At `self.i = 0`, value is `"1"`, create root node `1`.
+   - Increment `self.i` and reconstruct the left subtree.
+     - At `self.i = 1`, value is `"2"`, create left child node `2`.
+     - Increment `self.i` and reconstruct its left subtree.
+       - At `self.i = 2`, value is `"Null"`, return `None`.
+     - Increment `self.i` and reconstruct its right subtree.
+       - At `self.i = 3`, value is `"Null"`, return `None`.
+   - Increment `self.i` and reconstruct the right subtree.
+     - At `self.i = 4`, value is `"3"`, create right child node `3`.
+     - Increment `self.i` and reconstruct its left subtree.
+       - At `self.i = 5`, value is `"4"`, create left child node `4`.
+       - Increment `self.i` and reconstruct its left subtree.
+         - At `self.i = 6`, value is `"Null"`, return `None`.
+       - Increment `self.i` and reconstruct its right subtree.
+         - At `self.i = 7`, value is `"Null"`, return `None`.
+     - Increment `self.i` and reconstruct its right subtree.
+       - At `self.i = 8`, value is `"5"`, create right child node `5`.
+       - Increment `self.i` and reconstruct its left subtree.
+         - At `self.i = 9`, value is `"Null"`, return `None`.
+       - Increment `self.i` and reconstruct its right subtree.
+         - At `self.i = 10`, value is `"Null"`, return `None`.
+
+The reconstructed binary tree matches the original tree structure.
+
+#### Verification
+
+Finally, serialize the deserialized tree again to verify correctness:
+
+- Serialize the tree obtained from deserialization and check if it matches the original serialized string: `"1,2,Null,Null,3,4,Null,Null,5,Null,Null"`.
+
+The output confirms that the serialization and deserialization processes work as intended, accurately preserving the tree structure.
 
 #### Example 2:
 
 ```bash
 Input: root = []
-Output: []
+Output: Serialized: Null
+        Deserialized: Null
 ```

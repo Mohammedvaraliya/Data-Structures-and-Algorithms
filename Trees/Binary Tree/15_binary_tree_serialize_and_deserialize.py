@@ -49,36 +49,37 @@ class BinaryTree:
         return preorder_dfs()
         
 
-
-# Helper function to build a BT from a list
+# Helper function to build a BT from a list in preorder traversal
 def buildBT(nums):
-    if not nums:
-        return None
+    def build(index):
+        if index >= len(nums) or nums[index] is None:
+            return None, index + 1
+        node = TreeNode(nums[index])
+        node.left, index = build(index + 1)
+        node.right, index = build(index)
+        return node, index
 
-    root = TreeNode(nums[0])
-    nodes = [root]
-    i = 1
-
-    while i < len(nums):
-        current_node = nodes.pop(0)
-
-        if nums[i] is not None:
-            current_node.left = TreeNode(nums[i])
-            nodes.append(current_node.left)
-
-        i += 1
-
-        if i < len(nums) and nums[i] is not None:
-            current_node.right = TreeNode(nums[i])
-            nodes.append(current_node.right)
-
-        i += 1
-
+    root, _ = build(0)
     return root
 
 
 if __name__ == "__main__":
     
-    serializer = BinaryTree()
+    nums1 = [1, 2, None, None, 3, 4, None, None, 5, None, None]
+    # Building BinaryTree
+    root1 = buildBT(nums1)
+    bt1 = BinaryTree()
+    serializer1 = bt1.serialize(root1)
+    print(f"Serialized: {serializer1}")
+    deserializer1 = bt1.deserialize(serializer1)
+    print(f"Deserialized: {bt1.serialize(deserializer1)}")
+    
+    nums2 = []
+    # Building BinaryTree
+    root2 = buildBT(nums2)
+    bt2 = BinaryTree()
+    serializer2 = bt2.serialize(root2)
+    print(f"Serialized: {serializer2}")
+    deserializer2 = bt2.deserialize(serializer2)
+    print(f"Deserialized: {bt2.serialize(deserializer2)}")
 
-    deserializer = BinaryTree()
