@@ -438,7 +438,7 @@ Output: Serialized: 1,2,Null,Null,3,4,Null,Null,5,Null,Null
 
 **Explaination**
 
-Certainly! Here is a step-by-step explanation of how the implemented code works using the first input `nums1 = [1, 2, None, None, 3, 4, None, None, 5, None, None]`.
+Here is a step-by-step explanation of how the implemented code works using the first input `nums1 = [1, 2, None, None, 3, 4, None, None, 5, None, None]`.
 
 #### 1. Building the Binary Tree
 
