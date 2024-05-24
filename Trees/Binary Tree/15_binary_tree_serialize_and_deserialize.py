@@ -6,27 +6,47 @@ class TreeNode:
 
 class BinaryTree:
 
-    def maxPathSum(self, root: 'TreeNode') -> int:
-        res = [root.val]
-
-        # Return max path sum without split
-        def dfs(root):
-            if not root:
-                return 0
-
-            leftMax = dfs(root.left)
-            rightMax = dfs(root.right)
-            leftMax = max(leftMax, 0)
-            rightMax = max(rightMax, 0)
-
-            # Compute max path sum with split
-            res[0] = max(res[0], root.val + leftMax + rightMax)
-
-            return root.val + max(leftMax, rightMax)
+    def serialize(self, root: 'TreeNode'):
+        """Encodes a tree to a single string.
         
-        dfs(root)
+        :type root: TreeNode
+        :rtype: str
+        """
+        res = []
 
-        return res[0]
+        def preorder_dfs(node):
+            if not node:
+                res.append("Null")
+                return
+            res.append(str(node.val))
+            preorder_dfs(node.left)
+            preorder_dfs(node.right)
+
+        preorder_dfs(root)
+
+        return ",".join(res)
+
+    def deserialize(self, data):
+        """Decodes your encoded data to tree.
+        
+        :type data: str
+        :rtype: TreeNode
+        """
+        vals = data.split(",")
+        self.i = 0
+
+        def preorder_dfs():
+            if vals[self.i] == "Null":
+                self.i += 1
+                return None
+            node = TreeNode(int(vals[self.i]))
+            self.i += 1
+            node.left = preorder_dfs()
+            node.right = preorder_dfs()
+            
+            return node
+        
+        return preorder_dfs()
         
 
 
@@ -59,16 +79,6 @@ def buildBT(nums):
 
 if __name__ == "__main__":
     
-    binary_tree = BinaryTree()
+    serializer = BinaryTree()
 
-    nums1 = [1, 2, 3]
-    # Building BinaryTree
-    root1 = buildBT(nums1)
-    result1 = binary_tree.maxPathSum(root1)
-    print(result1)
-
-    nums2 = [-10, 9, 20, None, None, 15, 7]
-    # Building BinaryTree
-    root2 = buildBT(nums2)
-    result2 = binary_tree.maxPathSum(root2)
-    print(result2)
+    deserializer = BinaryTree()
