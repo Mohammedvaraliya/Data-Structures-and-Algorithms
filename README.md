@@ -2,6 +2,7 @@
 
 - [Stack](#stack)
 - [Queue](#queue)
+- [Heap (Priority Queue)](#heap-priority-queue)
 - [Linked List](#linked-list)
   - [Singly Linked List](#singly-linked-list)
   - [Doubly Linked List](#doubly-linked-list)
@@ -49,6 +50,13 @@
 | 04  | Queue Data Structure : Producer Consumer Problem                     | [Solution](./Queue/03_queue_producer_consumer.py)   |
 | 05  | Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue | [Solution](./Queue/04_queue_print_binary_number.py) |
 | 00  | Readme                                                               | [Problem Statements](./Queue/README.md)             |
+
+## Heap (Priority Queue)
+
+| #   | Title                        | Solution                                                               |
+| --- | ---------------------------- | ---------------------------------------------------------------------- |
+| 01  | Find Median from Data Stream | [Solution](<./Heap Priority Queue/01_find_median_from_data_stream.py>) |
+| 00  | Readme                       | [Problem Statements](<./Heap Priority Queue/README.md>)                |
 
 ## Linked List
 
