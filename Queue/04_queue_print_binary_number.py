@@ -29,7 +29,8 @@ def produce_binary_numbers(n):
 
     for i in range(n):
         front = numbers_queue.front()
-        print(f"The {i} number is : ",front)
+        # Index number starts from 0
+        print(f"The {i+1} number is : ",front)
         numbers_queue.enqueue(front + "0")
         numbers_queue.enqueue(front + "1")
 
@@ -38,5 +39,5 @@ def produce_binary_numbers(n):
 
 
 if __name__ == "__main__":
-    produce_binary_numbers(10)
+    produce_binary_numbers(14)
 
