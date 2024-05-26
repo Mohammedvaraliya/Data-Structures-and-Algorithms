@@ -23,12 +23,10 @@ if __name__ == "__main__":
 
     nums1 = [1,1,1,2,2,3]
     k1 = 2
-
-    nums2 = [1]
-    k2 = 1
-    
     X = topKFrequent(nums1, k1)
     print(X)
 
+    nums2 = [1]
+    k2 = 1
     Y = topKFrequent(nums2, k2)
     print(Y)
