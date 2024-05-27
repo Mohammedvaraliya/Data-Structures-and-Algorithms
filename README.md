@@ -9,6 +9,7 @@
   - [Circular Linked List](#circular-linked-list)
 - [Iteration & Recursion](#iteration--recursion)
 - [Arrays](#arrays)
+- [Backtracking](#backtracking)
 - [Hash Table](#hash-table)
 - [Search](#search)
   - [Linear Search](#linear-search)
@@ -142,6 +143,13 @@
 | 15  | Unique Number of Occurrences                          | [Solution](./Arrays/20_unique_number_of_occurence.py)    |
 | 16  | Split the Array                                       | [Solution](./Arrays/21_split_the_array.py)               |
 | 00  | Readme                                                | [Problem Statements](./Arrays/README.md)                 |
+
+## Backtracking
+
+| #   | Title           | Solution                                         |
+| --- | --------------- | ------------------------------------------------ |
+| 01  | Combination Sum | [Solution](./Backtracking/01_combination_sum.py) |
+| 00  | Readme          | [Problem Statements](./Backtracking/README.md)   |
 
 ## Hash Table
 
