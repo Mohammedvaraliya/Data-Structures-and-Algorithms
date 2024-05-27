@@ -39,6 +39,54 @@ Output: []
 
 **Explaination**
 
-**Efficiency:**
+#### 1. Initialize the Result List
 
-- This solution has a time complexity of $O(2^t)$ for `addNum` where t is the target value.
+- **Purpose**: To store all the unique combinations that sum up to the target.
+- **Action**: Create an empty list `res` to store the result combinations.
+
+#### 2. Depth-First Search (DFS) Function
+
+- **Purpose**: To explore all possible combinations of the candidates that sum up to the target.
+- **Action**:
+  - Define a nested helper function `dfs` that takes three parameters:
+    - `i`: the current index in the candidates list.
+    - `cur`: the current combination of numbers being considered.
+    - `total`: the current sum of the numbers in the combination.
+
+#### 3. Base Cases in DFS
+
+- **Purpose**: To determine when to stop the recursion.
+- **Action**:
+  - **Combination Found**: If `total` equals `target`, add a copy of `cur` to the result list `res` and return.
+  - **Exceeded Limits**: If `i` is out of bounds (greater than or equal to the length of candidates) or `total` exceeds `target`, return to backtrack.
+
+#### 4. Recursion in DFS
+
+- **Purpose**: To explore the inclusion and exclusion of each candidate number.
+- **Action**:
+  - **Include the Current Candidate**:
+    - Append the current candidate (candidates[i]) to `cur`.
+    - Recursively call `dfs` with the same index `i` (since the same number can be used multiple times) and update the `total` by adding the current candidate's value.
+  - **Exclude the Current Candidate**:
+    - Remove the last number added to `cur` to backtrack.
+    - Recursively call `dfs` with the next index `i + 1` to explore the next candidate.
+
+#### 5. Call DFS from the Main Function
+
+- **Purpose**: To initiate the recursive exploration.
+- **Action**: Start the DFS with the initial index `0`, an empty list `cur`, and a `total` of `0`.
+
+#### 6. Return the Result List
+
+- **Purpose**: To provide the final list of combinations that sum up to the target.
+- **Action**: Return the result list `res` containing all valid combinations.
+
+### Example Usage
+
+- Demonstrates the usage of the `combinationSum` function by creating an instance of the `Solution` class.
+- Calls the `combinationSum` function with different sets of candidates and targets.
+- Prints the results to verify the correct combinations are found.
+
+### Efficiency
+
+- The time complexity of the solution is $O(2^t)$, where `t` is the target value. This accounts for the exponential number of possible combinations that can be formed with the given candidates.
