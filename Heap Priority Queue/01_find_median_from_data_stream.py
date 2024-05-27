@@ -9,7 +9,7 @@ class MedianFinder:
 
 
     def addNum(self, num: int) -> None:
-        # Adding the num in maxheap by multiplying it with -1
+        # Adding the num in maxheap by multiplying it with -1 because python doesn't implement maxheap bydefault
         heapq.heappush(self.small, -1 * num)
 
         # Make sure every num(element) in small heap is <= every num(element) in large heap
