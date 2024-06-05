@@ -149,6 +149,7 @@
 | #   | Title           | Solution                                         |
 | --- | --------------- | ------------------------------------------------ |
 | 01  | Combination Sum | [Solution](./Backtracking/01_combination_sum.py) |
+| 02  | Word Search     | [Solution](./Backtracking/02_word_search.py)     |
 | 00  | Readme          | [Problem Statements](./Backtracking/README.md)   |
 
 ## Hash Table
