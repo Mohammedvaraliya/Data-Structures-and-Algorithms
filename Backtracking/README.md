@@ -81,12 +81,47 @@ Output: []
 - **Purpose**: To provide the final list of combinations that sum up to the target.
 - **Action**: Return the result list `res` containing all valid combinations.
 
-### Example Usage
+#### Example Usage
 
 - Demonstrates the usage of the `combinationSum` function by creating an instance of the `Solution` class.
 - Calls the `combinationSum` function with different sets of candidates and targets.
 - Prints the results to verify the correct combinations are found.
 
-### Efficiency
+#### Efficiency
 
 - The time complexity of the solution is $O(2^t)$, where `t` is the target value. This accounts for the exponential number of possible combinations that can be formed with the given candidates.
+
+### 02. Word Search
+
+[Leetcode Problem URL](https://leetcode.com/problems/word-search/description/)
+
+Given an `m` x `n` grid of characters board and a string word, return true if word exists in the grid.
+
+The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
+
+![example 1](https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg)
+
+```bash
+Example 1:
+
+Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
+Output: true
+```
+
+![example 2](https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg)
+
+```bash
+Example 2:
+
+Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE"
+Output: true
+```
+
+![example 3](https://assets.leetcode.com/uploads/2020/10/15/word3.jpg)
+
+```bash
+Example 3:
+
+Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"
+Output: false
+```
