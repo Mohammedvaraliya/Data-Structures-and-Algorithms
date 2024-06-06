@@ -125,3 +125,76 @@ Example 3:
 Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"
 Output: false
 ```
+
+**Explaination**
+
+The problem can be solved using Depth-First Search (DFS) with backtracking. The idea is to start from each cell in the grid and explore all possible paths to check if the word can be formed.
+
+#### Steps
+
+Sure! Here's a detailed explanation of the solution for the Word Search problem, step by step, along with an analysis of its efficiency.
+
+### Problem Summary
+
+Given an `m` x `n` grid of characters (`board`) and a string (`word`), determine if the word can be constructed from letters of sequentially adjacent cells in the grid. Adjacent cells can be horizontally or vertically neighboring, and the same letter cell may not be used more than once.
+
+### Approach
+
+The problem can be solved using Depth-First Search (DFS) with backtracking. The idea is to start from each cell in the grid and explore all possible paths to check if the word can be formed.
+
+### Steps
+
+1. **Initialize Variables:**
+
+   - `rows` and `cols` store the dimensions of the board.
+   - `path` is a set to keep track of visited cells during the DFS to avoid reusing the same cell.
+
+2. **Define the DFS Function:**
+
+   - The `dfs` function takes the current cell position `(row, col)` and the current index `i` of the word we are matching.
+   - Base Case: If `i` equals the length of the word, it means we have successfully matched all characters in the word, so we return `True`.
+   - Boundary and Validity Check: If the current cell is out of bounds, or the character at the current cell does not match the current character of the word, or the cell has already been visited, return `False`.
+   - Mark the current cell as visited by adding it to `path`.
+   - Recursively call `dfs` for the neighboring cells (down, up, right, left).
+   - Unmark the current cell by removing it from `path` before returning from the function.
+
+3. **Start DFS from Each Cell:**
+
+   - Iterate through each cell in the grid.
+   - If `dfs` returns `True` for any starting cell, return `True` immediately as the word exists in the grid.
+
+4. **Return False if Word Not Found:**
+   - If none of the cells lead to the formation of the word, return `False`.
+
+#### Explanation with Examples
+
+**Example 1:**
+
+- **Input:** `board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]`, `word = "ABCCED"`
+- **Output:** `True`
+- **Explanation:** The path "ABCCED" can be formed from the board starting from cell (0, 0) and following the path right → right → down → left → down.
+
+**Example 2:**
+
+- **Input:** `board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]`, `word = "SEE"`
+- **Output:** `True`
+- **Explanation:** The path "SEE" can be formed from the board starting from cell (2, 1) and following the path right → right.
+
+**Example 3:**
+
+- **Input:** `board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]`, `word = "ABCB"`
+- **Output:** `False`
+- **Explanation:** There is no path in the board that forms the word "ABCB" without reusing a cell.
+
+#### Efficiency Analysis
+
+- **Time Complexity:**
+
+  - The worst-case time complexity is $(O(m \times n \times 4^L))$, where `m` is the number of rows, `n` is the number of columns, and `L` is the length of the word.
+  - This is because in the worst case, each cell initiates a DFS that explores all 4 possible directions up to the length of the word.
+
+- **Space Complexity:**
+  - The space complexity is $(O(L))$, where `L` is the length of the word.
+  - This space is used by the recursion stack and the `path` set to keep track of visited cells.
+
+This solution effectively combines DFS with backtracking to explore all possible paths in the grid, ensuring that the word is found if it exists.
