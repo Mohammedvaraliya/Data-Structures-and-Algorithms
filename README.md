@@ -28,6 +28,7 @@
   - [General Trees](#general-trees)
   - [Binary Trees](#binary-trees)
   - [Binary Search Trees](#binary-search-trees)
+- [Trie Data Structures](#trie-data-structures)
 - [Graph Data Structure](#graph-data-structure)
 
 ## Stack
