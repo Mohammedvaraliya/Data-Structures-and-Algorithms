@@ -326,6 +326,13 @@
 | 12  | Binary Search Trees: Kth Smallest Element                           | [Solution](./Trees/Binary%20Search%20Tree/12_binary_search_tree_kth_smallest_element.py)            |
 | 00  | Readme                                                              | [Problem Statements](./Trees/Binary%20Search%20Tree/README.md)                                      |
 
+## Trie Data Structures
+
+| #   | Title                        | Solution                                             |
+| --- | ---------------------------- | ---------------------------------------------------- |
+| 01  | Implement Trie (Prefix Tree) | [Solution](./Tries/01_implement_trie_prefix_tree.py) |
+| 00  | Readme                       | [Problem Statements](./Tries/README.md)              |
+
 ## Graph Data Structure
 
 | #   | Title                | Solution                                       |
