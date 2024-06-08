@@ -44,7 +44,7 @@ class WordDictionary:
         return dfs(j=0, root=self.root)
 
 
-        
+
 
 if __name__ == "__main__":
 
