@@ -329,10 +329,11 @@
 
 ## Trie Data Structures
 
-| #   | Title                        | Solution                                             |
-| --- | ---------------------------- | ---------------------------------------------------- |
-| 01  | Implement Trie (Prefix Tree) | [Solution](./Tries/01_implement_trie_prefix_tree.py) |
-| 00  | Readme                       | [Problem Statements](./Tries/README.md)              |
+| #   | Title                                      | Solution                                                         |
+| --- | ------------------------------------------ | ---------------------------------------------------------------- |
+| 01  | Implement Trie (Prefix Tree)               | [Solution](./Tries/01_implement_trie_prefix_tree.py)             |
+| 02  | Design Add and Search Words Data Structure | [Solution](./Tries/02_design_add_search_words_data_structure.py) |
+| 00  | Readme                                     | [Problem Statements](./Tries/README.md)                          |
 
 ## Graph Data Structure
 
