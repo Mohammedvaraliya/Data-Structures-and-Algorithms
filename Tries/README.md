@@ -217,3 +217,107 @@ The `dfs` function is a helper function for recursive DFS:
 - **Search Method:**
   - **Time Complexity:** In the worst case, it can be $(O(m \times 26^m))$, where $(m)$ is the length of the word. This is because for each dot `'.'`, it may need to check all possible 26 child nodes, resulting in a combinatorial explosion.
   - **Space Complexity:** $(O(m))$ for the recursion stack in the worst case where $(m)$ is the length of the word.
+
+### 03. Word Search II
+
+[Leetcode Problem URL](https://leetcode.com/problems/word-search-ii/description/)
+
+Given an `m x n` `board` of characters and a list of strings `words`, return all words on the board.
+
+Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
+
+![problem1](https://assets.leetcode.com/uploads/2020/11/07/search1.jpg)
+
+```bash
+Example 1:
+
+Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]
+Output: ["eat","oath"]
+```
+
+![problem2](https://assets.leetcode.com/uploads/2020/11/07/search2.jpg)
+
+```bash
+Example 2:
+
+Input: board = [["a","b"],["c","d"]], words = ["abcb"]
+Output: []
+```
+
+```
+obj = Solution()
+
+board1 = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]]
+words1 = ["oath","pea","eat","rain"]
+res1 = obj.findWords(board=board1, words=words1)
+print(res1)
+
+board2 = [["a","b"],["c","d"]]
+word2 = ["abcb"]
+res2 = obj.findWords(board=board2, words=word2)
+print(res2)
+```
+
+**Explaination**
+
+To solve this problem, we utilize a combination of a Trie (prefix tree) and Depth-First Search (DFS). The Trie helps efficiently check if the prefixes of the words are present while performing the DFS.
+
+#### TrieNode Class
+
+The `TrieNode` class represents each node in the Trie. Each node contains:
+
+- A dictionary `children` to store the children nodes.
+- A boolean `endOfWord` to indicate if the node marks the end of a word.
+- An integer `refs` to keep track of the number of references to this node, which helps with optimization during word removal.
+
+#### Solution Class
+
+The `Solution` class manages the Trie and implements the `findWords` method to find all valid words on the board.
+
+1. **Initialization**
+
+The `Solution` class initializes the root of the Trie.
+
+```python
+class Solution:
+    def __init__(self) -> None:
+        self.root = TrieNode()
+```
+
+2. **FindWords Method**
+
+The `findWords` method populates the Trie with the given words and uses DFS to find all valid words on the board.
+
+- **Adding Words to Trie**
+
+```python
+def findWords(self, board: list[list[str]], words: list[str]) -> list[str]:
+    root = self.root
+    for w in words:
+        root.addWord(w)
+```
+
+- **DFS Method**
+
+The `dfs` function performs the Depth-First Search on the board to find all valid words. It:
+
+- Checks boundary conditions and if the current cell has already been visited or is not in the Trie.
+- Adds the cell to the visited set.
+- Checks if the current node marks the end of a word. If yes, it adds the word to the result set and removes it from the Trie.
+- Recursively explores all four possible directions (up, down, left, right).
+- Removes the cell from the visited set.
+
+- **Iterate Through Board**
+
+Finally, the method iterates through each cell in the board and initiates a DFS from that cell.
+
+### Efficiency Analysis
+
+- **Adding Words to Trie**
+
+  - **Time Complexity:** $(O(N \cdot M))$, where $(N)$ is the number of words and $(M)$ is the maximum length of a word. Each character of each word is processed once.
+  - **Space Complexity:** $(O(N \cdot M))$, where $(N)$ is the number of words and $(M)$ is the maximum length of a word. This is the space required to store the Trie.
+
+- **DFS Search**
+  - **Time Complexity:** $(O(m \cdot n \cdot 4^L))$, where $(m)$ and $(n)$ are the dimensions of the board and $(L)$ is the maximum length of a word. Each cell initiates a DFS that explores all possible directions.
+  - **Space Complexity:** $(O(L))$, where $(L)$ is the maximum length of a word. This is the space required for the recursion stack during DFS.
