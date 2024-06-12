@@ -341,4 +341,5 @@
 | #   | Title                | Solution                                       |
 | --- | -------------------- | ---------------------------------------------- |
 | 01  | Graph Data Structure | [Solution](./Graph/01_graph_data_structure.py) |
+| 01  | Number of Islands    | [Solution](./Graph/02_number_of_island.py)     |
 | 00  | Readme               | [Problem Statements](./Graph/README.md)        |

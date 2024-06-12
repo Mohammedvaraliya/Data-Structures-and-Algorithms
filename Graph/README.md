@@ -9,17 +9,17 @@ edges that connect them.
 ```Bash
 Example Graph:
 
-                />  Paris
-                /     |     \
-            /      |      \
-            /       |       \
-            /        |        \> New York
-    Mumbai         |         />         \
-            \        |        /            \
-            \       |       /              \
-            \      |      /                \
-                \     |>    /                  \> Toronto
-                \>  Dubai
+            />  Paris
+           /     |     \
+          /      |      \
+         /       |       \
+        /        |        \> New York
+Mumbai           |         />         \
+        \        |        /            \
+         \       |       /              \
+          \      |      /                \
+           \     |>    /                  \> Toronto
+            \>  Dubai
 
 
 The Routes:
