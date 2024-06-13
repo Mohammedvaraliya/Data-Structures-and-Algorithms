@@ -134,7 +134,7 @@ print(obj.numIslands(grid=grid3))
 4. **Return Result**:
    - After traversing the entire grid, return the number of islands.
 
-### Efficiency Analysis
+#### Efficiency Analysis
 
 - **Time Complexity**:
 
