@@ -80,4 +80,68 @@ Input: grid = [
 Output: 3
 ```
 
+```
+obj = Solution()
+
+grid1 = [
+    ["1","1","1","1","0"],
+    ["1","1","0","1","0"],
+    ["1","1","0","0","0"],
+    ["0","0","0","0","0"]
+]
+print(obj.numIslands(grid=grid1))
+
+grid2 = [
+    ["1","1","0","0","0"],
+    ["1","1","0","0","0"],
+    ["0","0","1","0","0"],
+    ["0","0","0","1","1"]
+]
+print(obj.numIslands(grid=grid2))
+
+grid3 = [
+    ["1","1","1"],
+    ["0","1","0"],
+    ["1","1","1"]
+]
+print(obj.numIslands(grid=grid3))
+```
+
 **Explaination**
+
+1. **Initialize Variables**:
+
+   - Check if the grid is empty. If it is, return 0.
+   - Initialize variables `rows` and `cols` to store the number of rows and columns of the grid, respectively.
+   - Create a set `visit` to keep track of visited cells.
+   - Initialize `islands` to 0 to count the number of islands.
+
+2. **Breadth-First Search (BFS) Function**:
+
+   - Define a BFS function `bfs` which takes `row` and `col` as arguments.
+   - Use a deque `q` to implement the BFS queue.
+   - Add the initial cell `(row, col)` to `visit` and `q`.
+   - While the queue is not empty, pop a cell from the queue and check its four possible neighbors (up, down, left, right).
+   - If a neighbor is within bounds, is land (`'1'`), and has not been visited, add it to the queue and mark it as visited.
+
+3. **Main Loop**:
+
+   - Loop through each cell in the grid.
+   - If a cell is land and has not been visited, it is the start of a new island.
+   - Call the BFS function to mark all cells connected to this cell.
+   - Increment the `islands` counter.
+
+4. **Return Result**:
+   - After traversing the entire grid, return the number of islands.
+
+### Efficiency Analysis
+
+- **Time Complexity**:
+
+  - The grid has `m` rows and `n` columns.
+  - Each cell is visited once, and each BFS operation considers up to 4 neighbors per cell.
+  - The time complexity is $(O(m \times n))$ because we traverse every cell in the grid once.
+
+- **Space Complexity**:
+  - The space complexity is also $(O(m \times n))$ due to the `visit` set and the queue used in BFS, which in the worst case can store all cells in the grid.
+  - Additionally, the recursive stack of BFS can go up to the size of the grid in the worst case.
