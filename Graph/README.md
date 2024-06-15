@@ -145,3 +145,124 @@ print(obj.numIslands(grid=grid3))
 - **Space Complexity**:
   - The space complexity is also $(O(m \times n))$ due to the `visit` set and the queue used in BFS, which in the worst case can store all cells in the grid.
   - Additionally, the recursive stack of BFS can go up to the size of the grid in the worst case.
+
+### 03. Clone Graph
+
+[Leetcode Problem URL](https://leetcode.com/problems/clone-graph/)
+
+Given a node in a connected undirected graph, return a deep copy of the graph.
+
+Each node in the graph contains an integer value and a list of its neighbors.
+
+```bash
+class Node {
+    public int val;
+    public List<Node> neighbors;
+}
+```
+
+The graph is shown in the test cases as an adjacency list. An adjacency list is a mapping of nodes to lists, used to represent a finite graph. Each list describes the set of neighbors of a node in the graph.
+
+For simplicity, nodes values are numbered from 1 to n, where n is the total number of nodes in the graph. The index of each node within the adjacency list is the same as the node's value (1-indexed).
+
+The input node will always be the first node in the graph and have 1 as the value.
+
+```bash
+Example 1:
+
+    1 ----------- 2
+    |             |
+    |             |
+    |             |
+    |             |
+    4 ----------- 3
+
+Input: adjList = [[2, 4], [1, 3], [2, 4], [1, 3]]
+Output: [[2, 4], [1, 3], [2, 4], [1, 3]]
+
+Explanation: There are 3 nodes in the graph.
+Node 1: val = 1 and neighbors = [2, 4].
+Node 2: val = 2 and neighbors = [1, 3].
+Node 3: val = 3 and neighbors = [2, 4].
+Node 4: val = 4 and neighbors = [1, 3].
+```
+
+![Image 2](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/96c7fb34-26e8-42e0-5f5d-61b8b8c96800/public)
+
+```bash
+Example 2:
+
+Input: adjList = [[]]
+Output: [[]]
+
+Explanation: The graph has one node with no neighbors.
+```
+
+```bash
+Example 3:
+
+Input: adjList = []
+Output: []
+
+Explanation: The graph is empty.
+```
+
+**Explaination**
+
+First, we define the `Node` class to represent a node in the graph.
+
+```python
+class Node:
+    def __init__(self, val=0, neighbors=None):
+        self.val = val
+        self.neighbors = neighbors if neighbors is not None else []
+```
+
+#### Solution Class
+
+The `Solution` class contains the `cloneGraph` method to clone the graph.
+
+1. **Initialization**:
+
+   - `oldToNew` is a dictionary(HashMap) that maps original nodes to their copies.
+
+2. **DFS Function**:
+
+   - This is a helper function that performs a Depth-First Search (DFS) to traverse and copy the graph.
+   - If the node has already been copied (exists in `oldToNew`), it returns the copied node to avoid cycles.
+   - Otherwise, it creates a new node (`copy`), adds it to the `oldToNew` dictionary, and then recursively copies all the neighbors.
+
+3. **Clone Graph**:
+
+   - Starts the cloning process by calling the `dfs` function with the input node if the node is not `None`.
+
+#### Creating the Graph from Adjacency List
+
+The `createGraph` function converts an adjacency list into a graph represented by `Node` objects.
+
+1. **Check for Empty List**:
+
+   - If the adjacency list is empty, return `None`.
+
+2. **Create Nodes**:
+
+   - Create a list of Node objects where each node's value corresponds to its index (1-indexed). Nodes' values are numbered from 1 to n, where n is the total number of nodes in the graph. The index of each node within the adjacency list matches the node's value (1-indexed).
+   - For example, if the graph has a total of 5 nodes (n=5), the values of the nodes should be 1, 2, 3, 4, and 5. Each node will have its respective neighbors (adjacent nodes) as defined in the adjacency list.
+
+3. **Assign Neighbors**:
+
+   - For each node, populate its `neighbors` list using the adjacency list.
+
+4. **Return Start Node**:
+   - Return the first node in the list as the starting node of the graph.
+
+#### Efficiency Analysis
+
+- **Time Complexity**:
+
+  - The time complexity is $O(V + E)$, where V is the number of vertices (nodes) and E is the number of edges.
+  - Each node and each edge is visited once during the DFS traversal.
+
+- **Space Complexity**:
+
+  - The space complexity is $O(V)$ due to the space needed to store the copy of each node and the recursion stack.
