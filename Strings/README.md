@@ -1,6 +1,5 @@
 # Data-Structures And Algorithms
 
-
 ### 01. Reverse String
 
     Reverse String
@@ -8,13 +7,13 @@
 
     Example:
             s = "1234567890"
-    
+
     Traverse the string and push() all the char one by one to the stack till s will empty.
     And
     pop() all the char from stack, so we get our reversed string
 
          "0987654321"
-    
+
 ### 02. Count Consonants in String
 
     Count Consonants in String
@@ -25,10 +24,10 @@
 
     Example:
             string_2 = "varaliya Mohammed"
-        
+
         Output:
                 9
-        
+
         Because there is 9 char present in the string which is consonent.
 
             string_2 = "abc de"
@@ -124,7 +123,7 @@ Example 2:
 
 Input: s = "rat", t = "car"
 Output: false
-```        
+```
 
 ### 07. String Processing: Is Palindrome Permutation
 
@@ -145,7 +144,7 @@ Output: false
 
     String Processing: Check Permutation
 
-    Given two strings, write a method to decide if 
+    Given two strings, write a method to decide if
     one is a prmutation of the other.
 
     Example:
@@ -161,9 +160,9 @@ Output: false
 
     String Processing: Is Unique
 
-    Implement an algorithm to determine if a string 
+    Implement an algorithm to determine if a string
     has all unique characters.
-    Example:    
+    Example:
                 unique_str_1 = 'ABCdefg'
                 non_unique_str_1 = 'non unique STR'
 
@@ -172,7 +171,7 @@ Output: false
     String Processing: Integer to String
 
     You are given some integer as input, (i.e. ... -3, -2, -1, 0, 1, 2, 3 ...)
-    Convert the integer you are given to a string. 
+    Convert the integer you are given to a string.
     Do not make use of the built-in "str" function.
 
     Examples:
@@ -197,9 +196,9 @@ Example:
     "123" : 123
 
     "-12332" : -12332
-    
+
     "554" : 554
-    
+
     etc.
 
 ord('0') = 48
@@ -233,7 +232,7 @@ Return the integer as the final result.
 Note:
     Only the space character ' ' is considered a whitespace character.
     Do not ignore any characters other than the leading whitespace or the rest of the string after the digits.
- 
+
 
 Example 1:
     Input: s = "42"
@@ -353,7 +352,7 @@ There may exists other ways to achive this answer too.
 [Leetcode Problem URL](https://leetcode.com/problems/minimum-window-substring/)
 
 ```bash
-Given two strings s and t of lengths m and n respectively, return the minimum window 
+Given two strings s and t of lengths m and n respectively, return the minimum window
 substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
 
 The testcases will be generated such that the answer is unique.
@@ -409,7 +408,7 @@ The only letter that appears twice is 'd' so we return 'd'.
 [Leetcode Problem URL](https://leetcode.com/problems/first-unique-character-in-a-string/)
 
 ```bash
-Given a string s, find the first non-repeating character in it and return its index. 
+Given a string s, find the first non-repeating character in it and return its index.
 If it does not exist, return -1.
 
 Example 1:
@@ -430,7 +429,7 @@ Output: -1
 [Leetcode Problem URL](https://leetcode.com/problems/first-unique-character-in-a-string/)
 
 ```bash
-Given two strings needle and haystack, return the index of the first occurrence of `needle` in `haystack`, 
+Given two strings needle and haystack, return the index of the first occurrence of `needle` in `haystack`,
 or `-1` if `needle` is not part of `haystack`.
 
 Example 1:

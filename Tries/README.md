@@ -45,7 +45,7 @@ obj.insert(word2)
 print(obj.search(word2)) # True because the word "app" has been inserted in the Trie object
 ```
 
-**explanation**
+**Explanation**
 
 #### TrieNode Class
 
@@ -170,7 +170,7 @@ print(obj.search(".ad")) # True because ".ad" matches "bad", "dad", or "mad"
 print(obj.search("b..")) # True because "b.." matches "bad"
 ```
 
-**explanation**
+**Explanation**
 
 #### TrieNode Class
 
@@ -258,7 +258,7 @@ res2 = obj.findWords(board=board2, words=word2)
 print(res2)
 ```
 
-**explanation**
+**Explanation**
 
 To solve this problem, we utilize a combination of a Trie (prefix tree) and Depth-First Search (DFS). The Trie helps efficiently check if the prefixes of the words are present while performing the DFS.
 

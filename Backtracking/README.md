@@ -37,7 +37,7 @@ Input: candidates = [2], target = 1
 Output: []
 ```
 
-**explanation**
+**Explanation**
 
 #### 1. Initialize the Result List
 
@@ -126,13 +126,13 @@ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "
 Output: false
 ```
 
-**explanation**
+**Explanation**
 
 The problem can be solved using Depth-First Search (DFS) with backtracking. The idea is to start from each cell in the grid and explore all possible paths to check if the word can be formed.
 
 #### Steps
 
-Sure! Here's a detailed explanation of the solution for the Word Search problem, step by step, along with an analysis of its efficiency.
+Sure! Here's a detailed Explanation of the solution for the Word Search problem, step by step, along with an analysis of its efficiency.
 
 ### Problem Summary
 

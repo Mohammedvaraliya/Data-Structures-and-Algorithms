@@ -32,7 +32,7 @@ The Routes:
     ("New York", "Toronto")
 ```
 
-**explanation**
+**Explanation**
 
 There is edges and the nodes in the graph data structure.
 Mumbai, Dubai, Paris, New York and Toronto is the Nodes.
@@ -107,7 +107,7 @@ grid3 = [
 print(obj.numIslands(grid=grid3))
 ```
 
-**explanation**
+**Explanation**
 
 1. **Initialize Variables**:
 
@@ -207,7 +207,7 @@ Output: []
 Explanation: The graph is empty.
 ```
 
-**explanation**
+**Explanation**
 
 First, we define the `Node` class to represent a node in the graph.
 

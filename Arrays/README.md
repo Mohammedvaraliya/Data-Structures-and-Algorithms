@@ -406,7 +406,7 @@ Output: false
 Explanation: The only possible way to split nums is nums1 = [1,1] and nums2 = [1,1]. Both nums1 and nums2 do not contain distinct elements. Therefore, we return false.
 ```
 
-**explanation**
+**Explanation**
 
 The provided solution tackles the problem of splitting an even-length integer array (nums) into two equal-sized sub-arrays that could potentially fulfill the conditions: nums1 and nums2 having distinct elements. While we don't explicitly create these sub-arrays in the code, the logic ensures that a valid split is possible.
 

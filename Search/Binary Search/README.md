@@ -1,6 +1,5 @@
 # Data-Structures And Algorithms
 
-
 ### 01. Binary search
 
     Binary search
@@ -8,7 +7,7 @@
 
     In this approach, the element is always searched in the middle of a portion of an array.
 
-    Binary search can be implemented only on a sorted list of items. If the elements are not sorted already, 
+    Binary search can be implemented only on a sorted list of items. If the elements are not sorted already,
     we need to sort them first.
 
     Example:
@@ -18,7 +17,7 @@
 
                 Low=0   <-- index number
                 High=8  <-- index number
-                Mid=4   <-- index number 
+                Mid=4   <-- index number
 
                     [2,	5,	6,	8,	10,	11,	13,	15,	16]
 
@@ -27,7 +26,7 @@
                 High=Mid-1
 
                 Low=0
-                High=3 
+                High=3
                 Mid=1
 
                     [2,	5,	6,	8,	10,	11,	13,	15,	16]
@@ -59,7 +58,7 @@
     Binary Search: Find Fixed Point
     A fixed point in an array "A" is an index "i" such that A[i] is equal to "i".
 
-    Given an array of n distinct integers sorted in ascending order, write a function that returns a "fixed point" in the array. If there is not a 
+    Given an array of n distinct integers sorted in ascending order, write a function that returns a "fixed point" in the array. If there is not a
     fixed point return "None".
 
     Problem is to find only one fixed point.
@@ -91,7 +90,7 @@
 ### 05. Binary Search: Find First Entry in List with Duplicates
 
     Binary Search: Find First Entry in List with Duplicates
-    writing a function that takes an array of sorted integers and a key and returns the index of the first 
+    writing a function that takes an array of sorted integers and a key and returns the index of the first
     occurrence of that key from the array.
 
     Example:
@@ -112,13 +111,13 @@
 ### 07. Binary Search: Integer Square Root
 
     Binary Search: Integer Square Root
-    write a function that takes a non-negative integer and returns the largest integer whose square is less 
+    write a function that takes a non-negative integer and returns the largest integer whose square is less
     than or equal to the integer given:
 
     Example:
 
         Assume input is integer 300.
-            
+
         Then the expected output of the function should be 17 since 17 squared is 289 which is strictly less than 300. Note that 18 squared is 324 which is strictly greater than 300, so the number 17 is the correct response.
 
 ### 08. Binary Search: Cyclically Shifted Array
@@ -156,7 +155,7 @@ Explanation: The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
 Example 3:
 Input: nums = [11,13,15,17]
 Output: 11
-Explanation: The original array was [11,13,15,17] and it was rotated 4 times. 
+Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 ```
 
 ### 09. Binary Search: Find Index Of All Occurances
@@ -180,7 +179,7 @@ index number starts from 0
 
 Three 15 are there in the data list at respective index number
 
-                Indices of occurences of number 15 are [5, 6, 7] 
+                Indices of occurences of number 15 are [5, 6, 7]
 ```
 
 ### 10. Binary Search: Search in Rotated Sorted Array

@@ -1,6 +1,6 @@
 # Data-Structures And Algorithms
 
-##### Note. The name of function which is same but _ before name is helper function.
+##### Note. The name of function which is same but \_ before name is helper function.
 
 ### 01. Binary Search Trees: Insertion
 
@@ -12,13 +12,13 @@
                   8
                 /    \
                3       10
-             /   \      
-            1      6    
+             /   \
+            1      6
 
     insert a Node with data 4
-    it will start from root node 
+    it will start from root node
     is the data is less than or greater than root node.
-    
+
     4 < 8 - 4 is less than 8
 
     move left
@@ -35,19 +35,19 @@
 
     move left
 
-    if no node in the left 
+    if no node in the left
 
     simply, insert the node over there
 
     final Binary Search Tree will be:
-                   
+
                    8
                 /    \
                3       10
-             /   \      
+             /   \
             1      6
                  /
-               4    
+               4
 
 ### 02. Binary Search Trees: Searching
 
@@ -60,8 +60,8 @@
                    8
                 /    \
                3       10
-             /   \      
-            1      6 
+             /   \
+            1      6
 
     Search(6):
 
@@ -73,9 +73,9 @@
     discard the right part of root node cause we know our node will present on the left side.
 
                   8
-                /   
-               3    
-             /   \  
+                /
+               3
+             /   \
             1      6
 
     move left
@@ -87,9 +87,9 @@
     discard the left part of cur node cause we know our node will present on the right side.
 
                   8
-                /   
-               3    
-                 \  
+                /
+               3
+                 \
                    6
 
     move right
@@ -105,22 +105,22 @@
 ### 03. Binary Search Trees: Checking the BST Property
 
     Binary Search Trees: Checking the BST Property
-    Specifically, we will be solving the problem of determining whether or not a given tree we are given as input abides by the so-called binary search tree (BST) property. 
+    Specifically, we will be solving the problem of determining whether or not a given tree we are given as input abides by the so-called binary search tree (BST) property.
 
     The BST property states that every node on the right subtree has to be larger than the current node and every
     node on the left subtree has to be smaller than the current node. Is determines whether a given tree satisfies
     the BST property.
 
     Example:
-    
+
     satisfied property tree:
 
             In-Order Traversal
-    
+
                     8
                 /       \
                3          10
-             /   \       /  \  
+             /   \       /  \
             1      6    9     11
 
             1
@@ -130,13 +130,13 @@
             9
             10
             11
-    
+
     return True
 
     unsatisfied property tree:
 
             In-Order Traversal
-    
+
                     1
                   /   \
                 2       3
@@ -144,7 +144,7 @@
             2
             1
             3
-    
+
     return False
 
 ### 04. Binary Search Trees: Using list
@@ -183,7 +183,7 @@
 
     Note: The Left Side of the Binary Search Tree vlaues should be less than the root node value.
           The Right Side of the Binary Search Tree values should be greater than the root node value.
-          
+
           * For more clarification, please [See the code](./02_binary_search_tree_using_list.py.py)
 
 ### 05. Binary Search Trees: Using list - In-Order-Traversal
@@ -200,12 +200,12 @@
                                                        \
                                                         \
                                                         34
-    
+
     In depth-first traversal: in-order is the traversal algorithm which is used to traverse the tree.
     This methods follows the step
 
     It will first traverse the left sub-tree, then root node, and then right sub tree.
-    
+
     Start from root node i.e 17.
 
     finalList = [1, 4, 9, 17, 18, 20, 23, 34]
@@ -224,12 +224,12 @@
                                                        \
                                                         \
                                                         34
-    
+
     In depth-first traversal: post-order is the traversal algorithm which is used to traverse the tree.
     This methods follows the step
 
     It will first traverse the left sub-tree, then right sub-tree, and then root node.
-    
+
     Start from root node i.e 17.
 
     finalList = [1, 9, 4, 18, 34, 23, 20, 17]
@@ -248,12 +248,12 @@
                                                        \
                                                         \
                                                         34
-    
+
     In depth-first traversal: pre-order is the traversal algorithm which is used to traverse the tree.
     This methods follows the step
 
     It will first traverse the root node, then left sub-tree, and then right sub tree.
-    
+
     Start from root node i.e 17.
 
     finalList = [17, 4, 1, 9, 20, 18, 23, 34]
@@ -283,7 +283,7 @@
     start from root node
     is the 20 less than or greater than root node value
 
-    20 is greater value 
+    20 is greater value
 
     decline the left side of tree and traverse right side
 
@@ -332,7 +332,7 @@
     start from root node
     is the 20 less than or greater than root node value
 
-    20 is greater value 
+    20 is greater value
 
     decline the left side of tree and traverse right side
 
@@ -361,7 +361,6 @@
                                                         \
                                                          34
 
-    
 ### 10. Binary Search Trees: Lowest Common Ancestor of a Binary Search Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
@@ -369,22 +368,22 @@
     Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
 
     According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”!
-  
-  Example 1:
-  ![BST](assets/binarysearchtree_improved.png)
+
+Example 1:
+![BST](assets/binarysearchtree_improved.png)
 
     Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
     Output: 6
     Explanation: The LCA of nodes 2 and 8 is 6.
 
-  Example 2:
-  ![BST](assets/binarysearchtree_improved.png)
+Example 2:
+![BST](assets/binarysearchtree_improved.png)
 
     Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
     Output: 2
     Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
 
-  Example 3:
+Example 3:
 
     Input: root = [2,1], p = 2, q = 1
     Output: 2
@@ -400,17 +399,17 @@
     The left subtree of a node contains only nodes with keys less than the node's key.
     The right subtree of a node contains only nodes with keys greater than the node's key.
     Both the left and right subtrees must also be binary search trees.
-  
-  Example 1:
 
-  ![BST](assets/tree1.jpg)
+Example 1:
+
+![BST](assets/tree1.jpg)
 
     Input: root = [2,1,3]
     Output: true
 
-  Example 2:
+Example 2:
 
-  ![BST](assets/tree2.jpg)
+![BST](assets/tree2.jpg)
 
     Input: root = [5,1,4,null,null,3,6]
     Output: false
@@ -420,20 +419,19 @@
 
 [Leetcode Problem URL](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 
-    Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) of 
+    Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) of
     all the values of the nodes in the tree.
 
-  Example 1:
+Example 1:
 
-  ![BST](assets/kthtree1.jpg)
+![BST](assets/kthtree1.jpg)
 
     Input: root = [3,1,4,null,2], k = 1
     Output: 1
 
-  Example 2:
+Example 2:
 
-  ![BST](assets/kthtree2.jpg)
+![BST](assets/kthtree2.jpg)
 
     Input: root = [5,3,6,2,4,null,null,1], k = 3
     Output: 3
-

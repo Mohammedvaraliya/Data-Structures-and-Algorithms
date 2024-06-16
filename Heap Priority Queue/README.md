@@ -32,7 +32,7 @@ medianFinder.addNum(3);    // arr[1, 2, 3]
 medianFinder.findMedian(); // return 2.0
 ```
 
-**explanation**
+**Explanation**
 
 This solution utilizes two heaps (`small` and `large`) to keep track of the data stream and efficiently find the median.
 
