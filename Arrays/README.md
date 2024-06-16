@@ -1,6 +1,5 @@
 # Data-Structures And Algorithms
 
-
 ### 01. Greedy Algorithms: Optimal Task Assignment
 
     Assign tasks to workers such that the time it takes to complete all tasks is minimized.
@@ -9,7 +8,6 @@
 ### 02. Sorting Algorithms: Intersection of Two Sorted Arrays
 
     Given two arrays, A and B, determine their intersection. That is, what elements are common to A and B?
-
 
 ### 03. Binary Search: Find Closest Number
 
@@ -32,7 +30,7 @@
 
     A fixed point in an array "A" is an index "i" such that A[i] is equal to "i".
 
-    Given an array of n distinct integers sorted in ascending order, write a function that returns a "fixed point" in the array. If there is not a 
+    Given an array of n distinct integers sorted in ascending order, write a function that returns a "fixed point" in the array. If there is not a
     fixed point return "None".
 
     Problem is to find only one fixed point.
@@ -76,10 +74,10 @@
     "array advance game"
 
     you are given an array of non-negative integers. For example:
-    
+
     [3,3,1,0,2,0,1].
 
-    Each number represents the maximum you can advance in the array. 
+    Each number represents the maximum you can advance in the array.
 
     Question:
     Is it possible to advance from the start of the array to the last element?
@@ -127,7 +125,7 @@ Explanation: The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
 Example 3:
 Input: nums = [11,13,15,17]
 Output: 11
-Explanation: The original array was [11,13,15,17] and it was rotated 4 times. 
+Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 ```
 
 ### 10. Arrays: Two Sum Problem
@@ -143,7 +141,7 @@ You may assume that each input would have exactly one solution, and you may not 
 
 You can return the answer in any order.
 
- 
+
 
 Example 1:
 
@@ -318,7 +316,7 @@ Notice that the solution set must not contain duplicate triplets.
 Example 1:
 Input: nums = [-1,0,1,2,-1,-4]
 Output: [[-1,-1,2],[-1,0,1]]
-Explanation: 
+Explanation:
 nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
 nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
 nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
@@ -407,7 +405,8 @@ Input: nums = [1,1,1,1]
 Output: false
 Explanation: The only possible way to split nums is nums1 = [1,1] and nums2 = [1,1]. Both nums1 and nums2 do not contain distinct elements. Therefore, we return false.
 ```
-**Explaination**
+
+**explanation**
 
 The provided solution tackles the problem of splitting an even-length integer array (nums) into two equal-sized sub-arrays that could potentially fulfill the conditions: nums1 and nums2 having distinct elements. While we don't explicitly create these sub-arrays in the code, the logic ensures that a valid split is possible.
 
