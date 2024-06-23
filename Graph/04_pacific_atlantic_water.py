@@ -24,13 +24,13 @@ class Solution:
             dfs(row = row, col = 0, visit = pac, prevHeight = heights[row][0])
             dfs(row = row, col = cols - 1, visit = atl, prevHeight = heights[row][cols - 1])
 
-        res = []
-        for row in range(rows):
-            for col in range(cols):
-                if (row, col) in pac and (row, col) in atl:
-                    res.append([row, col])
+        # res = []
+        # for row in range(rows):
+        #     for col in range(cols):
+        #         if (row, col) in pac and (row, col) in atl:
+        #             res.append([row, col])
         
-        return res
+        return list(pac.intersection(atl))
 
 
 
