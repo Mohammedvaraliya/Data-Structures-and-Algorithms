@@ -267,7 +267,7 @@ The `createGraph` function converts an adjacency list into a graph represented b
 
   - The space complexity is $O(V)$ due to the space needed to store the copy of each node and the recursion stack.
 
-### 03. Pacific Atlantic Water Flow
+### 04. Pacific Atlantic Water Flow
 
 [Leetcode Problem URL](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)
 
@@ -313,3 +313,37 @@ Explanation: The water can flow from the only cell to the Pacific and Atlantic o
 ```
 
 **Explanation**
+
+### 04. Pacific Atlantic Water Flow
+
+[Leetcode Problem URL](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)
+
+I've employed Depth-First Search (DFS) to determine which cells can flow to both oceans.
+
+1. **Initialization**:
+
+   - Determine the number of rows and columns in the grid.
+   - Create two sets, `pac` and `atl`, to keep track of cells that can reach the Pacific and Atlantic Oceans, respectively.
+
+2. **Depth-First Search (DFS) Function**:
+
+   - The `dfs` function is used to explore all possible cells that water can flow to from a given starting cell. It takes the current cell's row and column, a set to track visited cells, and the previous cell's height as parameters.
+   - The base case checks whether the cell is out of bounds, has already been visited, or its height is less than the previous cell's height.
+   - If the cell passes these checks, it's added to the visited set, and the DFS continues to the neighboring cells (up, down, left, right).
+
+3. **Perform DFS for All Boundary Cells**:
+
+   - Perform DFS starting from each cell in the first row and the last row for the Pacific and Atlantic Oceans, respectively.
+   - Perform DFS starting from each cell in the first column and the last column for the Pacific and Atlantic Oceans, respectively.
+
+4. **Find Intersection of Both Sets**:
+
+   - The final result is the intersection of the cells that can reach both the Pacific and Atlantic Oceans.
+   - `.intersection()` method: This method is used on sets to find the elements that are common to both sets. In other words, it returns a new set containing elements that exist in both `pac` and `atl`.
+
+#### Efficiency Analysis
+
+- **Time Complexity**:
+  - The algorithm runs a DFS from each cell that touches the oceans, visiting each cell in the grid at most once. Therefore, the time complexity is $O(m \times n)$, where $(m)$ is the number of rows and $(n)$ is the number of columns.
+- **Space Complexity**:
+  - The space complexity is $(O(m \times n))$ for the visited sets and the recursion stack in the worst case
