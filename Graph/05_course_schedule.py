@@ -1,6 +1,5 @@
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
-
         # Map each course to prereq list, For example, if numCourses = 3, prereq list as 0: [], 1: [], 2: [].
         preMap = { i:[] for i in range(numCourses) }
 
