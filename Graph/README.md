@@ -373,9 +373,59 @@ To take course 1 you should have finished course 0, and to take course 0 you sho
 
 **Explanation**
 
+The problem can be visualized as detecting cycles in a directed graph where each course is a node and each prerequisite is a directed edge. If there is a cycle, it is impossible to complete all courses.
+
+I've employed Depth-First Search (DFS) to detect cycles in the graph.
+
+1. **Graph Representation**:
+
+   - Initialize `preMap` to map each course to its list of prerequisites.
+   - Example: For `numCourses = 3`, initialize as `{0: [], 1: [], 2: []}`.
+   - Populate `preMap` with the prerequisites:
+
+2. **DFS Function**:
+
+   - Define the `dfs` function which will perform the depth-first search to detect cycles.
+   - If a course is already in `visitSet`, it means there's a cycle:
+     ```python
+     if course in visitSet:
+         return False
+     ```
+   - If a course has no prerequisites, it can be completed:
+     ```python
+     if preMap[course] == []:
+         return True
+     ```
+   - Add the course to `visitSet` and recursively check all its prerequisites:
+     ```python
+     visitSet.add(course)
+     for prerequisite in preMap[course]:
+         if not dfs(prerequisite):
+             return False
+     visitSet.remove(course)
+     preMap[course] = []  # Clear prerequisites to mark it as completed
+     return True
+     ```
+
+3. **DFS Execution**:
+   - Iterate over each course and run `dfs`. If any call returns `False`, there's a cycle:
+     ```python
+     for course in range(numCourses):
+         if not dfs(course):
+             return False
+     return True
+     ```
+
 #### Efficiency Analysis
 
 - **Time Complexity**:
-  - O(n + p), where n is the number of courses to be completed and p is the prerequisites of each n course.
+
+  - Building the `preMap` takes $O(p)$, where $p$ is the number of prerequisites.
+  - Each course is visited once, and during the visit, all its prerequisites are checked. Thus, the DFS traversal takes $O(n + p)$ time, where $n$ is the number of courses.
+  - Overall, the time complexity is $O(n + p)$.
+
 - **Space Complexity**:
-  -
+  - The `preMap` dictionary uses $O(n + p)$ space.
+  - The `visitSet` set uses $O(n)$ space.
+  - The recursion stack for DFS can go up to $O(n)$ depth.
+  - Overall, the space complexity is $O(n + p)$.
