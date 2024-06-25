@@ -344,4 +344,5 @@
 | 02  | Number of Islands           | [Solution](./Graph/02_number_of_island.py)       |
 | 03  | Clone Graph                 | [Solution](./Graph/03_clone_graph.py)            |
 | 04  | Pacific Atlantic Water Flow | [Solution](./Graph/04_pacific_atlantic_water.py) |
+| 05  | Course Schedule             | [Solution](./Graph/05_course_schedule.py)        |
 | 00  | Readme                      | [Problem Statements](./Graph/README.md)          |

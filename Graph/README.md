@@ -314,10 +314,6 @@ Explanation: The water can flow from the only cell to the Pacific and Atlantic o
 
 **Explanation**
 
-### 04. Pacific Atlantic Water Flow
-
-[Leetcode Problem URL](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)
-
 I've employed Depth-First Search (DFS) to determine which cells can flow to both oceans.
 
 1. **Initialization**:
@@ -346,4 +342,40 @@ I've employed Depth-First Search (DFS) to determine which cells can flow to both
 - **Time Complexity**:
   - The algorithm runs a DFS from each cell that touches the oceans, visiting each cell in the grid at most once. Therefore, the time complexity is $O(m \times n)$, where $(m)$ is the number of rows and $(n)$ is the number of columns.
 - **Space Complexity**:
-  - The space complexity is $(O(m \times n))$ for the visited sets and the recursion stack in the worst case
+  - The space complexity is $(O(m \times n))$ for the visited sets and the recursion stack in the worst case.
+
+### 05. Course Schedule
+
+[Leetcode Problem URL](https://leetcode.com/problems/course-schedule/description/)
+
+There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you must take course $b_i$ first if you want to take course $a_i$.
+
+For example, the pair `[0, 1]`, indicates that to take course `0` you have to first take course `1`.
+Return `true` if you can finish all courses. Otherwise, return `false`.
+
+```bash
+Example 1:
+
+Input: numCourses = 2, prerequisites = [[1,0]]
+Output: true
+Explanation: There are a total of 2 courses to take.
+To take course 1 you should have finished course 0. So it is possible.
+```
+
+```bash
+Example 2:
+
+Input: numCourses = 2, prerequisites = [[1,0],[0,1]]
+Output: false
+Explanation: There are a total of 2 courses to take.
+To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
+```
+
+**Explanation**
+
+#### Efficiency Analysis
+
+- **Time Complexity**:
+  - O(n + p), where n is the number of courses to be completed and p is the prerequisites of each n course.
+- **Space Complexity**:
+  -
