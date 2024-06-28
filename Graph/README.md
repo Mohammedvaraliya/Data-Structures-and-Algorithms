@@ -429,3 +429,36 @@ I've employed Depth-First Search (DFS) to detect cycles in the graph.
   - The `visitSet` set uses $O(n)$ space.
   - The recursion stack for DFS can go up to $O(n)$ depth.
   - Overall, the space complexity is $O(n + p)$.
+
+### 06. Graph Valid Tree
+
+[Leetcode Problem URL](https://leetcode.com/problems/graph-valid-tree/description/)
+[Lintcode Problem URL](https://www.lintcode.com/problem/178/)
+
+Given `n` nodes labeled from `0` to `n - 1` and a list of undirected edges (each edge is a pair of nodes), write a function to check whether these edges make up a valid tree.
+
+```bash
+Example 1:
+
+Input: n = 5 edges = [[0, 1], [0, 2], [0, 3], [1, 4]]
+Output: true
+```
+
+```bash
+Example 2:
+
+Input: n = 5 edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]
+Output: false
+```
+
+**Explanation**
+
+#### Efficiency Analysis
+
+- **Time Complexity**:
+
+  - O(E + V).
+
+- **Space Complexity**:
+
+  - O(E + V).
