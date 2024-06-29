@@ -453,12 +453,51 @@ Output: false
 
 **Explanation**
 
+The problem can be solved using Depth-First Search (DFS) to check for two conditions:
+
+1. The graph is connected (all nodes are reachable from any node).
+2. The graph is acyclic (no cycles).
+
+The following solution uses DFS to check these conditions.
+
+1. **Adjacency List**:
+
+   - Initialize `adj` to map each node to its list of connected nodes.
+   - Example: For `n = 5`, initialize as `{0: [], 1: [], 2: [], 3: [], 4: []}`.
+   - Populate `adj` with the edges:
+     ```python
+     for n1, n2 in edges:
+         adj[n1].append(n2)
+         adj[n2].append(n1)
+     ```
+
+2. **DFS Function**:
+
+   - Define the `dfs` function which will perform the depth-first search to check connectivity and detect cycles.
+   - If a node is already visited, it means there's a cycle:
+     ```python
+     if i in visit:
+         return False
+     ```
+   - Add the node to `visit` and recursively check all its connected nodes:
+     ```python
+     visit.add(i)
+     for j in adj[i]:
+         if j == prev:  # Skip the node we came from
+             continue
+         if not dfs(j, i):
+             return False
+     ```
+   - If no cycles are detected, return `True`.
+
+3. **DFS Execution**:
+   - Start DFS from node `0` and ensure all nodes are visited:
+     ```python
+     return dfs(0, -1) and n == len(visit)
+     ```
+   - If any node is not visited, the graph is not connected and thus not a valid tree.
+
 #### Efficiency Analysis
 
-- **Time Complexity**:
-
-  - O(E + V).
-
-- **Space Complexity**:
-
-  - O(E + V).
+- **Time Complexity**: The solution iterates over all nodes and edges once, giving a time complexity of $O(V + E)$.
+- **Space Complexity**: The adjacency list and the recursion stack both contribute to the space complexity, which is $O(V + E)$.
