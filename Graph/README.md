@@ -501,3 +501,34 @@ The following solution uses DFS to check these conditions.
 
 - **Time Complexity**: The solution iterates over all nodes and edges once, giving a time complexity of $O(V + E)$.
 - **Space Complexity**: The adjacency list and the recursion stack both contribute to the space complexity, which is $O(V + E)$.
+
+### 07. Number of Connected Components in an Undirected Graph
+
+[Leetcode Problem URL](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/)
+[Lintcode Problem URL](https://www.lintcode.com/problem/3651/)
+
+There is an undirected graph with `n` nodes. There is also an `edges` array, where `edges[i] = [a, b]` means that there is an edge between node `a` and node `b` in the graph.
+
+Return the total number of connected components in that graph.
+
+```bash
+Example 1
+
+Input:
+n=3
+edges=[[0,1], [0,2]]
+
+Output:
+1
+```
+
+```bash
+Example 2
+
+Input:
+n=6
+edges=[[0,1], [1,2], [2, 3], [4, 5]]
+
+Output:
+2
+```
