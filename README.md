@@ -338,11 +338,13 @@
 
 ## Graph Data Structure
 
-| #   | Title                       | Solution                                         |
-| --- | --------------------------- | ------------------------------------------------ |
-| 01  | Graph Data Structure        | [Solution](./Graph/01_graph_data_structure.py)   |
-| 02  | Number of Islands           | [Solution](./Graph/02_number_of_island.py)       |
-| 03  | Clone Graph                 | [Solution](./Graph/03_clone_graph.py)            |
-| 04  | Pacific Atlantic Water Flow | [Solution](./Graph/04_pacific_atlantic_water.py) |
-| 05  | Course Schedule             | [Solution](./Graph/05_course_schedule.py)        |
-| 00  | Readme                      | [Problem Statements](./Graph/README.md)          |
+| #   | Title                                                 | Solution                                                 |
+| --- | ----------------------------------------------------- | -------------------------------------------------------- |
+| 01  | Graph Data Structure                                  | [Solution](./Graph/01_graph_data_structure.py)           |
+| 02  | Number of Islands                                     | [Solution](./Graph/02_number_of_island.py)               |
+| 03  | Clone Graph                                           | [Solution](./Graph/03_clone_graph.py)                    |
+| 04  | Pacific Atlantic Water Flow                           | [Solution](./Graph/04_pacific_atlantic_water.py)         |
+| 05  | Course Schedule                                       | [Solution](./Graph/05_course_schedule.py)                |
+| 06  | Graph Valid Tree                                      | [Solution](./Graph/06_graph_valid_tree.py)               |
+| 07  | Number of Connected Components in an Undirected Graph | [Solution](./Graph/07_number_of_connected_components.py) |
+| 00  | Readme                                                | [Problem Statements](./Graph/README.md)                  |
