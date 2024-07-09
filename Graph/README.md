@@ -506,6 +506,7 @@ The following solution uses DFS to check these conditions.
 
 [Leetcode Problem URL](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/)
 [Lintcode Problem URL](https://www.lintcode.com/problem/3651/)
+[A Blog to Understand Union Find Algorithm](https://www.hackerearth.com/practice/notes/disjoint-set-union-union-find/)
 
 There is an undirected graph with `n` nodes. There is also an `edges` array, where `edges[i] = [a, b]` means that there is an edge between node `a` and node `b` in the graph.
 
@@ -532,3 +533,33 @@ edges=[[0,1], [1,2], [2, 3], [4, 5]]
 Output:
 2
 ```
+
+To solve this problem, I've used Union-Find (or Disjoint Set Union, DSU) data structure. The Union-Find data structure helps us efficiently manage and merge sets of elements, which is useful for determining connected components.
+
+1. **Initialize Parent and Rank Arrays**:
+
+   - `par = [0, 1, 2, ..., n-1]`: Each node is initially its own parent.
+   - `rank = [1, 1, 1, ..., 1]`: Each node starts with a rank of `1`.
+
+2. **Find Function**:
+
+   - The `find` function traverses up the parent chain to find the root of a node. Path compression is applied by setting the parent of each visited node directly to the root.
+
+3. **Union Function**:
+
+   - The `union` function merges two sets. It uses the rank to attach the smaller tree under the larger tree to keep the structure flat. If two nodes are already in the same set, no action is taken, and it returns `0`. If they are in different sets, it merges them and returns `1`.
+
+4. **Count Components**:
+
+   - Start with `res = n` (each node is its own component).
+   - For each edge `[n1, n2]`, call `union(n1, n2)`. If a merge occurs (return value `1`), decrease `res` by `1`.
+
+### Efficiency Analysis
+
+- **Time Complexity**: $O(V + E)$
+
+  - The `find` and `union` operations are almost constant time due to path compression and union by rank, leading to an amortized time complexity of $O\alpha(n)$, where $\alpha$ is the inverse Ackermann function, which grows very slowly.
+
+- **Space Complexity**: $O(V)$
+
+  - Space is used for the parent and rank arrays, each of size `n`.
