@@ -554,14 +554,14 @@ To solve this problem, I've used Union-Find (or Disjoint Set Union, DSU) data st
    - Start with `res = n` (each node is its own component).
    - For each edge `[n1, n2]`, call `union(n1, n2)`. If a merge occurs (return value `1`), decrease `res` by `1`.
 
-### Example Walkthrough
+#### Example Walkthrough
 
 Consider a graph with `n = 6` nodes and edges `[[0, 1], [1, 2], [2, 3], [4, 5]]`.
 
 1. **Initialization**:
 
    - Each node is its own parent.
-   - Rank of each node is initially 1.
+   - The rank of each node is initially 1.
 
    ```python
    par = [0, 1, 2, 3, 4, 5]
@@ -573,8 +573,8 @@ Consider a graph with `n = 6` nodes and edges `[[0, 1], [1, 2], [2, 3], [4, 5]]`
    - `find(0)` returns `0` (0 is its own parent).
    - `find(1)` returns `1` (1 is its own parent).
    - Since they are in different subsets, union them:
-     - Make `0` the parent of `1` because they are in different sets.
-     - Update the rank of `0` by adding the rank of `1` since `0` is now the parent.
+     - Make `0` the parent of `1`.
+     - Update the rank of `0` by adding the rank of `1`, i.e 1 + 1 = 2.
 
    Updated arrays:
 
@@ -588,8 +588,8 @@ Consider a graph with `n = 6` nodes and edges `[[0, 1], [1, 2], [2, 3], [4, 5]]`
    - `find(1)` returns `0` (following the chain from `1` to `0`).
    - `find(2)` returns `2` (2 is its own parent).
    - Since they are in different subsets, union them:
-     - Make `0` the parent of `2` because `0` has a higher rank.
-     - Update the rank of `0` by adding the rank of `2`.
+     - Make `0` the parent of `2`.
+     - Update the rank of `0` by adding the rank of `2`, i.e 2 + 1 = 3.
 
    Updated arrays:
 
@@ -598,39 +598,41 @@ Consider a graph with `n = 6` nodes and edges `[[0, 1], [1, 2], [2, 3], [4, 5]]`
    rank = [3, 1, 1, 1, 1, 1]
    ```
 
-4. **Union(1, 2)**:
+4. **Union(2, 3)**:
 
-   - `find(1)` returns `0` (following the chain from `1` to `0`).
-   - `find(2)` returns `2` (2 is its own parent).
-   - Since they are in different subsets, union them:
-     - Make `0` the parent of `2` because `0` has a higher rank.
-     - Update the rank of `0` by adding the rank of `2`.
-
-   Updated arrays:
-
-   ```python
-   par = [0, 0, 0, 3, 4, 5]
-   rank = [3, 1, 1, 1, 1, 1]
-   ```
-
-5. **Union(2, 3)**:
-
+   - `find(2)` returns `0` (following the chain from `2` to `0`).
    - `find(3)` returns `3` (3 is its own parent).
-   - `find(4)` returns `4` (4 is its own parent).
    - Since they are in different subsets, union them:
-     - Make `3` the parent of `4`.
-     - Update the rank of `3` by adding the rank of `4`, which is 1 + 1 = 2.
+     - Make `0` the parent of `3`.
+     - Update the rank of `0` by adding the rank of `3`, i.e 3 + 1 = 4.
 
    Updated arrays:
 
    ```python
-   par = [0, 0, 0, 3, 3]
-   rank = [3, 1, 1, 2, 1]
+   par = [0, 0, 0, 0, 4, 5]
+   rank = [4, 1, 1, 1, 1, 1]
    ```
 
-#### Result
+5. **Union(4, 5)**:
 
-After processing all edges, we have two connected components: `{0, 1, 2}` and `{3, 4}`, so the return value will be `2`. The `par` array indicates the parent of each node, and the `rank` array helps keep the tree balanced.
+   - `find(4)` returns `4` (4 is its own parent).
+   - `find(5)` returns `5` (5 is its own parent).
+   - Since they are in different subsets, union them:
+     - Make `4` the parent of `5`.
+     - Update the rank of `4` by adding the rank of `5`, i.e 1 + 1 = 2.
+
+   Updated arrays:
+
+   ```python
+   par = [0, 0, 0, 0, 4, 4]
+   rank = [4, 1, 1, 1, 2, 1]
+   ```
+
+### Result
+
+After processing all edges, the union function was executed 4 times, and it returned 1 for each of the 4 executions, indicating that nodes were successfully united into the same set. As a result, the initial value of `res` (which is `n = 6`) is decremented by 1 each time the union function returns 1. After processing all edges, `res` is decremented to 2. This indicates that there are 2 connected components or subsets.
+
+Hence, we have two connected components: `{0, 1, 2, 3}` and `{4, 5}`, so the return value will be `2`. The `par` array indicates the parent of each node, and the `rank` array helps keep the tree balanced.
 
 #### Efficiency Analysis
 
