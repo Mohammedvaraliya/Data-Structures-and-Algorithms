@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Singly Liked List Data-Structures and Algorithms
 
 ### 01. Singly Linked Lists -- Reverse
 

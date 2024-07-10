@@ -1,5 +1,4 @@
-# Data-Structures And Algorithms
-
+# Doubly Linked List Data-Structures and Algorithms
 
 ### 01. Doubly Linked Lists -- Append and Prepend
 
@@ -19,7 +18,7 @@
                             3
                             4
                             5
-                    
+
     Addbeforenode(2) = 1
     final list will be:     1
                             1
@@ -27,14 +26,14 @@
                             3
                             4
                             5
-    
+
     Add Node After Example:
                             1
                             2
                             3
                             4
                             5
-                    
+
     Addafternode(2) = 2
     final list will be:     1
                             2
@@ -51,7 +50,7 @@
 ### 04. Doubly Linked Lists -- Reverse
 
     Doubly Linked Lists -- Reverse
-    It will reversed the Doubly Linked List 
+    It will reversed the Doubly Linked List
 
     Example:
             1
@@ -59,7 +58,7 @@
             3
             4
             5
-    
+
     reversed_list :
                     5
                     4
@@ -80,7 +79,7 @@
             3
             4
             5
-    
+
     After removing the duplicate Node from the Doubly Linked list
     Doubly Linked List will be:
                                 1
@@ -118,4 +117,3 @@
                                          []
 
     because there is no pair exist which sum equal to given number
-

@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Numbers Data-Structures and Algorithms
 
 ### 01. Product of Two Numbers
 

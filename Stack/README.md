@@ -1,29 +1,28 @@
-# Data-Structures And Algorithms
-
+# Stack Data-Structures and Algorithms
 
 ### 01. The Stack data Structure
 
     Stack Data Structure
     Stack is FILO(First In Last Out) or LIFO(Last In First Out) Data structure
-        
+
        | D |
        | C |
        | B |
        | A |
        -----
-    
+
     Example:
     This is stack
 
             |   |
             -----
-    
-    When you push() an element 'A' to stack 
+
+    When you push() an element 'A' to stack
     stack will look like
 
                         | A |
                         -----
-    
+
     Now if you push() some more elements, it will place one above one
     final stack:
 
@@ -33,7 +32,7 @@
                 | A |
                 -----
 
-    When you pop() the element from stack, it will pop() from top of the stack or the recent pushed element 
+    When you pop() the element from stack, it will pop() from top of the stack or the recent pushed element
 
                 | C |
                 | B |
@@ -46,25 +45,25 @@
     deque is using Doubly Linked List data structure to store the element.
 
     Stack is FILO(First In Last Out) or LIFO(Last In First Out) Data structure
-        
+
        | D |
        | C |
        | B |
        | A |
        -----
-    
+
     Example:
     This is stack
 
             |   |
             -----
-    
-    When you push() an element 'A' to stack 
+
+    When you push() an element 'A' to stack
     stack will look like
 
                         | A |
                         -----
-    
+
     Now if you push() some more elements, it will place one above one
     final stack:
 
@@ -74,7 +73,7 @@
                 | A |
                 -----
 
-    When you pop() the element from stack, it will pop() from top of the stack or the recent pushed element 
+    When you pop() the element from stack, it will pop() from top of the stack or the recent pushed element
 
                 | C |
                 | B |
@@ -106,7 +105,7 @@ An input string is valid if:
 Open brackets must be closed by the same type of brackets.
 Open brackets must be closed in the correct order.
 Every close bracket has a corresponding open bracket of the same type.
- 
+
 Example 1:
 Input: s = "()"
 Output: true
@@ -119,7 +118,6 @@ Example 3:
 Input: s = "(]"
 Output: false
 ```
-
 
 ### 04. Convert integer to binary
 
@@ -146,13 +144,13 @@ Output: false
 
     Example:
             str = "You can do it."
-        output: 
+        output:
                 .ti od nac uoY
 
     First push() all the characters from str to stack.
 
     declare an empty string variable
 
-    Now, pop() characters one by one and add it to an empty string variable 
+    Now, pop() characters one by one and add it to an empty string variable
 
     return empty string variable

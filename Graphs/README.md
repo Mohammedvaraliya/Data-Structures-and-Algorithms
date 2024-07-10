@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Graphs Data-Structures and Algorithms
 
 ### 01. Graph Data Structure
 

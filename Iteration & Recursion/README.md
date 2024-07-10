@@ -1,5 +1,4 @@
-# Data-Structures And Algorithms
-
+# Iteration & Recursion Data-Structures and Algorithms
 
 ### 01. Understanding Iterative Approach
 
@@ -7,7 +6,7 @@
     The repeated execution of some groups of code statements in a program is called iteration.
 
     Example:
-    
+
     To find a sum of given n number
     we will iterate n + 1 number and add the number into sum variable. i.e
 
@@ -26,12 +25,12 @@
 ### 02. Understanding Recursive Approach
 
     Understanding Recursion Approach
-    Recursion is a process in which a function calls itself directly or indirectly. 
+    Recursion is a process in which a function calls itself directly or indirectly.
     Recursive algorithms are widely used in computer science to solve complex problems by breaking them down into simpler ones.
 
     Given a number n, find sum of first n natural numbers. To calculate the sum, we will use a recursive function find_sum().
 
-    Examples : 
+    Examples :
 
     To find a sum of given n number
 
@@ -44,13 +43,13 @@
     Example 2: Let n = 7
 
                Therefore, the sum of the first 7 natural numbers = 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28.
-   
+
                Thus, the output is 28.
 
     Example 3: Let n = 6
 
                Therefore, the sum of the first 6 natural numbers = 1 + 2 + 3 + 4 + 5 + 6 = 21.
-           
+
                Thus, the output is 21.
 
 ### 03. Fibonacci Number Using Recursion
@@ -63,20 +62,20 @@
     In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the recurrence relation
 
     Fn = Fn-1 + Fn-2
-    with seed values 
+    with seed values
 
     F0 = 0 and F1 = 1.
 
-    Given a number n, print n-th Fibonacci Number. 
+    Given a number n, print n-th Fibonacci Number.
 
-    Examples: 
+    Examples:
 
     Input  : n = 2
     Output : 1
 
     Input  : n = 9
     Output : 34
-    
+
     For example, if n = 0, then fib() should return 0. If n = 1, then it should return 1. For n > 1, it should return Fn-1 + Fn-2
 
     For n = 9
@@ -90,9 +89,9 @@
     Example:
 
             list = [1, 2, [3,4],[5,6]]
-    
+
     Initialize variable: total = 0
-        
+
     Here the program iterate through each element of the list and add the element value to a variable (total).
     If the element exist where the another list found
 
@@ -104,7 +103,7 @@
 
             element = 1
 
-            so, add element to the (total) variable 
+            so, add element to the (total) variable
 
             total = 1
 
@@ -112,10 +111,10 @@
 
             element = 2
 
-            so, add element to the (total) variable 
+            so, add element to the (total) variable
 
             total = 3
-        
+
         3rd iteration:
 
             element = [3, 4]
@@ -131,7 +130,7 @@
                 so, add element to the (total) variable
 
                 total = 3
-            
+
             2nd iteration:
 
                 element = 4
@@ -158,7 +157,7 @@
                 so, add element to the (total) variable
 
                 total = 5
-            
+
             2nd iteration:
 
                 element = 6
@@ -177,7 +176,7 @@
     Recursion: Get Sum Of Integer
     Given a number, the sum of its digits.
 
-    Examples : 
+    Examples :
 
             Input: n = 345
             Output: 12
@@ -196,7 +195,7 @@
 
     3. Repeat the next two steps till the number is not 0
 
-    4. Get the rightmost digit of the number with help of the remainder ‘%’ operator by dividing it 
+    4. Get the rightmost digit of the number with help of the remainder ‘%’ operator by dividing it
        by 10 and adding it to the sum.
 
     5. Divide the number by 10 with help of ‘/’ operator to remove the rightmost digit.
@@ -214,7 +213,7 @@
 
     sum_series of number 6 will be
     n = 6
-    when n == 0 
+    when n == 0
     return 0
 
     Otherwise, n+(n-2)+(n-4)... (until n-x =< 0)
@@ -225,7 +224,7 @@
                     n = 0
 
                     return 0
-                    
+
                     0 + 2 = 2
                     2 + 4 = 6
                     6 + 6 = 12
@@ -234,7 +233,7 @@
 
     sum_series of number 10 will be
     n = 10
-    when n == 0 
+    when n == 0
     return 0
 
     Otherwise, n+(n-2)+(n-4)... (until n-x =< 0)
@@ -247,20 +246,20 @@
                     n = 0
 
                     return 0
-                    
+
                     0 + 2 = 2
                     2 + 4 = 6
                     6 + 6 = 12
                     12 + 8 = 20
-                    20 + 10 = 30 
+                    20 + 10 = 30
 
             => 30 is the output
 
 ### 07. Recursion: Calculate The Harmonic Sum
 
     Recursion: Calculate The Harmonic Sum
-    The harmonic sum is the sum of the reciprocals of the positive integers. 
-    It is represented by the symbol Hn and can be written as the infinite series: Hn = 1 + 1/2 + 1/3 + ... + 1/n. 
+    The harmonic sum is the sum of the reciprocals of the positive integers.
+    It is represented by the symbol Hn and can be written as the infinite series: Hn = 1 + 1/2 + 1/3 + ... + 1/n.
 
     The value of the harmonic sum for the first 10 positive integers is approximately 2.9289682539682538.
 
@@ -271,9 +270,3 @@
     H7 = 1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6 + 1/7 = 2.5928571428571425
 
     Note that the value of the harmonic sum becomes closer to log(n) as n increases, but it never reaches it as the harmonic series diverges.
-
-
-
-
-
-

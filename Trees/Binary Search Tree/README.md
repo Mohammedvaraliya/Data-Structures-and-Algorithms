@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Binary Search Trees Data-Structures and Algorithms
 
 ##### Note. The name of function which is same but \_ before name is helper function.
 

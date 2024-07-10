@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Arrays Data-Structures and Algorithms
 
 ### 01. Greedy Algorithms: Optimal Task Assignment
 

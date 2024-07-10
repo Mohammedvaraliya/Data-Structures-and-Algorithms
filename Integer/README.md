@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Integers Data-Structures and Algorithms
 
 ### 01. Add Digits
 

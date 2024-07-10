@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Strings Data-Structures and Algorithms
 
 ### 01. Reverse String
 

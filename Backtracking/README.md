@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Backtracking Data-Structures and Algorithms
 
 ### 01. Combination Sum
 

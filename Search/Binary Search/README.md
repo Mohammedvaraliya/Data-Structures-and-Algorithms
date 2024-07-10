@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Binary search Data-Structures and Algorithms
 
 ### 01. Binary search
 

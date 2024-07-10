@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Queue Data-Structures and Algorithms
 
 ### 01. Queue Data Structure
 
@@ -30,7 +30,7 @@
 ### 03. Queue Data Structure : Producer Consumer Problem
 
     Queue Data Structure : Producer Consumer Problem
-    This problem is a producer,consumer problem where producer thread is producing data whereas consumer 
+    This problem is a producer,consumer problem where producer thread is producing data whereas consumer
     thread is consuming the data which has already produced.
 
 ### 04. Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue
@@ -66,8 +66,6 @@
         The 9 number is :  1010
 
     Notice a pattern above. After 1 second and third number is 1+0 and 1+1. 4th and 5th number are second number (i.e. 10) + 0 and second
-    number (i.e. 10) + 1.    
+    number (i.e. 10) + 1.
 
-    For more clarification, please take a look on my code.     
-
-    
+    For more clarification, please take a look on my code.

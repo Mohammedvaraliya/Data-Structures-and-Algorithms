@@ -1,9 +1,8 @@
-# Data-Structures And Algorithms
-
+# Circular Linked List Data-Structures and Algorithms
 
 ### 01. Circular Linked Lists -- Append and Prepend
 
-    Circular Linked List append and prepend method 
+    Circular Linked List append and prepend method
     Append - Add the Node from end of list
     Prepend - Add the Node from front of the list
 
@@ -31,10 +30,10 @@
                             4
                             5
                             6
-    
+
     step = 2
 
-    so the step start from head of the list 
+    so the step start from head of the list
 
     2 is Node where step meet
     remove : 2
@@ -55,8 +54,7 @@
 ### 05. Circular Linked Lists -- Is Circular Linked List
 
     Circular Linked Lists -- Is Circular Linked List
-    
+
     It will check the list which is given is circular or not
 
     we can check this by giving Singly and Doubly linked list to verify Circular Linked List
-

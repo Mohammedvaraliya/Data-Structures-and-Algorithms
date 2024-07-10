@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Heap Data-Structures and Algorithms
 
 ### 01. Find Median from Data Stream
 

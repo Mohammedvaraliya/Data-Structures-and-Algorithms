@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Tries Data-Structures and Algorithms
 
 ### 01. Implement Trie (Prefix Tree)
 

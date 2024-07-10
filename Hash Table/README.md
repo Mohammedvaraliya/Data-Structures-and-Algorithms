@@ -1,4 +1,4 @@
-# Data-Structures And Algorithms
+# Hash Table Data-Structures and Algorithms
 
 ### 01. Hash Table Implementation
 
@@ -7,8 +7,6 @@
 
     how list and array different from hash table
 
-
-    
 ### 02. Hash Table Implementation : Get Hash
 
     Hash Table Implementation : Get Hash
@@ -22,7 +20,7 @@
 
             118 +
 
-            ord('a') will retun ASCII value of char a    
+            ord('a') will retun ASCII value of char a
 
             118 + 97 +
 
@@ -57,7 +55,7 @@
                 it means '1-Mar' is index number 82
 
             Now, Assign values
-            
+
             obj["122-Mar"] = 550
             obj["1-Mar"] = 220
 
@@ -68,12 +66,10 @@
 
             using linked list or linear probing
 
-            replace None with empty list 
+            replace None with empty list
 
-            and if new key come append it on the same index number 
+            and if new key come append it on the same index number
 
             array will look like this
 
             [[], [], [('1-Mar', 550), ('122-Mar', 120)], [], [], [], [], [], [], []]
-
-

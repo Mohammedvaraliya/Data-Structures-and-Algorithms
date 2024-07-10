@@ -28,8 +28,9 @@
   - [General Trees](#general-trees)
   - [Binary Trees](#binary-trees)
   - [Binary Search Trees](#binary-search-trees)
-- [Trie Data Structures](#trie-data-structures)
-- [Graph Data Structure](#graph-data-structure)
+- [Tries Data Structures](#tries-data-structures)
+- [Graphs Data Structure](#graphs-data-structure)
+- [Advanced Graphs Data Structure](#advanced-graphs-data-structure)
 
 ## Stack
 
@@ -327,7 +328,7 @@
 | 12  | Binary Search Trees: Kth Smallest Element                           | [Solution](./Trees/Binary%20Search%20Tree/12_binary_search_tree_kth_smallest_element.py)            |
 | 00  | Readme                                                              | [Problem Statements](./Trees/Binary%20Search%20Tree/README.md)                                      |
 
-## Trie Data Structures
+## Tries Data Structures
 
 | #   | Title                                      | Solution                                                         |
 | --- | ------------------------------------------ | ---------------------------------------------------------------- |
@@ -336,7 +337,7 @@
 | 03  | Word Search II                             | [Solution](./Tries/03_word_search_ii.py)                         |
 | 00  | Readme                                     | [Problem Statements](./Tries/README.md)                          |
 
-## Graph Data Structure
+## Graphs Data Structure
 
 | #   | Title                                                 | Solution                                                  |
 | --- | ----------------------------------------------------- | --------------------------------------------------------- |
@@ -348,3 +349,10 @@
 | 06  | Graph Valid Tree                                      | [Solution](./Graphs/06_graph_valid_tree.py)               |
 | 07  | Number of Connected Components in an Undirected Graph | [Solution](./Graphs/07_number_of_connected_components.py) |
 | 00  | Readme                                                | [Problem Statements](./Graphs/README.md)                  |
+
+## Advanced Graphs Data Structure
+
+| #   | Title            | Solution                                               |
+| --- | ---------------- | ------------------------------------------------------ |
+| 01  | Alien Dictionary | [Solution](./Advanced%20Graphs/01_alien_dictionary.py) |
+| 00  | Readme           | [Problem Statements](./Advanced%20Graphs/README.md)    |
