@@ -442,3 +442,37 @@ Output: 4
 ```
 
 **Explanation**
+
+To solve this problem without sorting the array, I've used min-heap (also known as a priority queue) to efficiently find the kth largest element. Here’s how we can do it:
+
+1. **Initialize a Min-Heap**:
+
+   - A min-heap is a binary tree where the parent node is always less than or equal to its child nodes.
+   - The smallest element is always at the root of the heap.
+   - We start with an empty heap called `heap`.
+
+2. **Iterate through Each Element**:
+
+   - For each element `num` in the array `nums`, we push it into the heap using `heapq.heappush(heap, num)`.
+   - After adding the element, if the size of the heap exceeds `k`, we remove the smallest element using `heapq.heappop(heap)` to ensure the heap size is always `k`.
+
+3. **Return the kth Largest Element**:
+
+   - After processing all elements, the smallest element in the heap is the kth largest element in the array. We return `heap[0]`.
+
+#### Efficiency Analysis
+
+- **Time Complexity**: $O(n \log k)$
+  - Adding an element to the heap and removing the smallest element both take $O(\log k)$ time.
+  - Since we perform these operations for all `n` elements, the total time complexity is $O(n \log k)$.
+- **Space Complexity**: $O(k)$
+  - The space complexity is $O(k)$ because the heap will contain at most `k` elements.
+
+#### Why This Approach?
+
+Using a min-heap of size `k` is efficient for finding the kth largest element because:
+
+- It avoids the need to sort the entire array, which would take \(O(n \log n)\) time.
+- Maintaining a heap of size `k` ensures that we always have the top `k` largest elements seen so far, and accessing the smallest of these (the kth largest in the array) is \(O(1)\).
+
+By following this approach, we efficiently find the kth largest element with optimal time and space complexity.
