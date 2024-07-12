@@ -416,3 +416,29 @@ If it's present, its count is incremented. However, if the count goes beyond 2 (
 If the number is not yet encountered, a new entry is created in counter with a count of 1.
 
 Since the array has an even length and we require distinct elements in each sub-array (implicit in the problem statement), allowing more than two occurrences of any number would prevent a valid split. Therefore, this approach efficiently determines if a valid split is possible based on the frequency of elements in the array, without explicitly creating the sub-arrays.
+
+### 22. Kth Largest Element in an Array
+
+[Leetcode Problem URL](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)
+
+Given an integer array `nums` and an integer k, return the kth largest element in the array.
+
+Note that it is the $k^{th}$ largest element in the sorted order, not the kth distinct element.
+
+Can you solve it without sorting?
+
+```bash
+Example 1:
+
+Input: nums = [3,2,1,5,6,4], k = 2
+Output: 5
+```
+
+```bash
+Example 2:
+
+Input: nums = [3,2,3,1,2,4,5,5,6], k = 4
+Output: 4
+```
+
+**Explanation**
