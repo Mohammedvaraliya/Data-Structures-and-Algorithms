@@ -144,6 +144,7 @@
 | 14  | Container With Most Water                             | [Solution](./Arrays/19_container_with_most_water.py)     |
 | 15  | Unique Number of Occurrences                          | [Solution](./Arrays/20_unique_number_of_occurence.py)    |
 | 16  | Split the Array                                       | [Solution](./Arrays/21_split_the_array.py)               |
+| 17  | Kth Largest Element in an Array                       | [Solution](./Arrays/22_kth_largest_element.py)           |
 | 00  | Readme                                                | [Problem Statements](./Arrays/README.md)                 |
 
 ## Backtracking
