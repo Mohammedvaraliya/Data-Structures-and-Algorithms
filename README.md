@@ -31,6 +31,7 @@
 - [Tries Data Structures](#tries-data-structures)
 - [Graphs Data Structure](#graphs-data-structure)
 - [Advanced Graphs Data Structure](#advanced-graphs-data-structure)
+- [1-D Dynamic Programming](#)
 
 ## Stack
 
@@ -357,3 +358,10 @@
 | --- | ---------------- | ------------------------------------------------------ |
 | 01  | Alien Dictionary | [Solution](./Advanced%20Graphs/01_alien_dictionary.py) |
 | 00  | Readme           | [Problem Statements](./Advanced%20Graphs/README.md)    |
+
+## 1-D Dynamic Programming
+
+| #   | Title           | Solution                                                        |
+| --- | --------------- | --------------------------------------------------------------- |
+| 01  | Climbing Stairs | [Solution](./1-D%20Dynamic%20Programming/01_climbing_stairs.py) |
+| 00  | Readme          | [Problem Statements](./1-D%20Dynamic%20Programming/README.md)   |
