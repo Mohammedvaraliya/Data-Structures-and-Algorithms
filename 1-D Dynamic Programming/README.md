@@ -115,3 +115,88 @@ After the loop completes, the variable `one` contains the number of distinct way
 **Space Complexity**:
 
 - The space complexity is $O(1)$ because we only use a fixed amount of space (two variables, `one` and `two`), regardless of the input size $n$.
+
+### 02. House Robber
+
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+You are given an integer array `nums` where `nums[i]` represents the amount of money the `i`th house has. The houses are arranged in a straight line, i.e. the `i`th house is the neighbor of the `(i-1)`th and `(i+1)`th house.
+
+Return the maximum amount of money you can rob without alerting the police.
+
+```bash
+Example 1:
+
+Input: nums = [1,2,3,1]
+Output: 4
+Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
+Total amount you can rob = 1 + 3 = 4.
+```
+
+```bash
+Example 2:
+
+Input: nums = [2,7,9,3,1]
+Output: 12
+Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
+Total amount you can rob = 2 + 9 + 1 = 12.
+```
+
+**Explanation**
+
+1. **Approach**:
+
+   - Use two variables, `rob1` and `rob2`, to keep track of the maximum amount of money that can be robbed up to the previous house and the house before the previous house, respectively.
+   - Iterate through each house and determine whether to rob the current house or skip it.
+
+2. **Dynamic Programming Transition**:
+   - For each house `i`, we have two choices:
+     1. Rob the current house and add its money to `rob1` (the amount robbed up to the house before the previous house).
+     2. Skip the current house and carry forward `rob2` (the amount robbed up to the previous house).
+   - Update `rob2` to be the maximum of these two choices.
+
+#### Example Walkthrough
+
+Let's walk through the example `nums = [2,7,9,3,1]` step by step:
+
+1. **Initialization**:
+
+   - `rob1 = 0`, `rob2 = 0`
+
+2. **House 1 (Amount = 2)**:
+
+   - `temp = max(2 + 0, 0) = 2`
+   - Update `rob1 = rob2 = 0`
+   - Update `rob2 = temp = 2`
+
+3. **House 2 (Amount = 7)**:
+
+   - `temp = max(7 + 0, 2) = 7`
+   - Update `rob1 = rob2 = 2`
+   - Update `rob2 = temp = 7`
+
+4. **House 3 (Amount = 9)**:
+
+   - `temp = max(9 + 2, 7) = 11`
+   - Update `rob1 = rob2 = 7`
+   - Update `rob2 = temp = 11`
+
+5. **House 4 (Amount = 3)**:
+
+   - `temp = max(3 + 7, 11) = 11`
+   - Update `rob1 = rob2 = 11`
+   - Update `rob2 = temp = 11`
+
+6. **House 5 (Amount = 1)**:
+   - `temp = max(1 + 11, 11) = 12`
+   - Update `rob1 = rob2 = 11`
+   - Update `rob2 = temp = 12`
+
+#### Final Result
+
+The maximum amount of money that can be robbed without alerting the police is `12`.
+
+#### Efficiency Analysis
+
+- **Time Complexity**: $O(n)$, where `n` is the number of houses. We iterate through the list of houses once.
+- **Space Complexity**: $O(1)$, as we only use a constant amount of space for `rob1` and `rob2`.

@@ -31,7 +31,7 @@
 - [Tries Data Structures](#tries-data-structures)
 - [Graphs Data Structure](#graphs-data-structure)
 - [Advanced Graphs Data Structure](#advanced-graphs-data-structure)
-- [1-D Dynamic Programming](#)
+- [1-D Dynamic Programming](#1-d-dynamic-programming)
 
 ## Stack
 
@@ -364,4 +364,5 @@
 | #   | Title           | Solution                                                        |
 | --- | --------------- | --------------------------------------------------------------- |
 | 01  | Climbing Stairs | [Solution](./1-D%20Dynamic%20Programming/01_climbing_stairs.py) |
+| 01  | House Robber    | [Solution](./1-D%20Dynamic%20Programming/02_house_robber.py)    |
 | 00  | Readme          | [Problem Statements](./1-D%20Dynamic%20Programming/README.md)   |
