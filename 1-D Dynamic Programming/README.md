@@ -60,8 +60,8 @@ We need to find the number of distinct ways to climb a staircase with 5 steps, w
 
 We start with two variables:
 
-- `one = 1`: This represents the number of ways to reach the first step.
-- `two = 1`: This represents the number of ways to reach the second step.
+- `one = 1`: This represents the number of ways to reach the zero'th step.
+- `two = 1`: This represents the number of ways to reach the first step.
 
 ##### Iterative Calculation
 
