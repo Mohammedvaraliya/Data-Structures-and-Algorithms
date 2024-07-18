@@ -167,32 +167,32 @@ Let's walk through the example `nums = [2,7,9,3,1]` step by step:
 
 2. **House 1 (Amount = 2)**:
 
-   - `temp = max(2 + 0, 0) = 2`
+   - `newRob = max(2 + 0, 0) = 2`
    - Update `rob1 = rob2 = 0`
-   - Update `rob2 = temp = 2`
+   - Update `rob2 = newRob = 2`
 
 3. **House 2 (Amount = 7)**:
 
-   - `temp = max(7 + 0, 2) = 7`
+   - `newRob = max(7 + 0, 2) = 7`
    - Update `rob1 = rob2 = 2`
-   - Update `rob2 = temp = 7`
+   - Update `rob2 = newRob = 7`
 
 4. **House 3 (Amount = 9)**:
 
-   - `temp = max(9 + 2, 7) = 11`
+   - `newRob = max(9 + 2, 7) = 11`
    - Update `rob1 = rob2 = 7`
-   - Update `rob2 = temp = 11`
+   - Update `rob2 = newRob = 11`
 
 5. **House 4 (Amount = 3)**:
 
-   - `temp = max(3 + 7, 11) = 11`
+   - `newRob = max(3 + 7, 11) = 11`
    - Update `rob1 = rob2 = 11`
-   - Update `rob2 = temp = 11`
+   - Update `rob2 = newRob = 11`
 
 6. **House 5 (Amount = 1)**:
-   - `temp = max(1 + 11, 11) = 12`
+   - `newRob = max(1 + 11, 11) = 12`
    - Update `rob1 = rob2 = 11`
-   - Update `rob2 = temp = 12`
+   - Update `rob2 = newRob = 12`
 
 #### Final Result
 
