@@ -118,6 +118,8 @@ After the loop completes, the variable `one` contains the number of distinct way
 
 ### 02. House Robber
 
+[Leetcode Problem URL](https://leetcode.com/problems/house-robber/description/)
+
 You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
 
 You are given an integer array `nums` where `nums[i]` represents the amount of money the `i`th house has. The houses are arranged in a straight line, i.e. the `i`th house is the neighbor of the `(i-1)`th and `(i+1)`th house.
@@ -199,4 +201,89 @@ The maximum amount of money that can be robbed without alerting the police is `1
 #### Efficiency Analysis
 
 - **Time Complexity**: $O(n)$, where `n` is the number of houses. We iterate through the list of houses once.
+- **Space Complexity**: $O(1)$, as we only use a constant amount of space for `rob1` and `rob2`.
+
+### 02. House Robber II
+
+[Leetcode Problem URL](https://leetcode.com/problems/house-robber-ii/description/)
+
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+You are given an integer array `nums` where `nums[i]` represents the amount of money the `i`th house has. The houses are arranged in a circle, i.e. the first house and the last house are neighbors.
+
+Return the maximum amount of money you can rob without alerting the police.
+
+```bash
+Example 1:
+
+Input: nums = [2,3,2]
+Output: 3
+Explanation: You cannot rob house 1 (money = 2) and then rob house 3 (money = 2), because they are adjacent houses.
+```
+
+```bash
+Example 2:
+
+Input: nums = [1,2,3,1]
+Output: 4
+Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
+Total amount you can rob = 1 + 3 = 4.
+```
+
+```bash
+Example 3:
+
+Input: nums = [1,2,3]
+Output: 3
+```
+
+**Explanation**
+
+The problem is an extension of the "House Robber I" problem with an additional constraint that the houses are arranged in a circle. This means we cannot rob both the first and last houses simultaneously.
+
+1. **Approach**:
+   - I've split the problem into two subproblems:
+     1. Rob houses from the first house to the second-last house.
+     2. Rob houses from the second house to the last house.
+   - The reason I've split the problem this way is to avoid the situation where both the first and last houses are robbed.
+   - The final solution is the maximum of these two subproblems.
+
+#### Example Walkthrough
+
+Let's walk through the example `nums = [2, 3, 2]` step by step:
+
+1. **Initialization**:
+
+   - We need to consider two cases:
+     - Case 1: Rob houses from the first house to the second-last house: `nums[:-1] = [2, 3]`
+     - Case 2: Rob houses from the second house to the last house: `nums[1:] = [3, 2]`
+
+2. **Case 1 (`nums = [2, 3]`)**:
+
+   - Initialize `rob1 = 0`, `rob2 = 0`
+   - House 1 (Amount = 2):
+     - `newRob = max(0 + 2, 0) = 2`
+     - Update `rob1 = 0`, `rob2 = 2`
+   - House 2 (Amount = 3):
+     - `newRob = max(0 + 3, 2) = 3`
+     - Update `rob1 = 2`, `rob2 = 3`
+   - Maximum for this case: `3`
+
+3. **Case 2 (`nums = [3, 2]`)**:
+   - Initialize `rob1 = 0`, `rob2 = 0`
+   - House 1 (Amount = 3):
+     - `newRob = max(0 + 3, 0) = 3`
+     - Update `rob1 = 0`, `rob2 = 3`
+   - House 2 (Amount = 2):
+     - `newRob = max(0 + 2, 3) = 3`
+     - Update `rob1 = 3`, `rob2 = 3`
+   - Maximum for this case: `3`
+
+#### Final Result
+
+The maximum amount of money that can be robbed without alerting the police is the maximum of the two cases: `max(3, 3) = 3`.
+
+#### Efficiency Analysis
+
+- **Time Complexity**: $O(n)$, where `n` is the number of houses. We iterate through the list of houses twice (once for each subproblem).
 - **Space Complexity**: $O(1)$, as we only use a constant amount of space for `rob1` and `rob2`.

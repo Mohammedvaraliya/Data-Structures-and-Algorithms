@@ -364,5 +364,6 @@
 | #   | Title           | Solution                                                        |
 | --- | --------------- | --------------------------------------------------------------- |
 | 01  | Climbing Stairs | [Solution](./1-D%20Dynamic%20Programming/01_climbing_stairs.py) |
-| 01  | House Robber    | [Solution](./1-D%20Dynamic%20Programming/02_house_robber.py)    |
+| 02  | House Robber    | [Solution](./1-D%20Dynamic%20Programming/02_house_robber.py)    |
+| 03  | House Robber II | [Solution](./1-D%20Dynamic%20Programming/03_house_robber_2.py)  |
 | 00  | Readme          | [Problem Statements](./1-D%20Dynamic%20Programming/README.md)   |
