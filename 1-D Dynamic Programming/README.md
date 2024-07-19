@@ -203,7 +203,7 @@ The maximum amount of money that can be robbed without alerting the police is `1
 - **Time Complexity**: $O(n)$, where `n` is the number of houses. We iterate through the list of houses once.
 - **Space Complexity**: $O(1)$, as we only use a constant amount of space for `rob1` and `rob2`.
 
-### 02. House Robber II
+### 03. House Robber II
 
 [Leetcode Problem URL](https://leetcode.com/problems/house-robber-ii/description/)
 
@@ -287,3 +287,94 @@ The maximum amount of money that can be robbed without alerting the police is th
 
 - **Time Complexity**: $O(n)$, where `n` is the number of houses. We iterate through the list of houses twice (once for each subproblem).
 - **Space Complexity**: $O(1)$, as we only use a constant amount of space for `rob1` and `rob2`.
+
+### 04. Longest Palindromic Substring
+
+[Leetcode Problem URL](https://leetcode.com/problems/longest-palindromic-substring/description/)
+
+Given a string `s`, return the longest substring of `s` that is a palindrome.
+
+A palindrome is a string that reads the same forward and backward.
+
+If there are multiple palindromic substrings that have the same length, return any one of them.
+
+```bash
+Example 1:
+
+Input: s = "babad"
+Output: "bab"
+Explanation: "aba" is also a valid answer.
+```
+
+```bash
+Example 2:
+
+Input: s = "cbbd"
+Output: "bb"
+```
+
+**Explanation**
+
+To solve the problem of finding the longest palindromic substring, I've used a two-pointer approach to expand around the center.
+
+1. **Approach**:
+
+   - For each character in the string, consider it as the center of a potential palindrome.
+   - Expand outwards from the center and check for the longest palindrome.
+   - We need to consider both odd-length and even-length palindromes.
+
+2. **Helper Function**:
+
+   - We create a helper function `checkPalindrome` that takes two pointers `left` and `right`, and expands outwards as long as the characters at these pointers are the same.
+   - When the characters at `left` and `right` are no longer the same, the function returns the substring between `left + 1` and `right`.
+
+3. **Main Function**:
+
+   - Initialize an empty string `resString` to store the longest palindrome found.
+   - Iterate through each character in the string:
+     - For each character, use it as the center for an odd-length palindrome and an even-length palindrome by calling `checkPalindrome`.
+     - Update `resString` if a longer palindrome is found.
+
+#### Example Walkthrough
+
+Let's walk through the example `s = "babad"` step by step:
+
+1. **Initialization**:
+
+   - `resString = ""`
+
+2. **Iteration**:
+
+   - For `i = 0` (Character 'b'):
+
+     - Check odd-length palindrome centered at 'b': `"b"`
+     - Check even-length palindrome centered between 'b' and 'a': `""`
+     - Update `resString` to `"b"`
+
+   - For `i = 1` (Character 'a'):
+
+     - Check odd-length palindrome centered at 'a': `"bab"`
+     - Check even-length palindrome centered between 'a' and 'b': `""`
+     - Update `resString` to `"bab"`
+
+   - For `i = 2` (Character 'b'):
+
+     - Check odd-length palindrome centered at 'b': `"aba"`
+     - Check even-length palindrome centered between 'b' and 'a': `""`
+     - `resString` remains `"bab"`
+
+   - For `i = 3` (Character 'a'):
+
+     - Check odd-length palindrome centered at 'a': `"a"`
+     - Check even-length palindrome centered between 'a' and 'd': `""`
+     - `resString` remains `"bab"`
+
+   - For `i = 4` (Character 'd'):
+     - Check odd-length palindrome centered at 'd': `"d"`
+     - Check even-length palindrome centered after 'd': `""`
+     - `resString` remains `"bab"`
+
+#### Efficiency Analysis
+
+- **Time Complexity**: $O(n^2)$, where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
+- **Space Complexity**: $O(1)$, since we only use a constant amount of additional space for variables.
