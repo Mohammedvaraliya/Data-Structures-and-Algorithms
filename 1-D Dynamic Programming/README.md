@@ -378,3 +378,31 @@ Let's walk through the example `s = "babad"` step by step:
 
 - **Time Complexity**: $O(n^2)$, where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
 - **Space Complexity**: $O(1)$, since we only use a constant amount of additional space for variables.
+
+### 05. Palindromic Substrings
+
+[Leetcode Problem URL](https://leetcode.com/problems/longest-palindromic-substring/description/)
+
+Given a string `s`, return the number of palindromic substrings in it.
+
+A string is a palindrome when it reads the same backward as forward.
+
+A substring is a contiguous sequence of characters within the string.
+
+````bash
+Example 1:
+
+Input: s = "abc"
+Output: 3
+Explanation: Three palindromic strings: "a", "b", "c".
+
+
+```bash
+Example 2:
+
+Input: s = "aaa"
+Output: 6
+Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+````
+
+**Explanation**

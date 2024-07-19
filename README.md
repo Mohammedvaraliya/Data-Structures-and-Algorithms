@@ -361,9 +361,11 @@
 
 ## 1-D Dynamic Programming
 
-| #   | Title           | Solution                                                        |
-| --- | --------------- | --------------------------------------------------------------- |
-| 01  | Climbing Stairs | [Solution](./1-D%20Dynamic%20Programming/01_climbing_stairs.py) |
-| 02  | House Robber    | [Solution](./1-D%20Dynamic%20Programming/02_house_robber.py)    |
-| 03  | House Robber II | [Solution](./1-D%20Dynamic%20Programming/03_house_robber_2.py)  |
-| 00  | Readme          | [Problem Statements](./1-D%20Dynamic%20Programming/README.md)   |
+| #   | Title                         | Solution                                                                     |
+| --- | ----------------------------- | ---------------------------------------------------------------------------- |
+| 01  | Climbing Stairs               | [Solution](./1-D%20Dynamic%20Programming/01_climbing_stairs.py)              |
+| 02  | House Robber                  | [Solution](./1-D%20Dynamic%20Programming/02_house_robber.py)                 |
+| 03  | House Robber II               | [Solution](./1-D%20Dynamic%20Programming/03_house_robber_2.py)               |
+| 04  | Longest Palindromic Substring | [Solution](./1-D%20Dynamic%20Programming/04_longest_palindrome_substring.py) |
+| 05  | Palindromic Substrings        | [Solution](./1-D%20Dynamic%20Programming/05_palindromic_substring.py)        |
+| 00  | Readme                        | [Problem Statements](./1-D%20Dynamic%20Programming/README.md)                |
