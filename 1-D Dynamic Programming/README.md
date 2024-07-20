@@ -335,6 +335,17 @@ To solve the problem of finding the longest palindromic substring, I've used a t
      - For each character, use it as the center for an odd-length palindrome and an even-length palindrome by calling `checkPalindrome`.
      - Update `resString` if a longer palindrome is found.
 
+4. **Clarification on Odd and Even Length Palindromes**:
+
+   - Odd-Length Palindromes:
+     - We start with the same index for both left and right, i.e., `left = i` and `right = i`.
+     - For example, starting at index 0, we would have `left = 0` and `right = 0`.
+     - As we expand, we decrement left by 1 and increment right by 1, creating palindromes of length 3, 5, 7, and so on.
+   - Even-Length Palindromes:
+     - We start with adjacent indices for `left` and `right`, i.e., `left = i` and `right = i + 1`.
+     - For example, starting at index 0, we would have `left = 0` and `right = 1`.
+     - As we expand, we decrement left by 1 and increment right by 1, creating palindromes of length 2, 4, 6, 8, and so on.
+
 #### Example Walkthrough
 
 Let's walk through the example `s = "babad"` step by step:
