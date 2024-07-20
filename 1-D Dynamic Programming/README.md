@@ -417,3 +417,72 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 ````
 
 **Explanation**
+
+To solve the problem of counting palindromic substrings, I've used a two-pointer approach to expand around the center.
+
+1. **Approach**:
+
+   - For each character in the string, consider it as the center of a potential palindrome.
+   - Expand outwards from the center and count all palindromes.
+   - We need to consider both odd-length and even-length palindromes.
+
+2. **Helper Function**:
+
+   - We create a helper function `countPalindrome` that takes two pointers `left` and `right`, and expands outwards as long as the characters at these pointers are the same.
+   - It returns the count of palindromic substrings found during the expansion.
+
+3. **Main Function**:
+
+   - Initialize a variable `res` to store the total count of palindromic substrings.
+   - Iterate through each character in the string:
+     - For each character, use it as the center for an odd-length palindrome and an even-length palindrome by calling `countPalindrome`.
+     - Add the counts returned by `countPalindrome` to `res`.
+
+4. **Clarification on Odd and Even Length Palindromes**:
+
+   - **Odd-Length Palindromes**:
+     - We start with the same index for both left and right, i.e., `left = i` and `right = i`.
+     - For example, starting at index 0, we would have `left = 0` and `right = 0`.
+     - As we expand, we decrement `left` by 1 and increment `right` by 1, creating palindromes of length 1, 3, 5, and so on.
+   - **Even-Length Palindromes**:
+     - We start with adjacent indices for left and right, i.e., `left = i` and `right = i + 1`.
+     - For example, starting at index 0, we would have `left = 0` and `right = 1`.
+     - As we expand, we decrement `left` by 1 and increment `right` by 1, creating palindromes of length 2, 4, 6, and so on.
+
+#### Example Walkthrough
+
+Let's walk through the example `s = "aaa"` step by step:
+
+1. **Initialization**:
+
+   - `res = 0`
+
+2. **Iteration**:
+
+   - For `i = 0` (Character 'a'):
+
+     - Check odd-length palindrome centered at 'a':
+       - `left = 0`, `right = 0`, count = 1 (palindrome: `"a"`)
+     - Check even-length palindrome centered between 'a' and 'a':
+       - `left = 0`, `right = 1`, count = 1 (palindrome: `"aa"`)
+     - Update `res` to `2`
+
+   - For `i = 1` (Character 'a'):
+
+     - Check odd-length palindrome centered at 'a':
+       - `left = 1`, `right = 1`, count = 1 (palindrome: `"a"`)
+       - `left = 0`, `right = 2`, count = 1 (palindrome: `"aaa"`)
+     - Check even-length palindrome centered between 'a' and 'a':
+       - `left = 1`, `right = 2`, count = 1 (palindrome: `"aa"`)
+     - Update `res` to `5`
+
+   - For `i = 2` (Character 'a'):
+     - Check odd-length palindrome centered at 'a':
+       - `left = 2`, `right = 2`, count = 1 (palindrome: `"a"`)
+     - Check even-length palindrome centered after 'a': No valid palindrome
+     - Update `res` to `6`
+
+#### Efficiency Analysis
+
+- **Time Complexity**: \(O(n^2)\), where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
+- **Space Complexity**: \(O(1)\), since we only use a constant amount of additional space for variables.
