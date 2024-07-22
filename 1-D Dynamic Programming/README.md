@@ -486,3 +486,60 @@ Let's walk through the example `s = "aaa"` step by step:
 
 - **Time Complexity**: \(O(n^2)\), where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
 - **Space Complexity**: \(O(1)\), since we only use a constant amount of additional space for variables.
+
+### 06. Decode Ways
+
+[Leetcode Problem URL](https://leetcode.com/problems/decode-ways/description/)
+
+A string consisting of uppercase english characters can be encoded to a number using the following mapping:
+
+```bash
+'A' -> "1"
+'B' -> "2"
+...
+'Y' -> "25"
+'Z' -> "26"
+```
+
+However, while decoding the message, you realize that there are many different ways you can decode the message because some codes are contained in other codes (`"2"` and `"5"` vs `"25"`).
+
+For example, `"11106"` can be decoded into:
+
+- `"AAJF"` with the grouping `(1, 1, 10, 6)`
+- `"KJF"` with the grouping `(11, 10, 6)`
+- The grouping `(1, 11, 06)` is invalid because `"06"` is not a valid code (only `"6"` is valid).
+
+Note: there may be strings that are impossible to decode.
+
+Given a string `s` containing only digits, return the number of ways to decode it. If the entire string cannot be decoded in any valid way, return `0`.
+
+The test cases are generated so that the answer fits in a 32-bit integer.
+
+```bash
+Example 1:
+
+Input: s = "12"
+Output: 2
+Explanation:
+"12" could be decoded as "AB" (1 2) or "L" (12).
+```
+
+```bash
+Example 2:
+
+Input: s = "226"
+Output: 3
+Explanation:
+"226" could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
+```
+
+```bash
+Example 3:
+
+Input: s = "06"
+Output: 0
+Explanation:
+"06" cannot be mapped to "F" because of the leading zero ("6" is different from "06"). In this case, the string is not a valid encoding, so return 0.
+```
+
+**Explanation**
