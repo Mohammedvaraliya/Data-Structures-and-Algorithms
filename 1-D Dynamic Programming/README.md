@@ -543,3 +543,147 @@ Explanation:
 ```
 
 **Explanation**
+
+To solve the problem of counting the number of ways to decode the string, I've used a dynamic programming with memoization.
+
+1. **Approach**:
+
+   - We will use a depth-first search (DFS) approach with memoization to avoid redundant computations.
+   - We use a dictionary `dp` to store the results of subproblems to avoid recomputing them.
+
+2. **Base Case**:
+
+   - If the current index `i` is equal to the length of the string, it means we've successfully decoded the entire string, so we return `1`.
+
+3. **Recursive Case**:
+
+   - If the current character is '0', it cannot be decoded, so we return `0`.
+   - Otherwise, we try to decode one digit (e.g., `'1'` to `'9'`) and call the DFS function for the next index.
+   - We also check if we can decode two digits (e.g., `'10'` to `'26'`), and if so, we call the DFS function for the index after the next.
+
+4. **Memoization**:
+   - Store the result of each index `i` in the dictionary `dp` to avoid recomputation.
+
+#### Example Walkthrough
+
+Let's walk through the example `s = "226"` step by step:
+
+1. **Initialization**:
+   - `dp = {3: 1}` because if we reach the end of the string, there's one way to decode it (by doing nothing).
+
+### Problem Statement
+
+Given a string `s` containing only digits, return the number of ways to decode it. If the entire string cannot be decoded in any valid way, return `0`.
+
+### Examples
+
+1. **Example 1**:
+
+   - Input: `s = "12"`
+   - Output: `2`
+   - Explanation: "12" could be decoded as "AB" (1 2) or "L" (12).
+
+2. **Example 2**:
+
+   - Input: `s = "226"`
+   - Output: `3`
+   - Explanation: "226" could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
+
+3. **Example 3**:
+   - Input: `s = "06"`
+   - Output: `0`
+   - Explanation: "06" cannot be mapped to "F" because of the leading zero ("6" is different from "06"). In this case, the string is not a valid encoding, so return 0.
+
+### Solution Explanation
+
+To solve the problem of counting the number of ways to decode a string `s`, we can use dynamic programming. Here is the step-by-step explanation:
+
+1. **Approach**:
+
+   - We will use a recursive approach with memoization to avoid recalculating results for the same subproblems.
+   - The recursive function `dfs(i)` will compute the number of ways to decode the substring starting from index `i`.
+
+2. **Base Case**:
+
+   - If the current index `i` is at the end of the string (`i == len(s)`), we have found a valid decoding, so we return 1.
+
+3. **Memoization**:
+
+   - Use a dictionary `dp` to store the results of subproblems. Initialize `dp[len(s)] = 1` because there is one way to decode an empty substring.
+
+4. **Recursive Cases**:
+
+   - If the character at index `i` is '0', it cannot be decoded, so we return 0.
+   - Otherwise, compute the result for the single digit decode (`dfs(i + 1)`).
+   - If the next two characters form a valid two-digit number (between 10 and 26), add the result of decoding the two digits (`dfs(i + 2)`).
+
+5. **Return the Result**:
+   - The result of `dfs(0)` will give the number of ways to decode the entire string `s`.
+
+#### Example Walkthrough: `s = "226"`
+
+1. **Initialization**:
+
+   - We initialize the memoization dictionary `dp` to store results of subproblems. Start with `dp = { len(s): 1 }` which is `dp = { 3: 1 }` since the length of `s` is 3.
+   - This means that if we are at the end of the string, there is exactly one way to decode an empty substring.
+
+2. **Recursive Calls**:
+
+   - **Start at index `i = 0`**:
+
+     - `s[0] = '2'`, which is not '0'.
+     - Compute `dfs(1)` (decoding the substring starting from index 1).
+
+       - **At index `i = 1`**:
+
+         - `s[1] = '2'`, which is not '0'.
+         - Compute `dfs(2)` (decoding the substring starting from index 2).
+
+           - **At index `i = 2`**:
+
+             - `s[2] = '6'`, which is not '0'.
+             - Compute `dfs(3)` (decoding the substring starting from index 3).
+
+               - **At index `i = 3`**:
+                 - We have reached the end of the string, so return 1 (base case).
+
+             - Back to `i = 2`:
+
+               - `res = 1` (number of ways to decode substring from index 2 is 1, i.e., "6").
+               - Store the result in the dictionary: `dp[2] = 1`.
+
+             - Check if `s[1:3]` (i.e., "26") is a valid two-digit decode:
+
+               - It is valid (between 10 and 26).
+               - Compute `dfs(3)` again:
+                 - **At index `i = 3`**:
+                   - We have reached the end of the string, so return 1 (base case).
+
+             - Back to `i = 2`:
+               - Add the result: `res += 1` (now `res = 2`).
+
+           - Store the result in the dictionary: `dp[1] = 2`.
+
+         - Back to `i = 0`:
+
+           - `res = 2` (number of ways to decode substring from index 1 is 2).
+
+         - Check if `s[0:2]` (i.e., "22") is a valid two-digit decode:
+
+           - It is valid (between 10 and 26).
+           - Compute `dfs(2)` again:
+             - **At index `i = 2`**:
+               - Retrieve the result from the dictionary: `dp[2] = 1`.
+
+         - Back to `i = 0`:
+           - Add the result: `res += 1` (now `res = 3`).
+
+       - Store the result in the dictionary: `dp[0] = 3`.
+
+3. **Final Result**:
+   - `dp[0] = 3`, so the number of ways to decode the string "226" is 3.
+
+#### Efficiency Analysis
+
+- **Time Complexity**: $O(n)$, where `n` is the length of the string. We process each character at most once due to memoization.
+- **Space Complexity**: $O(n)$, due to the recursion stack and the dictionary `dp` storing the results of subproblems.
