@@ -670,3 +670,52 @@ Output: 0
 ```
 
 **Explanation**
+
+The idea is to build a solution for the amount from `0` up to the target `amount` by using previously computed results.
+
+1. **Approach**:
+
+   - We create an array `dp` where `dp[i]` represents the fewest number of coins needed to make up the amount `i`.
+   - Initialize `dp` with a value greater than the possible amount (`amount + 1`), because the maximum number of coins needed to make up `amount` cannot exceed `amount` (when using the coin `1` only).
+   - Set `dp[0]` to `0` because no coins are needed to make the amount `0`.
+
+2. **Dynamic Programming Transition**:
+
+   - For each amount `a` from `1` to `amount`, and for each coin `c` in `coins`:
+     - If the current amount `a` is greater than or equal to the coin value `c`, update `dp[a]` to the minimum of its current value or `dp[a - c] + 1`.
+     - This ensures that we are using the fewest number of coins needed to make up the amount `a`.
+
+3. **Result**:
+   - If `dp[amount]` is still greater than `amount`, it means that it is not possible to make up the amount using the given coins, so return `-1`.
+   - Otherwise, return `dp[amount]` as the fewest number of coins needed to make up the amount.
+
+#### Example Walkthrough
+
+Let's walk through the example `coins = [1,2,5]`, `amount = 11` step by step:
+
+1. **Initialization**:
+
+   - `dp = [0, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12]` (since `amount + 1 = 12`)
+   - Set `dp[0]` to `0` because zero coins are needed to make the amount `0`.
+
+2. **Filling DP Array**:
+
+   - For `a = 1`:
+     - Using coin `1`: `dp[1] = min(dp[1], 1 + dp[0]) = 1` -> `dp = [0, 1, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12]`
+   - For `a = 2`:
+     - Using coin `1`: `dp[2] = min(dp[2], 1 + dp[1]) = 2`
+     - Using coin `2`: `dp[2] = min(dp[2], 1 + dp[0]) = 1` -> `dp = [0, 1, 1, 12, 12, 12, 12, 12, 12, 12, 12, 12]`
+   - For `a = 3`:
+     - Using coin `1`: `dp[3] = min(dp[3], 1 + dp[2]) = 2`
+     - Using coin `2`: `dp[3] = min(dp[3], 1 + dp[1]) = 2` -> `dp = [0, 1, 1, 2, 12, 12, 12, 12, 12, 12, 12, 12]`
+   - Continue filling the array until `a = 11`:
+     - `dp[11] = min(dp[11], 1 + dp[10]) = 3` (using coin `5` twice and coin `1` once)
+
+3. **Result**:
+   - The final `dp` array is `[0, 1, 1, 2, 2, 1, 2, 2, 3, 3, 2, 3]`.
+   - The minimum number of coins to make `11` is `3` (`5 + 5 + 1`).
+
+#### Efficiency Analysis
+
+- **Time Complexity**: $O(n \cdot m)$, where `n` is the amount and `m` is the number of coins. This is because for each amount from `1` to `n`, we check all `m` coins.
+- **Space Complexity**: $O(n)$, where `n` is the amount. We use an array `dp` of size `n + 1`.
