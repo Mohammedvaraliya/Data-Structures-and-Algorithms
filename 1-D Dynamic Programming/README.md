@@ -484,8 +484,8 @@ Let's walk through the example `s = "aaa"` step by step:
 
 #### Efficiency Analysis
 
-- **Time Complexity**: \(O(n^2)\), where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
-- **Space Complexity**: \(O(1)\), since we only use a constant amount of additional space for variables.
+- **Time Complexity**: $O(n^2)$, where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
+- **Space Complexity**: $O(1)$, since we only use a constant amount of additional space for variables.
 
 ### 06. Decode Ways
 
@@ -545,58 +545,6 @@ Explanation:
 **Explanation**
 
 To solve the problem of counting the number of ways to decode the string, I've used a dynamic programming with memoization.
-
-1. **Approach**:
-
-   - We will use a depth-first search (DFS) approach with memoization to avoid redundant computations.
-   - We use a dictionary `dp` to store the results of subproblems to avoid recomputing them.
-
-2. **Base Case**:
-
-   - If the current index `i` is equal to the length of the string, it means we've successfully decoded the entire string, so we return `1`.
-
-3. **Recursive Case**:
-
-   - If the current character is '0', it cannot be decoded, so we return `0`.
-   - Otherwise, we try to decode one digit (e.g., `'1'` to `'9'`) and call the DFS function for the next index.
-   - We also check if we can decode two digits (e.g., `'10'` to `'26'`), and if so, we call the DFS function for the index after the next.
-
-4. **Memoization**:
-   - Store the result of each index `i` in the dictionary `dp` to avoid recomputation.
-
-#### Example Walkthrough
-
-Let's walk through the example `s = "226"` step by step:
-
-1. **Initialization**:
-   - `dp = {3: 1}` because if we reach the end of the string, there's one way to decode it (by doing nothing).
-
-### Problem Statement
-
-Given a string `s` containing only digits, return the number of ways to decode it. If the entire string cannot be decoded in any valid way, return `0`.
-
-### Examples
-
-1. **Example 1**:
-
-   - Input: `s = "12"`
-   - Output: `2`
-   - Explanation: "12" could be decoded as "AB" (1 2) or "L" (12).
-
-2. **Example 2**:
-
-   - Input: `s = "226"`
-   - Output: `3`
-   - Explanation: "226" could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
-
-3. **Example 3**:
-   - Input: `s = "06"`
-   - Output: `0`
-   - Explanation: "06" cannot be mapped to "F" because of the leading zero ("6" is different from "06"). In this case, the string is not a valid encoding, so return 0.
-
-### Solution Explanation
-
-To solve the problem of counting the number of ways to decode a string `s`, we can use dynamic programming. Here is the step-by-step explanation:
 
 1. **Approach**:
 
@@ -687,3 +635,38 @@ To solve the problem of counting the number of ways to decode a string `s`, we c
 
 - **Time Complexity**: $O(n)$, where `n` is the length of the string. We process each character at most once due to memoization.
 - **Space Complexity**: $O(n)$, due to the recursion stack and the dictionary `dp` storing the results of subproblems.
+
+### 06. Decode Ways
+
+[Leetcode Problem URL](https://leetcode.com/problems/coin-change/description/)
+
+You are given an integer array `coins` representing coins of different denominations and an integer amount representing a total amount of money.
+
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return `-1`.
+
+You may assume that you have an infinite number of each kind of coin.
+
+```bash
+Example 1:
+
+Input: coins = [1,2,5], amount = 11
+Output: 3
+Explanation: 11 = 5 + 5 + 1
+```
+
+```bash
+Example 2:
+
+Input: coins = [2], amount = 3
+Output: -1
+Explanation: The target amount is 3, but it is not possible to achieve this amount with the available coin denomination of 2. Using only the coin of 2 would result in a total of 4, which does not match the required amount of 3. Therefore, the function should return -1.
+```
+
+```bash
+Example 3:
+
+Input: coins = [1], amount = 0
+Output: 0
+```
+
+**Explanation**

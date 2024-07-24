@@ -369,4 +369,5 @@
 | 04  | Longest Palindromic Substring | [Solution](./1-D%20Dynamic%20Programming/04_longest_palindrome_substring.py) |
 | 05  | Palindromic Substrings        | [Solution](./1-D%20Dynamic%20Programming/05_palindromic_substring.py)        |
 | 06  | Decode Ways                   | [Solution](./1-D%20Dynamic%20Programming/06_decode_ways.py)                  |
+| 07  | Coin Change                   | [Solution](./1-D%20Dynamic%20Programming/07_coin_change.py)                  |
 | 00  | Readme                        | [Problem Statements](./1-D%20Dynamic%20Programming/README.md)                |
