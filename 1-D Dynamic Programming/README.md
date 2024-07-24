@@ -636,7 +636,7 @@ To solve the problem of counting the number of ways to decode the string, I've u
 - **Time Complexity**: $O(n)$, where `n` is the length of the string. We process each character at most once due to memoization.
 - **Space Complexity**: $O(n)$, due to the recursion stack and the dictionary `dp` storing the results of subproblems.
 
-### 06. Decode Ways
+### 07. Coin Change
 
 [Leetcode Problem URL](https://leetcode.com/problems/coin-change/description/)
 
