@@ -719,3 +719,31 @@ Let's walk through the example `coins = [1,2,5]`, `amount = 11` step by step:
 
 - **Time Complexity**: $O(n \cdot m)$, where `n` is the amount and `m` is the number of coins. This is because for each amount from `1` to `n`, we check all `m` coins.
 - **Space Complexity**: $O(n)$, where `n` is the amount. We use an array `dp` of size `n + 1`.
+
+### 08. Maximum Product Subarray
+
+[Leetcode Problem URL](https://leetcode.com/problems/maximum-product-subarray/description/)
+
+Given an integer array `nums`, find a subarray that has the largest product, and return the product.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+The test cases are generated so that the answer will fit in a 32-bit integer.
+
+```bash
+Example 1:
+
+Input: nums = [2,3,-2,4]
+Output: 6
+Explanation: [2,3] has the largest product 6.
+```
+
+```bash
+Example 2:
+
+Input: nums = [-2,0,-1]
+Output: 0
+Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
+```
+
+**Explanation**
