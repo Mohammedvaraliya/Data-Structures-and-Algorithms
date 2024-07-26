@@ -747,3 +747,70 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 ```
 
 **Explanation**
+
+The problem is to find the maximum product of a subarray in the given array `nums`. Due to the possibility of negative numbers and zero, the problem requires careful handling of the product calculations.
+
+1. **Initialization**:
+
+   - We start by initializing the result `res` to the maximum value in the array to handle the edge case where the array might have only one negative number or zero.
+   - We also initialize two variables `curMin` and `curMax` to `1`. These will store the minimum and maximum product of the subarray ending at the current position.
+
+2. **Iterate Through the Array**:
+
+   - For each element `n` in `nums`:
+     - If `n` is `0`, reset `curMin` and `curMax` to `1` because any subarray that includes `0` will have a product of `0`. Continue to the next element.
+     - Calculate the temporary maximum product `tmp` by multiplying `n` with `curMax`.
+     - Update `curMax` to the maximum of:
+       - `n` multiplied by `curMax` (extending the current maximum product subarray),
+       - `n` multiplied by `curMin` (if the current minimum product subarray multiplied by a negative number `n` results in a larger product),
+       - `n` itself (starting a new subarray).
+     - Update `curMin` to the minimum of:
+       - `tmp` (temporary maximum product),
+       - `n` multiplied by `curMin` (extending the current minimum product subarray),
+       - `n` itself (starting a new subarray).
+     - Update the result `res` to the maximum of `res` and `curMax`.
+
+3. **Result**:
+
+   - The maximum product of a subarray is stored in `res`.
+
+#### Example Walkthrough
+
+Let's walk through the example `nums = [2,3,-2,4]` step by step:
+
+1. **Initialization**:
+
+   - `res = max(nums) = 4`
+   - `curMin = 1`
+   - `curMax = 1`
+
+2. **Iteration**:
+
+   - For `n = 2`:
+     - `tmp = 2 * 1 = 2`
+     - `curMax = max(2 * 1, 2 * 1, 2) = 2`
+     - `curMin = min(2, 2 * 1, 2) = 2`
+     - `res = max(4, 2) = 4`
+   - For `n = 3`:
+     - `tmp = 3 * 2 = 6`
+     - `curMax = max(3 * 2, 3 * 2, 3) = 6`
+     - `curMin = min(6, 3 * 2, 3) = 3`
+     - `res = max(4, 6) = 6`
+   - For `n = -2`:
+     - `tmp = -2 * 6 = -12`
+     - `curMax = max(-2 * 6, -2 * 3, -2) = -2`
+     - `curMin = min(-12, -2 * 3, -2) = -12`
+     - `res = max(6, -2) = 6`
+   - For `n = 4`:
+     - `tmp = 4 * -2 = -8`
+     - `curMax = max(4 * -2, 4 * -12, 4) = 4`
+     - `curMin = min(-8, 4 * -12, 4) = -48`
+     - `res = max(6, 4) = 6`
+
+3. **Result**:
+   - The final `res` is `6`, which is the maximum product of a subarray in `nums`.
+
+#### Efficiency Analysis
+
+- **Time Complexity**: $O(n)$, where `n` is the length of the array `nums`. We iterate through the array once.
+- **Space Complexity**: $O(1)$, constant space. We use only a few variables (`curMin`, `curMax`, and `res`) regardless of the input size.
