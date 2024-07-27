@@ -808,6 +808,7 @@ Let's walk through the example `nums = [2,3,-2,4]` step by step:
      - `res = max(6, 4) = 6`
 
 3. **Result**:
+
    - The final `res` is `6`, which is the maximum product of a subarray in `nums`.
 
 #### Efficiency Analysis
