@@ -815,3 +815,37 @@ Let's walk through the example `nums = [2,3,-2,4]` step by step:
 
 - **Time Complexity**: $O(n)$, where `n` is the length of the array `nums`. We iterate through the array once.
 - **Space Complexity**: $O(1)$, constant space. We use only a few variables (`curMin`, `curMax`, and `res`) regardless of the input size.
+
+### 09. Word Break
+
+[Leetcode Problem URL](https://leetcode.com/problems/word-break/description/)
+
+Given a string `s` and a dictionary of strings `wordDict`, return `true` if `s` can be segmented into a space-separated sequence of one or more dictionary words.
+
+Note that the same word in the dictionary may be reused multiple times in the segmentation.
+
+```bash
+Example 1:
+
+Input: s = "leetcode", wordDict = ["leet","code"]
+Output: true
+Explanation: Return true because "leetcode" can be segmented as "leet code".
+```
+
+```bash
+Example 2:
+
+Input: s = "applepenapple", wordDict = ["apple","pen"]
+Output: true
+Explanation: Return true because "applepenapple" can be segmented as "apple pen apple".
+Note that you are allowed to reuse a dictionary word.
+```
+
+```bash
+Example 3:
+
+Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
+Output: false
+```
+
+**Explanation**

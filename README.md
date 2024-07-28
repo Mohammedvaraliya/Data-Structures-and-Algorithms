@@ -371,4 +371,5 @@
 | 06  | Decode Ways                   | [Solution](./1-D%20Dynamic%20Programming/06_decode_ways.py)                     |
 | 07  | Coin Change                   | [Solution](./1-D%20Dynamic%20Programming/07_coin_change.py)                     |
 | 08  | Maximum Product Subarray      | [Solution](./1-D%20Dynamic%20Programming/08_maximum_product_subarray.py)        |
+| 09  | Word Break                    | [Solution](./1-D%20Dynamic%20Programming/09_word_break.py)                      |
 | 00  | Readme                        | [Problem Statements with Explanations](./1-D%20Dynamic%20Programming/README.md) |
