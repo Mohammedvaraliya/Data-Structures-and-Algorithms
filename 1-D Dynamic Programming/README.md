@@ -849,3 +849,60 @@ Output: false
 ```
 
 **Explanation**
+
+The problem is to determine if the string `s` can be segmented into a space-separated sequence of one or more dictionary words.
+
+#### Approach
+
+1. **Dynamic Programming Array**:
+
+   - I've used a boolean array `dp` where `dp[i]` is `True` if the substring `s[i:]` can be segmented into dictionary words, otherwise `False`.
+   - Initialize `dp[len(s)]` to `True` because an empty substring can always be segmented.
+
+2. **Iterate Through the String**:
+
+   - Iterate through the string `s` from the end to the beginning.
+   - For each position `i`, check each word in `wordDict` to see if the substring `s[i:i+len(w)]` matches the word `w`.
+   - If it matches and the substring `s[i+len(w):]` can be segmented (`dp[i + len(w)]` is `True`), set `dp[i]` to `True`.
+   - Break the inner loop if `dp[i]` becomes `True` since there's no need to check further.
+
+3. **Return the Result**:
+   - Finally, return `dp[0]` which indicates whether the entire string `s` can be segmented into dictionary words.
+
+#### Example Walkthrough
+
+Let's walk through the example `s = "leetcode"`, `wordDict = ["leet","code"]` step by step:
+
+1. **Initialization**:
+
+   - `dp = [False, False, False, False, False, False, False, False, True]`
+   - `dp[8] = True` because the empty string can always be segmented.
+
+2. **Iteration**:
+
+   - For `i = 7` to `0`:
+     - At `i = 7`:
+       - No word in `wordDict` matches `s[7:]`, so `dp[7]` remains `False`.
+     - At `i = 6`:
+       - No word in `wordDict` matches `s[6:]`, so `dp[6]` remains `False`.
+     - At `i = 5`:
+       - No word in `wordDict` matches `s[5:]`, so `dp[5]` remains `False`.
+     - At `i = 4`:
+       - The word "code" matches `s[4:8]` and `dp[8]` is `True`, so `dp[4]` is set to `True`.
+     - At `i = 3`:
+       - No word in `wordDict` matches `s[3:]`, so `dp[3]` remains `False`.
+     - At `i = 2`:
+       - No word in `wordDict` matches `s[2:]`, so `dp[2]` remains `False`.
+     - At `i = 1`:
+       - No word in `wordDict` matches `s[1:]`, so `dp[1]` remains `False`.
+     - At `i = 0`:
+       - The word "leet" matches `s[0:4]` and `dp[4]` is `True`, so `dp[0]` is set to `True`.
+
+3. **Result**:
+   - The final `dp` array is `[True, False, False, False, True, False, False, False, True]`.
+   - `dp[0]` is `True`, so the string "leetcode" can be segmented as "leet code".
+
+#### Efficiency Analysis
+
+- **Time Complexity**: $O(n \cdot m)$, where `n` is the length of the string `s` and `m` is the number of words in `wordDict`. We iterate through the string and for each position, we check each word in the dictionary.
+- **Space Complexity**: $O(n)$, where `n` is the length of the string `s`. We use a DP array of size `n + 1`.
