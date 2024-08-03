@@ -906,3 +906,36 @@ Let's walk through the example `s = "leetcode"`, `wordDict = ["leet","code"]` st
 
 - **Time Complexity**: $O(n \cdot m)$, where `n` is the length of the string `s` and `m` is the number of words in `wordDict`. We iterate through the string and for each position, we check each word in the dictionary.
 - **Space Complexity**: $O(n)$, where `n` is the length of the string `s`. We use a DP array of size `n + 1`.
+
+### 10. Longest Increasing Subsequence
+
+[Leetcode Problem URL](https://leetcode.com/problems/longest-increasing-subsequence/description/)
+
+Given an integer array `nums`, return the length of the longest strictly increasing
+subsequence.
+
+A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.
+
+```bash
+Example 1:
+
+Input: nums = [10,9,2,5,3,7,101,18]
+Output: 4
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+```
+
+```bash
+Example 2:
+
+Input: nums = [0,1,0,3,2,3]
+Output: 4
+```
+
+```bash
+Example 3:
+
+Input: nums = [7,7,7,7,7,7,7]
+Output: 1
+```
+
+**Explanation**
