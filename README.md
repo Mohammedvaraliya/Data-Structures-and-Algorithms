@@ -32,6 +32,7 @@
 - [Graphs Data Structure](#graphs-data-structure)
 - [Advanced Graphs Data Structure](#advanced-graphs-data-structure)
 - [1-D Dynamic Programming](#1-d-dynamic-programming)
+- [2-D Dynamic Programming](#2-d-dynamic-programming)
 
 ## Stack
 
@@ -374,3 +375,10 @@
 | 09  | Word Break                     | [Solution](./1-D%20Dynamic%20Programming/09_word_break.py)                      |
 | 10  | Longest Increasing Subsequence | [Solution](./1-D%20Dynamic%20Programming/10_longest_increasing_subsequence.py)  |
 | 00  | Readme                         | [Problem Statements with Explanations](./1-D%20Dynamic%20Programming/README.md) |
+
+## 2-D Dynamic Programming
+
+| #   | Title        | Solution                                                                        |
+| --- | ------------ | ------------------------------------------------------------------------------- |
+| 01  | Unique Paths | [Solution](./2-D%20Dynamic%20Programming/01_unique_paths.py)                    |
+| 00  | Readme       | [Problem Statements with Explanations](./2-D%20Dynamic%20Programming/README.md) |
