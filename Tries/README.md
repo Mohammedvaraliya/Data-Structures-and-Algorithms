@@ -1,6 +1,6 @@
 # Tries Data-Structures and Algorithms
 
-### 01. Implement Trie (Prefix Tree)
+## 01. Implement Trie (Prefix Tree)
 
 [Leetcode Problem URL](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
 
@@ -45,7 +45,7 @@ obj.insert(word2)
 print(obj.search(word2)) # True because the word "app" has been inserted in the Trie object
 ```
 
-**Explanation**
+### Explanation
 
 #### TrieNode Class
 
@@ -125,7 +125,7 @@ The `startsWith` method checks if there is any word in the Trie that starts with
    - Traverse through each character in "app".
    - Since all characters are found and the last node has `endOfWord = True`, return `True`.
 
-### 02. Design Add and Search Words Data Structure
+## 02. Design Add and Search Words Data Structure
 
 [Leetcode Problem URL](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)
 
@@ -170,7 +170,7 @@ print(obj.search(".ad")) # True because ".ad" matches "bad", "dad", or "mad"
 print(obj.search("b..")) # True because "b.." matches "bad"
 ```
 
-**Explanation**
+### Explanation
 
 #### TrieNode Class
 
@@ -218,7 +218,7 @@ The `dfs` function is a helper function for recursive DFS:
   - **Time Complexity:** In the worst case, it can be $(O(m \times 26^m))$, where $(m)$ is the length of the word. This is because for each dot `'.'`, it may need to check all possible 26 child nodes, resulting in a combinatorial explosion.
   - **Space Complexity:** $(O(m))$ for the recursion stack in the worst case where $(m)$ is the length of the word.
 
-### 03. Word Search II
+## 03. Word Search II
 
 [Leetcode Problem URL](https://leetcode.com/problems/word-search-ii/description/)
 
@@ -258,7 +258,7 @@ res2 = obj.findWords(board=board2, words=word2)
 print(res2)
 ```
 
-**Explanation**
+### Explanation
 
 To solve this problem, we utilize a combination of a Trie (prefix tree) and Depth-First Search (DFS). The Trie helps efficiently check if the prefixes of the words are present while performing the DFS.
 
@@ -311,7 +311,7 @@ The `dfs` function performs the Depth-First Search on the board to find all vali
 
 Finally, the method iterates through each cell in the board and initiates a DFS from that cell.
 
-### Efficiency Analysis
+## Efficiency Analysis
 
 - **Adding Words to Trie**
 

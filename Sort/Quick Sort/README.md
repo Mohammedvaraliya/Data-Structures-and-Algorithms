@@ -1,6 +1,6 @@
 # Quick Sort Data-Structures and Algorithms
 
-### 01. Quick Sort: Hoare Partition
+## 01. Quick Sort: Hoare Partition
 
     Quick Sort : Hoare Partition
     Hoare partition is an algorithm that is used to partition an array about a pivot.
@@ -52,7 +52,7 @@
 
                            [2, 7, 9, 11, 15, 28, 29]
 
-### 02. Quick Sort: Lomuto Partition
+## 02. Quick Sort: Lomuto Partition
 
     Quick Sort: Lomuto Partition
     Lomuto partition scheme, which is used in the famous Quicksort algorithm.

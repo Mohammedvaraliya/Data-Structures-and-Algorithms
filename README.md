@@ -65,7 +65,7 @@
 
 ## Linked List
 
-### Singly Linked List
+## Singly Linked List
 
 | #   | Title                                                           | Solution                                                                                                     |
 | --- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -90,7 +90,7 @@
 | 00  | Readme                                                          | [Problem Statements with Explanations](./Linked%20List/Singly%20Linked%20List/README.md)                     |
 | 00  | Readme (Leetcode Problems)                                      | [Problem Statements with Explanations](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/README.md) |
 
-### Doubly Linked List
+## Doubly Linked List
 
 | #   | Title                                       | Solution                                                                                 |
 | --- | ------------------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -102,7 +102,7 @@
 | 06  | Doubly Linked List -- Pairs with Sum        | [Solution](./Linked%20List/Doubly%20Linked%20List/06_doublyLL_pairs_with_sum.py)         |
 | 00  | Readme                                      | [Problem Statements with Explanations](./Linked%20List/Doubly%20Linked%20List/Readme.md) |
 
-### Circular Linked List
+## Circular Linked List
 
 | #   | Title                                           | Solution                                                                                   |
 | --- | ----------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -168,7 +168,7 @@
 
 ## Search
 
-### Linear Search
+## Linear Search
 
 | #   | Title                         | Solution                                                                   |
 | --- | ----------------------------- | -------------------------------------------------------------------------- |
@@ -176,7 +176,7 @@
 | 02  | Linear Search : Find Elements | [Solution](./Search/Linear%20Search/02_linear_search.py)                   |
 | 00  | Readme                        | [Problem Statements with Explanations](./Search/Linear%20Search/README.md) |
 
-### Binary Search
+## Binary Search
 
 | #   | Title                                                   | Solution                                                                                      |
 | --- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
@@ -194,7 +194,7 @@
 
 ## Sorting Algorithms
 
-### Bubble Sort
+## Bubble Sort
 
 | #   | Title                   | Solution                                                               |
 | --- | ----------------------- | ---------------------------------------------------------------------- |
@@ -202,7 +202,7 @@
 | 02  | Bubble Sort : Using Key | [Solution](./Sort/Bubble%20Sort/02_bubble_sort_using_key.py)           |
 | 00  | Readme                  | [Problem Statements with Explanations](./Sort/Bubble%20Sort/README.md) |
 
-### Quick Sort
+## Quick Sort
 
 | #   | Title                        | Solution                                                              |
 | --- | ---------------------------- | --------------------------------------------------------------------- |
@@ -210,14 +210,14 @@
 | 02  | Quick Sort: Lomuto Partition | [Solution](./Sort/Quick%20Sort/02_quick_sort_lomuto_partition.py)     |
 | 00  | Readme                       | [Problem Statements with Explanations](./Sort/Quick%20Sort/README.md) |
 
-### Insertion Sort
+## Insertion Sort
 
 | #   | Title          | Solution                                                                  |
 | --- | -------------- | ------------------------------------------------------------------------- |
 | 01  | Insertion Sort | [Solution](./Sort/Insertion%20Sort/01_insertion_sort.py)                  |
 | 00  | Readme         | [Problem Statements with Explanations](./Sort/Insertion%20Sort/README.md) |
 
-### Merge Sort
+## Merge Sort
 
 | #   | Title                         | Solution                                                              |
 | --- | ----------------------------- | --------------------------------------------------------------------- |
@@ -226,7 +226,7 @@
 | 03  | Merge Sort: Using Key         | [Solution](./Sort/Merge%20Sort/03_merge_Sort_using_key.py)            |
 | 00  | Readme                        | [Problem Statements with Explanations](./Sort/Merge%20Sort/README.md) |
 
-### Shell Sort
+## Shell Sort
 
 | #   | Title                         | Solution                                                              |
 | --- | ----------------------------- | --------------------------------------------------------------------- |
@@ -234,7 +234,7 @@
 | 02  | Shell Sort: Remove Duplicates | [Solution](./Sort/Shell%20Sort/02_shell_sort_remove_duplicates.py)    |
 | 00  | Readme                        | [Problem Statements with Explanations](./Sort/Shell%20Sort/README.md) |
 
-### Selection Sort
+## Selection Sort
 
 | #   | Title                      | Solution                                                                  |
 | --- | -------------------------- | ------------------------------------------------------------------------- |
@@ -285,14 +285,14 @@
 
 ## Tree Data Structures
 
-### General Trees
+## General Trees
 
 | #   | Title         | Solution                                                                 |
 | --- | ------------- | ------------------------------------------------------------------------ |
 | 01  | General Trees | [Solution](./Trees/General%20Tree/01_general_tree.py)                    |
 | 00  | Readme        | [Problem Statements with Explanations](./Trees/General%20Tree/README.md) |
 
-### Binary Trees
+## Binary Trees
 
 | #   | Title                                                                    | Solution                                                                                         |
 | --- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
@@ -313,7 +313,7 @@
 | 15  | Binary Trees: Serialize and Deserialize                                  | [Solution](./Trees/Binary%20Tree/15_binary_tree_serialize_and_deserialize.py)                    |
 | 00  | Readme                                                                   | [Problem Statements with Explanations](./Trees/Binary%20Tree/README.md)                          |
 
-### Binary Search Trees
+## Binary Search Trees
 
 | #   | Title                                                               | Solution                                                                                            |
 | --- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -378,7 +378,8 @@
 
 ## 2-D Dynamic Programming
 
-| #   | Title        | Solution                                                                        |
-| --- | ------------ | ------------------------------------------------------------------------------- |
-| 01  | Unique Paths | [Solution](./2-D%20Dynamic%20Programming/01_unique_paths.py)                    |
-| 00  | Readme       | [Problem Statements with Explanations](./2-D%20Dynamic%20Programming/README.md) |
+| #   | Title                      | Solution                                                                        |
+| --- | -------------------------- | ------------------------------------------------------------------------------- |
+| 01  | Unique Paths               | [Solution](./2-D%20Dynamic%20Programming/01_unique_paths.py)                    |
+| 02  | Longest Common Subsequence | [Solution](./2-D%20Dynamic%20Programming/02_longest_common_subsequence.py)      |
+| 00  | Readme                     | [Problem Statements with Explanations](./2-D%20Dynamic%20Programming/README.md) |

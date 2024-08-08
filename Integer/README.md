@@ -1,6 +1,6 @@
 # Integers Data-Structures and Algorithms
 
-### 01. Add Digits
+## 01. Add Digits
 
 [Leetcode Problem URL](https://leetcode.com/problems/add-digits/)
 

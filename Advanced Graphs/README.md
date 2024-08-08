@@ -1,6 +1,6 @@
 # Advanced Graphs Data-Structures and Algorithms
 
-### 01. Alien Dictionary
+## 01. Alien Dictionary
 
 [Leetcode Problem URL](https://leetcode.com/problems/alien-dictionary/description/)
 [Lintcode Problem URL](https://www.lintcode.com/problem/892/)
@@ -65,7 +65,7 @@ so one possible solution is "hernf"
 So return "hernf"
 ```
 
-**Explanation**
+### Explanation
 
 To solve this problem, I've used a topological sorting approach. Here’s the detailed step-by-step explanation of the solution:
 

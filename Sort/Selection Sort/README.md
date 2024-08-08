@@ -1,6 +1,6 @@
 # Selection Sort Data-Structures and Algorithms
 
-### 01. Selection Sort
+## 01. Selection Sort
 
     Selection Sort
     The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order)
@@ -54,7 +54,7 @@
 
                                             11   	   12   	   22   	   25   	   64
 
-### 02. Selection Sort: Dictionary
+## 02. Selection Sort: Dictionary
 
     Selection Sort: Dictionary
 

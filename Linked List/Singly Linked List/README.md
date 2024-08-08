@@ -1,12 +1,12 @@
 # Singly Liked List Data-Structures and Algorithms
 
-### 01. Singly Liked List
+## 01. Singly Liked List
 
     Singly Liked List
     Append - Add the Node from end of the list
     Prepend - Add the Node from front of the list
 
-### 02. Singly Linked Lists -- Length of List
+## 02. Singly Linked Lists -- Length of List
 
     Singly Linked Lists -- Length of List
     It will return the length of the Singly Linked List
@@ -20,12 +20,12 @@
 
     length of Singly Linked List is : 4
 
-### 03. Singly Linked Lists -- Node Swap
+## 03. Singly Linked Lists -- Node Swap
 
     Singly Linked Lists -- Node Swap
     It will swap the node from Singly Linked List
 
-### 04. Singly Linked Lists -- Reverse
+## 04. Singly Linked Lists -- Reverse
 
 [Leetcode Problem URL](https://leetcode.com/problems/reverse-linked-list/)
 
@@ -62,7 +62,7 @@ Input: head = []
 Output: []
 ```
 
-### 05. Singly Linked Lists -- Merge Two Sorted Lists
+## 05. Singly Linked Lists -- Merge Two Sorted Lists
 
     Singly Linked Lists -- Merge Two Sorted Lists
     It will merge the two list in sorted order
@@ -94,7 +94,7 @@ Output: []
                 9
                 10
 
-### 06. Singly Linked Lists -- Remove Duplicates
+## 06. Singly Linked Lists -- Remove Duplicates
 
     Singly Linked Lists -- Remove Duplicates
     It will remove the duplicate Node from the Singly Linked List
@@ -114,7 +114,7 @@ Output: []
                                 2
                                 7
 
-### 07. Singly Linked Lists -- Nth-to-Last Node
+## 07. Singly Linked Lists -- Nth-to-Last Node
 
     Singly Linked List -- Nth-to-Last Node
     It will return the Node from last index number.
@@ -130,7 +130,7 @@ Output: []
     print_nth_from_last_method2(3):
                                     D
 
-### 08. Singly Linked Lists -- Count Occurrences
+## 08. Singly Linked Lists -- Count Occurrences
 
     Singly Linked Lists -- Count Occurrences
     It will return the number of Node present in the Singly Linked list of given Data.
@@ -150,7 +150,7 @@ Output: []
 
     because 4 occurences of Node with data (1) available in the Singly Linked List
 
-### 09. Singly Linked Lists -- Rotate
+## 09. Singly Linked Lists -- Rotate
 
     Singly Linked Lists -- Rotate
     It will rotate the Singly linked List of given index number.
@@ -175,7 +175,7 @@ Output: []
                     3
                     4
 
-### 10. Singly Linked Lists -- Is Palindrome
+## 10. Singly Linked Lists -- Is Palindrome
 
     Singly Linked Lists -- Is Palindrome
     A palindrome is a word or phrase that is the same forward and backwards.
@@ -200,7 +200,7 @@ Output: []
 
     HELLO cannot be read be same when read forward and backwards so this will return False.
 
-### 11. Singly Linked Lists -- Move Tail to Head
+## 11. Singly Linked Lists -- Move Tail to Head
 
     Singly Linked Lists -- Move Tail to Head
     It will move the last node to head of the Singly Linked list.
@@ -221,7 +221,7 @@ Output: []
                                 D
                                 E
 
-### 12. Singly Linked Lists -- Sum Two Lists
+## 12. Singly Linked Lists -- Sum Two Lists
 
     Singly Linked Lists -- Sum Two Lists
 

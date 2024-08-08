@@ -1,6 +1,6 @@
 # Iteration & Recursion Data-Structures and Algorithms
 
-### 01. Understanding Iterative Approach
+## 01. Understanding Iterative Approach
 
     Understanding Iterative Approach
     The repeated execution of some groups of code statements in a program is called iteration.
@@ -22,7 +22,7 @@
     i = 4   i.e 6 + 4   = 10
     i = 5   i.e 10 + 5  = 15
 
-### 02. Understanding Recursive Approach
+## 02. Understanding Recursive Approach
 
     Understanding Recursion Approach
     Recursion is a process in which a function calls itself directly or indirectly.
@@ -52,7 +52,7 @@
 
                Thus, the output is 21.
 
-### 03. Fibonacci Number Using Recursion
+## 03. Fibonacci Number Using Recursion
 
     Fibonacci Number Using Recursion
 
@@ -81,7 +81,7 @@
     For n = 9
     Output:34
 
-### 04. Recursion: List sum
+## 04. Recursion: List sum
 
     Recursion: List sum
     To find the sum of list recursively
@@ -171,7 +171,7 @@
 
     The final output of the sum_of_list is 21
 
-### 05. Recursion: Get Sum Of Integer
+## 05. Recursion: Get Sum Of Integer
 
     Recursion: Get Sum Of Integer
     Given a number, the sum of its digits.
@@ -202,7 +202,7 @@
 
     6. Print or return the sum
 
-### 06. Recursion: Sum Of Positive Integer
+## 06. Recursion: Sum Of Positive Integer
 
     Recursion: Sum Of Positive Integer
     Sum of positive integer
@@ -255,7 +255,7 @@
 
             => 30 is the output
 
-### 07. Recursion: Calculate The Harmonic Sum
+## 07. Recursion: Calculate The Harmonic Sum
 
     Recursion: Calculate The Harmonic Sum
     The harmonic sum is the sum of the reciprocals of the positive integers.

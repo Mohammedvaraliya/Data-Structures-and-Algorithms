@@ -1,13 +1,13 @@
 # Hash Table Data-Structures and Algorithms
 
-### 01. Hash Table Implementation
+## 01. Hash Table Implementation
 
     Hash Table Implementation
     How hash table works
 
     how list and array different from hash table
 
-### 02. Hash Table Implementation : Get Hash
+## 02. Hash Table Implementation : Get Hash
 
     Hash Table Implementation : Get Hash
 
@@ -38,7 +38,7 @@
 
             so, when we try to add the value in hash table with index 'vara', it will add to index 9.
 
-### 03. Hash Table Implementation : Collision Handling In Hash Table
+## 03. Hash Table Implementation : Collision Handling In Hash Table
 
     Hash Table Implementation : Collision Handling In Hash Table
     In collision handling the value can be stored in a multiple key value format on the same index number.

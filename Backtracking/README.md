@@ -1,6 +1,6 @@
 # Backtracking Data-Structures and Algorithms
 
-### 01. Combination Sum
+## 01. Combination Sum
 
 [Leetcode Problem URL](https://leetcode.com/problems/combination-sum/description/)
 
@@ -37,7 +37,7 @@ Input: candidates = [2], target = 1
 Output: []
 ```
 
-**Explanation**
+### Explanation
 
 #### 1. Initialize the Result List
 
@@ -91,7 +91,7 @@ Output: []
 
 - The time complexity of the solution is $O(2^t)$, where `t` is the target value. This accounts for the exponential number of possible combinations that can be formed with the given candidates.
 
-### 02. Word Search
+## 02. Word Search
 
 [Leetcode Problem URL](https://leetcode.com/problems/word-search/description/)
 
@@ -126,7 +126,7 @@ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "
 Output: false
 ```
 
-**Explanation**
+### Explanation
 
 The problem can be solved using Depth-First Search (DFS) with backtracking. The idea is to start from each cell in the grid and explore all possible paths to check if the word can be formed.
 
@@ -134,15 +134,15 @@ The problem can be solved using Depth-First Search (DFS) with backtracking. The 
 
 Sure! Here's a detailed Explanation of the solution for the Word Search problem, step by step, along with an analysis of its efficiency.
 
-### Problem Summary
+## Problem Summary
 
 Given an `m` x `n` grid of characters (`board`) and a string (`word`), determine if the word can be constructed from letters of sequentially adjacent cells in the grid. Adjacent cells can be horizontally or vertically neighboring, and the same letter cell may not be used more than once.
 
-### Approach
+## Approach
 
 The problem can be solved using Depth-First Search (DFS) with backtracking. The idea is to start from each cell in the grid and explore all possible paths to check if the word can be formed.
 
-### Steps
+## Steps
 
 1. **Initialize Variables:**
 

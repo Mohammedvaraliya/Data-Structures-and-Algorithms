@@ -1,6 +1,6 @@
 # 2-D Dynamic Programming Data-Structures and Algorithms
 
-### 01. Unique Paths
+## 01. Unique Paths
 
 [Leetcode Problem URL](https://leetcode.com/problems/unique-paths/description/)
 
@@ -30,7 +30,7 @@ Explanation: From the top-left corner, there are a total of 3 ways to reach the 
 3. Down -> Right -> Down
 ```
 
-**Explanation**
+### Explanation
 
 To solve this problem, I've used dynamic programming (DP). The idea is to break down the problem into smaller subproblems and solve them. We create a DP array where each element `dp[i][j]` represents the number of unique paths to reach the cell `(i, j)` from the top-left corner.
 
@@ -93,3 +93,41 @@ Let's walk through the example `m = 3`, `n = 7`:
 
 - **Time Complexity**: $O(m \cdot n)$, where `m` is the number of rows and `n` is the number of columns. We iterate through each cell of the grid once.
 - **Space Complexity**: $O(n)$, where `n` is the number of columns. We use a 1D DP array of size `n` to store the number of unique paths.
+
+## 02. Longest Common Subsequence
+
+[Leetcode Problem URL](https://leetcode.com/problems/longest-common-subsequence/description/)
+
+Given two strings `text1` and `text2`, return the length of their longest common subsequence. If there is no common subsequence, return `0`.
+
+A subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.
+
+- For example, `"ace"` is a subsequence of `"abcde"`.
+
+A common subsequence of two strings is a subsequence that is common to both strings.
+
+```bash
+Example 1:
+
+Input: text1 = "abcde", text2 = "ace"
+Output: 3
+Explanation: The longest common subsequence is "ace" and its length is 3.
+```
+
+```bash
+Example 2:
+
+Input: text1 = "abc", text2 = "abc"
+Output: 3
+Explanation: The longest common subsequence is "abc" and its length is 3.
+```
+
+```bash
+Example 3:
+
+Input: text1 = "abc", text2 = "def"
+Output: 0
+Explanation: There is no such common subsequence, so the result is 0.
+```
+
+### Explanation

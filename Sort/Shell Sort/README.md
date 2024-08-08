@@ -1,6 +1,6 @@
 # Shell Sort Data-Structures and Algorithms
 
-### 01. Shell Sort
+## 01. Shell Sort
 
     Shell Sort
     Shell sort is mainly a variation of Insertion Sort.
@@ -11,7 +11,7 @@
     We keep reducing the value of h until it becomes 1.
     An array is said to be h-sorted if all sublists of every h'th element are sorted.
 
-### 02. Shell Sort: Remove Duplicates
+## 02. Shell Sort: Remove Duplicates
 
     Shell Sort: Remove Duplicates
     It will remove the duplicates from the list while sorting

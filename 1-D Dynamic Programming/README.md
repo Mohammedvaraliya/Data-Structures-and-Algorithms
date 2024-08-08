@@ -1,6 +1,6 @@
 # 1-D Dynamic Programming Data-Structures and Algorithms
 
-### 01. Climbing Stairs
+## 01. Climbing Stairs
 
 [Leetcode Problem URL](https://leetcode.com/problems/climbing-stairs/description/)
 
@@ -29,7 +29,7 @@ Explanation: There are three ways to climb to the top.
 3. 2 steps + 1 step
 ```
 
-**Explanation**
+### Explanation
 
 The number of ways to reach the nth step is the sum of the number of ways to reach the (n-1)th step and the (n-2)th step. This is because we can either take a single step from (n-1) to n or a double step from (n-2) to n.
 
@@ -116,7 +116,7 @@ After the loop completes, the variable `one` contains the number of distinct way
 
 - The space complexity is $O(1)$ because we only use a fixed amount of space (two variables, `one` and `two`), regardless of the input size $n$.
 
-### 02. House Robber
+## 02. House Robber
 
 [Leetcode Problem URL](https://leetcode.com/problems/house-robber/description/)
 
@@ -144,7 +144,7 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 Total amount you can rob = 2 + 9 + 1 = 12.
 ```
 
-**Explanation**
+### Explanation
 
 1. **Approach**:
 
@@ -203,7 +203,7 @@ The maximum amount of money that can be robbed without alerting the police is `1
 - **Time Complexity**: $O(n)$, where `n` is the number of houses. We iterate through the list of houses once.
 - **Space Complexity**: $O(1)$, as we only use a constant amount of space for `rob1` and `rob2`.
 
-### 03. House Robber II
+## 03. House Robber II
 
 [Leetcode Problem URL](https://leetcode.com/problems/house-robber-ii/description/)
 
@@ -237,7 +237,7 @@ Input: nums = [1,2,3]
 Output: 3
 ```
 
-**Explanation**
+### Explanation
 
 The problem is an extension of the "House Robber I" problem with an additional constraint that the houses are arranged in a circle. This means we cannot rob both the first and last houses simultaneously.
 
@@ -288,7 +288,7 @@ The maximum amount of money that can be robbed without alerting the police is th
 - **Time Complexity**: $O(n)$, where `n` is the number of houses. We iterate through the list of houses twice (once for each subproblem).
 - **Space Complexity**: $O(1)$, as we only use a constant amount of space for `rob1` and `rob2`.
 
-### 04. Longest Palindromic Substring
+## 04. Longest Palindromic Substring
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-palindromic-substring/description/)
 
@@ -313,7 +313,7 @@ Input: s = "cbbd"
 Output: "bb"
 ```
 
-**Explanation**
+### Explanation
 
 To solve the problem of finding the longest palindromic substring, I've used a two-pointer approach to expand around the center.
 
@@ -390,7 +390,7 @@ Let's walk through the example `s = "babad"` step by step:
 - **Time Complexity**: $O(n^2)$, where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
 - **Space Complexity**: $O(1)$, since we only use a constant amount of additional space for variables.
 
-### 05. Palindromic Substrings
+## 05. Palindromic Substrings
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-palindromic-substring/description/)
 
@@ -416,7 +416,7 @@ Output: 6
 Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 ````
 
-**Explanation**
+### Explanation
 
 To solve the problem of counting palindromic substrings, I've used a two-pointer approach to expand around the center.
 
@@ -487,7 +487,7 @@ Let's walk through the example `s = "aaa"` step by step:
 - **Time Complexity**: $O(n^2)$, where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
 - **Space Complexity**: $O(1)$, since we only use a constant amount of additional space for variables.
 
-### 06. Decode Ways
+## 06. Decode Ways
 
 [Leetcode Problem URL](https://leetcode.com/problems/decode-ways/description/)
 
@@ -542,7 +542,7 @@ Explanation:
 "06" cannot be mapped to "F" because of the leading zero ("6" is different from "06"). In this case, the string is not a valid encoding, so return 0.
 ```
 
-**Explanation**
+### Explanation
 
 To solve the problem of counting the number of ways to decode the string, I've used a dynamic programming with memoization.
 
@@ -636,7 +636,7 @@ To solve the problem of counting the number of ways to decode the string, I've u
 - **Time Complexity**: $O(n)$, where `n` is the length of the string. We process each character at most once due to memoization.
 - **Space Complexity**: $O(n)$, due to the recursion stack and the dictionary `dp` storing the results of subproblems.
 
-### 07. Coin Change
+## 07. Coin Change
 
 [Leetcode Problem URL](https://leetcode.com/problems/coin-change/description/)
 
@@ -669,7 +669,7 @@ Input: coins = [1], amount = 0
 Output: 0
 ```
 
-**Explanation**
+### Explanation
 
 The idea is to build a solution for the amount from `0` up to the target `amount` by using previously computed results.
 
@@ -720,7 +720,7 @@ Let's walk through the example `coins = [1,2,5]`, `amount = 11` step by step:
 - **Time Complexity**: $O(n \cdot m)$, where `n` is the amount and `m` is the number of coins. This is because for each amount from `1` to `n`, we check all `m` coins.
 - **Space Complexity**: $O(n)$, where `n` is the amount. We use an array `dp` of size `n + 1`.
 
-### 08. Maximum Product Subarray
+## 08. Maximum Product Subarray
 
 [Leetcode Problem URL](https://leetcode.com/problems/maximum-product-subarray/description/)
 
@@ -746,7 +746,7 @@ Output: 0
 Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 ```
 
-**Explanation**
+### Explanation
 
 The problem is to find the maximum product of a subarray in the given array `nums`. Due to the possibility of negative numbers and zero, the problem requires careful handling of the product calculations.
 
@@ -816,7 +816,7 @@ Let's walk through the example `nums = [2,3,-2,4]` step by step:
 - **Time Complexity**: $O(n)$, where `n` is the length of the array `nums`. We iterate through the array once.
 - **Space Complexity**: $O(1)$, constant space. We use only a few variables (`curMin`, `curMax`, and `res`) regardless of the input size.
 
-### 09. Word Break
+## 09. Word Break
 
 [Leetcode Problem URL](https://leetcode.com/problems/word-break/description/)
 
@@ -848,7 +848,7 @@ Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
 Output: false
 ```
 
-**Explanation**
+### Explanation
 
 The problem is to determine if the string `s` can be segmented into a space-separated sequence of one or more dictionary words.
 
@@ -907,7 +907,7 @@ Let's walk through the example `s = "leetcode"`, `wordDict = ["leet","code"]` st
 - **Time Complexity**: $O(n \cdot m)$, where `n` is the length of the string `s` and `m` is the number of words in `wordDict`. We iterate through the string and for each position, we check each word in the dictionary.
 - **Space Complexity**: $O(n)$, where `n` is the length of the string `s`. We use a DP array of size `n + 1`.
 
-### 10. Longest Increasing Subsequence
+## 10. Longest Increasing Subsequence
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-increasing-subsequence/description/)
 
@@ -938,4 +938,4 @@ Input: nums = [7,7,7,7,7,7,7]
 Output: 1
 ```
 
-**Explanation**
+### Explanation

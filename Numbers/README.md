@@ -1,6 +1,6 @@
 # Numbers Data-Structures and Algorithms
 
-### 01. Product of Two Numbers
+## 01. Product of Two Numbers
 
     Product of Two Numbers
     Given two numbers, find their product using recursion.
@@ -19,7 +19,7 @@
 
     5 + 5 + 5 + 5 = 20
 
-### 02. Numbers: Convert Integer To Binary
+## 02. Numbers: Convert Integer To Binary
 
     Numbers: Convert Integer To Binary Number
     The algorithm works by repeatedly doubling a variable power until it is greater than the integer n.
@@ -52,7 +52,7 @@
 
         final binary string is : "1010" of integer 10
 
-### 03. Numbers: Convert Binary To Integer
+## 03. Numbers: Convert Binary To Integer
 
         Numbers: Convert Binary To Integer
         Initialize a variable result to 0.
@@ -131,7 +131,7 @@
                 return reseult
                 The integer of binary number 1011 is 11
 
-### 04. Roman to Integer
+## 04. Roman to Integer
 
 [Leetcode Problem URL](https://leetcode.com/problems/roman-to-integer/)
 

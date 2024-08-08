@@ -1,6 +1,6 @@
 # Graphs Data-Structures and Algorithms
 
-### 01. Graph Data Structure
+## 01. Graph Data Structure
 
 Graph Data Structure
 Graphs in data structures are non-linear data structures made up of a finite number of nodes or vertices and the
@@ -32,7 +32,7 @@ The Routes:
     ("New York", "Toronto")
 ```
 
-**Explanation**
+### Explanation
 
 There is edges and the nodes in the graph data structure.
 Mumbai, Dubai, Paris, New York and Toronto is the Nodes.
@@ -48,7 +48,7 @@ And the shortest path is :
 
 ['Mumbai', 'Paris', 'New York']
 
-### 02. Number of Islands
+## 02. Number of Islands
 
 [Leetcode Problem URL](https://leetcode.com/problems/number-of-islands/description/)
 
@@ -107,7 +107,7 @@ grid3 = [
 print(obj.numIslands(grid=grid3))
 ```
 
-**Explanation**
+### Explanation
 
 1. **Initialize Variables**:
 
@@ -146,7 +146,7 @@ print(obj.numIslands(grid=grid3))
   - The space complexity is also $(O(m \times n))$ due to the `visit` set and the queue used in BFS, which in the worst case can store all cells in the grid.
   - Additionally, the recursive stack of BFS can go up to the size of the grid in the worst case.
 
-### 03. Clone Graph
+## 03. Clone Graph
 
 [Leetcode Problem URL](https://leetcode.com/problems/clone-graph/)
 
@@ -207,7 +207,7 @@ Output: []
 Explanation: The graph is empty.
 ```
 
-**Explanation**
+### Explanation
 
 First, we define the `Node` class to represent a node in the graph.
 
@@ -267,7 +267,7 @@ The `createGraph` function converts an adjacency list into a graph represented b
 
   - The space complexity is $O(V)$ due to the space needed to store the copy of each node and the recursion stack.
 
-### 04. Pacific Atlantic Water Flow
+## 04. Pacific Atlantic Water Flow
 
 [Leetcode Problem URL](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)
 
@@ -312,7 +312,7 @@ Output: [[0,0]]
 Explanation: The water can flow from the only cell to the Pacific and Atlantic oceans.
 ```
 
-**Explanation**
+### Explanation
 
 I've employed Depth-First Search (DFS) to determine which cells can flow to both oceans.
 
@@ -344,7 +344,7 @@ I've employed Depth-First Search (DFS) to determine which cells can flow to both
 - **Space Complexity**:
   - The space complexity is $(O(m \times n))$ for the visited sets and the recursion stack in the worst case.
 
-### 05. Course Schedule
+## 05. Course Schedule
 
 [Leetcode Problem URL](https://leetcode.com/problems/course-schedule/description/)
 
@@ -371,7 +371,7 @@ Explanation: There are a total of 2 courses to take.
 To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
 ```
 
-**Explanation**
+### Explanation
 
 The problem can be visualized as detecting cycles in a directed graph where each course is a node and each prerequisite is a directed edge. If there is a cycle, it is impossible to complete all courses.
 
@@ -430,7 +430,7 @@ I've employed Depth-First Search (DFS) to detect cycles in the graph.
   - The recursion stack for DFS can go up to $O(n)$ depth.
   - Overall, the space complexity is $O(n + p)$.
 
-### 06. Graph Valid Tree
+## 06. Graph Valid Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/graph-valid-tree/description/)
 [Lintcode Problem URL](https://www.lintcode.com/problem/178/)
@@ -451,7 +451,7 @@ Input: n = 5 edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]
 Output: false
 ```
 
-**Explanation**
+### Explanation
 
 The problem can be solved using Depth-First Search (DFS) to check for two conditions:
 
@@ -502,7 +502,7 @@ The following solution uses DFS to check these conditions.
 - **Time Complexity**: The solution iterates over all nodes and edges once, giving a time complexity of $O(V + E)$.
 - **Space Complexity**: The adjacency list and the recursion stack both contribute to the space complexity, which is $O(V + E)$.
 
-### 07. Number of Connected Components in an Undirected Graph
+## 07. Number of Connected Components in an Undirected Graph
 
 [Leetcode Problem URL](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/)
 [Lintcode Problem URL](https://www.lintcode.com/problem/3651/)
@@ -628,7 +628,7 @@ Consider a graph with `n = 6` nodes and edges `[[0, 1], [1, 2], [2, 3], [4, 5]]`
    rank = [4, 1, 1, 1, 2, 1]
    ```
 
-### Result
+## Result
 
 After processing all edges, the union function was executed 4 times, and it returned 1 for each of the 4 executions, indicating that nodes were successfully united into the same set. As a result, the initial value of `res` (which is `n = 6`) is decremented by 1 each time the union function returns 1. After processing all edges, `res` is decremented to 2. This indicates that there are 2 connected components or subsets.
 

@@ -1,12 +1,12 @@
 # Doubly Linked List Data-Structures and Algorithms
 
-### 01. Doubly Linked Lists -- Append and Prepend
+## 01. Doubly Linked Lists -- Append and Prepend
 
     Doubly Linked Lists -- Append and Prepend
     Append - Add the Node from end of the list
     Prepend - Add the Node from front of the list
 
-### 02. Doubly Linked Lists -- Add Node Before/After
+## 02. Doubly Linked Lists -- Add Node Before/After
 
     Doubly Linked Lists -- Add Node Before/After
 
@@ -42,12 +42,12 @@
                             4
                             5
 
-### 03. Doubly Linked Lists -- Delete Node
+## 03. Doubly Linked Lists -- Delete Node
 
     Doubly Linked Lists -- Delete Node
     It will delete the node list
 
-### 04. Doubly Linked Lists -- Reverse
+## 04. Doubly Linked Lists -- Reverse
 
     Doubly Linked Lists -- Reverse
     It will reversed the Doubly Linked List
@@ -66,7 +66,7 @@
                     2
                     1
 
-### 05. Doubly Linked Lists -- Remove Duplicates
+## 05. Doubly Linked Lists -- Remove Duplicates
 
     Doubly Linked Lists -- Remove Duplicates
     It will remove the duplicate Node from the Doubly Linked list
@@ -88,7 +88,7 @@
                                 4
                                 5
 
-### 06. Doubly Linked Lists -- Pairs with Sum
+## 06. Doubly Linked Lists -- Pairs with Sum
 
     Doubly Linked Lists -- Pairs with Sum
     It will return the pair of data of Node where the sum of 2 data of Node is equal to the given number

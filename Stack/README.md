@@ -1,6 +1,6 @@
 # Stack Data-Structures and Algorithms
 
-### 01. The Stack data Structure
+## 01. The Stack data Structure
 
     Stack Data Structure
     Stack is FILO(First In Last Out) or LIFO(Last In First Out) Data structure
@@ -39,7 +39,7 @@
                 | A |
                 -----
 
-### 02. The Stack data Structure : Understanding Stack
+## 02. The Stack data Structure : Understanding Stack
 
     The Stack data Structure : Understanding Stack
     deque is using Doubly Linked List data structure to store the element.
@@ -80,7 +80,7 @@
                 | A |
                 -----
 
-### 03. Determine if parenthesis are balanced
+## 03. Determine if parenthesis are balanced
 
 [Leetcode Problem URL](https://leetcode.com/problems/valid-parentheses/)
 
@@ -119,7 +119,7 @@ Input: s = "(]"
 Output: false
 ```
 
-### 04. Convert integer to binary
+## 04. Convert integer to binary
 
     Convert integer to binary
     Use a stack data structure to convert integer values to binary.
@@ -137,7 +137,7 @@ Output: false
 
     11110010 is the binary number of integer 242
 
-### 05. The Stack data Structure : Reverse String
+## 05. The Stack data Structure : Reverse String
 
     The Stack data Structure : Reverse String
     It will return the reverse string from given string.

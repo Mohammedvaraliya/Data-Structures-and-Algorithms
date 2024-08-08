@@ -2,7 +2,7 @@
 
 ##### Note. The name of function which is same but \_ before name is helper function.
 
-### 01. Binary Trees: Traversal Algorithms Pre-order
+## 01. Binary Trees: Traversal Algorithms Pre-order
 
 ```bash
 Binary Trees: Traversal Algorithms Pre-order
@@ -27,7 +27,7 @@ so, above preorder traversal output will be :
                                         1-2-4-5-3-6-7
 ```
 
-### 02. Binary Trees: Traversal Algorithms In-order
+## 02. Binary Trees: Traversal Algorithms In-order
 
 ```bash
 Binary Trees: Traversal Algorithms In-order
@@ -52,7 +52,7 @@ so, above inorder traversal output will be :
                                     4-2-5-1-6-3-7-
 ```
 
-### 03. Binary Trees: Traversal Algorithms Post-order
+## 03. Binary Trees: Traversal Algorithms Post-order
 
 ```bash
 Binary Trees: Traversal Algorithms Post-order
@@ -77,7 +77,7 @@ so, above postorder traversal output will be :
                                         4-5-2-6-7-3-1-
 ```
 
-### 04. Binary Trees: Traversal Algorithms Level-order
+## 04. Binary Trees: Traversal Algorithms Level-order
 
 ```bash
 Binary Trees: Traversal Algorithms Level-order
@@ -100,7 +100,7 @@ so, above level-order traversal output will be :
                                         1-2-3-4-5-
 ```
 
-### 05. Binary Trees: Traversal Algorithms Reverse Level-order
+## 05. Binary Trees: Traversal Algorithms Reverse Level-order
 
 ```bash
 Binary Trees: Traversal Algorithms Reverse Level-order
@@ -121,7 +121,7 @@ so, above reverse level-order traversal output will be :
                                                         4-5-2-3-1-
 ```
 
-### 06. Binary Trees: Calculating Height of Tree
+## 06. Binary Trees: Calculating Height of Tree
 
 ```bash
 Binary Trees: Calculating Height of Tree
@@ -158,7 +158,7 @@ max will return the maximum number of given 2 numbers
 so, the height of this binary tree is: 2
 ```
 
-### 07. Binary Trees: Calculating Size of Tree
+## 07. Binary Trees: Calculating Size of Tree
 
 ```bash
 Binary Trees: Calculating Size of Tree
@@ -206,7 +206,7 @@ Example:
 so, the size of this binary tree is: 5
 ```
 
-### 08. Binary Trees: Invert Binary Tree
+## 08. Binary Trees: Invert Binary Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/invert-binary-tree/)
 
@@ -240,7 +240,7 @@ Input: root = []
 Output: []
 ```
 
-### 09. Binary Trees: Maximum Depth of Binary Tree
+## 09. Binary Trees: Maximum Depth of Binary Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
@@ -265,7 +265,7 @@ Input: root = [1,null,2]
 Output: 2
 ```
 
-### 10. Binary Trees: Subtree Of Another Tree
+## 10. Binary Trees: Subtree Of Another Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/subtree-of-another-tree/)
 
@@ -293,7 +293,7 @@ Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
 Output: false
 ```
 
-### 11. Binary Trees: Level Order Traversal - BFS
+## 11. Binary Trees: Level Order Traversal - BFS
 
 [Leetcode Problem URL](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 
@@ -324,7 +324,7 @@ Input: root = []
 Output: []
 ```
 
-### 12. Binary Trees: Construct Binary Tree from Preorder and Inorder Traversal
+## 12. Binary Trees: Construct Binary Tree from Preorder and Inorder Traversal
 
 [Leetcode Problem URL](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
@@ -356,7 +356,7 @@ Input: root = []
 Output: []
 ```
 
-### 13. Binary Trees: Construct Binary Tree from Inorder and Postorder Traversal
+## 13. Binary Trees: Construct Binary Tree from Inorder and Postorder Traversal
 
 [Leetcode Problem URL](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 
@@ -381,7 +381,7 @@ Input: inorder = [-1], postorder = [-1]
 Output: [-1]
 ```
 
-### 14. Binary Trees: Maximum Path Sum
+## 14. Binary Trees: Maximum Path Sum
 
 [Leetcode Problem URL](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 
@@ -414,7 +414,7 @@ Output: 42
 Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42.
 ```
 
-### 15. Binary Trees: Serialize and Deserialize
+## 15. Binary Trees: Serialize and Deserialize
 
 [Leetcode Problem URL](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 
@@ -436,7 +436,7 @@ Output: Serialized: 1,2,Null,Null,3,4,Null,Null,5,Null,Null
         Deserialized: 1,2,Null,Null,3,4,Null,Null,5,Null,Null
 ```
 
-**Explanation**
+### Explanation
 
 Here is a step-by-step Explanation of how the implemented code works using the first input `nums1 = [1, 2, None, None, 3, 4, None, None, 5, None, None]`.
 

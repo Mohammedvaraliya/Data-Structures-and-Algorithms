@@ -1,6 +1,6 @@
 # Singly Liked List Data-Structures and Algorithms
 
-### 01. Singly Linked Lists -- Reverse
+## 01. Singly Linked Lists -- Reverse
 
 [Leetcode Problem URL](https://leetcode.com/problems/reverse-linked-list/)
 
@@ -37,7 +37,7 @@ Input: head = []
 Output: []
 ```
 
-### 02. Singly Linked Lists -- Merge Two Sorted Lists
+## 02. Singly Linked Lists -- Merge Two Sorted Lists
 
 [Leetcode Problem URL](https://leetcode.com/problems/merge-two-sorted-lists/)
 
@@ -61,7 +61,7 @@ Input: list1 = [], list2 = [0]
 Output: [0]
 ```
 
-### 03. Singly Linked Lists -- Reorder List
+## 03. Singly Linked Lists -- Reorder List
 
 [Leetcode Problem URL](https://leetcode.com/problems/reorder-list/)
 
@@ -83,7 +83,7 @@ Input: head = [1,2,3,4,5]
 Output: [1,5,2,4,3]
 ```
 
-### 04. Singly Linked Lists -- Remove Nth Node From End of List
+## 04. Singly Linked Lists -- Remove Nth Node From End of List
 
 [Leetcode Problem URL](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
@@ -103,7 +103,7 @@ Input: head = [1,2], n = 1
 Output: [1]
 ```
 
-### 05. Singly Linked Lists -- Linked List Cycle
+## 05. Singly Linked Lists -- Linked List Cycle
 
 [Leetcode Problem URL](https://leetcode.com/problems/linked-list-cycle/)
 
@@ -130,7 +130,7 @@ Output: false
 Explanation: There is no cycle in the linked list.
 ```
 
-### 06. Singly Linked Lists -- Merge k Sorted Lists
+## 06. Singly Linked Lists -- Merge k Sorted Lists
 
 [Leetcode Problem URL](https://leetcode.com/problems/merge-k-sorted-lists/)
 

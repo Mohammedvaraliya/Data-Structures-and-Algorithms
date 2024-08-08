@@ -1,6 +1,6 @@
 # Strings Data-Structures and Algorithms
 
-### 01. Reverse String
+## 01. Reverse String
 
     Reverse String
     To reverse a string using stack operations - push() and pop()
@@ -14,7 +14,7 @@
 
          "0987654321"
 
-### 02. Count Consonants in String
+## 02. Count Consonants in String
 
     Count Consonants in String
 
@@ -37,7 +37,7 @@
 
         Because there is 3 char present in the string which is consonent.
 
-### 03. Look-and-Say Sequence
+## 03. Look-and-Say Sequence
 
     Look-and-Say Sequence
 
@@ -56,7 +56,7 @@
 
     so the final string will be like this "312211"
 
-### 04. String Processing: Spreadsheet Encoding
+## 04. String Processing: Spreadsheet Encoding
 
     String Processing: Spreadsheet Encoding
 
@@ -64,7 +64,7 @@
     similarly
     ord("B") is 67
 
-### 05. String Processing: Is Palindrome
+## 05. String Processing: Is Palindrome
 
 [Leetcode Problem URL](https://leetcode.com/problems/valid-palindrome/)
 
@@ -96,7 +96,7 @@ Explanation: s is an empty string "" after removing non-alphanumeric characters.
 Since an empty string reads the same forward and backward, it is a palindrome.
 ```
 
-### 06. String Processing: Is Anagram
+## 06. String Processing: Is Anagram
 
 [Leetcode Problem URL](https://leetcode.com/problems/valid-anagram/)
 
@@ -125,7 +125,7 @@ Input: s = "rat", t = "car"
 Output: false
 ```
 
-### 07. String Processing: Is Palindrome Permutation
+## 07. String Processing: Is Palindrome Permutation
 
     String Processing: Is Palindrome Permutation
 
@@ -140,7 +140,7 @@ Output: false
             palin_perm = "Tact Coa" #Taco Cat
             not_palin_perm = "This is not a palindrome permutation"
 
-### 08. String Processing: Check Permutation
+## 08. String Processing: Check Permutation
 
     String Processing: Check Permutation
 
@@ -156,7 +156,7 @@ Output: false
                                 not_permutation_1 = "Not"
                                 not_permutation_2 = "got"
 
-### 09. String Processing: Is Unique
+## 09. String Processing: Is Unique
 
     String Processing: Is Unique
 
@@ -166,7 +166,7 @@ Output: false
                 unique_str_1 = 'ABCdefg'
                 non_unique_str_1 = 'non unique STR'
 
-### 10. String Processing: Integer to String
+## 10. String Processing: Integer to String
 
     String Processing: Integer to String
 
@@ -182,7 +182,7 @@ Output: false
         Input: -123
         Output: "-123"
 
-### 11. String Processing: String to Integer
+## 11. String Processing: String to Integer
 
 [Leetcode Problem URL](https://leetcode.com/problems/string-to-integer-atoi/)
 
@@ -274,7 +274,7 @@ Example 3:
     Since 4193 is in the range [-231, 231 - 1], the final result is 4193.
 ```
 
-### 12. Longest Substring Without Repeating Characters
+## 12. Longest Substring Without Repeating Characters
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
@@ -301,7 +301,7 @@ Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 ```
 
-### 13. Encode and Decode Strings
+## 13. Encode and Decode Strings
 
 [Leetcode Problem URL](https://leetcode.com/problems/encode-and-decode-strings/)
 
@@ -325,7 +325,7 @@ Example2:
     One possible encode method is: "2#we3#say1#:3#yes"
 ```
 
-### 14. Longest Repeating Character Replacement
+## 14. Longest Repeating Character Replacement
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
@@ -347,7 +347,7 @@ The substring "BBBB" has the longest repeating letters, which is 4.
 There may exists other ways to achive this answer too.
 ```
 
-### 15. Minimum Window Substring
+## 15. Minimum Window Substring
 
 [Leetcode Problem URL](https://leetcode.com/problems/minimum-window-substring/)
 
@@ -374,7 +374,7 @@ Explanation: Both 'a's from t must be included in the window.
 Since the largest window of s only has one 'a', return empty string.
 ```
 
-### 16. First Letter to Appear Twice
+## 16. First Letter to Appear Twice
 
 [Leetcode Problem URL](https://leetcode.com/problems/first-letter-to-appear-twice/)
 
@@ -403,7 +403,7 @@ Explanation:
 The only letter that appears twice is 'd' so we return 'd'.
 ```
 
-### 17. First Unique Character in a String
+## 17. First Unique Character in a String
 
 [Leetcode Problem URL](https://leetcode.com/problems/first-unique-character-in-a-string/)
 
@@ -424,7 +424,7 @@ Input: s = "aabb"
 Output: -1
 ```
 
-### 18. Find the Index of the First Occurrence in a String
+## 18. Find the Index of the First Occurrence in a String
 
 [Leetcode Problem URL](https://leetcode.com/problems/first-unique-character-in-a-string/)
 

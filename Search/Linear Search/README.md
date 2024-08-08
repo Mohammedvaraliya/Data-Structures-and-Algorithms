@@ -1,12 +1,12 @@
 # Linear Search Data-Structures and Algorithms
 
-### 01. Linear Search
+## 01. Linear Search
 
     Linear Search
     Linear search is a very simple search algorithm.
     In this type of search, a sequential search is made over all items one by one.
 
-### 02. Linear Search : Find Elements
+## 02. Linear Search : Find Elements
 
     Linear Search : Find Elements
     You can use linear search if the array or list is not sorted.

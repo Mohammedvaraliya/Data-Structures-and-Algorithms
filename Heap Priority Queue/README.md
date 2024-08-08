@@ -1,6 +1,6 @@
 # Heap Data-Structures and Algorithms
 
-### 01. Find Median from Data Stream
+## 01. Find Median from Data Stream
 
 [Leetcode Problem URL](https://leetcode.com/problems/find-median-from-data-stream/description/)
 
@@ -32,7 +32,7 @@ medianFinder.addNum(3);    // arr[1, 2, 3]
 medianFinder.findMedian(); // return 2.0
 ```
 
-**Explanation**
+### Explanation
 
 This solution utilizes two heaps (`small` and `large`) to keep track of the data stream and efficiently find the median.
 

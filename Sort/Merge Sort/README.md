@@ -1,6 +1,6 @@
 # Merge Sort Data-Structures and Algorithms
 
-### 01. Merge Sort Two Sorted List
+## 01. Merge Sort Two Sorted List
 
     Merge Sort Two Sorted List
     The key idea to note here is that both the arrays are sorted.
@@ -30,7 +30,7 @@
 
                 [5, 7, 8, 9, 12, 45, 51, 56]
 
-### 02. Merge Sort: One Unsorted List
+## 02. Merge Sort: One Unsorted List
 
     Merge Sort: One Unsorted List
 
@@ -65,7 +65,7 @@
 
                             [3, 7, 8, 10, 15, 23, 29, 98]
 
-### 03. Merge Sort: Using Key
+## 03. Merge Sort: Using Key
 
     Merge Sort: Using Key
 

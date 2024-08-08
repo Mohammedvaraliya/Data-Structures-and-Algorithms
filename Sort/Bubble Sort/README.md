@@ -1,6 +1,6 @@
 # Bubble Sort Data-Structures and Algorithms
 
-### 01. Bubble Sort
+## 01. Bubble Sort
 
     Bubble Sort
     Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the
@@ -26,7 +26,7 @@
             ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
             ( 1 2 4 5 8 ) –>  ( 1 2 4 5 8 )
 
-### 02. Bubble Sort Using Key
+## 02. Bubble Sort Using Key
 
     Bubble Sort Using Key
 

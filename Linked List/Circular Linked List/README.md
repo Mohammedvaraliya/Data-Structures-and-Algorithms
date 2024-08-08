@@ -1,22 +1,22 @@
 # Circular Linked List Data-Structures and Algorithms
 
-### 01. Circular Linked Lists -- Append and Prepend
+## 01. Circular Linked Lists -- Append and Prepend
 
     Circular Linked List append and prepend method
     Append - Add the Node from end of list
     Prepend - Add the Node from front of the list
 
-### 02. Circular Linked Lists -- Remove Node
+## 02. Circular Linked Lists -- Remove Node
 
     Circular Linked Lists -- Remove Node
     It will remove the Node from the list
 
-### 03. Circular Linked Lists -- Split List
+## 03. Circular Linked Lists -- Split List
 
     Circular Linked Lists -- Split List
     It will split the Circular Linked List into two Circular Linked List
 
-### 04. Circular Linked Lists -- Josephus Problem
+## 04. Circular Linked Lists -- Josephus Problem
 
     Circular Linked Lists -- Josephus Problem
     Josephus problem will remove every node from the given Circular Linked List of the given step until only one Node left in the list
@@ -51,7 +51,7 @@
 
     Only one Node left : which is 5
 
-### 05. Circular Linked Lists -- Is Circular Linked List
+## 05. Circular Linked Lists -- Is Circular Linked List
 
     Circular Linked Lists -- Is Circular Linked List
 

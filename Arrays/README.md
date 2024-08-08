@@ -1,15 +1,15 @@
 # Arrays Data-Structures and Algorithms
 
-### 01. Greedy Algorithms: Optimal Task Assignment
+## 01. Greedy Algorithms: Optimal Task Assignment
 
     Assign tasks to workers such that the time it takes to complete all tasks is minimized.
     here, the elements in an array is duration of time
 
-### 02. Sorting Algorithms: Intersection of Two Sorted Arrays
+## 02. Sorting Algorithms: Intersection of Two Sorted Arrays
 
     Given two arrays, A and B, determine their intersection. That is, what elements are common to A and B?
 
-### 03. Binary Search: Find Closest Number
+## 03. Binary Search: Find Closest Number
 
     given a sorted array and a target number. we need to find a number in the array that is closest to the target number.
 
@@ -26,7 +26,7 @@
         Target number = 4
         Output : 5
 
-### 04. Binary Search: Find Fixed Point
+## 04. Binary Search: Find Fixed Point
 
     A fixed point in an array "A" is an index "i" such that A[i] is equal to "i".
 
@@ -45,7 +45,7 @@
         # No fixed point. Return "None":
         A = [-10, -5, 3, 4, 7, 9]
 
-### 05. Binary Search: Find Bitonic Peak
+## 05. Binary Search: Find Bitonic Peak
 
     Define a bitonic sequence as a sequence of integers such that:
         x_1 <= ... <= x_k >= ... >= x_n-1 for some k, 0 <= k < n.
@@ -58,7 +58,7 @@
 
     we assume that such a peak element exists.
 
-### 06. Binary Search: Find First Entry in List with Duplicates
+## 06. Binary Search: Find First Entry in List with Duplicates
 
     writing a function that takes an array of sorted integers and a key and returns the index of the first occurrence of that key from the array.
 
@@ -69,7 +69,7 @@
 
         Returns index 3 since 108 appear for the first time at index 3.
 
-### 07. Arrays: Array Advance Game
+## 07. Arrays: Array Advance Game
 
     "array advance game"
 
@@ -82,7 +82,7 @@
     Question:
     Is it possible to advance from the start of the array to the last element?
 
-### 08. Arrays: Arbitrary Precision Increment
+## 08. Arrays: Arbitrary Precision Increment
 
     Given:
         An array of non-negative digits that represent a decimal integer.
@@ -90,7 +90,7 @@
     Problem:
         Add one to the integer. Assume the solution still works even if implemented in a language with finite-precision arithmetic.
 
-### 09. Binary Search: Cyclically Shifted Array
+## 09. Binary Search: Cyclically Shifted Array
 
 [Leetcode Problem URL](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
@@ -128,7 +128,7 @@ Output: 11
 Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 ```
 
-### 10. Arrays: Two Sum Problem
+## 10. Arrays: Two Sum Problem
 
 [Leetcode Problem URL](https://leetcode.com/problems/two-sum/)
 
@@ -158,7 +158,7 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
 
-### 11. Arrays: Buy and Sell Stock
+## 11. Arrays: Buy and Sell Stock
 
 [Leetcode Problem URL](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
@@ -186,7 +186,7 @@ Problem:
     Explanation: In this case, no transactions are done and the max profit = 0.
 ```
 
-### 12. Subarray Sum Equals K
+## 12. Subarray Sum Equals K
 
 [Leetcode Problem URL](https://leetcode.com/problems/subarray-sum-equals-k/)
 
@@ -204,7 +204,7 @@ Input: nums = [1,2,3], k = 3
 Output: 2
 ```
 
-### 13. Contains Duplicate
+## 13. Contains Duplicate
 
 [Leetcode Problem URL](https://leetcode.com/problems/contains-duplicate/)
 
@@ -225,7 +225,7 @@ Input: nums = [1,1,1,3,3,4,3,2,4,2]
 Output: true
 ```
 
-### 14. Group Anagrams
+## 14. Group Anagrams
 
 [Leetcode Problem URL](https://leetcode.com/problems/group-anagrams/)
 
@@ -247,7 +247,7 @@ Input: strs = ["a"]
 Output: [["a"]]
 ```
 
-### 15. Top K Frequent Elements - Bucket Sort
+## 15. Top K Frequent Elements - Bucket Sort
 
 [Leetcode Problem URL](https://leetcode.com/problems/top-k-frequent-elements/)
 
@@ -265,7 +265,7 @@ Output: [1]
 Time coplexity of this solution which i solved is O(n)
 ```
 
-### 16. Product of Array Except Self
+## 16. Product of Array Except Self
 
 [Leetcode Problem URL](https://leetcode.com/problems/product-of-array-except-self/)
 
@@ -285,7 +285,7 @@ Input: nums = [-1,1,0,-3,3]
 Output: [0,0,9,0,0]
 ```
 
-### 17. Product of Array Except Self
+## 17. Product of Array Except Self
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-consecutive-sequence/)
 
@@ -304,7 +304,7 @@ Input: nums = [0,3,7,2,5,8,4,6,0,1]
 Output: 9
 ```
 
-### 18. 3Sum
+## 18. 3Sum
 
 [Leetcode Problem URL](https://leetcode.com/problems/3sum/)
 
@@ -334,7 +334,7 @@ Output: [[0,0,0]]
 Explanation: The only possible triplet sums up to 0.
 ```
 
-### 19. Container With Most Water
+## 19. Container With Most Water
 
 [Leetcode Problem URL](https://leetcode.com/problems/container-with-most-water/)
 
@@ -361,7 +361,7 @@ n == height.length
 0 <= height[i] <= 104
 ```
 
-### 20. Unique Number of Occurrences
+## 20. Unique Number of Occurrences
 
 [Leetcode Problem URL](https://leetcode.com/problems/unique-number-of-occurrences/)
 
@@ -382,7 +382,7 @@ Input: arr = [-3,0,1,-3,1,1,1,-3,10,0]
 Output: true
 ```
 
-### 21. Split the Array
+## 21. Split the Array
 
 [Leetcode Problem URL](https://leetcode.com/problems/split-the-array/)
 
@@ -406,7 +406,7 @@ Output: false
 Explanation: The only possible way to split nums is nums1 = [1,1] and nums2 = [1,1]. Both nums1 and nums2 do not contain distinct elements. Therefore, we return false.
 ```
 
-**Explanation**
+### Explanation
 
 The provided solution tackles the problem of splitting an even-length integer array (nums) into two equal-sized sub-arrays that could potentially fulfill the conditions: nums1 and nums2 having distinct elements. While we don't explicitly create these sub-arrays in the code, the logic ensures that a valid split is possible.
 
@@ -417,7 +417,7 @@ If the number is not yet encountered, a new entry is created in counter with a c
 
 Since the array has an even length and we require distinct elements in each sub-array (implicit in the problem statement), allowing more than two occurrences of any number would prevent a valid split. Therefore, this approach efficiently determines if a valid split is possible based on the frequency of elements in the array, without explicitly creating the sub-arrays.
 
-### 22. Kth Largest Element in an Array
+## 22. Kth Largest Element in an Array
 
 [Leetcode Problem URL](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)
 
@@ -441,7 +441,7 @@ Input: nums = [3,2,3,1,2,4,5,5,6], k = 4
 Output: 4
 ```
 
-**Explanation**
+### Explanation
 
 To solve this problem without sorting the array, I've used min-heap (also known as a priority queue) to efficiently find the kth largest element. Here’s how we can do it:
 

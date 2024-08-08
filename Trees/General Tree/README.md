@@ -1,6 +1,6 @@
 # General Trees Data-Structures and Algorithms
 
-### 01. General Tree
+## 01. General Tree
 
     General Tree
     General tree is a tree in which each node can have either zero or many child nodes.

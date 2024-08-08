@@ -2,7 +2,7 @@
 
 ##### Note. The name of function which is same but \_ before name is helper function.
 
-### 01. Binary Search Trees: Insertion
+## 01. Binary Search Trees: Insertion
 
     Binary Search Trees: Insertion
     It will insert the Node to the Binary Search Tree
@@ -49,7 +49,7 @@
                  /
                4
 
-### 02. Binary Search Trees: Searching
+## 02. Binary Search Trees: Searching
 
     Binary Search Trees: Searching
     It will give result after searching the node throughout the Binary Search Tree.
@@ -102,7 +102,7 @@
 
     if we cant find the data equal to node: return False
 
-### 03. Binary Search Trees: Checking the BST Property
+## 03. Binary Search Trees: Checking the BST Property
 
     Binary Search Trees: Checking the BST Property
     Specifically, we will be solving the problem of determining whether or not a given tree we are given as input abides by the so-called binary search tree (BST) property.
@@ -147,7 +147,7 @@
 
     return False
 
-### 04. Binary Search Trees: Using list
+## 04. Binary Search Trees: Using list
 
     Binary Search Trees: Insertion with the help of list
     Binary Search Tree will build with the help of list
@@ -186,7 +186,7 @@
 
           * For more clarification, please [See the code](./02_binary_search_tree_using_list.py.py)
 
-### 05. Binary Search Trees: Using list - In-Order-Traversal
+## 05. Binary Search Trees: Using list - In-Order-Traversal
 
     In-Order-Traversal
 
@@ -210,7 +210,7 @@
 
     finalList = [1, 4, 9, 17, 18, 20, 23, 34]
 
-### 06. Binary Search Trees: Using list - Post-Order-Traversal
+## 06. Binary Search Trees: Using list - Post-Order-Traversal
 
     Post-Order-Traversal
 
@@ -234,7 +234,7 @@
 
     finalList = [1, 9, 4, 18, 34, 23, 20, 17]
 
-### 07. Binary Search Trees: Using list - Pre-Order-Traversal
+## 07. Binary Search Trees: Using list - Pre-Order-Traversal
 
     Pre-Order-Traversal
 
@@ -258,7 +258,7 @@
 
     finalList = [17, 4, 1, 9, 20, 18, 23, 34]
 
-### 08. Binary Search Trees: Using list - Delete Node Method 1
+## 08. Binary Search Trees: Using list - Delete Node Method 1
 
     Binary Search Trees: Using list - Delete Node Method 1
     It will delete the node from binary search tree of given data
@@ -307,7 +307,7 @@
                                         /   \   /    \
                                        1     9  18    34
 
-### 09. Binary Search Trees: Using list - Delete Node Method 2
+## 09. Binary Search Trees: Using list - Delete Node Method 2
 
     Binary Search Trees: Using list - Delete Node Method 2
     It will delete the node from binary search tree of given data
@@ -361,7 +361,7 @@
                                                         \
                                                          34
 
-### 10. Binary Search Trees: Lowest Common Ancestor of a Binary Search Tree
+## 10. Binary Search Trees: Lowest Common Ancestor of a Binary Search Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 
@@ -388,7 +388,7 @@ Example 3:
     Input: root = [2,1], p = 2, q = 1
     Output: 2
 
-### 11. Binary Search Trees: Validate
+## 11. Binary Search Trees: Validate
 
 [Leetcode Problem URL](https://leetcode.com/problems/validate-binary-search-tree/)
 
@@ -415,7 +415,7 @@ Example 2:
     Output: false
     Explanation: The root node's value is 5 but its right child's value is 4.
 
-### 12. Binary Search Trees: Kth Smallest Element
+## 12. Binary Search Trees: Kth Smallest Element
 
 [Leetcode Problem URL](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 

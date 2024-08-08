@@ -1,6 +1,6 @@
 # Binary search Data-Structures and Algorithms
 
-### 01. Binary search
+## 01. Binary search
 
     Binary search
     Binary Search is a searching algorithm for finding an element's position in a sorted array.
@@ -35,7 +35,7 @@
 
                 Hence the element 6 is found at index 2.
 
-### 02. Binary Search: Find Closest Number
+## 02. Binary Search: Find Closest Number
 
     Binary Search: Find Closest Number
     given a sorted array and a target number. we need to find a number in the array that is closest to the target number.
@@ -53,7 +53,7 @@
         Target number = 4
         Output : 5
 
-### 03. Binary Search: Find Fixed Point
+## 03. Binary Search: Find Fixed Point
 
     Binary Search: Find Fixed Point
     A fixed point in an array "A" is an index "i" such that A[i] is equal to "i".
@@ -73,7 +73,7 @@
         # No fixed point. Return "None":
         A = [-10, -5, 3, 4, 7, 9]
 
-### 04. Binary Search: Find Bitonic Peak
+## 04. Binary Search: Find Bitonic Peak
 
     Binary Search: Find Bitonic Peak
     Define a bitonic sequence as a sequence of integers such that:
@@ -87,7 +87,7 @@
 
     we assume that such a peak element exists.
 
-### 05. Binary Search: Find First Entry in List with Duplicates
+## 05. Binary Search: Find First Entry in List with Duplicates
 
     Binary Search: Find First Entry in List with Duplicates
     writing a function that takes an array of sorted integers and a key and returns the index of the first
@@ -100,7 +100,7 @@
 
         Returns index 3 since 108 appear for the first time at index 3.
 
-### 06. Binary Search: Python's Bisect Method
+## 06. Binary Search: Python's Bisect Method
 
     Binary Search: Python's Bisect Method
 
@@ -108,7 +108,7 @@
         -"Built-in" binary search method in Python.
         -Can be used to search for an element in a sorted list.
 
-### 07. Binary Search: Integer Square Root
+## 07. Binary Search: Integer Square Root
 
     Binary Search: Integer Square Root
     write a function that takes a non-negative integer and returns the largest integer whose square is less
@@ -120,7 +120,7 @@
 
         Then the expected output of the function should be 17 since 17 squared is 289 which is strictly less than 300. Note that 18 squared is 324 which is strictly greater than 300, so the number 17 is the correct response.
 
-### 08. Binary Search: Cyclically Shifted Array
+## 08. Binary Search: Cyclically Shifted Array
 
 [Leetcode Problem URL](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
@@ -158,7 +158,7 @@ Output: 11
 Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 ```
 
-### 09. Binary Search: Find Index Of All Occurances
+## 09. Binary Search: Find Index Of All Occurances
 
 ```bash
 Binary Search: Find Index Of All Occurances
@@ -182,7 +182,7 @@ Three 15 are there in the data list at respective index number
                 Indices of occurences of number 15 are [5, 6, 7]
 ```
 
-### 10. Binary Search: Search in Rotated Sorted Array
+## 10. Binary Search: Search in Rotated Sorted Array
 
 [Leetcode Problem URL](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
