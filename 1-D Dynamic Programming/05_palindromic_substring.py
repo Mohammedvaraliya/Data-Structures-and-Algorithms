@@ -22,6 +22,7 @@ class Solution:
 
 
 if __name__ == "__main__":
+    
     obj = Solution()
 
     s1 = "abc"

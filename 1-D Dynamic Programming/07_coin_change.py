@@ -20,6 +20,7 @@ class Solution:
 
 
 if __name__ == "__main__":
+    
     obj = Solution()
 
     coins1 = [1,2,5]

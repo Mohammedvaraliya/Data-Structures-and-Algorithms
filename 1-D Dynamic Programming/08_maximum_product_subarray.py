@@ -18,6 +18,7 @@ class Solution:
 
 
 if __name__ == "__main__":
+    
     obj = Solution()
 
     nums1 = [2,3,-2,4]

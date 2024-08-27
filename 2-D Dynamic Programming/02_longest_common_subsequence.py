@@ -15,6 +15,7 @@ class Solution:
 
 
 if __name__ == "__main__":
+    
     obj = Solution()
 
     text1_1 = "abcde"
