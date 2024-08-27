@@ -33,6 +33,7 @@
 - [Advanced Graphs Data Structure](#advanced-graphs-data-structure)
 - [1-D Dynamic Programming](#1-d-dynamic-programming)
 - [2-D Dynamic Programming](#2-d-dynamic-programming)
+- [Greedy](#greedy)
 
 ## Stack
 
@@ -383,3 +384,10 @@
 | 01  | Unique Paths               | [Solution](./2-D%20Dynamic%20Programming/01_unique_paths.py)                    |
 | 02  | Longest Common Subsequence | [Solution](./2-D%20Dynamic%20Programming/02_longest_common_subsequence.py)      |
 | 00  | Readme                     | [Problem Statements with Explanations](./2-D%20Dynamic%20Programming/README.md) |
+
+## Greedy
+
+| #   | Title            | Solution                                                   |
+| --- | ---------------- | ---------------------------------------------------------- |
+| 01  | Maximum Subarray | [Solution](./Greedy/01_maximum_subarray.py)                |
+| 00  | Readme           | [Problem Statements with Explanations](./Greedy/README.md) |
