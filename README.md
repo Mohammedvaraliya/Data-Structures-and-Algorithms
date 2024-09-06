@@ -390,4 +390,5 @@
 | #   | Title            | Solution                                                   |
 | --- | ---------------- | ---------------------------------------------------------- |
 | 01  | Maximum Subarray | [Solution](./Greedy/01_maximum_subarray.py)                |
+| 01  | Jump Game        | [Solution](./Greedy/02_jump_game.py)                       |
 | 00  | Readme           | [Problem Statements with Explanations](./Greedy/README.md) |
