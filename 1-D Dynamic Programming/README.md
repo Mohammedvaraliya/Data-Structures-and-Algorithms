@@ -120,8 +120,6 @@ After the loop completes, the variable `one` contains the number of distinct way
 
 ---
 
----
-
 ## 02. House Robber
 
 [Leetcode Problem URL](https://leetcode.com/problems/house-robber/description/)
@@ -213,8 +211,6 @@ The maximum amount of money that can be robbed without alerting the police is `1
 
 ---
 
----
-
 ## 03. House Robber II
 
 [Leetcode Problem URL](https://leetcode.com/problems/house-robber-ii/description/)
@@ -299,8 +295,6 @@ The maximum amount of money that can be robbed without alerting the police is th
 
 - **Time Complexity**: $O(n)$, where `n` is the number of houses. We iterate through the list of houses twice (once for each subproblem).
 - **Space Complexity**: $O(1)$, as we only use a constant amount of space for `rob1` and `rob2`.
-
----
 
 ---
 
@@ -412,8 +406,6 @@ Let's walk through the example `s = "babad"` step by step:
 
 ---
 
----
-
 ## 05. Palindromic Substrings
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-palindromic-substring/description/)
@@ -510,8 +502,6 @@ Let's walk through the example `s = "aaa"` step by step:
 
 - **Time Complexity**: $O(n^2)$, where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
 - **Space Complexity**: $O(1)$, since we only use a constant amount of additional space for variables.
-
----
 
 ---
 
@@ -670,8 +660,6 @@ To solve the problem of counting the number of ways to decode the string, I've u
 
 ---
 
----
-
 ## 07. Coin Change
 
 [Leetcode Problem URL](https://leetcode.com/problems/coin-change/description/)
@@ -755,8 +743,6 @@ Let's walk through the example `coins = [1,2,5]`, `amount = 11` step by step:
 
 - **Time Complexity**: $O(n \cdot m)$, where `n` is the amount and `m` is the number of coins. This is because for each amount from `1` to `n`, we check all `m` coins.
 - **Space Complexity**: $O(n)$, where `n` is the amount. We use an array `dp` of size `n + 1`.
-
----
 
 ---
 
@@ -862,8 +848,6 @@ Let's walk through the example `nums = [2,3,-2,4]` step by step:
 
 ---
 
----
-
 ## 09. Word Break
 
 [Leetcode Problem URL](https://leetcode.com/problems/word-break/description/)
@@ -954,8 +938,6 @@ Let's walk through the example `s = "leetcode"`, `wordDict = ["leet","code"]` st
 
 - **Time Complexity**: $O(n \cdot m)$, where `n` is the length of the string `s` and `m` is the number of words in `wordDict`. We iterate through the string and for each position, we check each word in the dictionary.
 - **Space Complexity**: $O(n)$, where `n` is the length of the string `s`. We use a DP array of size `n + 1`.
-
----
 
 ---
 
