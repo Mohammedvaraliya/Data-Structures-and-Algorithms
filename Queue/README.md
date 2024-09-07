@@ -22,16 +22,22 @@
     it will return the last element in the list which is 1
     hence FIFO proved
 
+---
+
 ## 02. Queue Data Structure : Using dequeue
 
     Queue Data Structure : Using dequeue
     deque is using Doubly Linked List data structure to store the element.
+
+---
 
 ## 03. Queue Data Structure : Producer Consumer Problem
 
     Queue Data Structure : Producer Consumer Problem
     This problem is a producer,consumer problem where producer thread is producing data whereas consumer
     thread is consuming the data which has already produced.
+
+---
 
 ## 04. Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue
 
@@ -69,3 +75,5 @@
     number (i.e. 10) + 1.
 
     For more clarification, please take a look on my code.
+
+---

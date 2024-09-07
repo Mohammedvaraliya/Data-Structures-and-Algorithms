@@ -35,6 +35,8 @@
 
                 Hence the element 6 is found at index 2.
 
+---
+
 ## 02. Binary Search: Find Closest Number
 
     Binary Search: Find Closest Number
@@ -52,6 +54,8 @@
         Input :arr[] = {2, 5, 6, 7, 8, 8, 9};
         Target number = 4
         Output : 5
+
+---
 
 ## 03. Binary Search: Find Fixed Point
 
@@ -73,6 +77,8 @@
         # No fixed point. Return "None":
         A = [-10, -5, 3, 4, 7, 9]
 
+---
+
 ## 04. Binary Search: Find Bitonic Peak
 
     Binary Search: Find Bitonic Peak
@@ -87,6 +93,8 @@
 
     we assume that such a peak element exists.
 
+---
+
 ## 05. Binary Search: Find First Entry in List with Duplicates
 
     Binary Search: Find First Entry in List with Duplicates
@@ -100,6 +108,8 @@
 
         Returns index 3 since 108 appear for the first time at index 3.
 
+---
+
 ## 06. Binary Search: Python's Bisect Method
 
     Binary Search: Python's Bisect Method
@@ -107,6 +117,8 @@
     Bisect:
         -"Built-in" binary search method in Python.
         -Can be used to search for an element in a sorted list.
+
+---
 
 ## 07. Binary Search: Integer Square Root
 
@@ -119,6 +131,8 @@
         Assume input is integer 300.
 
         Then the expected output of the function should be 17 since 17 squared is 289 which is strictly less than 300. Note that 18 squared is 324 which is strictly greater than 300, so the number 17 is the correct response.
+
+---
 
 ## 08. Binary Search: Cyclically Shifted Array
 
@@ -158,6 +172,8 @@ Output: 11
 Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 ```
 
+---
+
 ## 09. Binary Search: Find Index Of All Occurances
 
 ```bash
@@ -182,6 +198,8 @@ Three 15 are there in the data list at respective index number
                 Indices of occurences of number 15 are [5, 6, 7]
 ```
 
+---
+
 ## 10. Binary Search: Search in Rotated Sorted Array
 
 [Leetcode Problem URL](https://leetcode.com/problems/search-in-rotated-sorted-array/)
@@ -204,3 +222,5 @@ Example 3:
 Input: nums = [1], target = 0
 Output: -1
 ```
+
+---

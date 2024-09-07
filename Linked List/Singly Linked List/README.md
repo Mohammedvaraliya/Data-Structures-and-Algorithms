@@ -6,6 +6,8 @@
     Append - Add the Node from end of the list
     Prepend - Add the Node from front of the list
 
+---
+
 ## 02. Singly Linked Lists -- Length of List
 
     Singly Linked Lists -- Length of List
@@ -20,10 +22,14 @@
 
     length of Singly Linked List is : 4
 
+---
+
 ## 03. Singly Linked Lists -- Node Swap
 
     Singly Linked Lists -- Node Swap
     It will swap the node from Singly Linked List
+
+---
 
 ## 04. Singly Linked Lists -- Reverse
 
@@ -94,6 +100,8 @@ Output: []
                 9
                 10
 
+---
+
 ## 06. Singly Linked Lists -- Remove Duplicates
 
     Singly Linked Lists -- Remove Duplicates
@@ -114,6 +122,8 @@ Output: []
                                 2
                                 7
 
+---
+
 ## 07. Singly Linked Lists -- Nth-to-Last Node
 
     Singly Linked List -- Nth-to-Last Node
@@ -129,6 +139,8 @@ Output: []
 
     print_nth_from_last_method2(3):
                                     D
+
+---
 
 ## 08. Singly Linked Lists -- Count Occurrences
 
@@ -149,6 +161,8 @@ Output: []
                                     4
 
     because 4 occurences of Node with data (1) available in the Singly Linked List
+
+---
 
 ## 09. Singly Linked Lists -- Rotate
 
@@ -175,6 +189,8 @@ Output: []
                     3
                     4
 
+---
+
 ## 10. Singly Linked Lists -- Is Palindrome
 
     Singly Linked Lists -- Is Palindrome
@@ -200,6 +216,8 @@ Output: []
 
     HELLO cannot be read be same when read forward and backwards so this will return False.
 
+---
+
 ## 11. Singly Linked Lists -- Move Tail to Head
 
     Singly Linked Lists -- Move Tail to Head
@@ -220,6 +238,8 @@ Output: []
                                 C
                                 D
                                 E
+
+---
 
 ## 12. Singly Linked Lists -- Sum Two Lists
 

@@ -19,6 +19,8 @@
 
     5 + 5 + 5 + 5 = 20
 
+---
+
 ## 02. Numbers: Convert Integer To Binary
 
     Numbers: Convert Integer To Binary Number
@@ -51,6 +53,8 @@
                         result:  1   0   1    0
 
         final binary string is : "1010" of integer 10
+
+---
 
 ## 03. Numbers: Convert Binary To Integer
 
@@ -131,11 +135,13 @@
                 return reseult
                 The integer of binary number 1011 is 11
 
+---
+
 ## 04. Roman to Integer
 
 [Leetcode Problem URL](https://leetcode.com/problems/roman-to-integer/)
 
-'''bash
+```bash
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
 Symbol Value
@@ -171,4 +177,6 @@ Example 3:
 Input: s = "MCMXCIV"
 Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
-'''
+```
+
+---

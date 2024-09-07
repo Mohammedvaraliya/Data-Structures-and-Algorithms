@@ -22,6 +22,8 @@
     i = 4   i.e 6 + 4   = 10
     i = 5   i.e 10 + 5  = 15
 
+---
+
 ## 02. Understanding Recursive Approach
 
     Understanding Recursion Approach
@@ -52,6 +54,8 @@
 
                Thus, the output is 21.
 
+---
+
 ## 03. Fibonacci Number Using Recursion
 
     Fibonacci Number Using Recursion
@@ -80,6 +84,8 @@
 
     For n = 9
     Output:34
+
+---
 
 ## 04. Recursion: List sum
 
@@ -171,6 +177,8 @@
 
     The final output of the sum_of_list is 21
 
+---
+
 ## 05. Recursion: Get Sum Of Integer
 
     Recursion: Get Sum Of Integer
@@ -201,6 +209,8 @@
     5. Divide the number by 10 with help of ‘/’ operator to remove the rightmost digit.
 
     6. Print or return the sum
+
+---
 
 ## 06. Recursion: Sum Of Positive Integer
 
@@ -254,6 +264,8 @@
                     20 + 10 = 30
 
             => 30 is the output
+
+---
 
 ## 07. Recursion: Calculate The Harmonic Sum
 

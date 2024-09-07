@@ -6,6 +6,8 @@
     Append - Add the Node from end of the list
     Prepend - Add the Node from front of the list
 
+---
+
 ## 02. Doubly Linked Lists -- Add Node Before/After
 
     Doubly Linked Lists -- Add Node Before/After
@@ -42,6 +44,8 @@
                             4
                             5
 
+---
+
 ## 03. Doubly Linked Lists -- Delete Node
 
     Doubly Linked Lists -- Delete Node
@@ -66,6 +70,8 @@
                     2
                     1
 
+---
+
 ## 05. Doubly Linked Lists -- Remove Duplicates
 
     Doubly Linked Lists -- Remove Duplicates
@@ -87,6 +93,8 @@
                                 3
                                 4
                                 5
+
+---
 
 ## 06. Doubly Linked Lists -- Pairs with Sum
 
@@ -117,3 +125,5 @@
                                          []
 
     because there is no pair exist which sum equal to given number
+
+---

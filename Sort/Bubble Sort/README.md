@@ -26,6 +26,8 @@
             ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
             ( 1 2 4 5 8 ) –>  ( 1 2 4 5 8 )
 
+---
+
 ## 02. Bubble Sort Using Key
 
     Bubble Sort Using Key
@@ -74,3 +76,5 @@
         { 'name': 'subhashish',  'amount': 800,  'device': 'iphone-12'},
         { 'name': 'sameer',  'amount': 200,  'device': 'vivo'},
     ]
+
+---

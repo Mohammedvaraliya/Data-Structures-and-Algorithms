@@ -146,6 +146,8 @@ print(obj.numIslands(grid=grid3))
   - The space complexity is also $(O(m \times n))$ due to the `visit` set and the queue used in BFS, which in the worst case can store all cells in the grid.
   - Additionally, the recursive stack of BFS can go up to the size of the grid in the worst case.
 
+---
+
 ## 03. Clone Graph
 
 [Leetcode Problem URL](https://leetcode.com/problems/clone-graph/)
@@ -267,6 +269,8 @@ The `createGraph` function converts an adjacency list into a graph represented b
 
   - The space complexity is $O(V)$ due to the space needed to store the copy of each node and the recursion stack.
 
+---
+
 ## 04. Pacific Atlantic Water Flow
 
 [Leetcode Problem URL](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)
@@ -343,6 +347,8 @@ I've employed Depth-First Search (DFS) to determine which cells can flow to both
   - The algorithm runs a DFS from each cell that touches the oceans, visiting each cell in the grid at most once. Therefore, the time complexity is $O(m \times n)$, where $(m)$ is the number of rows and $(n)$ is the number of columns.
 - **Space Complexity**:
   - The space complexity is $(O(m \times n))$ for the visited sets and the recursion stack in the worst case.
+
+---
 
 ## 05. Course Schedule
 
@@ -430,6 +436,8 @@ I've employed Depth-First Search (DFS) to detect cycles in the graph.
   - The recursion stack for DFS can go up to $O(n)$ depth.
   - Overall, the space complexity is $O(n + p)$.
 
+---
+
 ## 06. Graph Valid Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/graph-valid-tree/description/)
@@ -501,6 +509,8 @@ The following solution uses DFS to check these conditions.
 
 - **Time Complexity**: The solution iterates over all nodes and edges once, giving a time complexity of $O(V + E)$.
 - **Space Complexity**: The adjacency list and the recursion stack both contribute to the space complexity, which is $O(V + E)$.
+
+---
 
 ## 07. Number of Connected Components in an Undirected Graph
 

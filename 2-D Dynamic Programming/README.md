@@ -94,6 +94,8 @@ Let's walk through the example `m = 3`, `n = 7`:
 - **Time Complexity**: $O(m \cdot n)$, where `m` is the number of rows and `n` is the number of columns. We iterate through each cell of the grid once.
 - **Space Complexity**: $O(n)$, where `n` is the number of columns. We use a 1D DP array of size `n` to store the number of unique paths.
 
+---
+
 ## 02. Longest Common Subsequence
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-common-subsequence/description/)

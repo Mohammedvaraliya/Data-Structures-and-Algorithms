@@ -37,6 +37,8 @@ Input: head = []
 Output: []
 ```
 
+---
+
 ## 02. Singly Linked Lists -- Merge Two Sorted Lists
 
 [Leetcode Problem URL](https://leetcode.com/problems/merge-two-sorted-lists/)
@@ -61,6 +63,8 @@ Input: list1 = [], list2 = [0]
 Output: [0]
 ```
 
+---
+
 ## 03. Singly Linked Lists -- Reorder List
 
 [Leetcode Problem URL](https://leetcode.com/problems/reorder-list/)
@@ -83,6 +87,8 @@ Input: head = [1,2,3,4,5]
 Output: [1,5,2,4,3]
 ```
 
+---
+
 ## 04. Singly Linked Lists -- Remove Nth Node From End of List
 
 [Leetcode Problem URL](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
@@ -102,6 +108,8 @@ Example 3:
 Input: head = [1,2], n = 1
 Output: [1]
 ```
+
+---
 
 ## 05. Singly Linked Lists -- Linked List Cycle
 
@@ -129,6 +137,8 @@ Input: head = [1], pos = -1
 Output: false
 Explanation: There is no cycle in the linked list.
 ```
+
+---
 
 ## 06. Singly Linked Lists -- Merge k Sorted Lists
 
@@ -159,3 +169,5 @@ Example 3:
 Input: lists = [[]]
 Output: []
 ```
+
+---

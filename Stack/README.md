@@ -39,6 +39,8 @@
                 | A |
                 -----
 
+---
+
 ## 02. The Stack data Structure : Understanding Stack
 
     The Stack data Structure : Understanding Stack
@@ -79,6 +81,8 @@
                 | B |
                 | A |
                 -----
+
+---
 
 ## 03. Determine if parenthesis are balanced
 
@@ -137,6 +141,8 @@ Output: false
 
     11110010 is the binary number of integer 242
 
+---
+
 ## 05. The Stack data Structure : Reverse String
 
     The Stack data Structure : Reverse String
@@ -154,3 +160,5 @@ Output: false
     Now, pop() characters one by one and add it to an empty string variable
 
     return empty string variable
+
+---

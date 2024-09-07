@@ -11,6 +11,8 @@
     We keep reducing the value of h until it becomes 1.
     An array is said to be h-sorted if all sublists of every h'th element are sorted.
 
+---
+
 ## 02. Shell Sort: Remove Duplicates
 
     Shell Sort: Remove Duplicates
@@ -29,3 +31,5 @@
     Final sorted array will look like
 
                             [0, 1, 2, 3, 5, 7, 8, 9]
+
+---

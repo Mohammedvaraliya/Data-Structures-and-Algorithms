@@ -104,6 +104,8 @@ Let’s walk through the first example `nums = [-2,1,-3,4,-1,2,1,-5,4]`:
 - **Time Complexity:** `O(n)` where `n` is the length of the input array `nums`. The algorithm makes a single pass through the array.
 - **Space Complexity:** `O(1)` because no extra space is used that scales with the input size, only a few variables are used.
 
+---
+
 ## 02. Jump Game
 
 [Leetcode Problem URL](https://leetcode.com/problems/jump-game/description/)

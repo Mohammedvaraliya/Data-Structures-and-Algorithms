@@ -74,3 +74,5 @@
     Finally, the array is completely sorted.
 
                         [5, 6, 11, 12, 13]
+
+---

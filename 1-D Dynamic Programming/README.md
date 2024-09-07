@@ -116,6 +116,8 @@ After the loop completes, the variable `one` contains the number of distinct way
 
 - The space complexity is $O(1)$ because we only use a fixed amount of space (two variables, `one` and `two`), regardless of the input size $n$.
 
+---
+
 ## 02. House Robber
 
 [Leetcode Problem URL](https://leetcode.com/problems/house-robber/description/)
@@ -203,6 +205,8 @@ The maximum amount of money that can be robbed without alerting the police is `1
 - **Time Complexity**: $O(n)$, where `n` is the number of houses. We iterate through the list of houses once.
 - **Space Complexity**: $O(1)$, as we only use a constant amount of space for `rob1` and `rob2`.
 
+---
+
 ## 03. House Robber II
 
 [Leetcode Problem URL](https://leetcode.com/problems/house-robber-ii/description/)
@@ -287,6 +291,8 @@ The maximum amount of money that can be robbed without alerting the police is th
 
 - **Time Complexity**: $O(n)$, where `n` is the number of houses. We iterate through the list of houses twice (once for each subproblem).
 - **Space Complexity**: $O(1)$, as we only use a constant amount of space for `rob1` and `rob2`.
+
+---
 
 ## 04. Longest Palindromic Substring
 
@@ -390,6 +396,8 @@ Let's walk through the example `s = "babad"` step by step:
 - **Time Complexity**: $O(n^2)$, where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
 - **Space Complexity**: $O(1)$, since we only use a constant amount of additional space for variables.
 
+---
+
 ## 05. Palindromic Substrings
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-palindromic-substring/description/)
@@ -486,6 +494,8 @@ Let's walk through the example `s = "aaa"` step by step:
 
 - **Time Complexity**: $O(n^2)$, where `n` is the length of the string. We expand around each center in the string, and in the worst case, each expansion can take up to `n` steps.
 - **Space Complexity**: $O(1)$, since we only use a constant amount of additional space for variables.
+
+---
 
 ## 06. Decode Ways
 
@@ -636,6 +646,8 @@ To solve the problem of counting the number of ways to decode the string, I've u
 - **Time Complexity**: $O(n)$, where `n` is the length of the string. We process each character at most once due to memoization.
 - **Space Complexity**: $O(n)$, due to the recursion stack and the dictionary `dp` storing the results of subproblems.
 
+---
+
 ## 07. Coin Change
 
 [Leetcode Problem URL](https://leetcode.com/problems/coin-change/description/)
@@ -719,6 +731,8 @@ Let's walk through the example `coins = [1,2,5]`, `amount = 11` step by step:
 
 - **Time Complexity**: $O(n \cdot m)$, where `n` is the amount and `m` is the number of coins. This is because for each amount from `1` to `n`, we check all `m` coins.
 - **Space Complexity**: $O(n)$, where `n` is the amount. We use an array `dp` of size `n + 1`.
+
+---
 
 ## 08. Maximum Product Subarray
 
@@ -816,6 +830,8 @@ Let's walk through the example `nums = [2,3,-2,4]` step by step:
 - **Time Complexity**: $O(n)$, where `n` is the length of the array `nums`. We iterate through the array once.
 - **Space Complexity**: $O(1)$, constant space. We use only a few variables (`curMin`, `curMax`, and `res`) regardless of the input size.
 
+---
+
 ## 09. Word Break
 
 [Leetcode Problem URL](https://leetcode.com/problems/word-break/description/)
@@ -906,6 +922,8 @@ Let's walk through the example `s = "leetcode"`, `wordDict = ["leet","code"]` st
 
 - **Time Complexity**: $O(n \cdot m)$, where `n` is the length of the string `s` and `m` is the number of words in `wordDict`. We iterate through the string and for each position, we check each word in the dictionary.
 - **Space Complexity**: $O(n)$, where `n` is the length of the string `s`. We use a DP array of size `n + 1`.
+
+---
 
 ## 10. Longest Increasing Subsequence
 

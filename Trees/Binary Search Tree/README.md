@@ -2,6 +2,8 @@
 
 ##### Note. The name of function which is same but \_ before name is helper function.
 
+---
+
 ## 01. Binary Search Trees: Insertion
 
     Binary Search Trees: Insertion
@@ -48,6 +50,8 @@
             1      6
                  /
                4
+
+---
 
 ## 02. Binary Search Trees: Searching
 
@@ -102,6 +106,8 @@
 
     if we cant find the data equal to node: return False
 
+---
+
 ## 03. Binary Search Trees: Checking the BST Property
 
     Binary Search Trees: Checking the BST Property
@@ -147,6 +153,8 @@
 
     return False
 
+---
+
 ## 04. Binary Search Trees: Using list
 
     Binary Search Trees: Insertion with the help of list
@@ -186,6 +194,8 @@
 
           * For more clarification, please [See the code](./02_binary_search_tree_using_list.py.py)
 
+---
+
 ## 05. Binary Search Trees: Using list - In-Order-Traversal
 
     In-Order-Traversal
@@ -209,6 +219,8 @@
     Start from root node i.e 17.
 
     finalList = [1, 4, 9, 17, 18, 20, 23, 34]
+
+---
 
 ## 06. Binary Search Trees: Using list - Post-Order-Traversal
 
@@ -234,6 +246,8 @@
 
     finalList = [1, 9, 4, 18, 34, 23, 20, 17]
 
+---
+
 ## 07. Binary Search Trees: Using list - Pre-Order-Traversal
 
     Pre-Order-Traversal
@@ -257,6 +271,8 @@
     Start from root node i.e 17.
 
     finalList = [17, 4, 1, 9, 20, 18, 23, 34]
+
+---
 
 ## 08. Binary Search Trees: Using list - Delete Node Method 1
 
@@ -306,6 +322,8 @@
                                          / \     /  \
                                         /   \   /    \
                                        1     9  18    34
+
+---
 
 ## 09. Binary Search Trees: Using list - Delete Node Method 2
 
@@ -361,6 +379,8 @@
                                                         \
                                                          34
 
+---
+
 ## 10. Binary Search Trees: Lowest Common Ancestor of a Binary Search Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
@@ -387,6 +407,8 @@ Example 3:
 
     Input: root = [2,1], p = 2, q = 1
     Output: 2
+
+---
 
 ## 11. Binary Search Trees: Validate
 
@@ -415,6 +437,8 @@ Example 2:
     Output: false
     Explanation: The root node's value is 5 but its right child's value is 4.
 
+---
+
 ## 12. Binary Search Trees: Kth Smallest Element
 
 [Leetcode Problem URL](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
@@ -435,3 +459,5 @@ Example 2:
 
     Input: root = [5,3,6,2,4,null,null,1], k = 3
     Output: 3
+
+---

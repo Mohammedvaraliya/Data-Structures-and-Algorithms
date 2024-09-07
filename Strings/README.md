@@ -14,6 +14,8 @@
 
          "0987654321"
 
+---
+
 ## 02. Count Consonants in String
 
     Count Consonants in String
@@ -37,6 +39,8 @@
 
         Because there is 3 char present in the string which is consonent.
 
+---
+
 ## 03. Look-and-Say Sequence
 
     Look-and-Say Sequence
@@ -56,6 +60,8 @@
 
     so the final string will be like this "312211"
 
+---
+
 ## 04. String Processing: Spreadsheet Encoding
 
     String Processing: Spreadsheet Encoding
@@ -63,6 +69,8 @@
     ord("A") will return The ACII value which is 65
     similarly
     ord("B") is 67
+
+---
 
 ## 05. String Processing: Is Palindrome
 
@@ -95,6 +103,8 @@ Output: true
 Explanation: s is an empty string "" after removing non-alphanumeric characters.
 Since an empty string reads the same forward and backward, it is a palindrome.
 ```
+
+---
 
 ## 06. String Processing: Is Anagram
 
@@ -140,6 +150,8 @@ Output: false
             palin_perm = "Tact Coa" #Taco Cat
             not_palin_perm = "This is not a palindrome permutation"
 
+---
+
 ## 08. String Processing: Check Permutation
 
     String Processing: Check Permutation
@@ -156,6 +168,8 @@ Output: false
                                 not_permutation_1 = "Not"
                                 not_permutation_2 = "got"
 
+---
+
 ## 09. String Processing: Is Unique
 
     String Processing: Is Unique
@@ -165,6 +179,8 @@ Output: false
     Example:
                 unique_str_1 = 'ABCdefg'
                 non_unique_str_1 = 'non unique STR'
+
+---
 
 ## 10. String Processing: Integer to String
 
@@ -181,6 +197,8 @@ Output: false
 
         Input: -123
         Output: "-123"
+
+---
 
 ## 11. String Processing: String to Integer
 
@@ -274,6 +292,8 @@ Example 3:
     Since 4193 is in the range [-231, 231 - 1], the final result is 4193.
 ```
 
+---
+
 ## 12. Longest Substring Without Repeating Characters
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
@@ -301,6 +321,8 @@ Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 ```
 
+---
+
 ## 13. Encode and Decode Strings
 
 [Leetcode Problem URL](https://leetcode.com/problems/encode-and-decode-strings/)
@@ -325,6 +347,8 @@ Example2:
     One possible encode method is: "2#we3#say1#:3#yes"
 ```
 
+---
+
 ## 14. Longest Repeating Character Replacement
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-repeating-character-replacement/)
@@ -346,6 +370,8 @@ Explanation: Replace the one 'A' in the middle with 'B' and form "AABBBBA".
 The substring "BBBB" has the longest repeating letters, which is 4.
 There may exists other ways to achive this answer too.
 ```
+
+---
 
 ## 15. Minimum Window Substring
 
@@ -373,6 +399,8 @@ Output: ""
 Explanation: Both 'a's from t must be included in the window.
 Since the largest window of s only has one 'a', return empty string.
 ```
+
+---
 
 ## 16. First Letter to Appear Twice
 
@@ -424,6 +452,8 @@ Input: s = "aabb"
 Output: -1
 ```
 
+---
+
 ## 18. Find the Index of the First Occurrence in a String
 
 [Leetcode Problem URL](https://leetcode.com/problems/first-unique-character-in-a-string/)
@@ -443,3 +473,5 @@ Input: haystack = "leetcode", needle = "leeto"
 Output: -1
 Explanation: "leeto" did not occur in "leetcode", so we return -1.
 ```
+
+---
