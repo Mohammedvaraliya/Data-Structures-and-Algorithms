@@ -975,3 +975,114 @@ Output: 1
 ```
 
 ### Explanation
+
+I've solved this problem using **Dynamic Programming (DP)** to find the length of the longest increasing subsequence. The idea is to build a table (array) that stores the length of the longest increasing subsequence ending at each index. This allows us to find the solution by examining all the subsequences that can be formed up to that index.
+
+#### Why Dynamic Programming?
+
+- **Efficient for Subproblems**: The problem of finding the longest increasing subsequence is naturally recursive, where you need to check if each element can extend the subsequence formed by earlier elements.
+- **Optimal Over Brute Force**: Instead of recalculating results for every subsequence, DP stores results, allowing us to avoid redundant calculations and improve efficiency.
+
+1. **Initialization**:
+
+   - We create a list `LIS` where `LIS[i]` represents the length of the longest increasing subsequence ending at index `i`.
+   - Initially, each element of `LIS` is set to `1` since the minimum subsequence that ends at each index is just the element itself.
+
+2. **Iterate from End to Start**:
+
+   - We loop over each element from right to left (`i` goes from `len(nums) - 1` to `0`).
+   - For each `i`, we check the elements that come after it (`j` from `i + 1` to `len(nums)`).
+
+3. **Check for Increasing Subsequence**:
+
+   - If `nums[i] < nums[j]`, it means `nums[i]` can extend the subsequence formed by `nums[j]`.
+   - We update `LIS[i] = max(LIS[i], 1 + LIS[j])` to account for the longer subsequence ending at `i`.
+
+4. **Return the Result**:
+   - Once we finish filling the `LIS` array, the length of the longest increasing subsequence will be the maximum value in the `LIS` array.
+
+#### Example Walkthrough
+
+Let’s walk through an example `nums = [10,9,2,5,3,7,101,18]`:
+
+1. **Initialization**:
+
+   - `LIS = [1,1,1,1,1,1,1,1]` (each element represents the longest subsequence ending at that index, starting with 1).
+
+2. **Iteration**:
+
+   - Starting from the last index (`i = 7`), compare `nums[i]` with `nums[j]` for all `j > i`.
+
+   - `i = 7`: `nums[7] = 18`
+
+     - No element after index 7, so no update, `LIS = [1,1,1,1,1,1,1,1]`.
+
+   - `i = 6`: `nums[6] = 101`
+
+     - Compare `nums[6] < nums[7] (101 < 18)` → False, no update.
+     - `LIS = [1,1,1,1,1,1,1,1]`.
+
+   - `i = 5`: `nums[5] = 7`
+
+     - Compare `nums[5] < nums[6] (7 < 101)` → True, update `LIS[5] = max(LIS[5], 1 + LIS[6]) = 2`.
+     - Compare `nums[5] < nums[7] (7 < 18)` → True, update `LIS[5] = max(LIS[5], 1 + LIS[7]) = 2`.
+     - `LIS = [1,1,1,1,1,3,2,1]`.
+
+   - `i = 4`: `nums[4] = 3`
+
+     - Compare `nums[4] < nums[5] (3 < 7)` → True, update `LIS[4] = max(LIS[4], 1 + LIS[5]) = 4`.
+     - Compare `nums[4] < nums[6] (3 < 101)` → True, no change as the update already gave the best result.
+     - Compare `nums[4] < nums[7] (3 < 18)` → True, no change.
+     - `LIS = [1,1,1,1,4,3,2,1]`.
+
+   - `i = 3`: `nums[3] = 5`
+
+     - Compare `nums[3] < nums[4] (5 < 3)` → False, no update.
+     - Compare `nums[3] < nums[5] (5 < 7)` → True, update `LIS[3] = max(LIS[3], 1 + LIS[5]) = 3`.
+     - Compare `nums[3] < nums[6] (5 < 101)` → True, no change.
+     - Compare `nums[3] < nums[7] (5 < 18)` → True, no change.
+     - `LIS = [1,1,1,3,4,3,2,1]`.
+
+   - `i = 2`: `nums[2] = 2`
+
+     - Compare `nums[2] < nums[3] (2 < 5)` → True, update `LIS[2] = max(LIS[2], 1 + LIS[3]) = 4`.
+     - Compare `nums[2] < nums[4] (2 < 3)` → True, no change.
+     - Compare `nums[2] < nums[5] (2 < 7)` → True, no change.
+     - Compare `nums[2] < nums[6] (2 < 101)` → True, no change.
+     - Compare `nums[2] < nums[7] (2 < 18)` → True, no change.
+     - `LIS = [1,1,4,3,4,3,2,1]`.
+
+   - `i = 1`: `nums[1] = 9`
+
+     - Compare `nums[1] < nums[2] (9 < 2)` → False, no update.
+     - Compare `nums[1] < nums[3] (9 < 5)` → False, no update.
+     - Compare `nums[1] < nums[4] (9 < 3)` → False, no update.
+     - Compare `nums[1] < nums[5] (9 < 7)` → False, no update.
+     - Compare `nums[1] < nums[6] (9 < 101)` → True, update `LIS[1] = max(LIS[1], 1 + LIS[6]) = 2`.
+     - Compare `nums[1] < nums[7] (9 < 18)` → True, no change.
+     - `LIS = [1,2,4,3,4,3,2,1]`.
+
+   - `i = 0`: `nums[0] = 10`
+     - Compare `nums[0] < nums[1] (10 < 9)` → False, no update.
+     - Compare `nums[0] < nums[2] (10 < 2)` → False, no update.
+     - Compare `nums[0] < nums[3] (10 < 5)` → False, no update.
+     - Compare `nums[0] < nums[4] (10 < 3)` → False, no update.
+     - Compare `nums[0] < nums[5] (10 < 7)` → False, no update.
+     - Compare `nums[0] < nums[6] (10 < 101)` → True, update `LIS[0] = max(LIS[0], 1 + LIS[6]) = 3`.
+     - Compare `nums[0] < nums[7] (10 < 18)` → True, no change.
+     - `LIS = [3,2,4,3,4,3,2,1]`.
+
+3. **Final Result**:
+   - The longest increasing subsequence is of length `4` (`[2,3,7,101]`).
+
+#### Time Complexity
+
+- **$O(n^2)$**: The solution requires two nested loops. The outer loop iterates over each element, and the inner loop compares the current element with every subsequent element. Thus, the total number of comparisons is proportional to `n^2`, where `n` is the number of elements in the array.
+
+#### Space Complexity
+
+- **O(n)**: We use an additional array `LIS` of size `n` to store the length of the longest increasing subsequence at each index. Therefore, the space complexity is linear.
+
+---
+
+---
