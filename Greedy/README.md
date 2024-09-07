@@ -129,3 +129,68 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum jump 
 ```
 
 ### Explanation
+
+The problem of determining whether you can reach the last index in the array is solved efficiently using a **greedy approach**. The greedy approach aims to continuously evaluate the farthest point you can jump to while traversing backward through the array. This is more efficient than other approaches like dynamic programming or brute force.
+
+I've chose the greedy approach because:
+
+- **Efficiency**: The greedy approach runs in $O(n)$ time, which is more efficient than other approaches like dynamic programming that may take $O(n^2)$ time.
+- **Optimal for this problem**: Instead of storing states or calculating sub-problems like in DP, we only need to track the farthest we can reach, making it an ideal choice.
+
+1. **Goal Position**: We initialize a variable `goal` to track the farthest position we need to reach, starting with the last index (`goal = len(nums) - 1`).
+
+2. **Traverse Backward**: We iterate through the array backward from the second-to-last element (`i = len(nums) - 2`) down to the first element (`i = 0`).
+
+3. **Update Goal**:
+
+   - At each position `i`, check if you can jump from position `i` to the current `goal` (i.e., if `i + nums[i] >= goal`).
+   - If you can, update the `goal` to be the current position `i` because now we need to reach `i` instead of the original `goal`.
+   - The logic here is simple: if you can jump to the goal from the current position, then the goal moves closer.
+
+4. **Final Check**:
+
+   - After finishing the loop, if `goal == 0`, it means you can reach the first index and then jump all the way to the end. If not, return `false`.
+
+#### Example Walkthrough
+
+##### Example 1: `nums = [2,3,1,1,4]`
+
+1. **Initialization**:
+
+   - Start with `goal = 4` (last index).
+
+2. **Iteration**:
+
+   - `i = 4`: `4 + nums[4] = 4 + 4 = 8 >= goal` → Update `goal = 4`.
+   - `i = 3`: `3 + nums[3] = 3 + 1 = 4 >= goal` → Update `goal = 3`.
+   - `i = 2`: `2 + nums[2] = 2 + 1 = 3 >= goal` → Update `goal = 2`.
+   - `i = 1`: `1 + nums[1] = 1 + 3 = 4 >= goal` → Update `goal = 1`.
+   - `i = 0`: `0 + nums[0] = 0 + 2 = 2 >= goal` → Update `goal = 0`.
+
+3. **Final Check**: Since `goal == 0`, return `True`.
+
+##### Example 2: `nums = [3,2,1,0,4]`
+
+1. **Initialization**:
+
+   - Start with `goal = 4` (last index).
+
+2. **Iteration**:
+
+   - `i = 4`: `4 + nums[4] = 4 + 4 = 8 >= goal` → Update `goal = 4`.
+   - `i = 3`: `3 + nums[3] = 3 + 0 = 3 < goal`, so `goal` remains 4.
+   - `i = 2`: `2 + nums[2] = 2 + 1 = 3 < goal`, so `goal` remains 4.
+   - `i = 1`: `1 + nums[1] = 1 + 2 = 3 < goal`, so `goal` remains 4.
+   - `i = 0`: `0 + nums[0] = 0 + 3 = 3 < goal`, so `goal` remains 4.
+
+3. **Final Check**: Since `goal != 0`, return `False`.
+
+---
+
+#### Time Complexity
+
+- **O(n)**: We only traverse the array once, from the end to the beginning. Each index is processed in constant time, resulting in linear time complexity.
+
+### Space Complexity
+
+- **O(1)**: We only use a few variables (`goal`) for tracking the farthest reachable position. The space complexity is constant.
