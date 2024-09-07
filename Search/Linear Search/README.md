@@ -8,6 +8,8 @@
 
 ---
 
+---
+
 ## 02. Linear Search : Find Elements
 
     Linear Search : Find Elements
@@ -27,5 +29,7 @@
     target element is present at index number 3.
 
     hence, this traversing is called Linear Search.
+
+---
 
 ---

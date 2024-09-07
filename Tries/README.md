@@ -127,6 +127,8 @@ The `startsWith` method checks if there is any word in the Trie that starts with
 
 ---
 
+---
+
 ## 02. Design Add and Search Words Data Structure
 
 [Leetcode Problem URL](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)
@@ -219,6 +221,8 @@ The `dfs` function is a helper function for recursive DFS:
 - **Search Method:**
   - **Time Complexity:** In the worst case, it can be $(O(m \times 26^m))$, where $(m)$ is the length of the word. This is because for each dot `'.'`, it may need to check all possible 26 child nodes, resulting in a combinatorial explosion.
   - **Space Complexity:** $(O(m))$ for the recursion stack in the worst case where $(m)$ is the length of the word.
+
+---
 
 ---
 
@@ -317,6 +321,8 @@ Finally, the method iterates through each cell in the board and initiates a DFS 
 
 ---
 
+---
+
 ## Efficiency Analysis
 
 - **Adding Words to Trie**
@@ -327,5 +333,7 @@ Finally, the method iterates through each cell in the board and initiates a DFS 
 - **DFS Search**
   - **Time Complexity:** $(O(m \cdot n \cdot 4^L))$, where $(m)$ and $(n)$ are the dimensions of the board and $(L)$ is the maximum length of a word. Each cell initiates a DFS that explores all possible directions.
   - **Space Complexity:** $(O(L))$, where $(L)$ is the maximum length of a word. This is the space required for the recursion stack during DFS.
+
+---
 
 ---

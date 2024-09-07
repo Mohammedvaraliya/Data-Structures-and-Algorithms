@@ -7,9 +7,13 @@
 
 ---
 
+---
+
 ## 02. Sorting Algorithms: Intersection of Two Sorted Arrays
 
     Given two arrays, A and B, determine their intersection. That is, what elements are common to A and B?
+
+---
 
 ---
 
@@ -29,6 +33,8 @@
         Input :arr[] = {2, 5, 6, 7, 8, 8, 9};
         Target number = 4
         Output : 5
+
+---
 
 ---
 
@@ -53,6 +59,8 @@
 
 ---
 
+---
+
 ## 05. Binary Search: Find Bitonic Peak
 
     Define a bitonic sequence as a sequence of integers such that:
@@ -68,6 +76,8 @@
 
 ---
 
+---
+
 ## 06. Binary Search: Find First Entry in List with Duplicates
 
     writing a function that takes an array of sorted integers and a key and returns the index of the first occurrence of that key from the array.
@@ -78,6 +88,8 @@
         Target:  108
 
         Returns index 3 since 108 appear for the first time at index 3.
+
+---
 
 ---
 
@@ -96,6 +108,8 @@
 
 ---
 
+---
+
 ## 08. Arrays: Arbitrary Precision Increment
 
     Given:
@@ -103,6 +117,8 @@
 
     Problem:
         Add one to the integer. Assume the solution still works even if implemented in a language with finite-precision arithmetic.
+
+---
 
 ---
 
@@ -146,6 +162,8 @@ Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 
 ---
 
+---
+
 ## 10. Arrays: Two Sum Problem
 
 [Leetcode Problem URL](https://leetcode.com/problems/two-sum/)
@@ -175,6 +193,8 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
+
+---
 
 ---
 
@@ -208,6 +228,8 @@ Problem:
 
 ---
 
+---
+
 ## 12. Subarray Sum Equals K
 
 [Leetcode Problem URL](https://leetcode.com/problems/subarray-sum-equals-k/)
@@ -225,6 +247,8 @@ Example 2:
 Input: nums = [1,2,3], k = 3
 Output: 2
 ```
+
+---
 
 ---
 
@@ -248,6 +272,8 @@ Example 3:
 Input: nums = [1,1,1,3,3,4,3,2,4,2]
 Output: true
 ```
+
+---
 
 ---
 
@@ -275,6 +301,8 @@ Output: [["a"]]
 
 ---
 
+---
+
 ## 15. Top K Frequent Elements - Bucket Sort
 
 [Leetcode Problem URL](https://leetcode.com/problems/top-k-frequent-elements/)
@@ -292,6 +320,8 @@ Output: [1]
 
 Time coplexity of this solution which i solved is O(n)
 ```
+
+---
 
 ---
 
@@ -317,6 +347,8 @@ Output: [0,0,9,0,0]
 
 ---
 
+---
+
 ## 17. Product of Array Except Self
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-consecutive-sequence/)
@@ -335,6 +367,8 @@ Example 2:
 Input: nums = [0,3,7,2,5,8,4,6,0,1]
 Output: 9
 ```
+
+---
 
 ---
 
@@ -370,6 +404,8 @@ Explanation: The only possible triplet sums up to 0.
 
 ---
 
+---
+
 ## 19. Container With Most Water
 
 [Leetcode Problem URL](https://leetcode.com/problems/container-with-most-water/)
@@ -399,6 +435,8 @@ n == height.length
 
 ---
 
+---
+
 ## 20. Unique Number of Occurrences
 
 [Leetcode Problem URL](https://leetcode.com/problems/unique-number-of-occurrences/)
@@ -419,6 +457,8 @@ Example 3:
 Input: arr = [-3,0,1,-3,1,1,1,-3,10,0]
 Output: true
 ```
+
+---
 
 ---
 
@@ -456,6 +496,8 @@ If it's present, its count is incremented. However, if the count goes beyond 2 (
 If the number is not yet encountered, a new entry is created in counter with a count of 1.
 
 Since the array has an even length and we require distinct elements in each sub-array (implicit in the problem statement), allowing more than two occurrences of any number would prevent a valid split. Therefore, this approach efficiently determines if a valid split is possible based on the frequency of elements in the array, without explicitly creating the sub-arrays.
+
+---
 
 ---
 

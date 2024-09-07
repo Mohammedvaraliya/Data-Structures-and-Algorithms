@@ -32,6 +32,8 @@
 
 ---
 
+---
+
 ## 02. Merge Sort: One Unsorted List
 
     Merge Sort: One Unsorted List
@@ -66,6 +68,8 @@
                        [3, 7, 10, 15]             [8, 23. 29, 98]
 
                             [3, 7, 8, 10, 15, 23, 29, 98]
+
+---
 
 ---
 
@@ -104,5 +108,7 @@
             { 'name': 'vignesh',  'age': 21,  'time_hours': 2.5},
             { 'name': 'rajab', 'age': 12,  'time_hours': 3},
         ]
+
+---
 
 ---

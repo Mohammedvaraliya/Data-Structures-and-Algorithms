@@ -24,6 +24,8 @@
 
 ---
 
+---
+
 ## 02. Understanding Recursive Approach
 
     Understanding Recursion Approach
@@ -56,6 +58,8 @@
 
 ---
 
+---
+
 ## 03. Fibonacci Number Using Recursion
 
     Fibonacci Number Using Recursion
@@ -84,6 +88,8 @@
 
     For n = 9
     Output:34
+
+---
 
 ---
 
@@ -179,6 +185,8 @@
 
 ---
 
+---
+
 ## 05. Recursion: Get Sum Of Integer
 
     Recursion: Get Sum Of Integer
@@ -209,6 +217,8 @@
     5. Divide the number by 10 with help of ‘/’ operator to remove the rightmost digit.
 
     6. Print or return the sum
+
+---
 
 ---
 
@@ -264,6 +274,8 @@
                     20 + 10 = 30
 
             => 30 is the output
+
+---
 
 ---
 

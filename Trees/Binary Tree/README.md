@@ -4,6 +4,8 @@
 
 ---
 
+---
+
 ## 01. Binary Trees: Traversal Algorithms Pre-order
 
 ```bash
@@ -28,6 +30,8 @@ So, in a preorder traversal, each node is visited before both of its subtrees.
 so, above preorder traversal output will be :
                                         1-2-4-5-3-6-7
 ```
+
+---
 
 ---
 
@@ -58,6 +62,8 @@ so, above inorder traversal output will be :
 
 ---
 
+---
+
 ## 03. Binary Trees: Traversal Algorithms Post-order
 
 ```bash
@@ -82,6 +88,8 @@ So, in a postorder traversal, each node is visited after both of its subtrees.
 so, above postorder traversal output will be :
                                         4-5-2-6-7-3-1-
 ```
+
+---
 
 ---
 
@@ -110,6 +118,8 @@ so, above level-order traversal output will be :
 
 ---
 
+---
+
 ## 05. Binary Trees: Traversal Algorithms Reverse Level-order
 
 ```bash
@@ -130,6 +140,8 @@ The idea is to print the last level first, then the second last level, and so on
 so, above reverse level-order traversal output will be :
                                                         4-5-2-3-1-
 ```
+
+---
 
 ---
 
@@ -169,6 +181,8 @@ max will return the maximum number of given 2 numbers
 
 so, the height of this binary tree is: 2
 ```
+
+---
 
 ---
 
@@ -222,6 +236,8 @@ so, the size of this binary tree is: 5
 
 ---
 
+---
+
 ## 08. Binary Trees: Invert Binary Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/invert-binary-tree/)
@@ -258,6 +274,8 @@ Output: []
 
 ---
 
+---
+
 ## 09. Binary Trees: Maximum Depth of Binary Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
@@ -282,6 +300,8 @@ Example 2:
 Input: root = [1,null,2]
 Output: 2
 ```
+
+---
 
 ---
 
@@ -315,6 +335,8 @@ Output: false
 
 ---
 
+---
+
 ## 11. Binary Trees: Level Order Traversal - BFS
 
 [Leetcode Problem URL](https://leetcode.com/problems/binary-tree-level-order-traversal/)
@@ -345,6 +367,8 @@ Output: [[1]]
 Input: root = []
 Output: []
 ```
+
+---
 
 ---
 
@@ -382,6 +406,8 @@ Output: []
 
 ---
 
+---
+
 ## 13. Binary Trees: Construct Binary Tree from Inorder and Postorder Traversal
 
 [Leetcode Problem URL](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
@@ -406,6 +432,8 @@ Output: [3,9,20,null,null,15,7]
 Input: inorder = [-1], postorder = [-1]
 Output: [-1]
 ```
+
+---
 
 ---
 
@@ -441,6 +469,8 @@ Input: root = [-10,9,20,null,null,15,7]
 Output: 42
 Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42.
 ```
+
+---
 
 ---
 
@@ -615,5 +645,7 @@ Input: root = []
 Output: Serialized: Null
         Deserialized: Null
 ```
+
+---
 
 ---

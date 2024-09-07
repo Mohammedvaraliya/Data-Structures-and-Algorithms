@@ -4,6 +4,8 @@
 
 ---
 
+---
+
 ## 01. Binary Search Trees: Insertion
 
     Binary Search Trees: Insertion
@@ -50,6 +52,8 @@
             1      6
                  /
                4
+
+---
 
 ---
 
@@ -108,6 +112,8 @@
 
 ---
 
+---
+
 ## 03. Binary Search Trees: Checking the BST Property
 
     Binary Search Trees: Checking the BST Property
@@ -155,6 +161,8 @@
 
 ---
 
+---
+
 ## 04. Binary Search Trees: Using list
 
     Binary Search Trees: Insertion with the help of list
@@ -196,6 +204,8 @@
 
 ---
 
+---
+
 ## 05. Binary Search Trees: Using list - In-Order-Traversal
 
     In-Order-Traversal
@@ -219,6 +229,8 @@
     Start from root node i.e 17.
 
     finalList = [1, 4, 9, 17, 18, 20, 23, 34]
+
+---
 
 ---
 
@@ -248,6 +260,8 @@
 
 ---
 
+---
+
 ## 07. Binary Search Trees: Using list - Pre-Order-Traversal
 
     Pre-Order-Traversal
@@ -271,6 +285,8 @@
     Start from root node i.e 17.
 
     finalList = [17, 4, 1, 9, 20, 18, 23, 34]
+
+---
 
 ---
 
@@ -322,6 +338,8 @@
                                          / \     /  \
                                         /   \   /    \
                                        1     9  18    34
+
+---
 
 ---
 
@@ -381,6 +399,8 @@
 
 ---
 
+---
+
 ## 10. Binary Search Trees: Lowest Common Ancestor of a Binary Search Tree
 
 [Leetcode Problem URL](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
@@ -407,6 +427,8 @@ Example 3:
 
     Input: root = [2,1], p = 2, q = 1
     Output: 2
+
+---
 
 ---
 
@@ -439,6 +461,8 @@ Example 2:
 
 ---
 
+---
+
 ## 12. Binary Search Trees: Kth Smallest Element
 
 [Leetcode Problem URL](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
@@ -459,5 +483,7 @@ Example 2:
 
     Input: root = [5,3,6,2,4,null,null,1], k = 3
     Output: 3
+
+---
 
 ---

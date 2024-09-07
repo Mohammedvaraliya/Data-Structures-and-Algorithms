@@ -96,6 +96,8 @@ Let's walk through the example `m = 3`, `n = 7`:
 
 ---
 
+---
+
 ## 02. Longest Common Subsequence
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-common-subsequence/description/)

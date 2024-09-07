@@ -8,6 +8,8 @@
 
 ---
 
+---
+
 ## 02. Doubly Linked Lists -- Add Node Before/After
 
     Doubly Linked Lists -- Add Node Before/After
@@ -46,6 +48,8 @@
 
 ---
 
+---
+
 ## 03. Doubly Linked Lists -- Delete Node
 
     Doubly Linked Lists -- Delete Node
@@ -72,6 +76,8 @@
 
 ---
 
+---
+
 ## 05. Doubly Linked Lists -- Remove Duplicates
 
     Doubly Linked Lists -- Remove Duplicates
@@ -93,6 +99,8 @@
                                 3
                                 4
                                 5
+
+---
 
 ---
 
@@ -125,5 +133,7 @@
                                          []
 
     because there is no pair exist which sum equal to given number
+
+---
 
 ---

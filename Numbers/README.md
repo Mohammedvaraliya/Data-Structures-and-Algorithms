@@ -21,6 +21,8 @@
 
 ---
 
+---
+
 ## 02. Numbers: Convert Integer To Binary
 
     Numbers: Convert Integer To Binary Number
@@ -53,6 +55,8 @@
                         result:  1   0   1    0
 
         final binary string is : "1010" of integer 10
+
+---
 
 ---
 
@@ -137,6 +141,8 @@
 
 ---
 
+---
+
 ## 04. Roman to Integer
 
 [Leetcode Problem URL](https://leetcode.com/problems/roman-to-integer/)
@@ -178,5 +184,7 @@ Input: s = "MCMXCIV"
 Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 ```
+
+---
 
 ---

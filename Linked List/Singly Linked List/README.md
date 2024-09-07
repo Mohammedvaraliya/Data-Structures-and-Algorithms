@@ -8,6 +8,8 @@
 
 ---
 
+---
+
 ## 02. Singly Linked Lists -- Length of List
 
     Singly Linked Lists -- Length of List
@@ -24,10 +26,14 @@
 
 ---
 
+---
+
 ## 03. Singly Linked Lists -- Node Swap
 
     Singly Linked Lists -- Node Swap
     It will swap the node from Singly Linked List
+
+---
 
 ---
 
@@ -102,6 +108,8 @@ Output: []
 
 ---
 
+---
+
 ## 06. Singly Linked Lists -- Remove Duplicates
 
     Singly Linked Lists -- Remove Duplicates
@@ -124,6 +132,8 @@ Output: []
 
 ---
 
+---
+
 ## 07. Singly Linked Lists -- Nth-to-Last Node
 
     Singly Linked List -- Nth-to-Last Node
@@ -139,6 +149,8 @@ Output: []
 
     print_nth_from_last_method2(3):
                                     D
+
+---
 
 ---
 
@@ -161,6 +173,8 @@ Output: []
                                     4
 
     because 4 occurences of Node with data (1) available in the Singly Linked List
+
+---
 
 ---
 
@@ -191,6 +205,8 @@ Output: []
 
 ---
 
+---
+
 ## 10. Singly Linked Lists -- Is Palindrome
 
     Singly Linked Lists -- Is Palindrome
@@ -218,6 +234,8 @@ Output: []
 
 ---
 
+---
+
 ## 11. Singly Linked Lists -- Move Tail to Head
 
     Singly Linked Lists -- Move Tail to Head
@@ -238,6 +256,8 @@ Output: []
                                 C
                                 D
                                 E
+
+---
 
 ---
 

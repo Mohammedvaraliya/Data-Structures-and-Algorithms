@@ -56,6 +56,8 @@
 
 ---
 
+---
+
 ## 02. Selection Sort: Dictionary
 
     Selection Sort: Dictionary
@@ -106,5 +108,7 @@
         {'First Name': 'Raj', 'Last Name': 'Thakur'}
         {'First Name': 'Suraj', 'Last Name': 'Sharma'}
     ]
+
+---
 
 ---

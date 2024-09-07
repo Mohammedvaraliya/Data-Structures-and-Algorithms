@@ -16,6 +16,8 @@
 
 ---
 
+---
+
 ## 02. Count Consonants in String
 
     Count Consonants in String
@@ -41,6 +43,8 @@
 
 ---
 
+---
+
 ## 03. Look-and-Say Sequence
 
     Look-and-Say Sequence
@@ -62,6 +66,8 @@
 
 ---
 
+---
+
 ## 04. String Processing: Spreadsheet Encoding
 
     String Processing: Spreadsheet Encoding
@@ -69,6 +75,8 @@
     ord("A") will return The ACII value which is 65
     similarly
     ord("B") is 67
+
+---
 
 ---
 
@@ -103,6 +111,8 @@ Output: true
 Explanation: s is an empty string "" after removing non-alphanumeric characters.
 Since an empty string reads the same forward and backward, it is a palindrome.
 ```
+
+---
 
 ---
 
@@ -152,6 +162,8 @@ Output: false
 
 ---
 
+---
+
 ## 08. String Processing: Check Permutation
 
     String Processing: Check Permutation
@@ -170,6 +182,8 @@ Output: false
 
 ---
 
+---
+
 ## 09. String Processing: Is Unique
 
     String Processing: Is Unique
@@ -179,6 +193,8 @@ Output: false
     Example:
                 unique_str_1 = 'ABCdefg'
                 non_unique_str_1 = 'non unique STR'
+
+---
 
 ---
 
@@ -197,6 +213,8 @@ Output: false
 
         Input: -123
         Output: "-123"
+
+---
 
 ---
 
@@ -294,6 +312,8 @@ Example 3:
 
 ---
 
+---
+
 ## 12. Longest Substring Without Repeating Characters
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
@@ -323,6 +343,8 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 
 ---
 
+---
+
 ## 13. Encode and Decode Strings
 
 [Leetcode Problem URL](https://leetcode.com/problems/encode-and-decode-strings/)
@@ -349,6 +371,8 @@ Example2:
 
 ---
 
+---
+
 ## 14. Longest Repeating Character Replacement
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-repeating-character-replacement/)
@@ -370,6 +394,8 @@ Explanation: Replace the one 'A' in the middle with 'B' and form "AABBBBA".
 The substring "BBBB" has the longest repeating letters, which is 4.
 There may exists other ways to achive this answer too.
 ```
+
+---
 
 ---
 
@@ -399,6 +425,8 @@ Output: ""
 Explanation: Both 'a's from t must be included in the window.
 Since the largest window of s only has one 'a', return empty string.
 ```
+
+---
 
 ---
 
@@ -454,6 +482,8 @@ Output: -1
 
 ---
 
+---
+
 ## 18. Find the Index of the First Occurrence in a String
 
 [Leetcode Problem URL](https://leetcode.com/problems/first-unique-character-in-a-string/)
@@ -473,5 +503,7 @@ Input: haystack = "leetcode", needle = "leeto"
 Output: -1
 Explanation: "leeto" did not occur in "leetcode", so we return -1.
 ```
+
+---
 
 ---

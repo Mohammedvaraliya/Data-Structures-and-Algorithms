@@ -54,6 +54,8 @@
 
 ---
 
+---
+
 ## 02. Quick Sort: Lomuto Partition
 
     Quick Sort: Lomuto Partition
@@ -72,5 +74,7 @@
 
     start is the pointer after the pivot i.e index of start = 0
     end is the last element from the array i.e index of end = 6
+
+---
 
 ---

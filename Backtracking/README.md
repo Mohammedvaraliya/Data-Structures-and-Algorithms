@@ -93,6 +93,8 @@ Output: []
 
 ---
 
+---
+
 ## 02. Word Search
 
 [Leetcode Problem URL](https://leetcode.com/problems/word-search/description/)
@@ -138,15 +140,21 @@ Sure! Here's a detailed Explanation of the solution for the Word Search problem,
 
 ---
 
+---
+
 ## Problem Summary
 
 Given an `m` x `n` grid of characters (`board`) and a string (`word`), determine if the word can be constructed from letters of sequentially adjacent cells in the grid. Adjacent cells can be horizontally or vertically neighboring, and the same letter cell may not be used more than once.
 
 ---
 
+---
+
 ## Approach
 
 The problem can be solved using Depth-First Search (DFS) with backtracking. The idea is to start from each cell in the grid and explore all possible paths to check if the word can be formed.
+
+---
 
 ---
 
