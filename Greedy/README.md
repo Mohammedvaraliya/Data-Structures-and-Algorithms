@@ -185,12 +185,10 @@ I've chose the greedy approach because:
 
 3. **Final Check**: Since `goal != 0`, return `False`.
 
----
-
 #### Time Complexity
 
 - **O(n)**: We only traverse the array once, from the end to the beginning. Each index is processed in constant time, resulting in linear time complexity.
 
-### Space Complexity
+#### Space Complexity
 
 - **O(1)**: We only use a few variables (`goal`) for tracking the farthest reachable position. The space complexity is constant.
