@@ -34,6 +34,7 @@
 - [1-D Dynamic Programming](#1-d-dynamic-programming)
 - [2-D Dynamic Programming](#2-d-dynamic-programming)
 - [Greedy](#greedy)
+- [Intervals](#intervals)
 
 ## Stack
 
@@ -392,3 +393,10 @@
 | 01  | Maximum Subarray | [Solution](./Greedy/01_maximum_subarray.py)                |
 | 01  | Jump Game        | [Solution](./Greedy/02_jump_game.py)                       |
 | 00  | Readme           | [Problem Statements with Explanations](./Greedy/README.md) |
+
+## Intervals
+
+| #   | Title           | Solution                                                      |
+| --- | --------------- | ------------------------------------------------------------- |
+| 01  | Insert Interval | [Solution](./Intervals/01_insert_ineterval.py)                |
+| 00  | Readme          | [Problem Statements with Explanations](./Intervals/README.md) |
