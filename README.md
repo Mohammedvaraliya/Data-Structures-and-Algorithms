@@ -399,4 +399,5 @@
 | #   | Title           | Solution                                                      |
 | --- | --------------- | ------------------------------------------------------------- |
 | 01  | Insert Interval | [Solution](./Intervals/01_insert_ineterval.py)                |
+| 02  | Merge Interval  | [Solution](./Intervals/02_merge_intervals.py)                 |
 | 00  | Readme          | [Problem Statements with Explanations](./Intervals/README.md) |
