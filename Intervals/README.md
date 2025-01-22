@@ -105,3 +105,92 @@ Explanation: Intervals [1,4] and [4,5] are considered overlapping.
 ```
 
 ### Explanation
+
+To solve the problem efficiently, I've used the following approach:
+
+1. **Sorting the intervals**:
+
+   - The intervals are first sorted based on their starting time. This ensures that we process the intervals in the correct order.
+
+2. **Iterating through intervals**:
+
+   - Start with the first interval and compare it with the next interval. If the intervals overlap, merge them by updating the end time of the first interval.
+   - If they do not overlap, add the interval to the result and move to the next.
+
+3. **Handling overlaps**:
+
+   - Overlapping intervals are merged by taking the maximum of the end times of the overlapping intervals.
+
+4. **Final result**:
+
+   - The result is a list of merged, non-overlapping intervals.
+
+#### Why this approach?
+
+This approach ensures that:
+
+- The intervals are processed in order, which simplifies the merging process.
+- Each interval is checked only once, making the solution efficient.
+
+#### Example Walkthrough:
+
+Let’s go through the steps with an example `intervals = [[1,3],[2,6],[8,10],[15,18]]`:
+
+1. **Step 1: Sort the intervals**
+
+   - Sorted intervals: `[[1,3], [2,6], [8,10], [15,18]]`
+
+2. **Step 2: Initialize the output with the first interval**
+
+   - `output = [[1,3]]`
+
+3. **Step 3: Iterate through the sorted intervals**
+
+   1. Compare `current = [2,6]` with `lastInterval = [1,3]`:
+
+      - `current[0] <= lastInterval[1]` (2 ≤ 3), so they overlap.
+      - Merge intervals: Update `lastInterval` to `[1,6]` using `max(lastEnd, end)`.
+      - Why use `max(lastEnd, end)`? Consider intervals like `[1,5]` and `[2,4]`. Without using `max(lastEnd, end)`, the end of the merged interval might incorrectly become `4` instead of the correct value `5`.
+      - Updated `output = [[1,6]]`.
+
+   2. Compare `current = [8,10]` with `lastInterval = [1,6]`:
+
+      - `current[0] > lastInterval[1]` (8 > 6), so they do not overlap.
+      - Add `current` to output: `output = [[1,6], [8,10]]`.
+
+   3. Compare `current = [15,18]` with `lastInterval = [8,10]`:
+      - `current[0] > lastInterval[1]` (15 > 10), so they do not overlap.
+      - Add `current` to output: `output = [[1,6], [8,10], [15,18]]`.
+
+#### Final Output:
+
+```bash
+[[1,6],[8,10],[15,18]]
+```
+
+#### Time Complexity:
+
+- **Sorting**: The sorting step takes $O(n \log n)$, where $n$ is the number of intervals.
+- **Iteration**: We iterate through the intervals once, which takes $O(n)$.
+- **Overall**: $O(n \log n)$, dominated by the sorting step.
+
+#### Space Complexity:
+
+- The algorithm uses $O(1)$ additional space, as the merging is done in place using the output list.
+
+#### Why This Approach is Efficient
+
+1. **Sorting ensures simplicity**:
+
+   - By sorting the intervals, we only need to compare adjacent intervals, reducing complexity.
+
+2. **Efficient merging**:
+
+   - Each interval is processed once, and overlaps are resolved immediately.
+
+3. **Scalability**:
+   - This approach works well for a large number of intervals due to its $O(n \log n)$ complexity.
+
+---
+
+---
