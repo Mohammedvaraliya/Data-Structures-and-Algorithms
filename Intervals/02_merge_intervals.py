@@ -25,5 +25,4 @@ if __name__ == "__main__":
     print(obj.merge(intervals=intervals1))
 
     intervals2 = [[1,4],[4,5]]
-    newInterval2 = [6,7]
     print(obj.merge(intervals=intervals2))

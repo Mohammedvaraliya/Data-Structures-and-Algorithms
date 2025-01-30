@@ -194,3 +194,131 @@ Let’s go through the steps with an example `intervals = [[1,3],[2,6],[8,10],[1
 ---
 
 ---
+
+## 03. Non-overlapping Intervals
+
+[Leetcode Problem URL](https://leetcode.com/problems/non-overlapping-intervals/)
+
+Given an array of intervals `intervals` where `intervals[i] = [starti, endi]`, return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
+
+Note that intervals which only touch at a point are non-overlapping. For example, `[1, 2]` and `[2, 3]` are non-overlapping.
+
+```bash
+Example 1:
+
+Input: intervals = [[1,2],[2,3],[3,4],[1,3]]
+Output: 1
+Explanation: [1,3] can be removed and the rest of the intervals are non-overlapping.
+```
+
+```bash
+Example 2:
+
+Input: intervals = [[1,2],[1,2],[1,2]]
+Output: 2
+Explanation: You need to remove two [1,2] to make the rest of the intervals non-overlapping.
+```
+
+```bash
+Example 3:
+
+Input: intervals = [[1,2],[2,3]]
+Output: 0
+Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
+```
+
+### Explanation
+
+#### **Approach: Greedy Algorithm**
+
+A **greedy** approach is well-suited for this problem because our goal is to remove **the fewest intervals possible** while ensuring the remaining intervals are non-overlapping.
+
+By **sorting intervals by their start time** and iterating through them, we can always make the optimal decision at each step—either **keeping** an interval or **removing** it based on overlap conditions.
+
+1. **Step 1: Sort Intervals**
+
+   - We first **sort** the intervals **by their start time**. This ensures that we process intervals in a left-to-right manner, allowing us to track overlapping intervals effectively.
+
+2. **Step 2: Iterate Through the Sorted Intervals**
+
+   - We keep track of the `prevEnd`, which represents the **end of the last non-overlapping interval**.
+   - As we iterate through the intervals:
+   - **If the current interval starts after or at `prevEnd`**, it means there's no overlap, so we update `prevEnd`.
+   - **If the current interval starts before `prevEnd`**, there is an overlap. In this case, we increment the `result` (since one interval must be removed), and we update `prevEnd` to the **smaller** `end` value to minimize overlap.
+
+#### **Example Walkthrough**
+
+Let’s take an example to understand the step-by-step execution of our approach.
+
+1. **Example Input**
+
+   ```bash
+   intervals = [[1,3],[2,6],[8,10],[15,18]]
+   ```
+
+2. **Step 1: Sort Intervals**
+
+   - Sorted intervals (by start time):
+
+     ```bash
+     [[1,3], [2,6], [8,10], [15,18]]
+     ```
+
+3. **Step 2: Initialize Variables**
+
+   - `prevEnd = 3` (end of first interval)
+   - `result = 0` (no intervals removed yet)
+
+4. **Step 3: Iterate Through the Intervals**
+
+   1. **Compare `[2,6]` with `prevEnd = 3`**
+
+      - Overlapping (`2 < 3`)
+      - We remove one interval and update `prevEnd = min(6, 3) = 3`
+      - **result = 1**
+
+   2. **Compare `[8,10]` with `prevEnd = 3`**
+
+      - No overlap (`8 >= 3`), update `prevEnd = 10`
+      - **result = 1**
+
+   3. **Compare `[15,18]` with `prevEnd = 10`**
+      - No overlap (`15 >= 10`), update `prevEnd = 18`
+
+   - **result = 1**
+
+5. **Final Output**
+
+   ```bash
+   Output: 1
+   ```
+
+#### **Time and Space Complexity Analysis**
+
+1. **Time Complexity**
+
+   - **Sorting the intervals** takes **O(n log n)**.
+   - **Iterating through the intervals** takes **O(n)**.
+   - **Overall Complexity:** **O(n log n) + O(n) = O(n log n)**.
+
+2. **Space Complexity**
+
+   - We only use a few extra variables (`prevEnd`, `result`), making the space complexity **O(1)** (constant extra space).
+
+#### **Why This Approach?**
+
+1. **Why Sorting by Start Time?**
+
+   Sorting helps in processing the intervals in a structured order, making it easier to track and handle overlaps efficiently.
+
+2. **Why Keeping the Interval with the Smallest End Time?**
+
+   When two intervals overlap, removing the one with the larger end time ensures that we minimize future overlaps.
+
+3. **Why is this Greedy Approach Optimal?**
+
+   The **greedy choice** ensures that at each step, we are keeping the non-overlapping intervals while **minimizing removals**, leading to the most optimal solution.
+
+---
+
+---
