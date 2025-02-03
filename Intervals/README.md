@@ -348,3 +348,89 @@ Output: true
 ```
 
 ### Explanation
+
+To solve this problem, we need to determine if there are any overlapping intervals in the given list of meeting times. If any two intervals overlap, it means the person cannot attend all meetings without conflicts.
+
+#### Why This Approach?
+
+1. **Sorting by Start Time**: By sorting the intervals based on their start time, we can easily check if the next meeting starts before the previous one ends. This is the key to identifying overlaps.
+
+2. **Single Pass Through Intervals**: After sorting, we only need to traverse the list once to check for overlaps. This makes the solution efficient.
+
+#### Step-by-Step Explanation
+
+1. **Sort Intervals**: First, sort the intervals based on their start time. This allows us to compare each meeting with the next one in a linear fashion.
+
+2. **Check for Overlaps**: Iterate through the sorted intervals and check if the current meeting starts before the previous meeting ends. If it does, there's a conflict.
+
+3. **Return Result**: If no conflicts are found after traversing the entire list, return `true`. Otherwise, return `false`.
+
+#### Example Walkthrough
+
+Let's walk through **Example 1** step by step:
+
+**Input**: `intervals = [(0,30),(5,10),(15,20)]`
+
+1. **Sort Intervals**:
+
+   - The intervals are already sorted by start time: `[(0,30),(5,10),(15,20)]`.
+
+2. **Initialize**:
+
+   - Set `prevEnd = intervals[0].end = 30`.
+
+3. **Iterate Through Intervals From 1st Indext to End**:
+
+   - **Second Interval**: `(5,10)`
+     - Check if `5 < 30` (start of current interval < end of previous interval).
+     - Since `5 < 30`, there's a conflict. Return `false`.
+
+4. **Output**: `false`
+
+Now, let's walk through **Example 2**:
+
+**Input**: `intervals = [(5,8),(9,15)]`
+
+1. **Sort Intervals**:
+
+   - The intervals are already sorted by start time: `[(5,8),(9,15)]`.
+
+2. **Initialize**:
+
+   - Set `prevEnd = intervals[0].end = 8`.
+
+3. **Iterate Through Intervals From 1st Indext to End**:
+
+   - **Second Interval**: `(9,15)`
+     - Check if `9 < 8` (start of current interval < end of previous interval).
+     - Since `9 >= 8`, there's no conflict. Update `prevEnd = 15`.
+
+4. **No More Intervals**:
+
+   - Since no conflicts were found, return `true`.
+
+5. **Output**: `true`
+
+#### Time and Space Complexity
+
+1. Time Complexity
+
+   - **Sorting**: Sorting the intervals takes `O(n log n)`, where `n` is the number of intervals.
+   - **Traversal**: After sorting, we traverse the list once, which takes `O(n)`.
+   - **Overall Time Complexity**: `O(n log n)`.
+
+2. Space Complexity
+
+   - **Sorting**: Depending on the sorting algorithm, the space complexity can be `O(1)` (in-place sorting) or `O(n)` (if additional space is used).
+   - **Traversal**: We use a constant amount of extra space (`prevEnd`).
+   - **Overall Space Complexity**: `O(1)` or `O(n)` depending on the sorting implementation.
+
+#### Why This Approach is Efficient
+
+1. **Optimal Sorting**: Sorting the intervals by start time allows us to check for overlaps in a single pass, making the solution efficient.
+2. **No Nested Loops**: Unlike a brute-force approach that compares every pair of intervals (which would take $O(n^2)$), this approach avoids nested loops by leveraging sorting.
+3. **Scalability**: This solution scales well for large inputs due to its $O(n \ log \ n)$ time complexity.
+
+---
+
+---
