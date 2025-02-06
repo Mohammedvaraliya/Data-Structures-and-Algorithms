@@ -434,3 +434,26 @@ Now, let's walk through **Example 2**:
 ---
 
 ---
+
+## 05. Meeting Rooms II
+
+[Leetcode Problem URL](https://leetcode.com/problems/meeting-rooms-ii/description/)
+
+Given an array of meeting time interval objects consisting of start and end times `[[start_1,end_1],[start_2,end_2],...] (start_i < end_i)`, find the minimum number of days required to schedule all meetings without any conflicts.
+
+```bash
+Example 1:
+
+Input: intervals = [(0,40),(5,10),(15,20)]
+Output: 2
+Explanation:
+day1: (0,40)
+day2: (5,10),(15,20)
+```
+
+```bash
+Example 2:
+
+Input: intervals = [(4,9)]
+Output: 1
+```
