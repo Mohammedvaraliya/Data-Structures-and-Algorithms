@@ -457,3 +457,103 @@ Example 2:
 Input: intervals = [(4,9)]
 Output: 1
 ```
+
+### Explanation
+
+To solve this problem, we need to determine the **maximum number of overlapping meetings** at any point in time. This maximum number represents the minimum number of rooms required.
+
+#### Why This Approach?
+
+1. **Sorting Start and End Times**: By sorting the start and end times separately, we can efficiently track the number of overlapping meetings using a two-pointer technique.
+
+2. **Simulating Meeting Overlaps**: We simulate the process of meetings starting and ending, keeping track of the number of active meetings at any given time.
+
+3. **Efficient and Scalable**: This approach avoids nested loops and works in `O(n log n)` time, making it suitable for large inputs.
+
+#### Step 1: Sort Start and End Times
+
+- Extract and sort the start times of all intervals.
+- Extract and sort the end times of all intervals.
+
+#### Step 2: Use Two Pointers to Track Overlaps
+
+- Initialize two pointers, `s` (for start times) and `e` (for end times).
+- Initialize `count` to track the number of active meetings and `result` to store the maximum number of active meetings at any point.
+
+#### Step 3: Traverse Through Intervals
+
+- Compare the current start time (`start[s]`) with the current end time (`end[e]`):
+- If `start[s] < end[e]`, it means a new meeting has started before the previous one ended. Increment the `count` and move the start pointer (`s++`).
+- If `start[s] >= end[e]`, it means a meeting has ended. Decrement the `count` and move the end pointer (`e++`).
+- Update `result` with the maximum value of `count` at each step.
+
+#### Step 4: Return the Result
+
+- The value of `result` at the end of the traversal represents the minimum number of rooms required.
+
+#### Example Walkthrough
+
+Let’s walk through **Example 1** step by step:
+
+1. **Input**: `intervals = [(0,40),(5,10),(15,20)]`
+
+1. **Sort Start and End Times**:
+
+   - Start times: `[0, 5, 15]`
+   - End times: `[10, 20, 40]`
+
+1. **Initialize**:
+
+   - `s = 0`, `e = 0`
+   - `count = 0`, `result = 0`
+
+1. **Traverse Through Intervals**:
+
+   - **First Comparison**: `start[0] = 0` vs `end[0] = 10`
+     - Since `0 < 10`, a new meeting starts. Increment `count` to `1`.
+     - Update `result = max(0, 1) = 1`.
+     - Move start pointer: `s = 1`.
+   - **Second Comparison**: `start[1] = 5` vs `end[0] = 10`
+     - Since `5 < 10`, another meeting starts. Increment `count` to `2`.
+     - Update `result = max(1, 2) = 2`.
+     - Move start pointer: `s = 2`.
+   - **Third Comparison**: `start[2] = 15` vs `end[0] = 10`
+     - Since `15 >= 10`, a meeting ends. Decrement `count` to `1`.
+     - Update `result = max(2, 1) = 2`.
+     - Move end pointer: `e = 1`.
+   - **Fourth Comparison**: `start[2] = 15` vs `end[1] = 20`
+     - Since `15 < 20`, a new meeting starts. Increment `count` to `2`.
+     - Update `result = max(2, 2) = 2`.
+     - Move start pointer: `s = 3`.
+   - **Fifth Comparison**: `start[3]` (out of bounds) vs `end[1] = 20`
+     - Since all start times are processed, exit the loop.
+
+1. **Result**:
+
+   - The maximum number of overlapping meetings is `2`, so the minimum number of rooms required is `2`.
+
+1. **Output**: `2`
+
+#### Time and Space Complexity
+
+1. Time Complexity
+
+   - **Sorting**: Sorting the start and end times takes `O(n log n)` each, where `n` is the number of intervals.
+   - **Traversal**: The two-pointer traversal takes `O(n)`.
+   - **Overall Time Complexity**: `O(n log n)`.
+
+2. Space Complexity
+
+   - **Sorting**: Sorting requires `O(n)` space to store the start and end times.
+   - **Pointers and Counters**: Constant space is used for pointers and counters.
+   - **Overall Space Complexity**: `O(n)`.
+
+#### Why This Approach is Efficient
+
+1. **Optimal Sorting**: Sorting the start and end times separately allows us to efficiently track overlapping meetings.
+2. **Single Traversal**: The two-pointer technique ensures that we only traverse the list once, making the solution scalable.
+3. **Avoids Nested Loops**: Unlike a brute-force approach that compares every pair of intervals (which would take `O(n^2)`), this approach avoids nested loops by leveraging sorting and two pointers.
+
+---
+
+---
