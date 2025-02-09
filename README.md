@@ -35,6 +35,7 @@
 - [2-D Dynamic Programming](#2-d-dynamic-programming)
 - [Greedy](#greedy)
 - [Intervals](#intervals)
+- [Math and Geometry](#math--geometry)
 
 ## Stack
 
@@ -404,3 +405,10 @@
 | 04  | Meeting Rooms             | [Solution](./Intervals/04_meeting_rooms.py)                   |
 | 05  | Meeting Rooms II          | [Solution](./Intervals/05_meeting_rooms_2.py)                 |
 | 00  | Readme                    | [Problem Statements with Explanations](./Intervals/README.md) |
+
+## Math & Geometry
+
+| #   | Title        | Solution                                                                |
+| --- | ------------ | ----------------------------------------------------------------------- |
+| 01  | Rotate Image | [Solution](./Math%20&%20Geometry/01_rotate_image.py)                    |
+| 00  | Readme       | [Problem Statements with Explanations](./Math%20&%20Geometry/README.md) |
