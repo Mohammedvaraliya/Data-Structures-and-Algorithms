@@ -158,3 +158,130 @@ Let’s walk through **Example 1** step by step:
 ---
 
 ---
+
+## 02. Spiral Matrix
+
+[Leetcode Problem URL](https://leetcode.com/problems/spiral-matrix/description/)
+
+Given an `m x n` `matrix`, return all elements of the `matrix` in spiral order.
+
+Example 1:
+
+![spiral1](assets/spiral1.jpg)
+
+```bash
+Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [1,2,3,6,9,8,7,4,5]
+```
+
+Example 2:
+
+![spiral2](assets/spiral.jpg)
+
+```bash
+Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+```
+
+### Explanation
+
+To solve this problem, we can use a **layer-by-layer traversal** approach. This involves traversing the matrix in layers, starting from the outermost layer and moving inward. For each layer, we traverse the top row, right column, bottom row, and left column in order.
+
+#### Why This Approach?
+
+1. **Intuitive and Systematic**: The layer-by-layer approach ensures that we cover all elements of the matrix in a systematic and intuitive manner.
+2. **Efficient**: This approach avoids unnecessary computations and ensures that each element is visited exactly once.
+3. **Scalable**: The solution works efficiently for matrices of any size `m x n`.
+
+#### Step-by-Step Explanation
+
+1. Step 1: Define Boundaries
+
+   - Use four boundaries to represent the current layer:
+   - `left`: Leftmost column of the current layer.
+   - `right`: Rightmost column of the current layer.
+   - `top`: Topmost row of the current layer.
+   - `bottom`: Bottommost row of the current layer.
+
+2. Step 2: Traverse the Matrix in Spiral Order
+
+   - While `left < right` and `top < bottom`:
+     1. **Traverse the top row**: Move from `left` to `right` and add elements to the result.
+     2. **Traverse the right column**: Move from `top + 1` to `bottom` and add elements to the result.
+     3. **Traverse the bottom row**: If `top < bottom`, move from `right - 1` to `left` and add elements to the result.
+     4. **Traverse the left column**: If `left < right`, move from `bottom - 1` to `top + 1` and add elements to the result.
+   - After traversing a layer, update the boundaries to move to the next inner layer.
+
+3. Step 3: Handle Edge Cases
+
+   - If the matrix has only one row or one column, ensure that the traversal does not revisit elements.
+
+#### Example Walkthrough
+
+Let’s walk through **Example 1** step by step:
+
+1. **Input**: `matrix = [[1,2,3],[4,5,6],[7,8,9]]`
+
+1. **Initialize Boundaries**:
+
+   - `left = 0`, `right = 3` (number of columns).
+   - `top = 0`, `bottom = 3` (number of rows).
+   - `res = []` (to store the result).
+
+1. **First Layer**:
+
+   - **Traverse the top row**:
+     - Add elements from `matrix[0][0]` to `matrix[0][2]`: `[1, 2, 3]`.
+     - Update `res = [1, 2, 3]`.
+     - Increment `top` to `1`.
+   - **Traverse the right column**:
+     - Add elements from `matrix[1][2]` to `matrix[2][2]`: `[6, 9]`.
+     - Update `res = [1, 2, 3, 6, 9]`.
+     - Decrement `right` to `2`.
+   - **Traverse the bottom row**:
+     - Add elements from `matrix[2][1]` to `matrix[2][0]`: `[8, 7]`.
+     - Update `res = [1, 2, 3, 6, 9, 8, 7]`.
+     - Decrement `bottom` to `2`.
+   - **Traverse the left column**:
+     - Add element `matrix[1][0]`: `[4]`.
+     - Update `res = [1, 2, 3, 6, 9, 8, 7, 4]`.
+     - Increment `left` to `1`.
+
+1. **Second Layer**:
+
+   - **Traverse the top row**:
+     - Add element `matrix[1][1]`: `[5]`.
+     - Update `res = [1, 2, 3, 6, 9, 8, 7, 4, 5]`.
+     - Increment `top` to `2`.
+   - **Traverse the right column**:
+     - No elements to add (since `top == bottom`).
+   - **Traverse the bottom row**:
+     - No elements to add (since `left == right`).
+   - **Traverse the left column**:
+     - No elements to add (since `top == bottom`).
+
+1. **Result**:
+
+   - The spiral order traversal is `[1, 2, 3, 6, 9, 8, 7, 4, 5]`.
+
+1. **Output**: `[1, 2, 3, 6, 9, 8, 7, 4, 5]`
+
+#### Time Complexity
+
+- **Traversal**: Each element of the matrix is visited exactly once.
+- **Overall Time Complexity**: `O(m * n)`, where `m` is the number of rows and `n` is the number of columns.
+
+#### Space Complexity
+
+- **Result List**: The result list stores all `m * n` elements.
+- **Overall Space Complexity**: `O(m * n)`.
+
+#### Why This Approach is Efficient
+
+1. **Optimal Traversal**: Each element is visited exactly once, ensuring optimal time complexity.
+2. **In-Place Boundaries**: The boundaries are updated in-place, avoiding the need for extra data structures.
+3. **Scalable**: The solution works efficiently for matrices of any size.
+
+---
+
+---
