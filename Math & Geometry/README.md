@@ -273,8 +273,9 @@ Let’s walk through **Example 1** step by step:
 
 #### Space Complexity
 
-- **Result List**: The result list stores all `m * n` elements.
-- **Overall Space Complexity**: `O(m * n)`.
+- We use an additional list `res` to store the output.
+- The worst-case space usage is `O(m × n)` (for the output).
+- No extra data structures are used, so `O(1)` auxiliary space.
 
 #### Why This Approach is Efficient
 
