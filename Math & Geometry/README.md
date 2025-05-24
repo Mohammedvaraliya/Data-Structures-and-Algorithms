@@ -286,3 +286,181 @@ Let’s walk through **Example 1** step by step:
 ---
 
 ---
+
+## 03. Set Matrix Zeroes
+
+[Leetcode Problem URL](https://leetcode.com/problems/set-matrix-zeroes/)
+
+Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire row and column to `0`'s.
+
+You must do it in place.Example 1:
+
+Example 1:
+
+![matrix1](https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg)
+
+```bash
+Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
+Output: [[1,0,1],[0,0,0],[1,0,1]]
+```
+
+Example 2:
+
+![matrix2](https://assets.leetcode.com/uploads/2020/08/17/mat2.jpg)
+
+```bash
+Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
+```
+
+### Explanation
+
+#### Approach Explanation
+
+1. Intuition
+
+   - A brute-force approach would involve creating a **separate boolean matrix** to record rows and columns that should be zeroed. However, that would require **O(m + n)** space, violating the **in-place constraint**.
+
+   - To optimize the space complexity, we use the **first row and first column of the matrix itself** as markers for which rows and columns should be zeroed. An additional boolean flag `rowZero` tracks whether the **first row** needs to be zeroed.
+
+#### Why This Approach?
+
+1. **In-Place**: Meets the in-place requirement by using matrix itself to track zeros.
+2. **O(1) Space**: No extra space proportional to matrix size.
+3. **Efficient**: Each element is visited at most twice.
+4. **Avoids Redundancy**: No repeated overwrites after marking.
+
+#### Step-by-Step Algorithm
+
+1. Step 1: Traverse the matrix
+
+   - If `matrix[r][c] == 0`, mark `matrix[0][c] = 0` and `matrix[r][0] = 0`.
+   - Additionally, if `r == 0`, set a flag `rowZero = True`.
+
+2. Step 2: Zero-out the matrix (excluding first row and column)
+
+   - For `r in 1...rows-1` and `c in 1...cols-1`, set `matrix[r][c] = 0` if `matrix[0][c] == 0` or `matrix[r][0] == 0`.
+
+3. Step 3: Handle first column
+
+   - If `matrix[0][0] == 0`, set the first column to 0.
+
+4. Step 4: Handle first row
+
+   - If `rowZero` is `True`, set the first row to 0.
+
+#### Walkthrough Example
+
+1. Example for walkthrough:
+
+   ```python
+   matrix = [
+      [0, 1, 2, 0],
+      [3, 4, 5, 2],
+      [1, 3, 1, 5]
+   ]
+   ```
+
+2. **Step 1**: Initial Matrix
+
+   ```plaintext
+   Initial:
+   [0, 1, 2, 0]
+   [3, 4, 5, 2]
+   [1, 3, 1, 5]
+   ```
+
+   Start `rowZero = False`
+
+3. **Step 2**: First pass to mark rows and columns
+
+   Loop through the matrix:
+
+   - `matrix[0][0] == 0` → mark `matrix[0][0] = 0` and set `rowZero = True`
+   - `matrix[0][3] == 0` → mark `matrix[0][3] = 0`
+   - No other zeros in the matrix
+
+   Matrix now looks like:
+
+   ```plaintext
+   Markers:
+   [0, 1, 2, 0]
+   [3, 4, 5, 2]
+   [1, 3, 1, 5]
+   ```
+
+4. Step 3: Set elements to zero based on markers
+
+   Loop through `(r=1 to 2)` and `(c=1 to 3)`:
+
+   - r=1, c=1: No change
+   - r=1, c=2: No change
+   - r=1, c=3: Since `matrix[0][3] == 0`, set `matrix[1][3] = 0`
+   - r=2, c=3: `matrix[2][3] = 0`
+
+   Matrix now:
+
+   ```plaintext
+   After marking elements:
+   [0, 1, 2, 0]
+   [3, 4, 5, 0]
+   [1, 3, 1, 0]
+   ```
+
+5. Step 4: Handle first column
+
+   Since `matrix[0][0] == 0`, we set:
+
+   - `matrix[0][0] = 0`
+   - `matrix[1][0] = 0`
+   - `matrix[2][0] = 0`
+
+   Matrix now:
+
+   ```plaintext
+   After first column:
+   [0, 1, 2, 0]
+   [0, 4, 5, 0]
+   [0, 3, 1, 0]
+   ```
+
+6. Step 5: Handle first row
+
+   Since `rowZero == True`, set:
+
+   - `matrix[0][0] = 0`
+   - `matrix[0][1] = 0`
+   - `matrix[0][2] = 0`
+   - `matrix[0][3] = 0`
+
+   Final Matrix:
+
+   ```plaintext
+   [0, 0, 0, 0]
+   [0, 4, 5, 0]
+   [0, 3, 1, 0]
+   ```
+
+7. Final Output:
+
+   ```python
+   [[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]
+   ```
+
+#### Time and Space Complexity Analysis
+
+| Metric               | Complexity | Explanation                                              |
+| -------------------- | ---------- | -------------------------------------------------------- |
+| **Time Complexity**  | `O(m * n)` | Each cell is visited once for marking, once for setting. |
+| **Space Complexity** | `O(1)`     | No extra space used except for a few variables.          |
+
+#### Why This Approach is Efficient
+
+- **No Extra Matrix**: We don’t use auxiliary space like a duplicate matrix or extra rows/columns.
+- **Constant Space**: We reuse the matrix's first row and column for marking, achieving `O(1)` space.
+- **Minimized Overwrites**: Logical and clean separation of marking and applying zeros avoids repeated writes.
+- **Scalable**: Efficient even for large matrices.
+
+---
+
+---

@@ -408,7 +408,9 @@
 
 ## Math & Geometry
 
-| #   | Title        | Solution                                                                |
-| --- | ------------ | ----------------------------------------------------------------------- |
-| 01  | Rotate Image | [Solution](./Math%20&%20Geometry/01_rotate_image.py)                    |
-| 00  | Readme       | [Problem Statements with Explanations](./Math%20&%20Geometry/README.md) |
+| #   | Title             | Solution                                                                |
+| --- | ----------------- | ----------------------------------------------------------------------- |
+| 01  | Rotate Image      | [Solution](./Math%20&%20Geometry/01_rotate_image.py)                    |
+| 02  | Spiral Matrix     | [Solution](./Math%20&%20Geometry/02_spiral_matrix.py)                   |
+| 03  | Set Matrix Zeroes | [Solution](./Math%20&%20Geometry/03_set_matrix_zeroes.py)               |
+| 00  | Readme            | [Problem Statements with Explanations](./Math%20&%20Geometry/README.md) |
