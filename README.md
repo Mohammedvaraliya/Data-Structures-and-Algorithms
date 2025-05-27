@@ -414,3 +414,10 @@
 | 02  | Spiral Matrix     | [Solution](./Math%20&%20Geometry/02_spiral_matrix.py)                   |
 | 03  | Set Matrix Zeroes | [Solution](./Math%20&%20Geometry/03_set_matrix_zeroes.py)               |
 | 00  | Readme            | [Problem Statements with Explanations](./Math%20&%20Geometry/README.md) |
+
+## Bit Manipulation
+
+| #   | Title            | Solution                                                               |
+| --- | ---------------- | ---------------------------------------------------------------------- |
+| 01  | Number of 1 Bits | [Solution](./Bit%20Manipulation/01_number_of_1_bits.py)                |
+| 00  | Readme           | [Problem Statements with Explanations](./Bit%20Manipulation/README.md) |
