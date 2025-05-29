@@ -420,4 +420,5 @@
 | #   | Title            | Solution                                                               |
 | --- | ---------------- | ---------------------------------------------------------------------- |
 | 01  | Number of 1 Bits | [Solution](./Bit%20Manipulation/01_number_of_1_bits.py)                |
+| 02  | Counting Bits    | [Solution](./Bit%20Manipulation/02_counting_bits.py)                   |
 | 00  | Readme           | [Problem Statements with Explanations](./Bit%20Manipulation/README.md) |
