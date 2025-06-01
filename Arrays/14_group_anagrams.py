@@ -11,7 +11,7 @@ def groupAnagrams(strs: list[str]) -> list[list[str]]:
 
         res[tuple(count)].append(s)
     
-    return res.values()
+    return res.values() # type: ignore
 
 
 

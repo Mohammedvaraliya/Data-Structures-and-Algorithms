@@ -10,6 +10,7 @@ print(A)
 
 for i in range(len(A)//2):
     print(A[i], A[~i])
+    # print(A[i], A[-i-1])
 
 print("\n")
 
@@ -28,4 +29,5 @@ def optimal_task_assignment(array):
         m += 1
 
 
-optimal_task_assignment(Array)
+if __name__ == "__main__":
+    optimal_task_assignment(Array)

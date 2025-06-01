@@ -560,3 +560,140 @@ Using a min-heap of size `k` is efficient for finding the kth largest element be
 - Maintaining a heap of size `k` ensures that we always have the top `k` largest elements seen so far, and accessing the smallest of these (the kth largest in the array) is \(O(1)\).
 
 By following this approach, we efficiently find the kth largest element with optimal time and space complexity.
+
+---
+
+---
+
+## 23. Transform to Even Product
+
+[Problem from Languify Interview Platform](https://interview.languify.in/)
+
+Consider an integer array `A` that includes `N` integers.
+
+You are allowed to perform a specific operation on this array `A`, which involves selecting any number of elements from the array `A` and altering their values to whatever you choose.
+
+The initial Product of the elements in the array `A` is `ODD`, and your task is to determine the total number of unique operations (modulo $10^9 + 7$) that can be conducted to change the product of the array to `EVEN`.
+
+Two operations are considered distinct if there is `atleast one` element not chosen in the other operation.
+
+```bash
+Problem Constraints:
+1 <= N <= 105
+1 <= A[i] <= 106
+The initial product of array `A` is guaranteed to be odd
+```
+
+```bash
+Input Format:
+A single integer array `A`.
+```
+
+```bash
+Output Format:
+Return a single integer, the number of unique operations to transform the product into an even number, modulo $10^9 + 7$.
+```
+
+```bash
+Example 1:
+
+Input: A = [1, 3]
+Output: 3
+
+Explanation:
+- We can perform a maximum of three operations:
+- Operation 1: Choosing the element at index 0 and changing its value to 2, resulting in A = [2, 3] with a Product = 6
+- Operation 2: Choosing the element at index 1 and changing its value to 10, resulting in A = [1, 10] with a Product = 10
+- Operation 3: Choosing both elements at index 0 and 1 and changing their values to 2, resulting in A = [2, 2] with a Product = 4
+- No additional operations can be performed on this array.
+```
+
+```bash
+Example 2:
+
+Input 2: A = [3]
+Output: 1
+
+Explanation:
+- We can perform a maximum of one operation:
+- Operation 1: Choosing the element at index 0 and changing its value to 20, resulting in A = [20] with a Product = 20
+```
+
+### Explanation
+
+## Intuition
+
+If the initial product is **odd**, then **all elements in the array must be odd** (because any even number would make the product even).
+
+To make the product **even**, we need **at least one even number** in the array after the operation.
+
+Thus, the goal is to **select any non-empty subset** of the array and change **at least one** number to an **even number**.
+
+#### Key Observations
+
+- Every **non-empty subset** of the array where **at least one element is changed** can potentially make the product even.
+- Total number of **non-empty subsets** of an `n`-element array is `2^n - 1`.
+- If we change any subset of elements, and **at least one becomes even**, the resulting product will be even.
+
+- So, all `2^n - 1` non-empty subsets of the array **can potentially be transformed to have at least one even**.
+
+- Hence, the answer is:
+
+  ```
+  Total ways = (2^n - 1) % MOD
+  ```
+
+#### Example Walkthrough
+
+1. Take the last example:
+
+   ```python
+   A = [1, 3, 5, 7, 9]
+   ```
+
+2. Step 1: Confirm Product is Odd
+
+   - All elements are odd:
+
+   - `1 * 3 * 5 * 7 * 9 = 945` → odd
+
+3. Step 2: Calculate Total Non-empty Subsets
+
+   - Array length `n = 5`
+   - Total non-empty subsets = `2^n - 1 = 2^5 - 1 = 32 - 1 = 31`
+   - So, **31 distinct operations** can be performed to make the product even.
+
+4. Explanation of a few sample operations:
+
+   | Subset Indices Changed | Modified Elements    | Modified Array   | Product | Is Even |
+   | ---------------------- | -------------------- | ---------------- | ------- | ------- |
+   | \[0]                   | A\[0] = 2            | \[2, 3, 5, 7, 9] | 1890    | Yes     |
+   | \[1, 3]                | A\[1] = 4, A\[3] = 6 | \[1, 4, 5, 6, 9] | 1080    | Yes     |
+   | \[0, 1, 2, 3, 4]       | All changed to even  | \[2, 2, 2, 2, 2] | 32      | Yes     |
+   | \[2, 4]                | A\[2] = 6, A\[4] = 8 | \[1, 3, 6, 7, 8] | Even    | Yes     |
+
+   - All of these are distinct because they involve different subsets.
+
+5. Final Answer
+
+   ```python
+   return 31
+   ```
+
+#### Time and Space Complexity
+
+| Metric           | Complexity | Explanation                                                                             |
+| ---------------- | ---------- | --------------------------------------------------------------------------------------- |
+| Time Complexity  | $O(1)$     | Single computation: `pow(2, n, mod)` is done in constant time using fast exponentiation |
+| Space Complexity | $O(1)$     | Constant extra space used regardless of input size                                      |
+
+#### Why This Approach is Efficient
+
+- **Mathematical Insight** avoids the need to enumerate subsets.
+- Avoids brute-force approach of generating all subsets (which is exponential).
+- **Fast Modular Exponentiation** computes `2^n % mod` efficiently in O(log n) time.
+- Handles large constraints efficiently (`n ≤ 10^5`).
+
+---
+
+---
