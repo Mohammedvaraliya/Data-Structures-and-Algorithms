@@ -602,9 +602,9 @@ Output: 3
 
 Explanation:
 - We can perform a maximum of three operations:
-- Operation 1: Choosing the element at index 0 and changing its value to 2, resulting in A = [2, 3] with a Product = 6
-- Operation 2: Choosing the element at index 1 and changing its value to 10, resulting in A = [1, 10] with a Product = 10
-- Operation 3: Choosing both elements at index 0 and 1 and changing their values to 2, resulting in A = [2, 2] with a Product = 4
+- Operation 1: Choosing the element at index 0 and changing its value to 2, resulting in A = [2,3] with a Product = 6
+- Operation 2: Choosing the element at index 1 and changing its value to 10, resulting in A = [1,10] with a Product = 10
+- Operation 3: Choosing both elements at index 0 and 1 and changing their values to 2, resulting in A = [2,2] with a Product = 4
 - No additional operations can be performed on this array.
 ```
 
