@@ -222,24 +222,246 @@ Three 15 are there in the data list at respective index number
 
 [Leetcode Problem URL](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
-```bash
-There is an integer array nums sorted in ascending order (with distinct values).
-Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
-Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
-You must write an algorithm with O(log n) runtime complexity.
+You are given an integer array `nums` sorted in ascending order, but possibly **rotated at an unknown pivot index `k`** such that:
 
+```
+Original Sorted Array:    [0, 1, 2, 4, 5, 6, 7]
+After Rotation at index 3: [4, 5, 6, 7, 0, 1, 2]
+```
+
+Given a rotated sorted array `nums` and an integer `target`, return the **index** of `target` if it is in `nums`, or `-1` if it is not.
+
+**You must solve it in O(log n) time complexity.**
+
+Constraints
+
+- All elements in the array are **distinct**
+- Time complexity must be **O(log n)**
+
+Input Format
+
+- `nums`: list of integers (rotated sorted array)
+- `target`: integer to be searched
+
+Output Format
+
+- Return the **index** of the `target` in `nums`, or `-1` if it is not present
+
+```bash
 Example 1:
+
 Input: nums = [4,5,6,7,0,1,2], target = 0
 Output: 4
+```
 
+```bash
 Example 2:
 Input: nums = [4,5,6,7,0,1,2], target = 3
 Output: -1
+```
 
+```bash
 Example 3:
+
 Input: nums = [1], target = 0
 Output: -1
 ```
+
+### Explanation
+
+Since the array is **sorted but rotated**, a normal binary search won't work directly. However, at least one half (left or right) of the array will **always remain sorted**.
+
+#### Key Insight:
+
+At each iteration:
+
+- Either the **left half** (`nums[l]` to `nums[mid]`) is sorted
+- Or the **right half** (`nums[mid]` to `nums[r]`) is sorted
+
+By checking which half is sorted, and whether the target falls within the sorted range, we can **adjust our search range** accordingly.
+
+#### Algorithm Steps
+
+1. Initialize two pointers `l = 0` and `r = len(nums) - 1`
+2. While `l <= r`:
+
+   - Calculate `mid = (l + r) // 2`
+   - If `nums[mid] == target`, return `mid`
+   - Check if **left portion is sorted**:
+
+     - If `nums[l] <= nums[mid]`:
+
+       - If `target` lies within `[nums[l], nums[mid]]`, search left: `r = mid - 1`
+       - Else, search right: `l = mid + 1`
+
+   - Else (**right portion is sorted**):
+
+     - If `target` lies within `[nums[mid], nums[r]]`, search right: `l = mid + 1`
+     - Else, search left: `r = mid - 1`
+
+3. If not found, return `-1`
+
+### Example Walkthrough
+
+1. Example
+
+   ```python
+   Input: nums = [4,5,6,7,0,1,2], target = 0
+   ```
+
+2. Initial State:
+
+   ```
+   l = 0, r = 6
+   ```
+
+3. Iteration 1:
+
+   ```
+   mid = (0 + 6) // 2 = 3
+   nums[mid] = 7
+   nums[l] = 4 → nums[l] <= nums[mid] → Left half [4,5,6,7] is sorted
+
+   target = 0 not in [4,7] → search right
+   l = mid + 1 = 4
+   ```
+
+4. Iteration 2:
+
+   ```
+   l = 4, r = 6
+   mid = (4 + 6) // 2 = 5
+   nums[mid] = 1
+   nums[l] = 0 → nums[l] <= nums[mid] → Left half [0,1] is sorted
+
+   target = 0 ∈ [0,1] → search left
+   r = mid - 1 = 4
+   ```
+
+5. Iteration 3:
+
+   ```
+   l = 4, r = 4
+   mid = (4 + 4) // 2 = 4
+   nums[mid] = 0 == target → return 4
+   ```
+
+#### Time and Space Complexity
+
+| Metric           | Complexity | Justification                                  |
+| ---------------- | ---------- | ---------------------------------------------- |
+| Time Complexity  | O(log n)   | Binary search over a modified condition        |
+| Space Complexity | O(1)       | Constant space usage, no recursion or extra DS |
+
+#### Why This Approach?
+
+- **Brute-force** (linear search): O(n) — unacceptable for large input
+- **Normal binary search** fails because of rotation
+- **Modified binary search** leverages the fact that one half of the array is always sorted, reducing the search space **logarithmically**
+
+This makes the solution optimal and meets the required time complexity of `O(log n)`.
+
+---
+
+---
+
+## 10. Binary Search: Search in Rotated Sorted Array
+
+[Problem from Languify Interview Platform](https://interview.languify.in/)
+
+Given a sorted array `A` with a size of `N`, determine the number of elements that are less than or equal to `B`.
+
+NOTE: The expected time complexity is `O(log N)`.
+
+```bash
+Example 1:
+
+A = [1, 3, 4, 4, 6]
+B = 4
+Output:
+4
+```
+
+```bash
+Example 2:
+
+A = [1, 2, 5, 5]
+B = 3
+Output:
+2
+```
+
+### Explanation
+
+#### Intuition
+
+Since the array is **sorted**, this problem reduces to a **variant of binary search**. We need to find the **rightmost index** where the element is less than or equal to `B`. The number of such elements will be the **index** itself when `0-based indexing` is used — or more precisely, the **count** of all elements ≤ `B`.
+
+#### Approach
+
+I've used a **binary search** to efficiently find the number of elements in `A` that are ≤ `B`:
+
+- Maintain two pointers: `left = 0` and `right = len(A)`
+- Run a loop while `left < right`
+- Calculate the middle index `mid = (left + right) // 2`
+- If `A[mid] <= B`, move the `left` boundary rightward (`left = mid + 1`)
+- Else, move the `right` boundary leftward (`right = mid`)
+- The final value of `left` will be the number of elements ≤ `B`
+
+#### Example Walkthrough
+
+1. Let's take the **second example**:
+
+   ```python
+   A = [1, 2, 5, 5]
+   B = 3
+   ```
+
+   - We want to find how many elements in A are less than or equal to 3.
+
+2. Initial State:
+
+   ```
+   left = 0
+   right = 4  (length of A)
+   ```
+
+3. Iteration 1:
+
+   ```
+   mid = (0 + 4) // 2 = 2
+   A[mid] = 5 > 3 → Move right
+   right = mid = 2
+   ```
+
+4. Iteration 2:
+
+   ```
+   mid = (0 + 2) // 2 = 1
+   A[mid] = 2 ≤ 3 → Move left
+   left = mid + 1 = 2
+   ```
+
+   - Now `left == right == 2` → Exit loop.
+
+5. Final Output:
+
+   ```
+   Result = 2 → elements [1, 2] are ≤ 3
+   ```
+
+#### Time and Space Complexity
+
+| Metric           | Complexity   | Justification                                               |
+| ---------------- | ------------ | ----------------------------------------------------------- |
+| Time Complexity  | **O(log N)** | Binary search narrows the search space in logarithmic steps |
+| Space Complexity | **O(1)**     | Constant space used; no auxiliary data structures involved  |
+
+#### Why This Approach?
+
+- **Sorted Array + Counting Problem** → Naturally suited for **binary search**
+- **Optimal Time Complexity**: Brute-force would require O(N), but binary search reduces it to O(log N)
+- **Final Answer = Index of first number > B**, which is exactly what binary search finds
 
 ---
 

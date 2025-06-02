@@ -194,6 +194,7 @@
 | 08  | Find Minimum in Rotated Sorted Array                    | [Solution](./Search/Binary%20Search/08_binary_search_find_minimum_in_rotated_sorted_array.py) |
 | 09  | Binary Search: Find Index Of All Occurrences            | [Solution](./Search/Binary%20Search/09_binary_search_find_all_occurrences.py)                 |
 | 10  | Binary Search: Search in Rotated Sorted Array           | [Solution](./Search/Binary%20Search/10_binary_search_in_rotated_sorted_array.py)              |
+| 11  | Binary Search: Count Elements Less Than B               | [Solution](./Search/Binary%20Search/11_binary_search_count_element_less_than_b.py)            |
 | 00  | Readme                                                  | [Problem Statements with Explanations](./Search/Binary%20Search/README.md)                    |
 
 ## Sorting Algorithms
