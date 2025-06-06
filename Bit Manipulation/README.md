@@ -256,3 +256,124 @@ We want to compute the number of `1` bits in binary representation of all number
 ---
 
 ---
+
+## 03. Reverse Bits
+
+[Leetcode Problem URL](https://leetcode.com/problems/reverse-bits/)
+
+Reverse bits of a given 32 bits unsigned integer.
+
+Note:
+
+Note that in some languages, such as Java, there is no unsigned integer type. In this case, both input and output will be given as a signed integer type. They should not affect your implementation, as the integer's internal binary representation is the same, whether it is signed or unsigned.
+
+In Java, the compiler represents the signed integers using 2's complement notation. Therefore, in **Example 2** above, the input represents the signed integer `-3` and the output represents the signed integer `-1073741825`.
+
+```bash
+Example 1:
+
+Input: n = 00000010100101000001111010011100
+Output:    964176192 (00111001011110000010100101000000)
+Explanation: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000.
+```
+
+```bash
+Example 2:
+
+Input: n = 11111111111111111111111111111101
+Output:   3221225471 (10111111111111111111111111111111)
+Explanation: The input binary string 11111111111111111111111111111101 represents the unsigned integer 4294967293, so return 3221225471 which its binary representation is 10111111111111111111111111111111.
+```
+
+### Explanation
+
+We need to reverse the bits of a number. That is, bit at position 0 becomes bit at position 31, bit at position 1 becomes bit at position 30, and so on.
+
+To achieve this, we follow these steps:
+
+1. Initialize result `res = 0`
+2. Loop for all 32 bits `i = 0` to `31`:
+
+   - Extract the `i-th` bit from `n` using: `(n >> i) & 1`
+   - Place that bit in the `(31 - i)`-th position in `res`: `res = res | (bit << (31 - i))`
+
+3. Return the final `res`
+
+#### Step-by-Step Bit Manipulation Walkthrough (Example 1)
+
+1. Let’s dry-run the solution for:
+
+   ```python
+   n = 43261596
+   # Binary: 00000010100101000001111010011100
+   ```
+
+2. We initialize:
+
+   ```
+   res = 0
+   ```
+
+3. We loop from i = 0 to 31:
+
+   | Iteration (i) | Extracted Bit `(n >> i) & 1` | New Bit Position in `res` (31 - i) | `res` (in binary)                |
+   | ------------- | ---------------------------- | ---------------------------------- | -------------------------------- |
+   | 0             | 0                            | 31                                 | 00000000000000000000000000000000 |
+   | 1             | 0                            | 30                                 | 00000000000000000000000000000000 |
+   | 2             | 1                            | 29                                 | 00100000000000000000000000000000 |
+   | 3             | 1                            | 28                                 | 00110000000000000000000000000000 |
+   | 4             | 1                            | 27                                 | 00111000000000000000000000000000 |
+   | 5             | 0                            | 26                                 | 00111000000000000000000000000000 |
+   | 6             | 0                            | 25                                 | 00111000000000000000000000000000 |
+   | 7             | 1                            | 24                                 | 00111001000000000000000000000000 |
+   | 8             | 0                            | 23                                 | 00111001000000000000000000000000 |
+   | 9             | 1                            | 22                                 | 00111001010000000000000000000000 |
+   | 10            | 0                            | 21                                 | 00111001010000000000000000000000 |
+   | 11            | 1                            | 20                                 | 00111001010100000000000000000000 |
+   | 12            | 0                            | 19                                 | 00111001010100000000000000000000 |
+   | 13            | 0                            | 18                                 | 00111001010100000000000000000000 |
+   | 14            | 1                            | 17                                 | 00111001010101000000000000000000 |
+   | 15            | 0                            | 16                                 | 00111001010101000000000000000000 |
+   | 16            | 0                            | 15                                 | 00111001010101000000000000000000 |
+   | 17            | 0                            | 14                                 | 00111001010101000000000000000000 |
+   | 18            | 0                            | 13                                 | 00111001010101000000000000000000 |
+   | 19            | 1                            | 12                                 | 00111001010101000100000000000000 |
+   | 20            | 0                            | 11                                 | 00111001010101000100000000000000 |
+   | 21            | 1                            | 10                                 | 00111001010101000101000000000000 |
+   | 22            | 0                            | 9                                  | 00111001010101000101000000000000 |
+   | 23            | 0                            | 8                                  | 00111001010101000101000000000000 |
+   | 24            | 0                            | 7                                  | 00111001010101000101000000000000 |
+   | 25            | 0                            | 6                                  | 00111001010101000101000000000000 |
+   | 26            | 0                            | 5                                  | 00111001010101000101000000000000 |
+   | 27            | 0                            | 4                                  | 00111001010101000101000000000000 |
+   | 28            | 0                            | 3                                  | 00111001010101000101000000000000 |
+   | 29            | 0                            | 2                                  | 00111001010101000101000000000000 |
+   | 30            | 0                            | 1                                  | 00111001010101000101000000000000 |
+   | 31            | 0                            | 0                                  | 00111001010101000101000000000000 |
+
+4. Final binary value: `00111001011110000010100101000000` Decimal value: `964176192`
+
+5. This matches the expected output.
+
+#### Time and Space Complexity
+
+| Metric           | Value          | Explanation                                        |
+| ---------------- | -------------- | -------------------------------------------------- |
+| Time Complexity  | $O(32) → O(1)$ | Always runs for 32 iterations regardless of input  |
+| Space Complexity | $O(1)$         | No extra space used except constant-size variables |
+
+#### Why This Approach?
+
+- Bit manipulation is the most **efficient and direct way** to reverse binary digits.
+- Other approaches (e.g., converting to a string, reversing, and parsing) are **less performant** and use **extra space**.
+- This approach guarantees **constant time and space**, which is optimal for fixed 32-bit integer problems.
+
+#### Key Learnings
+
+- Use `bit = (n >> i) & 1` to extract the `i-th` bit from a number.
+- Use `res = res | (bit << (31 - i))` to place the bit at its reversed position.
+- Think in terms of **bit positions** rather than number values when working with bit-level problems.
+
+---
+
+---
