@@ -1,30 +1,30 @@
 # 📚 Table of Contents
 
-| Category                | Problems Solved | Description / Notes                          | Link to Section                                          | Solutions / Explanations Link            |
-| ----------------------- | --------------- | -------------------------------------------- | -------------------------------------------------------- | ---------------------------------------- |
-| Stack                   | 5               | Core stack problems and concepts             | [Go to Stack](#stack)                                    | [Solutions](./Stack/README.md)           |
-| Queue                   | 5               | Queue data structure problems                | [Go to Queue](#queue)                                    | [Solutions](./Queue/README.md)           |
-| Heap (Priority Queue)   | 1               | Heap and priority queue algorithms           | [Go to Heap](#heap-priority-queue)                       | [Solutions](./Heap/README.md)            |
-| Linked List             | 29              | Singly, Doubly, Circular Linked Lists        | [Go to Linked List](#linked-list)                        | [Solutions](./LinkedList/README.md)      |
-| Iteration & Recursion   | 7               | Fundamental iteration and recursion problems | [Go to Iteration & Recursion](#iteration--recursion)     | [Solutions](./Iteration/README.md)       |
-| Arrays                  | 23              | Array manipulation and search problems       | [Go to Arrays](#arrays)                                  | [Solutions](./Arrays/README.md)          |
-| Backtracking            | 2               | Classic backtracking problems                | [Go to Backtracking](#backtracking)                      | [Solutions](./Backtracking/README.md)    |
-| Hash Table              | 3               | Hash table based problems                    | [Go to Hash Table](#hash-table)                          | [Solutions](./HashTable/README.md)       |
-| Search                  | 13              | Linear and binary search algorithms          | [Go to Search](#search)                                  | [Solutions](./Search/README.md)          |
-| Strings                 | 18              | String manipulation problems                 | [Go to Strings](#strings)                                | [Solutions](./Strings/README.md)         |
-| Sorting Algorithms      | 12              | Various sorting techniques                   | [Go to Sorting Algorithms](#sorting-algorithms)          | [Solutions](./Sorting/README.md)         |
-| Integers                | 1               | Integer related problems                     | [Go to Integers](#integers)                              | [Solutions](./Integers/README.md)        |
-| Numbers                 | 4               | Number theory and math problems              | [Go to Numbers](#numbers)                                | [Solutions](./Numbers/README.md)         |
-| Tree Data Structures    | 28              | General, binary and binary search trees      | [Go to Tree Data Structures](#tree-data-structures)      | [Solutions](./Trees/README.md)           |
-| Tries Data Structures   | 3               | Trie (Prefix Tree) problems                  | [Go to Tries](#tries-data-structures)                    | [Solutions](./Tries/README.md)           |
-| Graphs Data Structure   | 7               | Basic graph algorithms                       | [Go to Graphs](#graphs-data-structure)                   | [Solutions](./Graphs/README.md)          |
-| Advanced Graphs         | 1               | Advanced graph problems                      | [Go to Advanced Graphs](#advanced-graphs-data-structure) | [Solutions](./AdvancedGraphs/README.md)  |
-| 1-D Dynamic Programming | 10              | One-dimensional DP problems                  | [Go to 1-D DP](#1-d-dynamic-programming)                 | [Solutions](./DP1D/README.md)            |
-| 2-D Dynamic Programming | 2               | Two-dimensional DP problems                  | [Go to 2-D DP](#2-d-dynamic-programming)                 | [Solutions](./DP2D/README.md)            |
-| Greedy                  | 2               | Greedy algorithm problems                    | [Go to Greedy](#greedy)                                  | [Solutions](./Greedy/README.md)          |
-| Intervals               | 5               | Interval scheduling and related problems     | [Go to Intervals](#intervals)                            | [Solutions](./Intervals/README.md)       |
-| Math and Geometry       | 3               | Math and geometry related problems           | [Go to Math and Geometry](#math--geometry)               | [Solutions](./Math/README.md)            |
-| Bit Manipulation        | 4               | Bitwise operations problems                  | [Go to Bit Manipulation](#bit-manipulation)              | [Solutions](./BitManipulation/README.md) |
+| Category                | Problems Solved | Description / Notes                          | Link to Section                                          | Solutions / Explanations Link                        |
+| ----------------------- | --------------- | -------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------- |
+| Stack                   | 5               | Core stack problems and concepts             | [Go to Stack](#stack)                                    | [Solutions](./Stack/README.md)                       |
+| Queue                   | 5               | Queue data structure problems                | [Go to Queue](#queue)                                    | [Solutions](./Queue/README.md)                       |
+| Heap (Priority Queue)   | 1               | Heap and priority queue algorithms           | [Go to Heap](#heap-priority-queue)                       | [Solutions](./Heap%20Priority%20Queue/README.md)     |
+| Linked List             | 29              | Singly, Doubly, Circular Linked Lists        | [Go to Linked List](#linked-list)                        | [Solutions](./LinkedList/README.md)                  |
+| Iteration & Recursion   | 7               | Fundamental iteration and recursion problems | [Go to Iteration & Recursion](#iteration--recursion)     | [Solutions](./Iteration%20&%20Recursion/README.md)   |
+| Arrays                  | 23              | Array manipulation and search problems       | [Go to Arrays](#arrays)                                  | [Solutions](./Arrays/README.md)                      |
+| Backtracking            | 2               | Classic backtracking problems                | [Go to Backtracking](#backtracking)                      | [Solutions](./Backtracking/README.md)                |
+| Hash Table              | 3               | Hash table based problems                    | [Go to Hash Table](#hash-table)                          | [Solutions](./Hash%20Table/README.md)                |
+| Search                  | 13              | Linear and binary search algorithms          | [Go to Search](#search)                                  | [Solutions](./Search/README.md)                      |
+| Strings                 | 18              | String manipulation problems                 | [Go to Strings](#strings)                                | [Solutions](./Strings/README.md)                     |
+| Sorting Algorithms      | 12              | Various sorting techniques                   | [Go to Sorting Algorithms](#sorting-algorithms)          | [Solutions](./Sort/README.md)                        |
+| Integers                | 1               | Integer related problems                     | [Go to Integers](#integers)                              | [Solutions](./Integer/README.md)                     |
+| Numbers                 | 4               | Number theory and math problems              | [Go to Numbers](#numbers)                                | [Solutions](./Numbers/README.md)                     |
+| Tree Data Structures    | 28              | General, binary and binary search trees      | [Go to Tree Data Structures](#tree-data-structures)      | [Solutions](./Trees/README.md)                       |
+| Tries Data Structures   | 3               | Trie (Prefix Tree) problems                  | [Go to Tries](#tries-data-structures)                    | [Solutions](./Tries/README.md)                       |
+| Graphs Data Structure   | 7               | Basic graph algorithms                       | [Go to Graphs](#graphs-data-structure)                   | [Solutions](./Graphs/README.md)                      |
+| Advanced Graphs         | 1               | Advanced graph problems                      | [Go to Advanced Graphs](#advanced-graphs-data-structure) | [Solutions](./Advanced%20Graphs/README.md)           |
+| 1-D Dynamic Programming | 10              | One-dimensional DP problems                  | [Go to 1-D DP](#1-d-dynamic-programming)                 | [Solutions](./1-D%20Dynamic%20Programming/README.md) |
+| 2-D Dynamic Programming | 2               | Two-dimensional DP problems                  | [Go to 2-D DP](#2-d-dynamic-programming)                 | [Solutions](./2-D%20Dynamic%20Programming/README.md) |
+| Greedy                  | 2               | Greedy algorithm problems                    | [Go to Greedy](#greedy)                                  | [Solutions](./Greedy/README.md)                      |
+| Intervals               | 5               | Interval scheduling and related problems     | [Go to Intervals](#intervals)                            | [Solutions](./Intervals/README.md)                   |
+| Math and Geometry       | 3               | Math and geometry related problems           | [Go to Math and Geometry](#math--geometry)               | [Solutions](./Math%20&%20Geometry/README.md)         |
+| Bit Manipulation        | 4               | Bitwise operations problems                  | [Go to Bit Manipulation](#bit-manipulation)              | [Solutions](./Bit%20Manipulation/README.md)          |
 
 ## Stack
 
