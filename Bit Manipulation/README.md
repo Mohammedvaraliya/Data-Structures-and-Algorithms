@@ -419,15 +419,15 @@ I've implemented **two efficient approaches** to solve this problem:
 
    - The sum of first `n` natural numbers:
 
-   $$
-   \text{expected\_sum} = \frac{n \cdot (n + 1)}{2}
-   $$
+     $$
+     \text{expected\_sum} = \frac{n \cdot (n + 1)}{2}
+     $$
 
    - Subtract the actual sum of elements in the array from the expected sum:
 
-   $$
-   \text{missing\_number} = \text{expected\_sum} - \text{actual\_sum}
-   $$
+     $$
+     \text{missing\_number} = \text{expected\_sum} - \text{actual\_sum}
+     $$
 
    - But I've used an optimized way:
 
