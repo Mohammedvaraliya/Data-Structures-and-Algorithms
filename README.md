@@ -1,41 +1,30 @@
 # 📚 Table of Contents
 
-- [Stack](#stack)
-- [Queue](#queue)
-- [Heap (Priority Queue)](#heap-priority-queue)
-- [Linked List](#linked-list)
-  - [Singly Linked List](#singly-linked-list)
-  - [Doubly Linked List](#doubly-linked-list)
-  - [Circular Linked List](#circular-linked-list)
-- [Iteration & Recursion](#iteration--recursion)
-- [Arrays](#arrays)
-- [Backtracking](#backtracking)
-- [Hash Table](#hash-table)
-- [Search](#search)
-  - [Linear Search](#linear-search)
-  - [Binary Search](#binary-search)
-- [Sorting Algorithms](#sorting-algorithms)
-  - [Bubble Sort](#bubble-sort)
-  - [Quick Sort](#quick-sort)
-  - [Insertion Sort](#insertion-sort)
-  - [Merge Sort](#merge-sort)
-  - [Shell Sort](#shell-sort)
-  - [Selection Sort](#selection-sort)
-- [Strings](#strings)
-- [Integers](#integers)
-- [Numbers](#numbers)
-- [Tree Data Structures](#tree-data-structures)
-  - [General Trees](#general-trees)
-  - [Binary Trees](#binary-trees)
-  - [Binary Search Trees](#binary-search-trees)
-- [Tries Data Structures](#tries-data-structures)
-- [Graphs Data Structure](#graphs-data-structure)
-- [Advanced Graphs Data Structure](#advanced-graphs-data-structure)
-- [1-D Dynamic Programming](#1-d-dynamic-programming)
-- [2-D Dynamic Programming](#2-d-dynamic-programming)
-- [Greedy](#greedy)
-- [Intervals](#intervals)
-- [Math and Geometry](#math--geometry)
+| Category                | Problems Solved | Description / Notes                          | Link to Section                                          | Solutions / Explanations Link            |
+| ----------------------- | --------------- | -------------------------------------------- | -------------------------------------------------------- | ---------------------------------------- |
+| Stack                   | 5               | Core stack problems and concepts             | [Go to Stack](#stack)                                    | [Solutions](./Stack/README.md)           |
+| Queue                   | 5               | Queue data structure problems                | [Go to Queue](#queue)                                    | [Solutions](./Queue/README.md)           |
+| Heap (Priority Queue)   | 1               | Heap and priority queue algorithms           | [Go to Heap](#heap-priority-queue)                       | [Solutions](./Heap/README.md)            |
+| Linked List             | 29              | Singly, Doubly, Circular Linked Lists        | [Go to Linked List](#linked-list)                        | [Solutions](./LinkedList/README.md)      |
+| Iteration & Recursion   | 7               | Fundamental iteration and recursion problems | [Go to Iteration & Recursion](#iteration--recursion)     | [Solutions](./Iteration/README.md)       |
+| Arrays                  | 23              | Array manipulation and search problems       | [Go to Arrays](#arrays)                                  | [Solutions](./Arrays/README.md)          |
+| Backtracking            | 2               | Classic backtracking problems                | [Go to Backtracking](#backtracking)                      | [Solutions](./Backtracking/README.md)    |
+| Hash Table              | 3               | Hash table based problems                    | [Go to Hash Table](#hash-table)                          | [Solutions](./HashTable/README.md)       |
+| Search                  | 13              | Linear and binary search algorithms          | [Go to Search](#search)                                  | [Solutions](./Search/README.md)          |
+| Strings                 | 18              | String manipulation problems                 | [Go to Strings](#strings)                                | [Solutions](./Strings/README.md)         |
+| Sorting Algorithms      | 12              | Various sorting techniques                   | [Go to Sorting Algorithms](#sorting-algorithms)          | [Solutions](./Sorting/README.md)         |
+| Integers                | 1               | Integer related problems                     | [Go to Integers](#integers)                              | [Solutions](./Integers/README.md)        |
+| Numbers                 | 4               | Number theory and math problems              | [Go to Numbers](#numbers)                                | [Solutions](./Numbers/README.md)         |
+| Tree Data Structures    | 28              | General, binary and binary search trees      | [Go to Tree Data Structures](#tree-data-structures)      | [Solutions](./Trees/README.md)           |
+| Tries Data Structures   | 3               | Trie (Prefix Tree) problems                  | [Go to Tries](#tries-data-structures)                    | [Solutions](./Tries/README.md)           |
+| Graphs Data Structure   | 7               | Basic graph algorithms                       | [Go to Graphs](#graphs-data-structure)                   | [Solutions](./Graphs/README.md)          |
+| Advanced Graphs         | 1               | Advanced graph problems                      | [Go to Advanced Graphs](#advanced-graphs-data-structure) | [Solutions](./AdvancedGraphs/README.md)  |
+| 1-D Dynamic Programming | 10              | One-dimensional DP problems                  | [Go to 1-D DP](#1-d-dynamic-programming)                 | [Solutions](./DP1D/README.md)            |
+| 2-D Dynamic Programming | 2               | Two-dimensional DP problems                  | [Go to 2-D DP](#2-d-dynamic-programming)                 | [Solutions](./DP2D/README.md)            |
+| Greedy                  | 2               | Greedy algorithm problems                    | [Go to Greedy](#greedy)                                  | [Solutions](./Greedy/README.md)          |
+| Intervals               | 5               | Interval scheduling and related problems     | [Go to Intervals](#intervals)                            | [Solutions](./Intervals/README.md)       |
+| Math and Geometry       | 3               | Math and geometry related problems           | [Go to Math and Geometry](#math--geometry)               | [Solutions](./Math/README.md)            |
+| Bit Manipulation        | 4               | Bitwise operations problems                  | [Go to Bit Manipulation](#bit-manipulation)              | [Solutions](./BitManipulation/README.md) |
 
 ## Stack
 
@@ -126,7 +115,7 @@
 | 04  | Recursive Method: List Sum            | [Solution](./Iteration%20%26%20Recursion/04_recursion_list_sum.py)               |
 | 05  | Recursive Method: Sum Of Integer      | [Solution](./Iteration%20%26%20Recursion/05_recurion_get_sum_of_integer.py)      |
 | 06  | Recursion: Sum Of Positive Integer    | [Solution](./Iteration%20%26%20Recursion/06_recursion_sum_of_positive_int.py)    |
-| 06  | Recursion: Calculate The Harmonic Sum | [Solution](./Iteration%20%26%20Recursion/07_recursion_calculate_harmonic_sum.py) |
+| 07  | Recursion: Calculate The Harmonic Sum | [Solution](./Iteration%20%26%20Recursion/07_recursion_calculate_harmonic_sum.py) |
 | 00  | Readme                                | [Problem Statements with Explanations](./Iteration%20%26%20Recursion/README.md)  |
 
 ## Arrays
@@ -197,6 +186,30 @@
 | 11  | Binary Search: Count Elements Less Than B               | [Solution](./Search/Binary%20Search/11_binary_search_count_element_less_than_b.py)            |
 | 00  | Readme                                                  | [Problem Statements with Explanations](./Search/Binary%20Search/README.md)                    |
 
+## Strings
+
+| #   | Title                                              | Solution                                                                       |
+| --- | -------------------------------------------------- | ------------------------------------------------------------------------------ |
+| 01  | Reverse String                                     | [Solution](./Strings/01_reverse_string.py)                                     |
+| 02  | Count Consonants in String                         | [Solution](./Strings/02_Count_Consonants_in_String.py)                         |
+| 03  | Look-and-Say Sequence                              | [Solution](./Strings/03_look_n_say_sequence.py)                                |
+| 04  | String Processing: Spreadsheet Encoding            | [Solution](./Strings/04_spreadsheet_encoding.py)                               |
+| 05  | String Processing: Is Palindrome                   | [Solution](./Strings/05_is_palindrome.py)                                      |
+| 06  | String Processing: Is Anagram                      | [Solution](./Strings/06_is_anagram.py)                                         |
+| 07  | String Processing: Is Palindrome Permutation       | [Solution](./Strings/07_is_palindrome_permutation.py)                          |
+| 08  | String Processing: Check Permutation               | [Solution](./Strings/08_is_permutation.py)                                     |
+| 09  | String Processing: Is Unique                       | [Solution](./Strings/09_is_unique.py)                                          |
+| 10  | String Processing: Integer to String               | [Solution](./Strings/10_integer_to_string.py)                                  |
+| 11  | String Processing: String to Integer               | [Solution](./Strings/11_string_to_integer.py)                                  |
+| 12  | Longest Substring Without Repeating Characters     | [Solution](./Strings/12_longest_substring_without_repeating_char.py)           |
+| 13  | Encode and Decode Strings                          | [Solution](./Strings/13_encode_and_decode_string.py)                           |
+| 14  | Longest Repeating Character Replacement            | [Solution](./Strings/14_longest_repeating%20character_replacement.py)          |
+| 15  | Minimum Window Substring                           | [Solution](./Strings/15_minimum_window_substring.py)                           |
+| 16  | First Letter to Appear Twice                       | [Solution](./Strings/16_first_letter_to_appear_twice.py)                       |
+| 17  | First Unique Character in a String                 | [Solution](./Strings/17_first_unique_character_in_a_string.py)                 |
+| 18  | Find the Index of the First Occurrence in a String | [Solution](./Strings/18_find_the_index_of_the_first_occurrence_in_a_string.py) |
+| 00  | Readme                                             | [Problem Statements with Explanations](./Strings/README.md)                    |
+
 ## Sorting Algorithms
 
 ## Bubble Sort
@@ -246,30 +259,6 @@
 | 01  | Selection Sort             | [Solution](./Sort/Selection%20Sort/01_selection_sort.py)                  |
 | 02  | Selection Sort: Dictionary | [Solution](./Sort/Selection%20Sort/02_selection_sort_on_dictionary.py)    |
 | 00  | Readme                     | [Problem Statements with Explanations](./Sort/Selection%20Sort/README.md) |
-
-## Strings
-
-| #   | Title                                              | Solution                                                                       |
-| --- | -------------------------------------------------- | ------------------------------------------------------------------------------ |
-| 01  | Reverse String                                     | [Solution](./Strings/01_reverse_string.py)                                     |
-| 02  | Count Consonants in String                         | [Solution](./Strings/02_Count_Consonants_in_String.py)                         |
-| 03  | Look-and-Say Sequence                              | [Solution](./Strings/03_look_n_say_sequence.py)                                |
-| 04  | String Processing: Spreadsheet Encoding            | [Solution](./Strings/04_spreadsheet_encoding.py)                               |
-| 05  | String Processing: Is Palindrome                   | [Solution](./Strings/05_is_palindrome.py)                                      |
-| 06  | String Processing: Is Anagram                      | [Solution](./Strings/06_is_anagram.py)                                         |
-| 07  | String Processing: Is Palindrome Permutation       | [Solution](./Strings/07_is_palindrome_permutation.py)                          |
-| 08  | String Processing: Check Permutation               | [Solution](./Strings/08_is_permutation.py)                                     |
-| 09  | String Processing: Is Unique                       | [Solution](./Strings/09_is_unique.py)                                          |
-| 10  | String Processing: Integer to String               | [Solution](./Strings/10_integer_to_string.py)                                  |
-| 11  | String Processing: String to Integer               | [Solution](./Strings/11_string_to_integer.py)                                  |
-| 12  | Longest Substring Without Repeating Characters     | [Solution](./Strings/12_longest_substring_without_repeating_char.py)           |
-| 13  | Encode and Decode Strings                          | [Solution](./Strings/13_encode_and_decode_string.py)                           |
-| 14  | Longest Repeating Character Replacement            | [Solution](./Strings/14_longest_repeating%20character_replacement.py)          |
-| 15  | Minimum Window Substring                           | [Solution](./Strings/15_minimum_window_substring.py)                           |
-| 16  | First Letter to Appear Twice                       | [Solution](./Strings/16_first_letter_to_appear_twice.py)                       |
-| 17  | First Unique Character in a String                 | [Solution](./Strings/17_first_unique_character_in_a_string.py)                 |
-| 18  | Find the Index of the First Occurrence in a String | [Solution](./Strings/18_find_the_index_of_the_first_occurrence_in_a_string.py) |
-| 00  | Readme                                             | [Problem Statements with Explanations](./Strings/README.md)                    |
 
 ## Integers
 
