@@ -1,3 +1,6 @@
+'''
+Requires n log n time(since any comparison based sorting algorithm rquires at least n log n time to sort)
+'''
 # Method-1
 
 s1 = "fairy tales"
@@ -9,11 +12,6 @@ s2 = s2.replace(" ", "").lower()
 print(s1)
 print(s2)
 
-'''
-Requires n log n time(since any comparison
-based sorting algorithm rquires at least n log n time
-to sort)
-'''
 print(sorted(s1) == sorted(s2))
 print("\n")
 

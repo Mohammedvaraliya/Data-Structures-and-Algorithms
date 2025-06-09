@@ -145,6 +145,12 @@ Input: s = "rat", t = "car"
 Output: false
 ```
 
+### Explanation
+
+---
+
+---
+
 ## 07. String Processing: Is Palindrome Permutation
 
     String Processing: Is Palindrome Permutation

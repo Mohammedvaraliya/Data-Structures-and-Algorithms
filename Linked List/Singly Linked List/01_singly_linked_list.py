@@ -1,14 +1,13 @@
 class Node:
-    def __init__(self, data):
+    def __init__(self, data: str) -> None: 
         self.data = data
         self.next = None
 
-
 class SinglyLinkedList:
-    def __init__(self):
+    def __init__(self) -> None:
         self.head = None
 
-    def append(self, data):
+    def append(self, data: str) -> None:
         new_node = Node(data)
 
         if self.head is None:
