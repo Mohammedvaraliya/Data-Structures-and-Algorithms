@@ -194,6 +194,79 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
 
+### Explanation
+
+#### Why this Approach?
+
+- We want a **fast and efficient solution**.
+- Brute force takes **O(n²)** time – not acceptable for large inputs.
+- This approach brings the complexity down to **O(n)** by **trading space for time**.
+- I've used a **dictionary (hash table)** to store the complement (`target - nums[i]`) as key and its index as value.
+
+#### Algorithm Explanation
+
+- Initialize an empty hash table (dictionary).
+- Iterate over the array.
+- For each number `nums[i]`, check:
+
+  - If `nums[i]` exists in the hash table, that means the **complement** was seen before → return `[ht[nums[i]], i]`.
+  - Else, store the **complement** (`target - nums[i]`) with index `i`.
+
+#### Example Walkthrough
+
+1. Let’s walk through the function with the input:
+
+   ```python
+   nums = [3, 2, 4]
+   target = 6
+   ```
+
+   We aim to find two indices such that `nums[i] + nums[j] = 6`.
+
+2. Initialization:
+
+   ```python
+   ht = {}
+   ```
+
+3. Iteration:
+
+   | Iteration | i   | nums\[i] | ht (before check) | Check Condition (nums\[i] in ht?) | Action                                      | ht (after update) |
+   | --------- | --- | -------- | ----------------- | --------------------------------- | ------------------------------------------- | ----------------- |
+   | 0         | 0   | 3        | {}                | No                                | Store complement 6 - 3 = 3 → ht\[3] = 0     | {3: 0}            |
+   | 1         | 1   | 2        | {3: 0}            | No                                | Store complement 6 - 2 = 4 → ht\[4] = 1     | {3: 0, 4: 1}      |
+   | 2         | 2   | 4        | {3: 0, 4: 1}      | Yes                               | Match found → return \[ht\[4], 2] = \[1, 2] | Done              |
+
+4. Output: `[1, 2]`
+
+   This means:
+
+   ```python
+   nums[1] + nums[2] = 2 + 4 = 6
+   ```
+
+#### Time and Space Complexity
+
+| Metric           | Value  | Explanation                               |
+| ---------------- | ------ | ----------------------------------------- |
+| Time Complexity  | $O(n)$ | Single traversal of array using loop      |
+| Space Complexity | $O(n)$ | Worst-case hash table stores all elements |
+
+#### Why This is Efficient
+
+- **No nested loops** unlike the brute-force solution.
+- Fast lookups using a **dictionary (hash table)**.
+- Provides **immediate complement match** using pre-calculated difference.
+- This approach is **scalable for large datasets** due to linear performance.
+
+#### Comparison With Other Approaches
+
+| Approach              | Time Complexity | Space Complexity | Notes                               |
+| --------------------- | --------------- | ---------------- | ----------------------------------- |
+| Brute Force (2 loops) | $O(n²)$         | $O(1)$           | Inefficient for large `n`           |
+| Hash Table            | $O(n)$          | $O(n)$           | Most efficient for unsorted input   |
+| Two-pointer (slider)  | $O(n)$          | $O(1)$           | Only works **when array is sorted** |
+
 ---
 
 ---

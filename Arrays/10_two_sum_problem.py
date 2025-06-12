@@ -1,68 +1,77 @@
-'''
-Problem: Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice.
-'''
+class Solution:
+    # Time Complexity : O(n^2)
+    # Space Complexity : O(1)
+    def twoSum_brute_force(self, nums: list[int], target: int) -> list[int]:
+        
+        for i in range(len(nums) - 1):
+            for j in range(1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+                
+        return [0, 0]
+
+    # Time Complexity : O(n)
+    # Space Complexity : O(n)
+    def twoSum_hash_table(self, nums: list[int], target: int) -> list[int]:
+        ht = dict()
+
+        for i in range(len(nums)):
+            if nums[i] in ht:
+                return [ht[nums[i]], i]
+            else:
+                ht[target - nums[i]] = i
+
+        return [0, 0]
+
+    # Time Complexity : O(n)
+    # Space Complexity : O(1)
+    # Works only if the input list is sorted
+    def two_sum_slider(self, nums, target):
+        i = 0
+        j = len(nums) - 1
+        
+        while i <= j:
+            if nums[i] + nums[j] == target:
+                return [i, j]
+            elif nums[i] + nums[j] < target:
+                i += 1
+            else:
+                # the case where array[i] + array[j] > target:
+                j -= 1
+
+        return [0, 0]
 
 
-# Time Complexity : O(n^2)
-# Space Complexity : O(1)
-def two_sum_bruteforce(array, target):
-
-    for i in range(len(array) - 1):
-        for j in range(i + 1, len(array)):
-            if array[i] + array[j] == target:
-                print(f"[{array[i]}, {array[j]}]")
-                return True
-    return False
 
 
-# Time Complexity : O(n)
-# Space Complexity : O(n)
-def two_sum_hash_table(array, target):
-    ht = dict()
-    for i in range(len(array)):
-        if array[i] in ht:
-            print(f"[{ht[array[i]]}, {array[i]}]")
-            return True
-        else:
-            ht[target - array[i]] = array[i]
-
-    return False
-
-
-# Time Complexity : O(n)
-# Space Complexity : O(1)
-def two_sum(array, target):
-    i = 0
-    j = len(array) - 1
-    
-    while i <= j:
-        if array[i] + array[j] == target:
-            print(f"[{array[i]}, {array[j]}]")
-            return True
-        elif array[i] + array[j] < target:
-            i += 1
-        else:
-            # the case where array[i] + array[j] > target:
-            j -= 1
-
-    return False
 
 
 
 if __name__ == "__main__":
 
-    A = [-2, 1, 2, 4, 7, 11]
-    target = 13
+    obj = Solution()
 
-    X = two_sum_bruteforce(A, target)
-    print(X)
-    print("\n")
+    nums1 = [3,4,5,6]
+    target1 = 7
+    print(obj.twoSum_brute_force(nums=nums1, target=target1))
+    print(obj.twoSum_hash_table(nums=nums1, target=target1))
+    print(obj.two_sum_slider(nums=nums1, target=target1), "\n")
 
-    Y = two_sum_hash_table(A, target)
-    print(Y)
-    print("\n")
+    nums2 = [4,5,6]
+    target2 = 10
+    print(obj.twoSum_brute_force(nums=nums2, target=target2))
+    print(obj.twoSum_hash_table(nums=nums2, target=target2))
+    print(obj.two_sum_slider(nums=nums2, target=target2), "\n")
 
-    Z = two_sum(A, target)
-    print(Z)
-    print("\n")
+    nums3 = [5,5]
+    target3 = 10
+    print(obj.twoSum_brute_force(nums=nums3, target=target3))
+    print(obj.twoSum_hash_table(nums=nums3, target=target3))
+    print(obj.two_sum_slider(nums=nums3, target=target3), "\n")
+
+    nums4 = [-2, 1, 2, 4, 7, 11]
+    target4 = 13
+    print(obj.twoSum_brute_force(nums=nums4, target=target4))
+    print(obj.twoSum_hash_table(nums=nums4, target=target4))
+    print(obj.two_sum_slider(nums=nums4, target=target4))
 
