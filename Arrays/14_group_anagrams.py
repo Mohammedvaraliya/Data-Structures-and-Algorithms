@@ -1,31 +1,32 @@
 import collections
 
-def groupAnagrams(strs: list[str]) -> list[list[str]]:
-    res = collections.defaultdict(list) #mapping charCount to list of Anagrams
+class Solution:
+    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
+        res = collections.defaultdict(list)
 
-    for s in strs:
-        count = [0] * 26 # a...z
+        for s in strs:
+            count = [0] * 26
+            
+            for c in s:
+                count[ord(c) - ord('a')] += 1
+            
+            res[tuple(count)].append(s)
+        
+        return list(res.values())
 
-        for c in s:
-            count[ord(c) - ord('a')] += 1
-
-        res[tuple(count)].append(s)
-    
-    return res.values() # type: ignore
+        
 
 
 
 if __name__ == "__main__":
 
+    obj = Solution()
+
     str1 = ["eat","tea","tan","ate","nat","bat"]
+    print(obj.groupAnagrams(str1))
+
     str2 = [""]
+    print(obj.groupAnagrams(str2))
+
     str3 = ["a"]
-    
-    X = groupAnagrams(str1)
-    print(X)
-    
-    Y = groupAnagrams(str2)
-    print(Y)
-    
-    Z = groupAnagrams(str3)
-    print(Z)
+    print(obj.groupAnagrams(str3))

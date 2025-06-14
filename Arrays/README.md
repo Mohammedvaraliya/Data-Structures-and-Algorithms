@@ -372,6 +372,126 @@ Input: strs = ["a"]
 Output: [["a"]]
 ```
 
+### Explanation
+
+#### Why this Approach?
+
+- Anagrams have **exactly the same letters** with **the same frequency**.
+- Instead of sorting strings (which costs O(n log n)), we can use a **fixed-size frequency count array** of 26 letters as a **hashable key**.
+- This allows **constant-time comparison** between different anagram groups and leads to **better performance** on large input sizes.
+
+#### Key Idea:
+
+Use a **dictionary (hash map)** where:
+
+- **Key** = A **tuple of 26 integers**, each representing the **frequency of a character** in the word (from `'a'` to `'z'`)
+- **Value** = List of strings (words) that match that frequency key (i.e., are anagrams)
+
+#### Example Walkthrough
+
+1. Let’s walk through the input:
+
+   ```python
+   strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+   ```
+
+   - We want to group anagrams together.
+   - We will build a dictionary where the **key is the character frequency tuple**.
+
+2. Initial State:
+
+   ```python
+   res = defaultdict(list)
+   ```
+
+3. `s = "eat"`
+
+   - count = `[0, 0, ..., 0]` (length 26)
+   - Processing `'e'`: `count[4] += 1`
+   - Processing `'a'`: `count[0] += 1`
+   - Processing `'t'`: `count[19] += 1`
+   - count = `[1, 0, 0, 0, 1, ..., 1, ..., 0]`
+   - Key = `(1, 0, 0, 0, 1, ..., 1, ..., 0)`
+   - Store: `res[key] = ["eat"]`
+
+4. `s = "tea"`
+
+   - `'t'` → `count[19] += 1`
+   - `'e'` → `count[4] += 1`
+   - `'a'` → `count[0] += 1`
+   - Key is same as previous → group with "eat"
+   - Store: `res[key] = ["eat", "tea"]`
+
+5. `s = "tan"`
+
+   - `'t'` → `count[19] += 1`
+   - `'a'` → `count[0] += 1`
+   - `'n'` → `count[13] += 1`
+   - Key = `(1, 0, 0, 0, 0, ..., 1 (at index 13), ..., 1 (at 19))`
+   - New key → `res[key] = ["tan"]`
+
+6. `s = "ate"`
+
+   - Same frequency as `"eat"` and `"tea"`
+   - Store: `res[previous_key] = ["eat", "tea", "ate"]`
+
+7. `s = "nat"`
+
+   - Same frequency as `"tan"`
+   - Store: `res[previous_key] = ["tan", "nat"]`
+
+8. `s = "bat"`
+
+   - `'b'` → `count[1] += 1`
+   - `'a'` → `count[0] += 1`
+   - `'t'` → `count[19] += 1`
+   - New key → `res[key] = ["bat"]`
+
+9. Final Dictionary:
+
+   ```python
+   {
+   (1, 0, 0, 0, 1, ..., 1): ["eat", "tea", "ate"],
+   (1, 0, 0, 0, 0, ..., 1 at index 13, ..., 1): ["tan", "nat"],
+   (1, 1, 0, ..., 1, ..., 0): ["bat"]
+   }
+   ```
+
+10. Output:
+
+    ```python
+    [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+    ```
+
+#### Time and Space Complexity
+
+| Metric           | Value     | Explanation                                                 |
+| ---------------- | --------- | ----------------------------------------------------------- |
+| Time Complexity  | O(n \* k) | `n` = number of words, `k` = average length of each word    |
+| Space Complexity | O(n \* k) | Storing all words in groups + frequency array as tuple keys |
+
+- **Building frequency array** takes O(k) time per string.
+- In total, the time is O(nk), which is **better than sorting each string** (O(nk log k)).
+
+#### Why This is Efficient
+
+- **Sorting-based approach** would require O(k log k) per word. With n words → O(nk log k)
+- **This approach** uses **O(k)** per word using **fixed-size counting array** → more efficient.
+- The use of **tuple as a hash key** is a Pythonic way to ensure dictionary lookups are fast and unique for each anagram group.
+
+#### Comparison With Other Approaches
+
+| Approach                  | Time Complexity | Space Complexity | Notes                                                |
+| ------------------------- | --------------- | ---------------- | ---------------------------------------------------- |
+| Sort each word + hashmap  | O(nk log k)     | O(nk)            | Slower due to string sorting                         |
+| Frequency count + hashmap | O(nk)           | O(nk)            | Optimal, avoids sorting, used in this implementation |
+
+#### Final Thoughts
+
+- The **frequency-count approach** is the most optimal for grouping anagrams in Python.
+- Using **defaultdict** simplifies grouping logic.
+- This approach ensures performance even on larger inputs while maintaining clarity and correctness.
+
 ---
 
 ---
