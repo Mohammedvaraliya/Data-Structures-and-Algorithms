@@ -514,6 +514,127 @@ Output: [1]
 Time coplexity of this solution which i solved is O(n)
 ```
 
+### Explanation
+
+A standard approach using a heap would give a time complexity of O(n log k). - However, we can solve it in **O(n)** time using **Bucket Sort**, which is more efficient and optimal for this problem when `k` is small relative to `n`.
+
+#### Step-by-Step Algorithm
+
+1. **Frequency Counting**
+
+   - Use a hash map (`count`) to count the frequency of each number in the array.
+
+2. **Bucket Indexing**
+
+   - Create a list of empty buckets (`freq`), where index `i` represents all numbers with frequency `i`.
+
+3. **Populating Buckets**
+
+   - For each key-value pair in the frequency map, place the number in the bucket at index equal to its frequency.
+
+4. **Collect Top K Frequent**
+
+   - Traverse the bucket list in reverse (from high to low frequency).
+   - Accumulate the numbers in the result list until `k` elements are collected.
+
+#### Example Walkthrough
+
+1. Let’s walk through:
+
+   ```python
+   nums = [1,1,1,2,2,3]
+   k = 2
+   ```
+
+2. Step 1: Frequency Count
+
+   - Using a dictionary:
+
+     ```python
+     count = {
+        1: 3,
+        2: 2,
+        3: 1
+     }
+     ```
+
+   - Explanation:
+
+     - `1` appears 3 times
+     - `2` appears 2 times
+     - `3` appears 1 time
+
+3. Step 2: Bucket Initialization
+
+   - Create an array of empty lists of size `len(nums) + 1 = 7`:
+
+     ```python
+     freq = [[], [], [], [], [], [], []]  # indices 0 to 6
+     ```
+
+4. Step 3: Fill the Buckets
+
+   - We loop through `count.items()`:
+
+   - `count[1] = 3` → place `1` in `freq[3]`
+   - `count[2] = 2` → place `2` in `freq[2]`
+   - `count[3] = 1` → place `3` in `freq[1]`
+
+   - Resulting buckets:
+
+   ```python
+   freq = [[], [3], [2], [1], [], [], []]
+            0   1    2    3
+   ```
+
+5. Step 4: Collecting Top K Frequent Elements
+
+   - Start from the end of the `freq` list and move backwards:
+
+     ```python
+     res = []
+
+     i = 6 → freq[6] is empty → skip
+     i = 5 → empty → skip
+     i = 4 → empty → skip
+     i = 3 → freq[3] = [1]
+           res = [1]
+
+     i = 2 → freq[2] = [2]
+           res = [1, 2]
+
+     len(res) == k → stop
+     ```
+
+6. Final Output:
+
+   ```python
+   [1, 2]
+   ```
+
+#### Time and Space Complexity
+
+| Metric           | Value  | Explanation                                  |
+| ---------------- | ------ | -------------------------------------------- |
+| Time Complexity  | $O(n)$ | Single pass to count frequency + bucket scan |
+| Space Complexity | $O(n)$ | Frequency map + buckets list                 |
+
+#### Comparison With Other Approaches
+
+| Approach               | Time Complexity | Space Complexity | Notes                                        |
+| ---------------------- | --------------- | ---------------- | -------------------------------------------- |
+| HashMap + Heap         | $O(n log k)$    | $O(n + k)$       | Slower due to heap operations                |
+| **Bucket Sort (used)** | **O(n)**        | **O(n)**         | Optimal – constant time for frequency lookup |
+
+#### Final Thoughts
+
+- Bucket sort shines in problems like this, where frequencies are bounded and we care about top-K.
+- This implementation uses a clean and readable Pythonic approach using:
+
+  - `dict` for counting
+  - `list` of buckets
+  - reverse loop to collect top-k items efficiently
+
 ---
 
 ---
