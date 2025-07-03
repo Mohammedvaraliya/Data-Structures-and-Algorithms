@@ -375,6 +375,100 @@ Example2:
     One possible encode method is: "2#we3#say1#:3#yes"
 ```
 
+### Explanation
+
+We use **length-prefixed encoding** to serialize the list of strings into a single string. The format is:
+
+```
+<length>#<string>
+```
+
+We repeat this format for each string in the list. The `#` serves as a delimiter between the length and the actual string. During decoding, we simply parse the length, extract that many characters, and repeat until the string ends.
+
+#### Encode Method
+
+We loop through each string in the list:
+
+1. Calculate the **length** of the string.
+2. Concatenate the length, the `#` delimiter, and the string itself.
+3. Append the result to the encoded string.
+
+#### Decode Method
+
+We use a two-pointer approach:
+
+1. Start at the beginning of the string.
+2. Move a pointer `j` forward until it finds `#`. The substring from `i` to `j` is the **length** of the next string.
+3. Convert this substring into an integer.
+4. Extract the next `length` characters and append them to the result.
+5. Move the pointer `i` forward to the start of the next encoded segment.
+6. Repeat until the end of the encoded string.
+
+#### Detailed Example Walkthrough
+
+1. Let's walk through the full encoding and decoding for this input:
+
+   ```python
+   Input: ["Hello", "everyone", "have", "a", "great", "day"]
+   ```
+
+2. #### Encoding
+
+3. Initialize: `res = ""`
+
+   | Iteration | String     | Length | Encoded Part | res So Far                               |
+   | --------- | ---------- | ------ | ------------ | ---------------------------------------- |
+   | 1         | "Hello"    | 5      | "5#Hello"    | "5#Hello"                                |
+   | 2         | "everyone" | 8      | "8#everyone" | "5#Hello8#everyone"                      |
+   | 3         | "have"     | 4      | "4#have"     | "5#Hello8#everyone4#have"                |
+   | 4         | "a"        | 1      | "1#a"        | "5#Hello8#everyone4#have1#a"             |
+   | 5         | "great"    | 5      | "5#great"    | "5#Hello8#everyone4#have1#a5#great"      |
+   | 6         | "day"      | 3      | "3#day"      | "5#Hello8#everyone4#have1#a5#great3#day" |
+
+4. **Final Encoded String:**
+
+   ```python
+   "5#Hello8#everyone4#have1#a5#great3#day"
+   ```
+
+5. #### Decoding
+
+6. Now decode `"5#Hello8#everyone4#have1#a5#great3#day"` step by step.
+
+7. Initialize: `res = []`, `i = 0`
+
+   | Iteration | `i` | `j` (where `s[j] == '#'`) | Length | Substring Extracted | New `i` | res                                                 |
+   | --------- | --- | ------------------------- | ------ | ------------------- | ------- | --------------------------------------------------- |
+   | 1         | 0   | 1                         | 5      | "Hello"             | 7       | \["Hello"]                                          |
+   | 2         | 7   | 8                         | 8      | "everyone"          | 17      | \["Hello", "everyone"]                              |
+   | 3         | 17  | 18                        | 4      | "have"              | 23      | \["Hello", "everyone", "have"]                      |
+   | 4         | 23  | 24                        | 1      | "a"                 | 26      | \["Hello", "everyone", "have", "a"]                 |
+   | 5         | 26  | 27                        | 5      | "great"             | 33      | \["Hello", "everyone", "have", "a", "great"]        |
+   | 6         | 33  | 34                        | 3      | "day"               | 38      | \["Hello", "everyone", "have", "a", "great", "day"] |
+
+8. **Final Decoded Output:**
+
+   ```python
+   ["Hello", "everyone", "have", "a", "great", "day"]
+   ```
+
+#### Time and Space Complexity
+
+| Operation | Time Complexity | Space Complexity | Notes                                 |
+| --------- | --------------- | ---------------- | ------------------------------------- |
+| Encoding  | $O(n $\*$ k)$   | $O(1)$           | n = number of strings, k = avg length |
+| Decoding  | $O(n $\*$ k)$   | $O(n)$           | Stores each string in result list     |
+
+---
+
+#### Why This Approach?
+
+- Using length-prefixed encoding (`len#string`) solves issues where strings may contain special characters like `#`, `,`, etc.
+- This method is **safe**, **reversible**, and **efficient**.
+- It avoids ambiguity during decoding by clearly separating length and content.
+
+Other approaches like delimiter-only (`|`, `,`) or using escape characters can lead to bugs if those characters appear inside the original strings.
+
 ---
 
 ---
