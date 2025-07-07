@@ -145,45 +145,97 @@
 
 ## 04. Roman to Integer
 
-[Leetcode Problem URL](https://leetcode.com/problems/roman-to-integer/)
+[LeetCode Problem URL](https://leetcode.com/problems/roman-to-integer/)
+
+Roman numerals are represented by seven symbols:
+
+| Symbol | Value |
+| ------ | ----- |
+| I      | 1     |
+| V      | 5     |
+| X      | 10    |
+| L      | 50    |
+| C      | 100   |
+| D      | 500   |
+| M      | 1000  |
+
+Roman numerals are written from **largest to smallest** from **left to right**. However, when a **smaller value precedes a larger one**, it is **subtracted**. For example:
+
+- `IV = 4` → `5 - 1`
+- `IX = 9` → `10 - 1`
+- `XL = 40`, `XC = 90`
+- `CD = 400`, `CM = 900`
+
+Given a string `s` representing a Roman numeral, return its corresponding **integer value**.
 
 ```bash
-Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
-
-Symbol Value
-I 1
-V 5
-X 10
-L 50
-C 100
-D 500
-M 1000
-
-For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
-
-Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
-
-I can be placed before V (5) and X (10) to make 4 and 9.
-X can be placed before L (50) and C (100) to make 40 and 90.
-C can be placed before D (500) and M (1000) to make 400 and 900.
-
-Given a roman numeral, convert it to an integer.
-
 Example 1:
 Input: s = "III"
 Output: 3
-Explanation: III = 3.
+Explanation: III = 1 + 1 + 1 = 3
 
 Example 2:
 Input: s = "LVIII"
 Output: 58
-Explanation: L = 50, V= 5, III = 3.
+Explanation: L = 50, V = 5, III = 3 → 50 + 5 + 3 = 58
 
 Example 3:
 Input: s = "MCMXCIV"
 Output: 1994
-Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+Explanation: M = 1000, CM = 900, XC = 90, IV = 4 → 1000 + 900 + 90 + 4 = 1994
 ```
+
+### Explanation
+
+#### Approach: Subtract Smaller Before Larger
+
+We iterate over the Roman numeral string and compare **current value with previous value**:
+
+- If **current > previous**, it means a subtractive pattern (`IV`, `IX`, etc.), so we **subtract twice the previous** because it was already added once.
+- Otherwise, we just **add current** to total.
+
+#### Step-by-Step Walkthrough (Example: `"MCMXCIV"`)
+
+Let's walk through the input `s = "MCMXCIV"`:
+
+| Iteration | Char | curr | prev | Condition          | Action                    | total |
+| --------- | ---- | ---- | ---- | ------------------ | ------------------------- | ----- |
+| 0         | M    | 1000 | 0    | 1000 > 0 (True)    | total += 1000 - 0         | 1000  |
+| 1         | C    | 100  | 1000 | 100 < 1000 (False) | total += 100              | 1100  |
+| 2         | M    | 1000 | 100  | 1000 > 100 (True)  | total += 1000 - 2×100=800 | 1900  |
+| 3         | X    | 10   | 1000 | 10 < 1000 (False)  | total += 10               | 1910  |
+| 4         | C    | 100  | 10   | 100 > 10 (True)    | total += 100 - 2×10=80    | 1990  |
+| 5         | I    | 1    | 100  | 1 < 100 (False)    | total += 1                | 1991  |
+| 6         | V    | 5    | 1    | 5 > 1 (True)       | total += 5 - 2×1 = 3      | 1994  |
+
+**Final Output:** `1994`
+
+#### Time and Space Complexity
+
+| Metric           | Value    | Explanation                                            |
+| ---------------- | -------- | ------------------------------------------------------ |
+| Time Complexity  | **O(n)** | Single pass over string `s`                            |
+| Space Complexity | **O(1)** | Only constant extra space for dictionary and variables |
+
+#### Why This Approach Works
+
+- We avoid using multiple conditionals for specific substrings (`"IV"`, `"CM"`, etc.).
+- Instead, we generalize the rule: _If a smaller numeral comes before a larger one, subtract it twice_ (since we already added it once).
+- This leads to a **clean, readable**, and **efficient** $O(n)$ solution.
+
+#### Pattern Recognition for Similar Problems
+
+This pattern can be used in problems involving:
+
+- **Symbol-to-value mappings**
+- **Comparing adjacent elements** (current vs. previous/next)
+- Situations where **implicit rules** (like subtraction when a smaller comes before a larger) affect logic
+
+Look for:
+
+- Mapping structures (`dict`)
+- Iteration with state tracking (`prev`)
+- Conditional logic involving previous and current values
 
 ---
 
