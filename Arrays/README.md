@@ -1070,8 +1070,6 @@ Explanation:
 
 ### Explanation
 
-## Intuition
-
 If the initial product is **odd**, then **all elements in the array must be odd** (because any even number would make the product even).
 
 To make the product **even**, we need **at least one even number** in the array after the operation.
@@ -1142,6 +1140,91 @@ Thus, the goal is to **select any non-empty subset** of the array and change **a
 - Avoids brute-force approach of generating all subsets (which is exponential).
 - **Fast Modular Exponentiation** computes `2^n % mod` efficiently in O(log n) time.
 - Handles large constraints efficiently (`n ≤ 10^5`).
+
+---
+
+---
+
+## 24. Reverse String
+
+[Leetcode Problem URL](https://leetcode.com/problems/reverse-string/)
+
+Write a function that reverses a string. The input string is given as an array of characters `s`.
+
+You must do this by modifying the input array in-place with `O(1)` extra memory.
+
+```bash
+Example 1:
+
+Input: s = ["h","e","l","l","o"]
+Output: ["o","l","l","e","h"]
+```
+
+```bash
+Example 2:
+
+Input: s = ["H","a","n","n","a","h"]
+Output: ["h","a","n","n","a","H"]
+```
+
+### Explanation
+
+**Approach: Two-Pointer Technique**
+
+To reverse an array **in-place**, we use the **two-pointer technique**:
+
+- Start one pointer (`p`) at the beginning of the array.
+- Start another pointer (`q`) at the end of the array.
+- Swap the characters at `p` and `q`.
+- Move `p` forward and `q` backward.
+- Repeat until both pointers meet or cross.
+
+This guarantees that every element is moved to its correct reversed position **without using any extra space**.
+
+#### Step-by-Step Walkthrough
+
+1. Let’s walkthrough this using:
+
+   ```python
+   s = ["H", "a", "n", "n", "a", "h"]
+   ```
+
+2. Initial state:
+
+   ```
+   p = 0, q = 5
+   s = ["H", "a", "n", "n", "a", "h"]
+   ```
+
+   | Iteration | p   | q   | s\[p] | s\[q] | Action                           | Array After Swap                       |
+   | --------- | --- | --- | ----- | ----- | -------------------------------- | -------------------------------------- |
+   | 1         | 0   | 5   | "H"   | "h"   | Swap s\[0] and s\[5]             | \["h", "a", "n", "n", "a", "H"]        |
+   | 2         | 1   | 4   | "a"   | "a"   | Swap s\[1] and s\[4] (no change) | \["h", "a", "n", "n", "a", "H"]        |
+   | 3         | 2   | 3   | "n"   | "n"   | Swap s\[2] and s\[3] (no change) | \["h", "a", "n", "n", "a", "H"]        |
+   | 4         | 3   | 2   | —     | —     | p > q → Loop ends                | Final: \["h", "a", "n", "n", "a", "H"] |
+
+#### Time and Space Complexity
+
+| Complexity       | Value  | Explanation                                              |
+| ---------------- | ------ | -------------------------------------------------------- |
+| Time Complexity  | $O(n)$ | Each character is swapped at most once                   |
+| Space Complexity | $O(1)$ | No extra memory used beyond a few pointers and temp vars |
+
+#### Why This Approach?
+
+- The **two-pointer technique** is optimal when we need to **swap elements symmetrically** from the ends.
+- It’s ideal when we’re constrained by **in-place** and **O(1) space**.
+- Avoids creation of new arrays or use of built-in reversing functions.
+
+#### What Pattern Should I Look For?
+
+This problem is part of the **Two-Pointer In-Place Swap Pattern**.
+Look for this pattern when:
+
+- You're reversing elements
+- Rotating arrays
+- Partitioning elements (like in QuickSort, Dutch National Flag, etc.)
+- In-place transformation is required
 
 ---
 

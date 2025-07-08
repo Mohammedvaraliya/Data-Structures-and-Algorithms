@@ -140,6 +140,7 @@
 | 16  | Split the Array                                       | [Solution](./Arrays/21_split_the_array.py)                 |
 | 17  | Kth Largest Element in an Array                       | [Solution](./Arrays/22_kth_largest_element.py)             |
 | 18  | Transform to Even Product                             | [Solution](./Arrays/23_transform_to_even_product.py)       |
+| 19  | Reverse String                                        | [Solution](./Arrays/24_reverse_string.py)                  |
 | 00  | Readme                                                | [Problem Statements with Explanations](./Arrays/README.md) |
 
 ## Backtracking
