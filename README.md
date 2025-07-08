@@ -208,6 +208,7 @@
 | 16  | First Letter to Appear Twice                       | [Solution](./Strings/16_first_letter_to_appear_twice.py)                       |
 | 17  | First Unique Character in a String                 | [Solution](./Strings/17_first_unique_character_in_a_string.py)                 |
 | 18  | Find the Index of the First Occurrence in a String | [Solution](./Strings/18_find_the_index_of_the_first_occurrence_in_a_string.py) |
+| 19  | Shuffle String                                     | [Solution](./Strings/19_shuffle_string.py)                                     |
 | 00  | Readme                                             | [Problem Statements with Explanations](./Strings/README.md)                    |
 
 ## Sorting Algorithms

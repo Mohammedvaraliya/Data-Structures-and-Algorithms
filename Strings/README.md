@@ -607,3 +607,109 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 ---
 
 ---
+
+## 19. Shuffle String
+
+[Leetcode Problem URL](https://leetcode.com/problems/shuffle-string/)
+
+You are given a string s and an integer array indices of the same length. The string s will be shuffled such that the character at the ith position moves to indices[i] in the shuffled string.
+
+Return the shuffled string.
+
+![Example1](https://assets.leetcode.com/uploads/2020/07/09/q1.jpg)
+
+```bash
+Example 1:
+
+Input: s = "codeleet", indices = [4,5,6,7,0,2,1,3]
+Output: "leetcode"
+Explanation: As shown, "codeleet" becomes "leetcode" after shuffling.
+c -> 4
+o -> 5
+d -> 6
+e -> 7
+l -> 0
+e -> 2
+e -> 1
+t -> 3
+
+Final string = "leetcode"
+```
+
+```bash
+Example 2:
+
+Input: s = "abc", indices = [0,1,2]
+Output: "abc"
+Explanation: After shuffling, each character remains in its position.
+```
+
+### Explanation
+
+**Approach: Index Mapping with Extra List**
+
+- We initialize an array of empty strings of the same length as `s`.
+- For each character in the string `s`, place it at the position given by `indices[i]` in the new array.
+- Finally, join the characters of this new array to get the result.
+
+This approach works in **linear time** and uses an auxiliary array to store characters in their new positions.
+
+#### Step-by-Step Walkthrough (Example: `s = "codeleet", indices = [4,5,6,7,0,2,1,3]`)
+
+1. We create an empty list:
+
+   ```
+   shuffled_chars = ["", "", "", "", "", "", "", ""]
+   ```
+
+2. Now we iterate:
+
+   | Iteration (i) | s\[i] | indices\[i] | Operation              | shuffled_chars                             |
+   | ------------- | ----- | ----------- | ---------------------- | ------------------------------------------ |
+   | 0             | c     | 4           | Place `'c'` at index 4 | `["", "", "", "", "c", "", "", ""]`        |
+   | 1             | o     | 5           | Place `'o'` at index 5 | `["", "", "", "", "c", "o", "", ""]`       |
+   | 2             | d     | 6           | Place `'d'` at index 6 | `["", "", "", "", "c", "o", "d", ""]`      |
+   | 3             | e     | 7           | Place `'e'` at index 7 | `["", "", "", "", "c", "o", "d", "e"]`     |
+   | 4             | l     | 0           | Place `'l'` at index 0 | `["l", "", "", "", "c", "o", "d", "e"]`    |
+   | 5             | e     | 2           | Place `'e'` at index 2 | `["l", "", "e", "", "c", "o", "d", "e"]`   |
+   | 6             | e     | 1           | Place `'e'` at index 1 | `["l", "e", "e", "", "c", "o", "d", "e"]`  |
+   | 7             | t     | 3           | Place `'t'` at index 3 | `["l", "e", "e", "t", "c", "o", "d", "e"]` |
+
+3. Final Result:
+
+   ```python
+   "".join(shuffled_chars) → "leetcode"
+   ```
+
+#### Time and Space Complexity
+
+| Metric           | Value    | Explanation                                |
+| ---------------- | -------- | ------------------------------------------ |
+| Time Complexity  | **O(n)** | One pass over the input string and indices |
+| Space Complexity | **O(n)** | Extra array `shuffled_chars` of size n     |
+
+#### Why This Approach?
+
+- The problem requires placing characters into known positions — this is a direct use case of **index mapping**.
+- Using an extra list allows us to directly assign characters with **O(1)** operations.
+- Much more **efficient and cleaner** than building the string character-by-character or doing multiple passes.
+
+#### Pattern Recognition
+
+This problem follows a common **Index Mapping + Output Array** pattern:
+
+- Given elements and their final positions, use a temporary structure to arrange them.
+- Appears in problems like:
+
+  - Restoring permutations
+  - Reordering arrays based on rules
+  - Position-based encoding/decoding
+
+When to apply this:
+
+- Whenever a list of elements and their target indices are given.
+- Ideal when constraints allow extra space (`O(n)`).
+
+---
+
+---

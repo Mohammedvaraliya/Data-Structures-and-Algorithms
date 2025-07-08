@@ -173,12 +173,16 @@ Example 1:
 Input: s = "III"
 Output: 3
 Explanation: III = 1 + 1 + 1 = 3
+```
 
+```bash
 Example 2:
 Input: s = "LVIII"
 Output: 58
 Explanation: L = 50, V = 5, III = 3 → 50 + 5 + 3 = 58
+```
 
+```bash
 Example 3:
 Input: s = "MCMXCIV"
 Output: 1994
