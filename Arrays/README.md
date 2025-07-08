@@ -1229,3 +1229,103 @@ Look for this pattern when:
 ---
 
 ---
+
+## 25. Maximum Number of Words Found in Sentences
+
+[Leetcode Problem URL](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/)
+
+A sentence is a list of words that are separated by a single space with no leading or trailing spaces.
+
+You are given an array of strings `sentences`, where each `sentences[i]` represents a single `sentence`.
+
+Return the maximum number of words that appear in a single sentence.
+
+```bash
+Example 1:
+
+Input: sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+Output: 6
+Explanation:
+- The first sentence, "alice and bob love leetcode", has 5 words in total.
+- The second sentence, "i think so too", has 4 words in total.
+- The third sentence, "this is great thanks very much", has 6 words in total.
+Thus, the maximum number of words in a single sentence comes from the third sentence, which has 6 words.
+```
+
+```bash
+Example 2:
+
+Input: sentences = ["please wait", "continue to fight", "continue to win"]
+Output: 3
+Explanation: It is possible that multiple sentences contain the same number of words.
+In this example, the second and third sentences (underlined) have the same number of words.
+```
+
+### Explanation
+
+**Approach Used: Pythonic Split and Count**
+
+- Each sentence is a string of words separated by spaces.
+- To count the words in each sentence, we can use Python’s `str.split()` method which splits the sentence at each space and returns a list of words.
+- The length of this list gives us the number of words.
+- Track the maximum word count encountered while iterating through all sentences.
+
+#### Step-by-Step Walkthrough
+
+1. Let’s walk through the example:
+
+   ```python
+   sentences = [
+      "alice and bob love leetcode",
+      "i think so too",
+      "this is great thanks very much"
+   ]
+   ```
+
+1. Initial State:
+
+   ```
+   res = 0
+   ```
+
+   | Iteration | sentence                         | sentence.split()                                   | Word Count | Updated res |
+   | --------- | -------------------------------- | -------------------------------------------------- | ---------- | ----------- |
+   | 1         | "alice and bob love leetcode"    | \['alice', 'and', 'bob', 'love', 'leetcode']       | 5          | 5           |
+   | 2         | "i think so too"                 | \['i', 'think', 'so', 'too']                       | 4          | 5           |
+   | 3         | "this is great thanks very much" | \['this', 'is', 'great', 'thanks', 'very', 'much'] | 6          | **6**       |
+
+1. Final Result:
+
+   ```python
+   return res  → 6
+   ```
+
+#### Why This Approach?
+
+- `str.split()` efficiently handles word extraction in Python.
+- Simple, clean, and readable one-pass loop.
+- We avoid manual space counting (compared to brute force character-by-character iteration).
+
+#### Time and Space Complexity
+
+| Complexity       | Value         | Justification                                            |
+| ---------------- | ------------- | -------------------------------------------------------- |
+| Time Complexity  | $O(n $\*$ m)$ | Where `n` is number of sentences and `m` is avg length   |
+| Space Complexity | $O(1)$        | We use only constant space (`res`), split allocates temp |
+
+> Note: If you consider `split()` space internally, it uses O(m) temporarily, but result is not stored globally.
+
+#### Pattern Recognition
+
+This problem falls under:
+
+- **String Manipulation**
+- **Counting**
+- **Maximum Pattern**
+- **In-place Linear Scan**
+
+Look for problems that involve measuring something across multiple strings (e.g., longest/shortest word, most vowels, longest sentence) — this maximum accumulation pattern is frequently useful.
+
+---
+
+---
