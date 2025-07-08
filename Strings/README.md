@@ -713,3 +713,104 @@ When to apply this:
 ---
 
 ---
+
+## 20. Rotate String
+
+[Leetcode Problem URL](https://leetcode.com/problems/rotate-string/)
+
+Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.
+
+A shift on s consists of moving the leftmost character of s to the rightmost position.
+
+For example, if s = "abcde", then it will be "bcdea" after one shift.
+
+```bash
+Example 1:
+
+Input: s = "abcde", goal = "cdeab"
+Output: true
+```
+
+```bash
+Example 2:
+
+Input: s = "abcde", goal = "abced"
+Output: false
+```
+
+### Explanation
+
+**Approach Used: Brute-Force Rotation Check (Custom Rotation)**
+
+- First, check if the lengths of `s` and `goal` are not equal. If not, return `False` immediately.
+- Loop through each index from `0` to `len(s) - 1`, and at each index:
+
+  - Rotate the string `s` by slicing: from that index to the end, then concatenate the start to that index.
+  - Check if the rotated string matches `goal`.
+
+- If any such rotated string matches, return `True`.
+- If no match is found in all possible rotations, return `False`.
+
+#### Step-by-Step Walkthrough
+
+1. Let’s walk through the following example step by step:
+
+   ```python
+   s = "abcde"
+   goal = "cdeab"
+   ```
+
+2. Initial Check:
+
+   `len(s) == len(goal)` → both are 5 characters long.
+
+   | Iteration | i   | Rotation (s\[i:] + s\[:i]) | Is Equal to `goal`? |
+   | --------- | --- | -------------------------- | ------------------- |
+   | 0         | 0   | "abcde"                    | No                  |
+   | 1         | 1   | "bcdea"                    | No                  |
+   | 2         | 2   | "cdeab"                    | Yes → Return True   |
+   | -         | -   | loop stops                 | -                   |
+
+   → Output: `True`
+
+#### Time and Space Complexity
+
+| Complexity       | Value | Explanation                                                                  |
+| ---------------- | ----- | ---------------------------------------------------------------------------- |
+| Time Complexity  | O(n²) | There are `n` rotations, each takes up to O(n) time due to slicing + compare |
+| Space Complexity | O(n)  | Each rotation creates a new string of size `n`                               |
+
+#### Optimized Observation (Second Method in the code)
+
+Instead of checking all possible rotations, we can observe:
+If `goal` is a **rotation** of `s`, then it must be a **substring** of `s + s`.
+
+So an alternate approach would be:
+
+```python
+def rotateString(self, s: str, goal: str) -> bool:
+    if len(s) != len(goal):
+        return False
+
+    doubled = s + s
+
+    return goal in doubled
+```
+
+| Complexity           | Value    | Explanation                                                                                                                                                                                                      |
+| -------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Time Complexity**  | **O(n)** | Concatenating `s + s` takes O(n), and checking if `goal` is a substring of it (`goal in doubled`) takes O(n) using efficient substring search algorithms (like KMP or Boyer-Moore in Python's C implementation). |
+| **Space Complexity** | **O(n)** | `s + s` creates a new string of length `2n`, which takes O(n) space. No other data structures are used.                                                                                                          |
+
+#### Pattern Recognition
+
+This is a classic **rotation pattern** where:
+
+- You simulate all possible **shifts** or **rotations**.
+- The logic often involves **string slicing** or **concatenation**.
+- Can be solved more efficiently using **string doubling** technique (`s + s`).
+- Cyclic permutations or circular behavior.
+
+---
+
+---
