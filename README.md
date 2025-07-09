@@ -142,6 +142,7 @@
 | 18  | Transform to Even Product                             | [Solution](./Arrays/23_transform_to_even_product.py)          |
 | 19  | Reverse String                                        | [Solution](./Arrays/24_reverse_string.py)                     |
 | 20  | Maximum Number of Words Found in Sentences            | [Solution](./Arrays/25_max_num_of_words_found_in_sentence.py) |
+| 21  | Move Zeroes                                           | [Solution](./Arrays/26_move_zeroes.py)                        |
 | 00  | Readme                                                | [Problem Statements with Explanations](./Arrays/README.md)    |
 
 ## Backtracking
