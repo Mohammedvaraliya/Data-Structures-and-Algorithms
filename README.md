@@ -144,6 +144,7 @@
 | 20  | Maximum Number of Words Found in Sentences            | [Solution](./Arrays/25_max_num_of_words_found_in_sentence.py) |
 | 21  | Move Zeroes                                           | [Solution](./Arrays/26_move_zeroes.py)                        |
 | 22  | Sort Array By Parity                                  | [Solution](./Arrays/27_sort_array_by_parity.py)               |
+| 23  | Remove Duplicates from Sorted Array                   | [Solution](./Arrays/28_remove_duplicate_from_sorted_array.py) |
 | 00  | Readme                                                | [Problem Statements with Explanations](./Arrays/README.md)    |
 
 ## Backtracking
