@@ -145,6 +145,7 @@
 | 21  | Move Zeroes                                           | [Solution](./Arrays/26_move_zeroes.py)                        |
 | 22  | Sort Array By Parity                                  | [Solution](./Arrays/27_sort_array_by_parity.py)               |
 | 23  | Remove Duplicates from Sorted Array                   | [Solution](./Arrays/28_remove_duplicate_from_sorted_array.py) |
+| 29  | Remove Element                                        | [Solution](./Arrays/29_remove_element.py)                     |
 | 00  | Readme                                                | [Problem Statements with Explanations](./Arrays/README.md)    |
 
 ## Backtracking
