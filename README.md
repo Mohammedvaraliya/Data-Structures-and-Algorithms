@@ -120,33 +120,39 @@
 
 ## Arrays
 
-| #   | Title                                                 | Solution                                                      |
-| --- | ----------------------------------------------------- | ------------------------------------------------------------- |
-| 01  | Arrays: Array Advance Game                            | [Solution](./Arrays/07_array_advance_game.py)                 |
-| 02  | Greedy Algorithms: Optimal Task Assignment            | [Solution](./Arrays/01_optimal_task_assignment.py)            |
-| 03  | Sorting Algorithms: Intersection of Two Sorted Arrays | [Solution](./Arrays/02_intersect_sorted_array.py)             |
-| 04  | Arrays: Arbitrary Precision Increment                 | [Solution](./Arrays/08_arbitrary_precision_increment.py)      |
-| 05  | Arrays: Two Sum Problem                               | [Solution](./Arrays/10_two_sum_problem.py)                    |
-| 06  | Arrays: Buy and Sell Stock                            | [Solution](./Arrays/11_buy_and_sell_stock.py)                 |
-| 07  | Subarray Sum Equals K                                 | [Solution](./Arrays/12_subarray_sum_equals_k.py)              |
-| 08  | Contains Duplicate                                    | [Solution](./Arrays/13_contains_duplicate.py)                 |
-| 09  | Group Anagrams                                        | [Solution](./Arrays/14_group_anagrams.py)                     |
-| 10  | Top K Frequent Elements - Bucket Sort                 | [Solution](./Arrays/15_top_k_frequent_element.py)             |
-| 11  | Product of Array Except Self                          | [Solution](./Arrays/16_product_of_array_except_self.py)       |
-| 12  | Longest Consecutive Sequence                          | [Solution](./Arrays/17_longest_consecutive_sequence.py)       |
-| 13  | 3Sum                                                  | [Solution](./Arrays/18_three_sum.py)                          |
-| 14  | Container With Most Water                             | [Solution](./Arrays/19_container_with_most_water.py)          |
-| 15  | Unique Number of Occurrences                          | [Solution](./Arrays/20_unique_number_of_occurence.py)         |
-| 16  | Split the Array                                       | [Solution](./Arrays/21_split_the_array.py)                    |
-| 17  | Kth Largest Element in an Array                       | [Solution](./Arrays/22_kth_largest_element.py)                |
-| 18  | Transform to Even Product                             | [Solution](./Arrays/23_transform_to_even_product.py)          |
-| 19  | Reverse String                                        | [Solution](./Arrays/24_reverse_string.py)                     |
-| 20  | Maximum Number of Words Found in Sentences            | [Solution](./Arrays/25_max_num_of_words_found_in_sentence.py) |
-| 21  | Move Zeroes                                           | [Solution](./Arrays/26_move_zeroes.py)                        |
-| 22  | Sort Array By Parity                                  | [Solution](./Arrays/27_sort_array_by_parity.py)               |
-| 23  | Remove Duplicates from Sorted Array                   | [Solution](./Arrays/28_remove_duplicate_from_sorted_array.py) |
-| 29  | Remove Element                                        | [Solution](./Arrays/29_remove_element.py)                     |
-| 00  | Readme                                                | [Problem Statements with Explanations](./Arrays/README.md)    |
+| #   | Title                                                 | Solution                                                                      |
+| --- | ----------------------------------------------------- | ----------------------------------------------------------------------------- |
+| 01  | Greedy Algorithms: Optimal Task Assignment            | [Solution](./Arrays/01_optimal_task_assignment.py)                            |
+| 02  | Sorting Algorithms: Intersection of Two Sorted Arrays | [Solution](./Arrays/02_intersect_sorted_array.py)                             |
+| 03  | Arrays: Find Closest Number                           | [Solution](./Arrays/03_find_closest_number.py)                                |
+| 04  | Arrays: Find Fixed Point                              | [Solution](./Arrays/04_find_fixed_point.py)                                   |
+| 05  | Arrays: Find Bitcoin Peak                             | [Solution](./Arrays/05_find_bitcoin_peak.py)                                  |
+| 06  | Arrays: Find First Duplicate Entry                    | [Solution](./Arrays/06_find_first_dup_entry.py)                               |
+| 07  | Arrays: Array Advance Game                            | [Solution](./Arrays/07_array_advance_game.py)                                 |
+| 08  | Arrays: Arbitrary Precision Increment                 | [Solution](./Arrays/08_arbitrary_precision_increment.py)                      |
+| 09  | Binary Search: Find Minimum in Rotated Sorted Array   | [Solution](./Arrays/09_binary_search_find_minimum_in_rotated_sorted_array.py) |
+| 10  | Arrays: Two Sum Problem                               | [Solution](./Arrays/10_two_sum_problem.py)                                    |
+| 11  | Arrays: Buy and Sell Stock                            | [Solution](./Arrays/11_buy_and_sell_stock.py)                                 |
+| 12  | Subarray Sum Equals K                                 | [Solution](./Arrays/12_subarray_sum_equals_k.py)                              |
+| 13  | Contains Duplicate                                    | [Solution](./Arrays/13_contains_duplicate.py)                                 |
+| 14  | Group Anagrams                                        | [Solution](./Arrays/14_group_anagrams.py)                                     |
+| 15  | Top K Frequent Elements - Bucket Sort                 | [Solution](./Arrays/15_top_k_frequent_element.py)                             |
+| 16  | Product of Array Except Self                          | [Solution](./Arrays/16_product_of_array_except_self.py)                       |
+| 17  | Longest Consecutive Sequence                          | [Solution](./Arrays/17_longest_consecutive_sequence.py)                       |
+| 18  | 3Sum                                                  | [Solution](./Arrays/18_three_sum.py)                                          |
+| 19  | Container With Most Water                             | [Solution](./Arrays/19_container_with_most_water.py)                          |
+| 20  | Unique Number of Occurrences                          | [Solution](./Arrays/20_unique_number_of_occurence.py)                         |
+| 21  | Split the Array                                       | [Solution](./Arrays/21_split_the_array.py)                                    |
+| 22  | Kth Largest Element in an Array                       | [Solution](./Arrays/22_kth_largest_element.py)                                |
+| 23  | Transform to Even Product                             | [Solution](./Arrays/23_transform_to_even_product.py)                          |
+| 24  | Reverse String                                        | [Solution](./Arrays/24_reverse_string.py)                                     |
+| 25  | Maximum Number of Words Found in Sentences            | [Solution](./Arrays/25_max_num_of_words_found_in_sentence.py)                 |
+| 26  | Move Zeroes                                           | [Solution](./Arrays/26_move_zeroes.py)                                        |
+| 27  | Sort Array By Parity                                  | [Solution](./Arrays/27_sort_array_by_parity.py)                               |
+| 28  | Remove Duplicates from Sorted Array                   | [Solution](./Arrays/28_remove_duplicate_from_sorted_array.py)                 |
+| 29  | Remove Element                                        | [Solution](./Arrays/29_remove_element.py)                                     |
+| 30  | Find Second Largest Element                           | [Solution](./Arrays/30_find_second_largest_element.py)                        |
+| 00  | Readme                                                | [Problem Statements with Explanations](./Arrays/README.md)                    |
 
 ## Backtracking
 
