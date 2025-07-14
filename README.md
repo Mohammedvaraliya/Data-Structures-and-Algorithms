@@ -152,6 +152,7 @@
 | 28  | Remove Duplicates from Sorted Array                   | [Solution](./Arrays/28_remove_duplicate_from_sorted_array.py)                 |
 | 29  | Remove Element                                        | [Solution](./Arrays/29_remove_element.py)                                     |
 | 30  | Find Second Largest Element                           | [Solution](./Arrays/30_find_second_largest_element.py)                        |
+| 31  | Find Minimum and Maximum                              | [Solution](./Arrays/31_find_max_min.py)                                       |
 | 00  | Readme                                                | [Problem Statements with Explanations](./Arrays/README.md)                    |
 
 ## Backtracking
