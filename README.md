@@ -129,7 +129,7 @@
 | 05  | Arrays: Find Bitcoin Peak                             | [Solution](./Arrays/05_find_bitcoin_peak.py)                                  |
 | 06  | Arrays: Find First Duplicate Entry                    | [Solution](./Arrays/06_find_first_dup_entry.py)                               |
 | 07  | Arrays: Array Advance Game                            | [Solution](./Arrays/07_array_advance_game.py)                                 |
-| 08  | Arrays: Arbitrary Precision Increment                 | [Solution](./Arrays/08_arbitrary_precision_increment.py)                      |
+| 08  | Plus One                                              | [Solution](./Arrays/08_plus_one.py)                                           |
 | 09  | Binary Search: Find Minimum in Rotated Sorted Array   | [Solution](./Arrays/09_binary_search_find_minimum_in_rotated_sorted_array.py) |
 | 10  | Arrays: Two Sum Problem                               | [Solution](./Arrays/10_two_sum_problem.py)                                    |
 | 11  | Arrays: Buy and Sell Stock                            | [Solution](./Arrays/11_buy_and_sell_stock.py)                                 |
