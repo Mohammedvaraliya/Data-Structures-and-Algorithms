@@ -88,44 +88,125 @@
 
 ---
 
-## 03. Determine if parenthesis are balanced
+## 03. Valid Parentheses
 
 [Leetcode Problem URL](https://leetcode.com/problems/valid-parentheses/)
 
-```bash
-Determine if parenthesis are balanced
-Use a stack to check whether or not a string has
-balanced usage of parenthesis.
+Given a string `s` containing just the characters '`(`', '`)`', '`{`', '`}`', '`[`' and '`]`', determine if the input string is valid.
 
-Example:
-    (), ()(), (({{[]}})) <== Balanced.
-    ((),  {{{)}], [][]]] <== Not Balanced.
-
-Balanced Example: {[]}
-
-Non-Balanced Example: (()
-
-Non-Balanced Example: ]]
-
-Problem Statement :
-Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 An input string is valid if:
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-Every close bracket has a corresponding open bracket of the same type.
 
+1. Open brackets must be closed by the same type of brackets.
+2. Open brackets must be closed in the correct order.
+3. Every close bracket has a corresponding open bracket of the same type.
+
+```bash
 Example 1:
+
 Input: s = "()"
 Output: true
+```
 
+```bash
 Example 2:
+
 Input: s = "()[]{}"
 Output: true
+```
 
+```bash
 Example 3:
+
 Input: s = "(]"
 Output: false
 ```
+
+```bash
+Example 4:
+
+Input: s = "([])"
+Output: true
+```
+
+### Explanation
+
+#### Approach Explanation
+
+1.  Why This Approach?
+
+    This is a **classic stack-based problem** where we track opening brackets and match them with closing ones using **Last-In-First-Out (LIFO)** behavior. A stack is the most appropriate data structure for such pattern-based validations where **matching and ordering both matter**.
+
+2.  Problem-Solving Pattern Used
+
+    - **Stack** (LIFO)
+    - Sometimes grouped under **greedy** or **simulation** patterns, because we simulate bracket closing in real time using stack operations.
+
+3.  Efficiency of This Approach
+
+    - **Optimal use of space**: We only store unmatched opening brackets.
+    - **Early exit**: We return `False` as soon as a mismatch is found, avoiding unnecessary computation.
+    - **Clean and readable**: The algorithm is concise and intuitive once the pattern is understood.
+
+#### Step-by-Step Walkthrough
+
+1. Let's walk through a complete example using the second approach (`is_paren_balanced_2nd_approach`) as it is more concise and efficient.
+
+2. Input:
+
+   ```python
+   s = "({[]})"
+   ```
+
+3. Initial Setup:
+
+   ```python
+   stack = []
+   matching = {')': '(', '}': '{', ']': '['}
+   ```
+
+4. Iteration-wise Breakdown:
+
+   | Index | Character | Action                    | Stack             |
+   | ----- | --------- | ------------------------- | ----------------- |
+   | 0     | '('       | Open bracket → push       | \['(']            |
+   | 1     | '{'       | Open bracket → push       | \['(', '{']       |
+   | 2     | '\['      | Open bracket → push       | \['(', '{', '\['] |
+   | 3     | ']'       | Closing → match with '\[' | \['(', '{']       |
+   | 4     | '}'       | Closing → match with '{'  | \['(']            |
+   | 5     | ')'       | Closing → match with '('  | \[]               |
+
+5. Final Check:
+
+   - Stack is empty → ✅ All brackets matched correctly.
+   - Return `True`
+
+6. Algorithm
+
+   - If a character is a closing bracket:
+
+   - Check if the last item in the stack matches.
+   - If yes, pop the top item.
+   - If not, return False.
+
+   - If it’s an opening bracket, push it onto the stack.
+   - At the end, if the stack is empty, return True.
+
+#### Time and Space Complexity
+
+| Metric               | Complexity | Explanation                                                                         |
+| -------------------- | ---------- | ----------------------------------------------------------------------------------- |
+| **Time Complexity**  | $O(n)$     | We traverse the input string once (`n` = number of characters in `s`).              |
+| **Space Complexity** | $O(n)$     | In the worst case (e.g., all opening brackets), the stack holds all `n` characters. |
+
+#### Summary
+
+- The use of a **stack** makes this problem straightforward and efficient.
+- Handles nesting and mixed types of brackets.
+- The second approach is highly efficient in practice due to reduced object overhead compared to a custom class-based stack.
+
+---
+
+---
 
 ## 04. Convert integer to binary
 

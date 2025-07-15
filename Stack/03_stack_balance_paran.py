@@ -1,20 +1,4 @@
-'''
-Use a stack to check whether or not a string has
-balanced usage of parenthesis.
-
-Example:
-    (), ()(), (({{[]}})) <== Balanced.
-    ((),  {{{)}], [][]]] <== Not Balanced.
-
-Balanced Example: {[]}
-
-Non-Balanced Example: (()
-
-Non-Balanced Example: ]]
-'''
-
-class Stack():
-    
+class Stack:
     def __init__(self):
         self.items = []
 
@@ -22,103 +6,91 @@ class Stack():
         self.items.append(item)
 
     def pop(self):
-        return self.items.pop()
+        return self.items.pop() if not self.is_empty() else None
 
     def is_empty(self):
-        return self.items == []
+        return len(self.items) == 0
 
     def peek(self):
-        if not self.is_empty():
-            return self.items[-1]   
+        return self.items[-1] if not self.is_empty() else None
 
-    def get_Stack(self):
+    def get_stack(self):
         return self.items
 
-def is_match(p1, p2):
-    if p1 == "(" and p2 == ")":
-        return True
-    
-    elif p1 == "{" and p2 == "}":
-        return True
 
-    elif p1 == "[" and p2 == "]":
-        return True
+class Solution:
+    def __init__(self):
+        self.stack = Stack()
 
-    else:
-        return False
+    def is_match(self, p1, p2):
+        return (p1 == '(' and p2 == ')') or \
+               (p1 == '{' and p2 == '}') or \
+               (p1 == '[' and p2 == ']')
 
+    def is_paren_balanced(self, paren_string):
+        self.stack = Stack()  # Reset stack for fresh check
+        is_balanced = True
+        index = 0
 
-
-def is_paren_balanced(paren_string):
-    s = Stack()
-    is_balanced = True
-    index = 0
-
-    while(index < len(paren_string)) and is_balanced:
-        paren = paren_string[index]
-        operparan = "{[("
-        if paren in operparan:
-            s.push(paren)
-        else:
-            if s.is_empty():
-                is_balanced = False
+        while index < len(paren_string) and is_balanced:
+            paren = paren_string[index]
+            if paren in "({[":
+                self.stack.push(paren)
             else:
-                top = s.pop()
-                if not is_match(top, paren):
+                if self.stack.is_empty():
                     is_balanced = False
+                else:
+                    top = self.stack.pop()
+                    if not self.is_match(top, paren):
+                        is_balanced = False
+            index += 1
 
-        index += 1
+        result = is_balanced and self.stack.is_empty()
+        print("String is Balanced" if result else "String is not Balanced")
+        return result
 
-    if s.is_empty() and is_balanced:
-        print("String is Balanced")
-        return True
-    else:
-        print("String is not Balanced")
-        return False
+    def is_paren_balanced_2nd_approach(self, s: str) -> bool:
+        matching = {
+            ")":"(",
+            "}":"{",
+            "]":"["
+        }
+        stack = []
 
-
-def is_paren_balanced_2nd_approach(s: str) -> bool:
-    Map = {
-        ")": "(", 
-        "]": "[", 
-        "}": "{"
-    }
-    stack = []
-
-    for c in s:
-        if c in Map:
-            if stack and stack[-1] == Map[c]:
-                stack.pop()
+        for char in s:
+            if char in matching:
+                if stack and stack[-1] == matching[char]:
+                    stack.pop()
+                else:
+                    return False
             else:
-                return False
-        else:
-            stack.append(c)
+                stack.append(char)
 
-    return True if not stack else False
+        return not stack
 
 
 if __name__ == "__main__":
+    solution = Solution()
 
-    print(is_paren_balanced("()")) # Balanced paran
-    print(is_paren_balanced_2nd_approach("()")) # Balanced paran
-    print("\n")
+    print(solution.is_paren_balanced("()"))  # Balanced
+    print(solution.is_paren_balanced_2nd_approach("()"))
+    print()
 
-    print(is_paren_balanced("(([{{{([])}}}]))")) # this is also balanced but complicated
-    print(is_paren_balanced_2nd_approach("(([{{{([])}}}]))")) # this is also balanced but complicated
-    print("\n")
+    print(solution.is_paren_balanced("(([{{{([])}}}]))"))  # Balanced
+    print(solution.is_paren_balanced_2nd_approach("(([{{{([])}}}]))"))
+    print()
 
-    print(is_paren_balanced("[[}")) # its Not Balanced
-    print(is_paren_balanced_2nd_approach("[[}")) # its Not Balanced
-    print("\n")
+    print(solution.is_paren_balanced("[[}"))  # Not Balanced
+    print(solution.is_paren_balanced_2nd_approach("[[}"))
+    print()
 
-    print(is_paren_balanced("(([[])}[}]))")) # this is Not Balanced
-    print(is_paren_balanced_2nd_approach("(([[])}[}]))")) # this is Not Balanced
-    print("\n")
+    print(solution.is_paren_balanced("(([[])}[}]))"))  # Not Balanced
+    print(solution.is_paren_balanced_2nd_approach("(([[])}[}]))"))
+    print()
 
-    print(is_paren_balanced("()[]{}")) # this is Not Balanced
-    print(is_paren_balanced_2nd_approach("()[]{}")) # this is Not Balanced
-    print("\n")
+    print(solution.is_paren_balanced("()[]{}"))  # Balanced
+    print(solution.is_paren_balanced_2nd_approach("()[]{}"))
+    print()
 
-    print(is_paren_balanced("(]")) # this is Not Balanced
-    print(is_paren_balanced_2nd_approach("(]")) # this is Not Balanced
-
+    print(solution.is_paren_balanced("(]"))  # Not Balanced
+    print(solution.is_paren_balanced_2nd_approach("(]"))
