@@ -1,19 +1,31 @@
-def findIndexOfFirstOccurence(haystack: str, needle: str) -> int:
-    
-    n = len(haystack)
-    m = len(needle)
+class Solution:
+    def findIndexOfFirstOccurence(self, haystack: str, needle: str) -> int:
+        n = len(haystack)
+        m = len(needle)
 
-    for i in range(n):
-        j = 0
-        for k in range(i, n):
-            if haystack[k] == needle[j]:
-                j += 1
+        for i in range(n):
+            j = 0
+            for k in range(i, n):
+                if haystack[k] == needle[j]:
+                    j += 1
+                else:
+                    break
+                if j == m:
+                    return i
+                
+        return -1
+    
+    def strStr(self, haystack: str, needle: str) -> int:
+        res = -1
+
+        for i in range(len(haystack)):
+            if haystack[i] == needle[0] and haystack[i:len(needle) + i] == needle:
+                res = i
+                return res
             else:
-                break
-            if j == m:
-                return i
-            
-    return -1
+                res = -1
+        
+        return res
     
 
 
@@ -21,11 +33,13 @@ def findIndexOfFirstOccurence(haystack: str, needle: str) -> int:
 
 if __name__ == "__main__":
 
-    haystack1 = "sabbutsad"
+    obj = Solution()
+
+    haystack1 = "sadbutsad"
     needle1 = "sad"
-    print(findIndexOfFirstOccurence(haystack1, needle1))
+    print(obj.strStr(haystack1, needle1))
 
     haystack2 = "leetcode"
     needle2 = "leeto"
-    print(findIndexOfFirstOccurence(haystack2, needle2))
+    print(obj.strStr(haystack2, needle2))
 
