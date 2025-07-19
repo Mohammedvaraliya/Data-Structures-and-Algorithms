@@ -1094,30 +1094,113 @@ Explanation: The only possible triplet sums up to 0.
 
 ## 19. Container With Most Water
 
-[Leetcode Problem URL](https://leetcode.com/problems/container-with-most-water/)
+[LeetCode Problem URL](https://leetcode.com/problems/container-with-most-water/)
 
-```bash
-You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+You are given an integer array `height` of length `n`. There are n vertical lines drawn such that the two endpoints of the `ith` line are (i, 0) and (`i, height[i]`).
 
-Find two lines that together with the x-axis form a container, such that the container contains the most water.
+Find two lines that together with the `x-axis` form a container, such that the container contains the most water.
 
 Return the maximum amount of water a container can store.
 
 Notice that you may not slant the container.
 
+![IMG](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
+
+```bash
 Example 1:
+
 Input: height = [1,8,6,2,5,4,8,3,7]
 Output: 49
 Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+```
 
+```bash
 Example 2:
+
 Input: height = [1,1]
 Output: 1
-Constraints:
-n == height.length
-2 <= n <= 105
-0 <= height[i] <= 104
 ```
+
+### Explanation
+
+#### Approach Explanation
+
+1. Why This Approach?
+
+   The brute-force solution checks every possible pair of lines to find the maximum area, which is inefficient for large inputs.
+
+   To solve this optimally, we use the **Two Pointer Technique**, which enables us to solve the problem in linear time. This is both efficient and elegant, avoiding unnecessary computations.
+
+2. Pattern Used
+
+   - **Two Pointer Technique**
+   - The left and right pointers start at both ends of the array and move toward each other, shrinking the width and choosing the direction based on the shorter height to maximize area potential.
+
+3. Why This Is Efficient
+
+   - It avoids nested loops (as in brute-force).
+   - It guarantees every potential widest container is evaluated with at least one pointer moved.
+   - Reduces time complexity from $O(n²)$ to $O(n)$, which is optimal for this problem.
+
+#### Step-by-Step Walkthrough
+
+1. Input:
+
+   ```python
+   height = [1,8,6,2,5,4,8,3,7]
+   ```
+
+2. Initialization:
+
+   - `left = 0`, `right = 8`, `res = 0`
+
+3. Iterations:
+
+   1. `left = 0`, `right = 8`: min(1,7)=1 → area = 8×1 = 8 → max = 8
+      Move left pointer (since height\[0] < height\[8])
+
+   2. `left = 1`, `right = 8`: min(8,7)=7 → area = 7×7 = 49 → max = 49
+      Move right pointer (since height\[1] > height\[8])
+
+   3. `left = 1`, `right = 7`: min(8,3)=3 → area = 6×3 = 18 → max = 49
+      Move right pointer
+
+   4. `left = 1`, `right = 6`: min(8,8)=8 → area = 5×8 = 40 → max = 49
+      Move right pointer
+
+   5. `left = 1`, `right = 5`: min(8,4)=4 → area = 4×4 = 16 → max = 49
+      Move right pointer
+
+   6. `left = 1`, `right = 4`: min(8,5)=5 → area = 3×5 = 15 → max = 49
+      Move right pointer
+
+   7. `left = 1`, `right = 3`: min(8,2)=2 → area = 2×2 = 4 → max = 49
+      Move right pointer
+
+   8. `left = 1`, `right = 2`: min(8,6)=6 → area = 1×6 = 6 → max = 49
+      Move right pointer
+
+   9. `left = 1`, `right = 1`: loop ends
+
+4. Final Result:
+
+   ```python
+   Maximum area = 49
+   ```
+
+#### Time and Space Complexity
+
+| Method                | Time Complexity | Space Complexity | Explanation                     |
+| --------------------- | --------------- | ---------------- | ------------------------------- |
+| Brute-force           | $O(n²)$         | $O(1)$           | Nested loops to try all pairs   |
+| Two-pointer (Optimal) | $O(n)$          | $O(1)$           | Single-pass scan from both ends |
+
+#### Summary
+
+- The brute-force approach checks all pairs, which is inefficient for large inputs.
+- The two-pointer approach leverages greedy principles to move the pointer pointing to the smaller height inward, thereby optimizing the area.
+- This is a classic and efficient way to solve container problems using the **Two-Pointer Technique**.
+- The optimal solution is **linear in time and constant in space**, which is ideal for real-time or large-scale inputs.
 
 ---
 
