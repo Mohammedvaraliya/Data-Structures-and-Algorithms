@@ -1215,37 +1215,68 @@ Output: 4
 
 To solve this problem without sorting the array, I've used min-heap (also known as a priority queue) to efficiently find the kth largest element. Here’s how we can do it:
 
-1. **Initialize a Min-Heap**:
+#### Approach Explanation
 
-   - A min-heap is a binary tree where the parent node is always less than or equal to its child nodes.
-   - The smallest element is always at the root of the heap.
-   - We start with an empty heap called `heap`.
+1. Why This Approach?
 
-2. **Iterate through Each Element**:
+   The naive solution would be to **sort the entire array** and return the kᵗʰ largest element. This is simple but not optimal for large datasets, especially when sorting isn't necessary to get just one element.
 
-   - For each element `num` in the array `nums`, we push it into the heap using `heapq.heappush(heap, num)`.
-   - After adding the element, if the size of the heap exceeds `k`, we remove the smallest element using `heapq.heappop(heap)` to ensure the heap size is always `k`.
+   A better approach uses a **Min Heap** of size `k` to efficiently track the k largest elements seen so far. This allows us to extract the kᵗʰ largest element without sorting the entire array.
 
-3. **Return the kth Largest Element**:
+2. Problem-Solving Pattern Used
 
-   - After processing all elements, the smallest element in the heap is the kth largest element in the array. We return `heap[0]`.
+   - **Heap (Priority Queue)** pattern.
+   - This is a classic use-case for a **Min Heap** where we maintain the top `k` largest elements.
+   - Python's `heapq` module implements a min-heap by default.
 
-#### Efficiency Analysis
+3. Why This Is Efficient and Elegant
 
-- **Time Complexity**: $O(n \log k)$
-  - Adding an element to the heap and removing the smallest element both take $O(\log k)$ time.
-  - Since we perform these operations for all `n` elements, the total time complexity is $O(n \log k)$.
-- **Space Complexity**: $O(k)$
-  - The space complexity is $O(k)$ because the heap will contain at most `k` elements.
+   - Instead of sorting `n` elements (which is O(n log n)), we only keep the top `k` elements in the heap.
+   - Each insertion and removal operation from the heap takes O(log k) time.
+   - Hence, this solution is far more scalable for large arrays.
 
-#### Why This Approach?
+#### Step-by-Step Walkthrough
 
-Using a min-heap of size `k` is efficient for finding the kth largest element because:
+1. Let's walk through the example:
 
-- It avoids the need to sort the entire array, which would take \(O(n \log n)\) time.
-- Maintaining a heap of size `k` ensures that we always have the top `k` largest elements seen so far, and accessing the smallest of these (the kth largest in the array) is \(O(1)\).
+   ```python
+   nums = [3, 2, 3, 1, 2, 4, 5, 5, 6], k = 4
+   ```
 
-By following this approach, we efficiently find the kth largest element with optimal time and space complexity.
+   We use a **min heap** (`heap[]`) to store the largest `k = 4` elements. The smallest among them (at `heap[0]`) will be the 4ᵗʰ largest overall.
+
+1. Iterations:
+
+   1. `num = 3` → heap = \[3]
+   2. `num = 2` → heap = \[2, 3]
+   3. `num = 3` → heap = \[2, 3, 3]
+   4. `num = 1` → heap = \[1, 2, 3, 3]
+   5. `num = 2` → heap = \[1, 2, 3, 3, 2] → size > k ⇒ pop smallest ⇒ heap = \[2, 2, 3, 3]
+   6. `num = 4` → heap = \[2, 2, 3, 3, 4] ⇒ size > k ⇒ pop ⇒ heap = \[2, 3, 3, 4]
+   7. `num = 5` → heap = \[2, 3, 3, 4, 5] ⇒ pop ⇒ heap = \[3, 3, 5, 4]
+   8. `num = 5` → heap = \[3, 3, 5, 4, 5] ⇒ pop ⇒ heap = \[3, 4, 5, 5]
+   9. `num = 6` → heap = \[3, 4, 5, 5, 6] ⇒ pop ⇒ heap = \[4, 5, 5, 6]
+
+1. Final Heap:
+
+   ```python
+   [4, 5, 5, 6]
+   ```
+
+   - The smallest of the top 4 elements is `heap[0] = 4`, which is the **4ᵗʰ largest element**.
+
+#### Time and Space Complexity Analysis
+
+| Method                      | Time Complexity  | Space Complexity | Notes                                                          |
+| --------------------------- | ---------------- | ---------------- | -------------------------------------------------------------- |
+| Sorting                     | $O(n \ log \ n)$ | $O(1)$ or $O(n)$ | Built-in sort; space depends on language's sort implementation |
+| Min Heap (Optimal Approach) | $O(n \ log \ k)$ | $O(k)$           | Maintains a heap of size `k` throughout the traversal of array |
+
+#### Summary
+
+- The Min Heap approach efficiently solves the problem without sorting the entire array.
+- It works well even when the input is large and only a small portion of the result is needed (the kᵗʰ largest).
+- Clean and effective, this method is widely used in top-k problems, streaming data, and real-time analytics.
 
 ---
 
