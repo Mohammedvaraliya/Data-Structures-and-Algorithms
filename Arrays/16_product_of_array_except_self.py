@@ -1,4 +1,14 @@
 class Solution:
+    def productExceptSelf_not_acceptable(self, nums: list[int]) -> list[int]:
+        product = 1
+        for n in nums:
+            product *= n
+        print(product)
+        for i in range(len(nums)):
+            nums[i] = product // nums[i]
+        
+        return nums
+    
     def productExceptSelf(self, nums: list[int]) -> list[int]:
         res = [1] * len(nums)
 
