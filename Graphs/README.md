@@ -48,6 +48,10 @@ And the shortest path is :
 
 ['Mumbai', 'Paris', 'New York']
 
+---
+
+---
+
 ## 02. Number of Islands
 
 [Leetcode Problem URL](https://leetcode.com/problems/number-of-islands/description/)

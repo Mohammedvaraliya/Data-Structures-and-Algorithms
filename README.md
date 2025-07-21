@@ -59,28 +59,30 @@
 
 ## Singly Linked List
 
-| #   | Title                                                           | Solution                                                                                                     |
-| --- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| 01  | Singly Linked List                                              | [Solution](./Linked%20List/Singly%20Linked%20List/01_singly_linked_list.py)                                  |
-| 02  | Singly Linked List -- Length of List                            | [Solution](./Linked%20List/Singly%20Linked%20List/02_singlyLL_length_of_list.py)                             |
-| 03  | Singly Linked List -- Node Swap                                 | [Solution](./Linked%20List/Singly%20Linked%20List/03_singlyLL_swap_nodes.py)                                 |
-| 04  | Singly Linked List -- Reverse                                   | [Solution](./Linked%20List/Singly%20Linked%20List/04_singlyLL_reverse_list.py)                               |
-| 05  | Singly Linked List -- Merge Two Sorted Lists                    | [Solution](./Linked%20List/Singly%20Linked%20List/05_singlyLL_merge.py)                                      |
-| 06  | Singly Linked List -- Remove Duplicates                         | [Solution](./Linked%20List/Singly%20Linked%20List/06_singlyLL_remove_dup.py)                                 |
-| 07  | Singly Linked List -- Nth-to-Last Node                          | [Solution](./Linked%20List/Singly%20Linked%20List/07_singlyLL_nth_to_last.py)                                |
-| 08  | Singly Linked List -- Count Occurrence                          | [Solution](./Linked%20List/Singly%20Linked%20List/08_singlyLL_count_occurences.py)                           |
-| 09  | Singly Linked List -- Rotate                                    | [Solution](./Linked%20List/Singly%20Linked%20List/09_singlyLL_rotate.py)                                     |
-| 10  | Singly Linked List -- Is Palindrome                             | [Solution](./Linked%20List/Singly%20Linked%20List/10_singlyLL_is_palindrome.py)                              |
-| 11  | Singly Linked List -- Move Tail to Head                         | [Solution](./Linked%20List/Singly%20Linked%20List/11_singyLL_move_tail_to_head.py)                           |
-| 12  | Singly Linked List -- Sum Two Lists                             | [Solution](./Linked%20List/Singly%20Linked%20List/12_singlyLL_sum_two_lists.py)                              |
-| 13  | Singly Linked Lists Leetcode -- Reverse                         | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/01_reverse_linked_list.py)             |
-| 14  | Singly Linked Lists Leetcode -- Merge Two Sorted Lists          | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/02_merge_two_sorted_list.py)           |
-| 15  | Singly Linked List Leetcode -- Reorder List                     | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/03_reorder_list.py)                    |
-| 16  | Singly Linked List Leetcode -- Remove Nth Node From End of List | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/04_remove_nth_from_end_of_the_list.py) |
-| 17  | Singly Linked List Leetcode -- Linked List Cycle                | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/05_linked_list_cycle.py)               |
-| 18  | Singly Linked List Leetcode -- Merge k Sorted Lists             | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/06_merge_k_sorted_list.py)             |
-| 00  | Readme                                                          | [Problem Statements with Explanations](./Linked%20List/Singly%20Linked%20List/README.md)                     |
-| 00  | Readme (Leetcode Problems)                                      | [Problem Statements with Explanations](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/README.md) |
+| #   | Title                                                             | Solution                                                                                                        |
+| --- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 01  | Singly Linked List                                                | [Solution](./Linked%20List/Singly%20Linked%20List/01_singly_linked_list.py)                                     |
+| 02  | Singly Linked List -- Length of List                              | [Solution](./Linked%20List/Singly%20Linked%20List/02_singlyLL_length_of_list.py)                                |
+| 03  | Singly Linked List -- Node Swap                                   | [Solution](./Linked%20List/Singly%20Linked%20List/03_singlyLL_swap_nodes.py)                                    |
+| 04  | Singly Linked List -- Reverse                                     | [Solution](./Linked%20List/Singly%20Linked%20List/04_singlyLL_reverse_list.py)                                  |
+| 05  | Singly Linked List -- Merge Two Sorted Lists                      | [Solution](./Linked%20List/Singly%20Linked%20List/05_singlyLL_merge.py)                                         |
+| 06  | Singly Linked List -- Remove Duplicates                           | [Solution](./Linked%20List/Singly%20Linked%20List/06_singlyLL_remove_dup.py)                                    |
+| 07  | Singly Linked List -- Nth-to-Last Node                            | [Solution](./Linked%20List/Singly%20Linked%20List/07_singlyLL_nth_to_last.py)                                   |
+| 08  | Singly Linked List -- Count Occurrence                            | [Solution](./Linked%20List/Singly%20Linked%20List/08_singlyLL_count_occurences.py)                              |
+| 09  | Singly Linked List -- Rotate                                      | [Solution](./Linked%20List/Singly%20Linked%20List/09_singlyLL_rotate.py)                                        |
+| 10  | Singly Linked List -- Is Palindrome                               | [Solution](./Linked%20List/Singly%20Linked%20List/10_singlyLL_is_palindrome.py)                                 |
+| 11  | Singly Linked List -- Move Tail to Head                           | [Solution](./Linked%20List/Singly%20Linked%20List/11_singyLL_move_tail_to_head.py)                              |
+| 12  | Singly Linked List -- Sum Two Lists                               | [Solution](./Linked%20List/Singly%20Linked%20List/12_singlyLL_sum_two_lists.py)                                 |
+| 13  | Singly Linked Lists Leetcode -- Reverse                           | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/01_reverse_linked_list.py)                |
+| 14  | Singly Linked Lists Leetcode -- Merge Two Sorted Lists            | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/02_merge_two_sorted_list.py)              |
+| 15  | Singly Linked List Leetcode -- Reorder List                       | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/03_reorder_list.py)                       |
+| 16  | Singly Linked List Leetcode -- Remove Nth Node From End of List   | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/04_remove_nth_from_end_of_the_list.py)    |
+| 17  | Singly Linked List Leetcode -- Linked List Cycle                  | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/05_linked_list_cycle.py)                  |
+| 18  | Singly Linked List Leetcode -- Merge k Sorted Lists               | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/06_merge_k_sorted_list.py)                |
+| 19  | Singly Linked List Leetcode -- Remove Duplicates from Sorted List | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/07_removes_duplicate_from_sorted_list.py) |
+| 20  | Singly Linked List Leetcode -- Delete Node in a Linked List       | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/08_delete_node_in_a_linked_list.py)       |
+| 00  | Readme                                                            | [Problem Statements with Explanations](./Linked%20List/Singly%20Linked%20List/README.md)                        |
+| 00  | Readme (Leetcode Problems)                                        | [Problem Statements with Explanations](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/README.md)    |
 
 ## Doubly Linked List
 
