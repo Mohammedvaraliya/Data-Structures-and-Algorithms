@@ -80,7 +80,8 @@
 | 17  | Singly Linked List Leetcode -- Linked List Cycle                  | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/05_linked_list_cycle.py)                  |
 | 18  | Singly Linked List Leetcode -- Merge k Sorted Lists               | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/06_merge_k_sorted_list.py)                |
 | 19  | Singly Linked List Leetcode -- Remove Duplicates from Sorted List | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/07_removes_duplicate_from_sorted_list.py) |
-| 20  | Singly Linked List Leetcode -- Delete Node in a Linked List       | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/08_delete_node_in_a_linked_list.py)       |
+| 20  | Singly Linked List Leetcode -- Odd Even Linked List               | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/09_odd_even_linked_list.py)               |
+| 21  | Singly Linked List Leetcode -- Copy List with Random Pointer      | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/10_copy_list_with_random_pointer.py)      |
 | 00  | Readme                                                            | [Problem Statements with Explanations](./Linked%20List/Singly%20Linked%20List/README.md)                        |
 | 00  | Readme (Leetcode Problems)                                        | [Problem Statements with Explanations](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/README.md)    |
 
