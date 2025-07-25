@@ -294,7 +294,7 @@
 | 02  | Convert Integer To Binary | [Solution](./Numbers/02_convert_integer_to_binary.py)       |
 | 03  | Convert Binary To Integer | [Solution](./Numbers/03_convert_binary_to_integer.py)       |
 | 04  | Roman to Integer          | [Solution](./Numbers/04_roman_to_integer.py)                |
-| 05  | Integer to Roman          | [Solution](./Numbers/05)                                    |
+| 05  | Integer to Roman          | [Solution](./Numbers/05_integer_to_roman.py)                |
 | 00  | Readme                    | [Problem Statements with Explanations](./Numbers/README.md) |
 
 ## Tree Data Structures
