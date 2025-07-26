@@ -82,6 +82,7 @@
 | 19  | Singly Linked List Leetcode -- Remove Duplicates from Sorted List | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/07_removes_duplicate_from_sorted_list.py) |
 | 20  | Singly Linked List Leetcode -- Odd Even Linked List               | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/09_odd_even_linked_list.py)               |
 | 21  | Singly Linked List Leetcode -- Copy List with Random Pointer      | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/10_copy_list_with_random_pointer.py)      |
+| 22  | Singly Linked List Leetcode -- Rotate List                        | [Solution](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/11_rotate_list.py)                        |
 | 00  | Readme                                                            | [Problem Statements with Explanations](./Linked%20List/Singly%20Linked%20List/README.md)                        |
 | 00  | Readme (Leetcode Problems)                                        | [Problem Statements with Explanations](./Linked%20List/Singly%20Linked%20List/Leetcode%20Problems/README.md)    |
 
