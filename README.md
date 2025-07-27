@@ -88,15 +88,16 @@
 
 ## Doubly Linked List
 
-| #   | Title                                       | Solution                                                                                 |
-| --- | ------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| 01  | Doubly Linked List -- Append and Prepend    | [Solution](./Linked%20List/Doubly%20Linked%20List/01_doubly_linked_list.py)              |
-| 02  | Doubly Linked List -- Add Node Before/After | [Solution](./Linked%20List/Doubly%20Linked%20List/02_soublyLL_add_before_after.py)       |
-| 03  | Doubly Linked List -- Delete Node           | [Solution](./Linked%20List/Doubly%20Linked%20List/03_doublyLL_delete%20node.py)          |
-| 04  | Doubly Linked List -- Reverse               | [Solution](./Linked%20List/Doubly%20Linked%20List/04_doublyLL_reverse.py)                |
-| 05  | Doubly Linked List -- Remove Duplicates     | [Solution](./Linked%20List/Doubly%20Linked%20List/05_doublyLL_remove_duplicates.py)      |
-| 06  | Doubly Linked List -- Pairs with Sum        | [Solution](./Linked%20List/Doubly%20Linked%20List/06_doublyLL_pairs_with_sum.py)         |
-| 00  | Readme                                      | [Problem Statements with Explanations](./Linked%20List/Doubly%20Linked%20List/Readme.md) |
+| #   | Title                                                         | Solution                                                                                         |
+| --- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 01  | Doubly Linked List -- Append and Prepend                      | [Solution](./Linked%20List/Doubly%20Linked%20List/01_doubly_linked_list.py)                      |
+| 02  | Doubly Linked List -- Add Node Before/After                   | [Solution](./Linked%20List/Doubly%20Linked%20List/02_soublyLL_add_before_after.py)               |
+| 03  | Doubly Linked List -- Delete Node                             | [Solution](./Linked%20List/Doubly%20Linked%20List/03_doublyLL_delete%20node.py)                  |
+| 04  | Doubly Linked List -- Reverse                                 | [Solution](./Linked%20List/Doubly%20Linked%20List/04_doublyLL_reverse.py)                        |
+| 05  | Doubly Linked List -- Remove Duplicates                       | [Solution](./Linked%20List/Doubly%20Linked%20List/05_doublyLL_remove_duplicates.py)              |
+| 06  | Doubly Linked List -- Pairs with Sum                          | [Solution](./Linked%20List/Doubly%20Linked%20List/06_doublyLL_pairs_with_sum.py)                 |
+| 07  | Doubly Linked List -- Flatten a Multilevel Doubly Linked List | [Solution](./Linked%20List/Doubly%20Linked%20List/07_flatten_a_multilevel_doubly_linked_list.py) |
+| 00  | Readme                                                        | [Problem Statements with Explanations](./Linked%20List/Doubly%20Linked%20List/Readme.md)         |
 
 ## Circular Linked List
 
