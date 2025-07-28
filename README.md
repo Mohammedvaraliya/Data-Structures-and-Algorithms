@@ -108,6 +108,8 @@
 | 03  | Circular Linked List -- Split List              | [Solution](./Linked%20List/Circular%20Linked%20List/03_circularLL_split_list.py)           |
 | 04  | Circular Linked List -- Josephus Problem        | [Solution](./Linked%20List/Circular%20Linked%20List/04_circularLL_josephus.py)             |
 | 05  | Circular Linked List -- Is Circular Linked List | [Solution](./Linked%20List/Circular%20Linked%20List/05_circularLL_is_circularLL.py)        |
+| 06  | Circular Linked List -- Linked List Cycle       | [Solution](./Linked%20List/Circular%20Linked%20List/06_linked_list_cycle.py)               |
+| 07  | Circular Linked List -- Linked List Cycle II    | [Solution](./Linked%20List/Circular%20Linked%20List/07_linked_list_cycle_2.py)             |
 | 00  | Readme                                          | [Problem Statements with Explanations](./Linked%20List/Circular%20Linked%20List/README.md) |
 
 ## Iteration & Recursion
