@@ -28,14 +28,15 @@
 
 ## Stack
 
-| #   | Title                                          | Solution                                                  |
-| --- | ---------------------------------------------- | --------------------------------------------------------- |
-| 01  | The Stack data Structure                       | [Solution](./Stack/01_stack_DS.py)                        |
-| 02  | The Stack data Structure : Understanding Stack | [Solution](./Stack/02_stack_DS.ipynb)                     |
-| 03  | Determine if parenthesis are balanced          | [Solution](./Stack/03_stack_balance_paran.py)             |
-| 04  | Convert integer to binary                      | [Solution](./Stack/04_stack_divide_by_two.py)             |
-| 05  | The Stack data Structure : Reverse String      | [Solution](./Stack/05_stack_reverse_string.py)            |
-| 00  | Readme                                         | [Problem Statements with Explanations](./Stack/README.md) |
+| #   | Title                                           | Solution                                                  |
+| --- | ----------------------------------------------- | --------------------------------------------------------- |
+| 01  | The Stack data Structure                        | [Solution](./Stack/01_stack_DS.py)                        |
+| 02  | The Stack data Structure : Understanding Stack  | [Solution](./Stack/02_stack_DS.ipynb)                     |
+| 03  | Determine if parenthesis are balanced           | [Solution](./Stack/03_stack_balance_paran.py)             |
+| 04  | Convert integer to binary                       | [Solution](./Stack/04_stack_divide_by_two.py)             |
+| 05  | The Stack data Structure : Reverse String       | [Solution](./Stack/05_stack_reverse_string.py)            |
+| 06  | The Stack data Structure : Score of Parentheses | [Solution](./Stack/06_score_of_parentheses.py)            |
+| 00  | Readme                                          | [Problem Statements with Explanations](./Stack/README.md) |
 
 ## Queue
 
