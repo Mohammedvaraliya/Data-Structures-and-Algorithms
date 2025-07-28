@@ -205,28 +205,82 @@ Output: [1]
 
 [Leetcode Problem URL](https://leetcode.com/problems/linked-list-cycle/)
 
+Given `head`, the head of a linked list, determine if the linked list has a cycle in it.
+
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. Note that `pos` is not passed as a parameter.
+
+Return `true` if there is a cycle in the linked list. Otherwise, return `false`.
+
 ```bash
-Given head, the head of a linked list, determine if the linked list has a cycle in it.
-
-There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter.
-
-Return true if there is a cycle in the linked list. Otherwise, return false.
-
 Example 1:
 Input: head = [3,2,0,-4], pos = 1
 Output: true
 Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+```
 
+```bash
 Example 2:
 Input: head = [1,2], pos = 0
 Output: true
 Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.
+```
 
+```bash
 Example 3:
 Input: head = [1], pos = -1
 Output: false
 Explanation: There is no cycle in the linked list.
 ```
+
+### Explanation
+
+This problem requires detecting whether a linked list has a cycle. A cycle occurs when a node's `next` pointer points back to a previous node, creating a loop.
+
+#### Approach Explanation
+
+1. Why This Approach?
+
+   We detect the cycle using **Floyd’s Tortoise and Hare Algorithm** (a two-pointer technique). This method is both efficient and elegant — it doesn't require extra space like hash sets and detects cycles in `O(n)` time with `O(1)` space.
+
+1. Problem-Solving Pattern
+
+   - **Two Pointer (Fast and Slow Pointers)** — a classic approach used for cycle detection in linked lists.
+   - **Hashing (Method 2)** — an alternative approach that uses extra space but is easier to understand for beginners.
+
+#### Step-by-Step Walkthrough
+
+1. We will walk through **Floyd's Cycle Detection Algorithm** using the input:
+
+   ```python
+   Input: [3, 2, 0, -4], pos = 1
+   ```
+
+1. This means the list looks like:
+
+   `3 → 2 → 0 → -4` and `-4.next = 2` (cycle starts at node 2).
+
+1. Iteration Table
+
+   | Step | Slow Pointer | Fast Pointer | Notes                                    |
+   | ---- | ------------ | ------------ | ---------------------------------------- |
+   | 0    | 3 (head)     | 3 (head)     | Both pointers start at head              |
+   | 1    | 2            | 0            | slow = slow\.next, fast = fast.next.next |
+   | 2    | 0            | 2            | moving further                           |
+   | 3    | -4           | -4           | Both meet → Cycle detected               |
+
+1. When `slow == fast`, a cycle is confirmed.
+
+#### Time and Space Complexity Analysis
+
+| Method              | Time Complexity | Space Complexity | Explanation                     |
+| ------------------- | --------------- | ---------------- | ------------------------------- |
+| Two Pointer (Floyd) | $O(n)$          | $O(1)$           | Fast and slow pointer traversal |
+| Hashing             | $O(n)$          | $O(n)$           | Store each node in a set        |
+
+#### Summary
+
+- **Best Practice:** Use Floyd’s algorithm for efficient constant space solution.
+- **Alternative:** Hashing can be useful when clarity is more important than optimal space.
 
 ---
 
