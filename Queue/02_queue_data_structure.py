@@ -5,10 +5,16 @@ class Queue:
         self.buffer = deque()
 
     def enqueue(self, val):
-        self.buffer.appendleft(val)
+        self.buffer.append(val)
 
     def dequeue(self):
-        return self.buffer.pop()
+        if not self.is_empty():
+            removed_item = self.buffer.popleft()
+            print(f"Dequeued: {removed_item}")
+            return removed_item
+        else:
+            print("Queue is empty. Cannot dequeue.")
+            return None
 
     def front(self):
         return self.buffer[-1]
@@ -18,6 +24,9 @@ class Queue:
 
     def size(self):
         return len(self.buffer)
+    
+    def display(self):
+        return "Queue: ", list(self.buffer)
 
 
 if __name__ == "__main__":
@@ -40,15 +49,27 @@ if __name__ == "__main__":
         'price': 1198.3
     })
 
-    print(q.buffer)
-    print("\n")
+    print(q.display())
+    print()
 
     print(q.size())
-    print("\n")
+    print()
 
     print(q.dequeue())
     print(q.dequeue())
     print(q.dequeue())
-    print("\n")
+    print()
 
     print(q.size())
+
+    q.enqueue(5)
+    q.enqueue(6)
+    q.enqueue(7)
+    q.enqueue(8)
+
+    print(q.display())
+
+    q.dequeue()
+    print("Front: ", q.front())
+
+    print(q.display())

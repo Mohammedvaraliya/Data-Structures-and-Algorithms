@@ -2,25 +2,26 @@
 
 ## 01. Queue Data Structure
 
-    Queue Data Structure.
-    Queue is FIFO(First In First Out) or LILO(Last In Last Out) data structure.
+Queue Data Structure.
+Queue is FIFO(First In First Out) or LILO(Last In Last Out) data structure.
 
-    Example:
-            queue = []
+Example:
 
-    Now, insert an element 1 at index 0
+    queue = []
 
-            queue = [1]
+Now, insert an element 1 at index 0
 
-    Now, insert some more elements at index 0
-    So, every element which was placed on index 0 will push by 1 when you try to insert at index 0
-    queue will look like
+    queue = [1]
 
-            queue = [5, 4, 3, 2, 1]
+Now, insert some more elements at index 0
+So, every element which was placed on index 0 will push by 1 when you try to insert at index 0
+queue will look like
 
-    if i use pop() to queue
-    it will return the last element in the list which is 1
-    hence FIFO proved
+    queue = [5, 4, 3, 2, 1]
+
+if i use pop() to queue
+it will return the last element in the list which is 1
+hence FIFO proved
 
 ---
 
@@ -28,8 +29,42 @@
 
 ## 02. Queue Data Structure : Using dequeue
 
-    Queue Data Structure : Using dequeue
-    deque is using Doubly Linked List data structure to store the element.
+Queue is FIFO(First In First Out) or LILO(Last In Last Out) data structure.
+
+The problem requires implementing a general queue data structure that supports basic operations such as `enqueue`, `dequeue`, checking if the queue `is empty` and `display` queue elements.
+
+The queue is implemented using a `deque` (double-ended queue) from the `collections` module in Python, which allows for efficient appending and popping of elements from both ends.
+
+Append and Pop operations, append element to the right side of the queue and pop element from the left side of the queue.
+
+```bash
+Example 1:
+
+Input:
+Q.enqueue(5)
+Q.enqueue(6)
+Q.enqueue(7)
+Q.enqueue(8)
+Q.display()
+Output:
+Queue elements: [5, 6, 7, 8]
+Q.dequeue()
+Q.display()
+Output:
+Queue elements: [6, 7, 8]
+Q.dequeue()
+Q.display()
+Output:
+Queue elements: [7, 8]
+Q.dequeue()
+Q.display()
+Output:
+Queue elements: [8]
+Q.dequeue()
+Q.display()
+Output:
+Queue is empty
+```
 
 ---
 
