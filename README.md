@@ -46,8 +46,8 @@
 | 01  | The Queue Data Structure                                             | [Solution](./Queue/01_queue.ipynb)                        |
 | 02  | The Queue Data Structure                                             | [Solution](./Queue/02_queue_data_structure.py)            |
 | 03  | Queue Data Structure : Producer Consumer Problem                     | [Solution](./Queue/03_queue_producer_consumer.py)         |
-| 04  | Queue Data Structure : Producer Consumer Problem                     | [Solution](./Queue/03_queue_producer_consumer.py)         |
-| 05  | Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue | [Solution](./Queue/04_queue_print_binary_number.py)       |
+| 04  | Queue Data Structure : Print Binary Numbers From 1 to 10 Using Queue | [Solution](./Queue/04_queue_print_binary_number.py)       |
+| 05  | Circular Queue Data Structure                                        | [Solution](./Queue/05_circular_queue.py)                  |
 | 00  | Readme                                                               | [Problem Statements with Explanations](./Queue/README.md) |
 
 ## Heap (Priority Queue)
