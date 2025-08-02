@@ -439,3 +439,124 @@ This problem can be solved using a **greedy algorithm** by always subtracting th
 ---
 
 ---
+
+## 06. Next Palindrome Number
+
+A palindrome is a number that reads the same backward as forward. The task is to find the next palindrome number greater than a given integer.
+
+```bash
+Example 1:
+
+Input: num = 123
+Output: 131
+Explanation: The next palindrome after 123 is 131.
+```
+
+```bash
+Example 2:
+
+Input: num = 121
+Output: 131
+Explanation: The next palindrome after 121 is 131.
+```
+
+```bash
+Example 3:
+
+Input: num = 1221
+Output: 1331
+Explanation: The next palindrome after 1221 is 1331.
+```
+
+### Explanation
+
+This problem can be solved using a **brute-force approach** by incrementing the number and checking each subsequent number to see if it is a palindrome.
+
+#### Approach Explanation
+
+1. **Core Idea**
+
+   To solve this problem:
+
+   - **Start from the next number** after the given input.
+   - **Check each number one by one** to see if it is a palindrome.
+   - The **first number** that satisfies the palindrome condition is the answer.
+
+2. **Why This Approach?**
+
+   - This is the most **straightforward brute-force** method that guarantees a correct result.
+   - Palindromes follow a clear pattern and are sparse enough that the **next palindrome is usually close**.
+   - The solution avoids complex string manipulations by using **pure number-based operations**.
+
+3. **Problem Solving Pattern**
+
+   - **Simulation / Brute-force**: We simulate the process of checking each number.
+   - **Mathematical manipulation**: Reversing a number to check for palindromicity.
+
+4. **Efficiency and Elegance**
+
+   - While not optimal for very large inputs, this method is **simple, readable, and easy to debug**.
+   - Suitable for educational and interview purposes where correctness and clarity matter more than extreme optimization.
+
+#### Step-by-Step Walkthrough
+
+1. Let’s walk through the example:
+
+2. Example Input: `num = 123`
+
+   We want to find the next palindrome greater than 123.
+
+3. Initial Function Call:
+
+   ```python
+   nextPalindromeNumber(123)
+   ```
+
+   | Step | Current `num` | Is Palindrome? | Reversed Number | Action Taken             |
+   | ---- | ------------- | -------------- | --------------- | ------------------------ |
+   | 1    | 124           | False          | 421             | Increment and check next |
+   | 2    | 125           | False          | 521             | Increment and check next |
+   | 3    | 126           | False          | 621             | ...                      |
+   | 4    | 127           | False          | 721             | ...                      |
+   | 5    | 128           | False          | 821             | ...                      |
+   | 6    | 129           | False          | 921             | ...                      |
+   | 7    | 130           | False          | 031             | ...                      |
+   | 8    | 131           | True           | 131             | Return result: `131`     |
+
+4. How Palindrome Check Works (Helper Function)
+
+   The `is_palindrome(num)` function:
+
+   - Reverses the digits of the number using modulus and division.
+   - Compares the reversed number with the original.
+
+5. Example:
+
+   ```python
+   num = 131
+
+   Digit extraction:
+   131 % 10 = 1        → reversed = 0 * 10 + 1 = 1
+   13 % 10 = 3         → reversed = 1 * 10 + 3 = 13
+   1 % 10 = 1          → reversed = 13 * 10 + 1 = 131
+
+   Since reversed == original, it's a palindrome.
+   ```
+
+6. Final Output Explanation
+
+   The first palindrome number greater than `123` is `131`, found after checking 8 consecutive numbers. The code simply increments and checks until this condition is satisfied.
+
+#### Time and Space Complexity Analysis
+
+| Aspect               | Complexity  | Explanation                                                                           |
+| -------------------- | ----------- | ------------------------------------------------------------------------------------- |
+| **Time Complexity**  | $O(N \* D)$ | In the worst case, we may check `N` numbers, each with up to `D` digits (to reverse). |
+| **Space Complexity** | $O(1)$      | Constant extra space is used for variables and no additional data structures.         |
+
+- `N`: Number of increments needed until we find a palindrome.
+- `D`: Number of digits in the number (used for reversing).
+
+---
+
+---

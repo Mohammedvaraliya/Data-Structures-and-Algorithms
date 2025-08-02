@@ -302,6 +302,7 @@
 | 03  | Convert Binary To Integer | [Solution](./Numbers/03_convert_binary_to_integer.py)       |
 | 04  | Roman to Integer          | [Solution](./Numbers/04_roman_to_integer.py)                |
 | 05  | Integer to Roman          | [Solution](./Numbers/05_integer_to_roman.py)                |
+| 06  | Next Palindrome Number    | [Solution](./Numbers/06_next_palindrome_number.py)          |
 | 00  | Readme                    | [Problem Statements with Explanations](./Numbers/README.md) |
 
 ## Tree Data Structures
