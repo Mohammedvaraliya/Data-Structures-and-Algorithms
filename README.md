@@ -322,6 +322,7 @@
 | 02  | Binary Trees: Traversal Algorithms In-Order                              | [Solution](./Trees/Binary%20Tree/02_binary_tree_traversal_inorder.py)                            |
 | 03  | Binary Trees: Traversal Algorithms Post-Order                            | [Solution](./Trees/Binary%20Tree/03_binary_tree_traversal_postorder.py)                          |
 | 04  | Binary Trees: Traversal Algorithms Level-Order                           | [Solution](./Trees/Binary%20Tree/04_binary_tree_traversal_levelorder.py)                         |
+| 04  | Binary Trees: Traversal Algorithms All Traversals                        | [Solution](./Trees/Binary%20Tree/04.2_binary_tree_all_traversals.py)                             |
 | 05  | Binary Trees: Traversal Algorithms Reverse Level-Order                   | [Solution](./Trees/Binary%20Tree/05_binary_tree_traversal_reverse_levelorder.py)                 |
 | 06  | Binary Trees: Calculating Height of Tree                                 | [Solution](./Trees/Binary%20Tree/06_binary_tree_calculating_height_of_tree.py)                   |
 | 07  | Binary Trees: Calculating Size of Tree                                   | [Solution](./Trees/Binary%20Tree/07_binary_tree_calculating_size_of_tree.py)                     |
