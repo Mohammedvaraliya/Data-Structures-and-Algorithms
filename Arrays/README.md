@@ -1109,20 +1109,99 @@ When the problem requires calculating results **excluding** the current index, a
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-consecutive-sequence/)
 
+Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.
+
+You must write an algorithm that runs in `O(n)` time.
+
 ```bash
-Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
-
-You must write an algorithm that runs in O(n) time.
-
 Example 1:
+
 Input: nums = [100,4,200,1,3,2]
 Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+```
 
+```bash
 Example 2:
+
 Input: nums = [0,3,7,2,5,8,4,6,0,1]
 Output: 9
 ```
+
+```bash
+Example 3:
+
+Input: nums = [1,0,1,2]
+Output: 3
+```
+
+### Explanation
+
+To solve the problem of finding the longest consecutive sequence in an unsorted array, we can use a **set** to achieve an average time complexity of O(n). The key idea is to leverage the properties of sets for fast lookups and to iterate through the numbers only once.
+
+#### (True) Approach Explanation
+
+1. Why this Approach?
+
+   We used a **hash set** to achieve `O(n)` time complexity. The idea is to only start counting sequences from numbers that are the **start** of a sequence (i.e., `n-1` is not in the array), which guarantees that we only scan each sequence once.
+
+2. Problem-Solving Pattern
+
+   - **Hashing / Set-based Lookup**
+   - **Greedy / Linear Scanning**
+   - Efficient use of hash sets for `O(1)` average-time lookups
+
+3. Why It’s Efficient and Elegant
+
+   - The **naive approach** would be to sort the array (`O(n log n)`) and then find the sequence — but the question explicitly requires `O(n)`.
+   - By using a set, we reduce duplicate checks and unnecessary work — each element is visited **once**, and each sequence is processed **only from its smallest element**.
+
+#### Step-by-Step Walkthrough
+
+1. Let's use the example:
+
+   ```python
+   nums = [100, 4, 200, 1, 3, 2]
+   ```
+
+2. Step 0: Initialize
+
+   ```python
+   numSet = {100, 4, 200, 1, 3, 2}
+   longest = 0
+   ```
+
+   | Iteration | Current `n` | Is `n-1` in Set? | Start New Sequence? | Sequence Count (`length`) | Current `longest` |
+   | --------- | ----------- | ---------------- | ------------------- | ------------------------- | ----------------- |
+   | 1         | 100         | 99 (False)       | (True) Yes          | 1                         | 1                 |
+   | 2         | 4           | 3 (True)         | (False) No          | -                         | 1                 |
+   | 3         | 200         | 199 (False)      | (True) Yes          | 1                         | 1                 |
+   | 4         | 1           | 0 (False)        | (True) Yes          | \[1,2,3,4] → 4            | 4                 |
+   | 5         | 3           | 2 (True)         | (False) No          | -                         | 4                 |
+   | 6         | 2           | 1 (True)         | (False) No          | -                         | 4                 |
+
+3. Final `longest = 4`
+
+#### Explanation of Key Logic
+
+1. **Convert the list to a set** for `O(1)` lookups.
+2. **Only start counting** from numbers that are **not** part of a longer sequence (i.e., `n-1` is not in the set).
+3. Use a **while loop** to count how many consecutive numbers exist starting from `n`.
+4. Track the **maximum sequence length** found so far.
+
+#### Time and Space Complexity Analysis
+
+| Metric           | Complexity | Explanation                                                   |
+| ---------------- | ---------- | ------------------------------------------------------------- |
+| Time Complexity  | $O(n)$     | Each element is visited once; set lookups are O(1) on average |
+| Space Complexity | $O(n)$     | `numSet` stores all elements once                             |
+| Auxiliary Space  | $O(1)$     | Only a few variables are used for counting                    |
+
+#### Summary
+
+- This solution is optimal and satisfies the `O(n)` constraint.
+- Utilizes **hash sets** to detect the start of a sequence and avoid redundant work.
+- Handles edge cases like duplicates and scattered values efficiently.
 
 ---
 
