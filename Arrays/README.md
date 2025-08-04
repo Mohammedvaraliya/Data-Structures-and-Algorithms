@@ -1246,6 +1246,83 @@ Explanation: The only possible triplet sums up to 0.
 
 ### Explanation
 
+This problem is a classic example of finding triplets in an array that sum to zero. The most efficient way to solve this problem is by using a combination of sorting and the two-pointer technique.
+
+#### Approach Explanation
+
+1. Why this Approach?
+
+   The naive brute-force approach would require checking all triplets in `O(n³)` time. That’s inefficient for large inputs.
+
+   Instead, this approach:
+
+   - Sorts the array.
+   - Uses a **fixed pointer** and a **two-pointer technique** to efficiently find pairs that sum to the negative of the fixed element.
+
+   This reduces time complexity to **O(n²)**.
+
+2. Problem-Solving Pattern Used
+
+   - **Sorting**
+   - **Two-Pointer Technique**
+   - **Duplicate Skipping Strategy**
+
+3. Why It’s Efficient
+
+   - Sorting helps with efficient scanning and duplicate elimination.
+   - Two-pointer technique reduces nested loop combinations.
+   - Only valid, non-repeating triplets are added to the result.
+
+#### Step-by-Step Walkthrough
+
+1. We'll take the example:
+
+   ```python
+   nums = [-1, 0, 1, 2, -1, -4]
+   ```
+
+2. After sorting:
+
+   ```
+   nums = [-4, -1, -1, 0, 1, 2]
+   ```
+
+3. We iterate `i` through the list, fixing one number `a = nums[i]`, and use two pointers `l` and `r` to find two other numbers such that `a + nums[l] + nums[r] == 0`.
+
+   | i   | a   | l   | nums\[l] | r   | nums\[r]                 | Sum                | Action                                   | Result                     |
+   | --- | --- | --- | -------- | --- | ------------------------ | ------------------ | ---------------------------------------- | -------------------------- |
+   | 0   | -4  | 1   | -1       | 5   | 2                        | -4 + (-1) + 2 = -3 | Sum < 0 → increment `l`                  | —                          |
+   | 0   | -4  | 2   | -1       | 5   | 2                        | -4 + (-1) + 2 = -3 | Sum < 0 → increment `l`                  | —                          |
+   | 0   | -4  | 3   | 0        | 5   | 2                        | -4 + 0 + 2 = -2    | Sum < 0 → increment `l`                  | —                          |
+   | 0   | -4  | 4   | 1        | 5   | 2                        | -4 + 1 + 2 = -1    | Sum < 0 → increment `l`                  | —                          |
+   | 1   | -1  | 2   | -1       | 5   | 2                        | -1 + (-1) + 2 = 0  | Found triplet! Move `l`, skip duplicates | \[\[-1, -1, 2]]            |
+   | 1   | -1  | 3   | 0        | 4   | 1                        | -1 + 0 + 1 = 0     | Found triplet! Move `l`, skip duplicates | \[\[-1, -1, 2], \[-1,0,1]] |
+   | 2   | -1  | —   | —        | —   | Duplicate `-1`, skip     | —                  | —                                        |                            |
+   | 3   | 0   | 4   | 1        | 5   | 2                        | 0 + 1 + 2 = 3      | Sum > 0 → decrement `r`                  | —                          |
+   | 4   | 1   | —   | —        | —   | Positive `a`, break loop | —                  | —                                        |                            |
+
+4. Final Output
+
+   ```python
+   [[-1, -1, 2], [-1, 0, 1]]
+   ```
+
+#### Intermediate Details Explained
+
+- **Sorted array** simplifies duplicate handling and allows binary-like search.
+- **Two-pointer approach** is used inside a loop fixing one element each time.
+- **Skip conditions** help remove duplicates from the result.
+- **Early stopping**: If the fixed number `a > 0`, we know the sum can't be 0, so we break.
+
+#### Time and Space Complexity
+
+| Metric               | Complexity | Explanation                                                              |
+| -------------------- | ---------- | ------------------------------------------------------------------------ |
+| **Time Complexity**  | $O(n²)$    | Outer loop runs `n` times, and inner two-pointer loop runs in `O(n)`     |
+| **Space Complexity** | $O(1)$     | We don’t use extra space (ignoring output list which is required anyway) |
+
+> Note: Sorting takes O(n log n), but the dominant term is the nested loop (O(n²)).
+
 ---
 
 ---
