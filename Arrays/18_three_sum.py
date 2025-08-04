@@ -3,6 +3,9 @@ def threeSum(nums: list[int]) -> list[list[int]]:
     nums.sort()
 
     for i, a in enumerate(nums):
+        if a > 0:
+            break
+        
         if i > 0 and a == nums[i - 1]:
             continue
 

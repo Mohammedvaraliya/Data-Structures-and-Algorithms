@@ -1211,12 +1211,13 @@ To solve the problem of finding the longest consecutive sequence in an unsorted 
 
 [Leetcode Problem URL](https://leetcode.com/problems/3sum/)
 
-```bash
-Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
 
 Notice that the solution set must not contain duplicate triplets.
 
+```bash
 Example 1:
+
 Input: nums = [-1,0,1,2,-1,-4]
 Output: [[-1,-1,2],[-1,0,1]]
 Explanation:
@@ -1225,17 +1226,25 @@ nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
 nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
 The distinct triplets are [-1,0,1] and [-1,-1,2].
 Notice that the order of the output and the order of the triplets does not matter.
+```
 
+```bash
 Example 2:
+
 Input: nums = [0,1,1]
 Output: []
 Explanation: The only possible triplet does not sum up to 0.
+```
+
+```bash
 Example 3:
 
 Input: nums = [0,0,0]
 Output: [[0,0,0]]
 Explanation: The only possible triplet sums up to 0.
 ```
+
+### Explanation
 
 ---
 
@@ -2716,6 +2725,118 @@ rotate 2 steps to the right: [3,99,-1,-100]
 - It avoids excessive shifting or use of extra arrays.
 - The logic is clean, and the implementation is intuitive with good use of pointers or Python slicing.
 - This approach is recommended for both **interviews** and **real-world performance-critical applications**.
+
+---
+
+---
+
+## 34. Two Sum II - Input Array Is Sorted
+
+[LeetCode Problem URL](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+
+Given a 1-indexed array of integers `numbers` that is already sorted in non-decreasing order, find two numbers such that they add up to a specific `target` number. Let these two numbers be `numbers[index1]` and `numbers[index2]` where `1 <= index1 < index2 <= numbers.length`.
+
+Return the indices of the two numbers, `index1` and `index2`, added by one as an integer array `[index1, index2]` of length `2`.
+
+The tests are generated such that there is exactly one solution. You may not use the same element twice.
+
+Your solution must use only constant extra space.
+
+```bash
+Example 1:
+
+Input: numbers = [2,7,11,15], target = 9
+Output: [1,2]
+Explanation: The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. We return [1, 2].
+```
+
+```bash
+Example 2:
+
+Input: numbers = [2,3,4], target = 6
+Output: [1,3]
+Explanation: The sum of 2 and 4 is 6. Therefore index1 = 1, index2 = 3. We return [1, 3].
+```
+
+```bash
+Example 3:
+
+Input: numbers = [-1,0], target = -1
+Output: [1,2]
+Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We return [1, 2].
+```
+
+### Explanation
+
+This problem can be efficiently solved using the **two-pointer technique** due to the sorted nature of the input array. The goal is to find two indices such that their corresponding values sum up to a given target.
+
+#### Approach Explanation
+
+1. Why this Approach?
+
+   We chose the **two-pointer approach** because the array is sorted. This allows us to **scan from both ends** towards the center efficiently and find the correct pair in **linear time** without using any extra space like hash maps.
+
+2. Pattern Used
+
+   - **Two-Pointer Technique**
+   - **Greedy (move pointer based on condition)**
+   - Takes advantage of **sorted property** of the input array
+
+3. Why It’s Efficient
+
+   - **No need to use extra space** (e.g., hash maps)
+   - **Linear time complexity** O(n), better than brute force O(n²)
+   - Simple and easy to implement
+
+#### Step-by-Step Walkthrough
+
+1. Let's walk through the following example:
+
+   ```python
+   numbers = [2, 7, 11, 15]
+   target = 9
+   ```
+
+2. Initial pointers:
+
+   - `l = 0` → points to 2
+   - `r = 3` → points to 15
+
+   | Step | l   | numbers\[l] | r   | numbers\[r] | curSum = numbers\[l] + numbers\[r] | Action                  |
+   | ---- | --- | ----------- | --- | ----------- | ---------------------------------- | ----------------------- |
+   | 1    | 0   | 2           | 3   | 15          | 17                                 | curSum > target → r--   |
+   | 2    | 0   | 2           | 2   | 11          | 13                                 | curSum > target → r--   |
+   | 3    | 0   | 2           | 1   | 7           | 9                                  | curSum == target → True |
+
+3. Return `[l+1, r+1] = [1, 2]`
+
+#### How It Works (Logic Breakdown)
+
+1. **Start with two pointers**:
+
+   - `l` at the beginning
+   - `r` at the end
+
+2. **Repeat until pointers meet**:
+
+   - Calculate `curSum = numbers[l] + numbers[r]`
+   - If `curSum > target`, move `r` left (reduce the sum)
+   - If `curSum < target`, move `l` right (increase the sum)
+   - If `curSum == target`, return `[l+1, r+1]` as indices are 1-based
+
+3. **Why move pointers like this?**
+
+   - The array is sorted. So:
+
+     - Decreasing `r` → moves to smaller numbers
+     - Increasing `l` → moves to larger numbers
+
+#### Time and Space Complexity
+
+| Metric               | Complexity | Explanation                                                   |
+| -------------------- | ---------- | ------------------------------------------------------------- |
+| **Time Complexity**  | $O(n)$     | Each pointer moves at most `n` steps — total linear traversal |
+| **Space Complexity** | $O(1)$     | No extra data structures used — only two pointers maintained  |
 
 ---
 
