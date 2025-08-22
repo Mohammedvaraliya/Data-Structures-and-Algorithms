@@ -324,28 +324,93 @@ Example 3:
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
-```bash
 Longest Substring Without Repeating Characters
 
-Given a string s, find the length of the longest substring without repeating characters.
+Given a string `s`, find the length of the longest substring without repeating characters.
 
+```bash
 Example 1:
 
 Input: s = "abcabcbb"
 Output: 3
 Explanation: The answer is "abc", with the length of 3.
+```
 
+```bash
 Example 2:
 Input: s = "bbbbb"
 Output: 1
 Explanation: The answer is "b", with the length of 1.
+```
 
+```bash
 Example 3:
 Input: s = "pwwkew"
 Output: 3
 Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 ```
+
+### Explanation
+
+Here, we will use the **Sliding Window** technique with a hash map (dictionary) to keep track of the characters and their latest indices.
+
+#### Approach Explanation
+
+1. Why this approach?
+
+   We need to **track the longest substring without repeating characters**. A brute force solution would try all substrings, check for duplicates, and compute the longest — but that is inefficient (`O(n²)` or worse).
+
+   Instead, we use a **Sliding Window** approach with a **hash map** to efficiently keep track of seen characters.
+
+2. Problem-Solving Pattern
+
+   This problem follows the **Sliding Window** + **Hash Map** pattern:
+
+   - A **sliding window** (`start` to `i`) maintains the current substring without duplicates.
+   - A **hash map (dictionary)** stores the latest index of each character.
+   - When a duplicate is found, the `start` pointer is adjusted to ensure uniqueness.
+
+3. Why is it efficient?
+
+   - Each character is visited at most **twice** (once by `i`, once by `start` adjustment).
+   - Time complexity reduces to **O(n)**.
+   - Memory is efficient since we only store characters of the current window.
+
+#### Step-by-Step Walkthrough
+
+1. We will use the example:
+
+   ```bash
+   s = "abcabcbb"
+   ```
+
+   ```bash
+   map = {}       # Stores the last index where each character was seen
+   start = 0      # Start index of the current substring window
+   max_length = 0 # Keeps track of the max length found
+   ```
+
+   | Step | i (index) | s\[i] (char) | Map (char → index) | start | max_length | Action Taken                       |
+   | ---- | --------- | ------------ | ------------------ | ----- | ---------- | ---------------------------------- |
+   | 1    | 0         | a            | {}                 | 0     | 0          | Add 'a'. max_length = 1            |
+   | 2    | 1         | b            | {a:0}              | 0     | 1          | Add 'b'. max_length = 2            |
+   | 3    | 2         | c            | {a:0, b:1}         | 0     | 2          | Add 'c'. max_length = 3            |
+   | 4    | 3         | a            | {a:0, b:1, c:2}    | 0 → 1 | 3          | 'a' is duplicate → move start to 1 |
+   | 5    | 4         | b            | {a:3, b:1, c:2}    | 1 → 2 | 3          | 'b' is duplicate → move start to 2 |
+   | 6    | 5         | c            | {a:3, b:4, c:2}    | 2 → 3 | 3          | 'c' is duplicate → move start to 3 |
+   | 7    | 6         | b            | {a:3, b:5, c:2}    | 3 → 5 | 3          | 'b' duplicate → move start to 5    |
+   | 8    | 7         | b            | {a:3, b:6, c:5}    | 5 → 7 | 3          | 'b' duplicate → move start to 7    |
+
+2. **Final Result:**
+   The longest substring without repeating characters is `"abc"`, with length **3**.
+
+#### Time and Space Complexity Analysis
+
+| Complexity Type | Complexity       | Explanation                                                                                                                                          |
+| --------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Time**        | **O(n)**         | Each character is processed at most twice (once by `i`, once by `start` adjustment).                                                                 |
+| **Space**       | **O(min(n, k))** | Hash map stores characters in the current window. At most `k` unique characters, where `k` is charset size (e.g., 26 for lowercase English letters). |
 
 ---
 
@@ -890,3 +955,7 @@ This is a classic **rotation pattern** where:
 ---
 
 ---
+
+```
+
+```
