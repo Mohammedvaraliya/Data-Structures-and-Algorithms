@@ -1,34 +1,38 @@
-def characterReplacement(s: str, k: int) -> int:
-    count = {}
-    res = 0
+class Solution:
 
-    l = 0
-    maxf = 0
+    def characterReplacement(self, s: str, k: int) -> int:
+        count = {}
+        res = 0
 
-    for r in range(len(s)):
-        count[s[r]] = 1 + count.get(s[r], 0)
-        maxf = max(maxf, count[s[r]])
+        l = 0
+        maxf = 0
 
-        if (r - l + 1) - maxf > k:
-            count[s[l]] -= 1
-            l += 1
+        for r in range(len(s)):
+            count[s[r]] = 1 + count.get(s[r], 0)
+            maxf = max(maxf, count[s[r]])
 
-        res = max(res, r - l + 1)
-    
-    return res
+            if (r - l + 1) - maxf > k:
+                count[s[l]] -= 1
+                l += 1
+
+            res = max(res, r - l + 1 )
+        
+        return res
 
 
 
 if __name__ == "__main__":
 
+    obj = Solution()
+
     X = "ABAB"
     K1 = 2
-    print(characterReplacement(X, K1))
+    print(obj.characterReplacement(X, K1))
 
     Y = "AABABBA"
     K2 = 1
-    print(characterReplacement(Y, K2))
+    print(obj.characterReplacement(Y, K2))
 
     Z = "ABABBA"
     K3 = 2
-    print(characterReplacement(Z, K3))
+    print(obj.characterReplacement(Z, K3))
