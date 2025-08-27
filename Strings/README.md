@@ -542,16 +542,18 @@ Other approaches like delimiter-only (`|`, `,`) or using escape characters can l
 
 [Leetcode Problem URL](https://leetcode.com/problems/longest-repeating-character-replacement/)
 
-```bash
 You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.
 
 Return the length of the longest substring containing the same letter you can get after performing the above operations.
 
+```bash
 Example 1:
 Input: s = "ABAB", k = 2
 Output: 4
 Explanation: Replace the two 'A's with two 'B's or vice versa.
+```
 
+```bash
 Example 2:
 Input: s = "AABABBA", k = 1
 Output: 4
@@ -559,6 +561,84 @@ Explanation: Replace the one 'A' in the middle with 'B' and form "AABBBBA".
 The substring "BBBB" has the longest repeating letters, which is 4.
 There may exists other ways to achive this answer too.
 ```
+
+### Explanation
+
+Here, we will use the **Sliding Window** technique with a frequency map to track character counts within the current window.
+
+#### Approach Explanation
+
+1. **Chosen Approach**:
+   The solution uses the **Sliding Window technique** with a **frequency map** to track character counts within the current window.
+
+2. **Why this Approach**:
+
+   - Brute force would require checking all substrings, which is too slow (O(n²) or worse).
+   - Sliding window allows us to expand and shrink the window dynamically while keeping track of valid substrings, achieving linear time.
+
+3. **Pattern Identified**:
+
+   - This problem fits the **Sliding Window + HashMap pattern**, where we maintain counts of characters in the current window and ensure that the window is valid under the replacement constraint.
+
+4. **Efficiency Justification**:
+
+   - Instead of recalculating for every substring, we reuse previous computations by expanding or shrinking the window.
+   - The key insight: the number of replacements required = `window size - frequency of most common character`. If this number is more than `k`, we shrink the window.
+   - This makes the algorithm efficient and scalable to large strings.
+
+#### Step-by-Step Walkthrough
+
+1. Let us take the input:
+
+   `s = "AABABBA", k = 1`
+
+2. We will track the following variables:
+
+   - `count`: dictionary to store frequency of characters in the window.
+   - `l`: left pointer of the window.
+   - `r`: right pointer of the window (loop variable).
+   - `maxf`: frequency of the most frequent character in the current window.
+   - `res`: length of the longest valid window found so far.
+
+3. Iteration Table
+
+   | Step | r (index) | s\[r] | Window (`s[l:r]`) | count      | maxf | Condition `(window - maxf > k)` | Action (shrink/expand) | res |
+   | ---- | --------- | ----- | ----------------- | ---------- | ---- | ------------------------------- | ---------------------- | --- |
+   | 1    | 0         | A     | "A"               | {A:1}      | 1    | (1-1)=0 ≤1                      | Expand                 | 1   |
+   | 2    | 1         | A     | "AA"              | {A:2}      | 2    | (2-2)=0 ≤1                      | Expand                 | 2   |
+   | 3    | 2         | B     | "AAB"             | {A:2, B:1} | 2    | (3-2)=1 ≤1                      | Expand                 | 3   |
+   | 4    | 3         | A     | "AABA"            | {A:3, B:1} | 3    | (4-3)=1 ≤1                      | Expand                 | 4   |
+   | 5    | 4         | B     | "AABAB"           | {A:3, B:2} | 3    | (5-3)=2 >1                      | Shrink → l=1           | 4   |
+   |      |           |       | "ABAB"            | {A:2, B:2} | 3    | (4-3)=1 ≤1                      | Window stable          | 4   |
+   | 6    | 5         | B     | "ABABB"           | {A:2, B:3} | 3    | (5-3)=2 >1                      | Shrink → l=2           | 4   |
+   |      |           |       | "BABB"            | {A:1, B:3} | 3    | (4-3)=1 ≤1                      | Window stable          | 4   |
+   | 7    | 6         | A     | "BABBA"           | {A:2, B:3} | 3    | (5-3)=2 >1                      | Shrink → l=3           | 4   |
+   |      |           |       | "ABBA"            | {A:2, B:2} | 3    | (4-3)=1 ≤1                      | Window stable          | 4   |
+
+4. Final Result: The maximum valid window size observed was `4`. Therefore, the output is:
+
+   ```
+   Output = 4
+   ```
+
+#### Why This Works
+
+1. By maintaining the frequency of characters and the most frequent character count (`maxf`), we can directly determine if a window is valid.
+2. Shrinking happens only when the replacements required exceed `k`.
+3. This ensures that at every step, the algorithm keeps the window as large as possible, maximizing efficiency.
+
+#### Time and Space Complexity Analysis
+
+| Complexity | Analysis                                                                                            |
+| ---------- | --------------------------------------------------------------------------------------------------- |
+| **Time**   | **O(n)** – Each character is visited at most twice (once when expanding `r`, once when moving `l`). |
+| **Space**  | **O(26) ≈ O(1)** – Only uppercase English letters are stored in the frequency map.                  |
+
+#### Key Takeaways
+
+1. This problem is a classic **sliding window** case where the validity of the window depends on the most frequent character.
+2. The trick is understanding that we do not need to recalculate the whole substring; just track frequencies incrementally.
+3. Shrinking only when necessary keeps the window as long as possible while satisfying the replacement constraint.
 
 ---
 
