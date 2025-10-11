@@ -24,6 +24,7 @@
 | Greedy                  | 2               | Greedy algorithm problems                    | [Go to Greedy](#greedy)                                  | [Solutions](./Greedy/README.md)                      |
 | Intervals               | 5               | Interval scheduling and related problems     | [Go to Intervals](#intervals)                            | [Solutions](./Intervals/README.md)                   |
 | Math and Geometry       | 3               | Math and geometry related problems           | [Go to Math and Geometry](#math--geometry)               | [Solutions](./Math%20&%20Geometry/README.md)         |
+| Pattern Printing        | 1               | Hollow Pyramid Star Pattern                  | [Go to Pattern Printing ](#pattern-printing)             | [Solutions](./Pattern-Printing/README.md)            |
 | Bit Manipulation        | 4               | Bitwise operations problems                  | [Go to Bit Manipulation](#bit-manipulation)              | [Solutions](./Bit%20Manipulation/README.md)          |
 
 ## Stack
@@ -445,3 +446,10 @@
 | 03  | Reverse Bits     | [Solution](./Bit%20Manipulation/03_reverse_bits.py)                    |
 | 04  | Missing Number   | [Solution](./Bit%20Manipulation/04_missing_number.py)                  |
 | 00  | Readme           | [Problem Statements with Explanations](./Bit%20Manipulation/README.md) |
+
+## Pattern Printing
+
+| #   | Title                       | Solution                                                             |
+| --- | --------------------------- | -------------------------------------------------------------------- |
+| 01  | Hollow Pyramid Star Pattern | [Solution](./Pattern-Printing/01_hollow_pyramid_star_pattern.py)     |
+| 00  | Readme                      | [Problem Statements with Explanations](./Pattern-Printing/README.md) |
