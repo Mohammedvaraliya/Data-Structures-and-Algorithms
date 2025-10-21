@@ -25,6 +25,21 @@ class Solution:
 
          print(''.join(line))
          cur_row += 1
+   
+   # More optimal approach
+   def hollow_pyramid_method2(self, rows):
+        if rows < 5:
+            print("Value of rows should be greater than or equal to 5 to print hollow star pattern")
+            return
+
+        for i in range(rows):
+            if i == 0:
+                line = '*'
+            elif i == rows - 1:
+                line = '*' * (2 * rows - 1)
+            else:
+                line = '*' + ' ' * (2 * i - 1) + '*'
+            print(line.center(2 * rows - 1))
 
 
 if __name__ == "__main__":
@@ -32,3 +47,4 @@ if __name__ == "__main__":
    obj = Solution()
    num_rows = int(input("Enter the number of rows for the hollow pyramid: "))
    obj.hollow_pyramid_method1(num_rows)
+   obj.hollow_pyramid_method2(num_rows)
