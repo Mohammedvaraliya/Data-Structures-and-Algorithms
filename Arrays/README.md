@@ -2918,3 +2918,160 @@ This problem can be efficiently solved using the **two-pointer technique** due t
 ---
 
 ---
+
+## 35. GCD of Array
+
+Compute greatest common divisors (GCDs) in several useful ways:
+
+- `gcd(a, b)`: Euclidean algorithm — GCD of two integers.
+- `gcd_of_array(arr)`: GCD of all elements in an array.
+- `gcd_of_array_smallest_and_largest(nums)`: shortcut: GCD of min and max of array.
+- `pairwise_gcd(arr)`: return GCD for every unordered pair.
+- `infinite_numbers(start=12, step=6)`: example infinite generator (optional).
+- `gcd_stream(generator, limit)`: fold GCD over the first `limit` numbers of the generator.
+
+Input / Output: functions accept Python integers / lists and return integers or lists of (pair, gcd) results as appropriate.
+
+### Explanation
+
+#### 1. Approach Explanation
+
+1. **Core idea — Euclidean algorithm (iterative)**
+
+   - The `gcd(a, b)` implementation uses the standard Euclidean algorithm:
+
+     ```py
+     while b != 0:
+         a, b = b, a % b
+     return abs(a)
+     ```
+
+   - This repeatedly replaces `(a, b)` with `(b, a % b)` until the remainder becomes `0`. At that point `a` holds the GCD. `abs` ensures non-negative result.
+
+2. **Why this approach**
+
+   - The Euclidean algorithm is the fastest and simplest general-purpose method for GCD with excellent theoretical guarantees. It is:
+
+     - Correct (classical proof by invariants).
+     - Efficient (runs in `O(log(min(a,b)))` time for inputs `a` and `b`).
+     - Easy to implement iteratively without recursion.
+
+3. **How the array GCD is formed**
+
+   - `gcd_of_array(arr)` folds the two-argument `gcd` function across the list:
+
+     ```py
+     result = arr[0]
+     for num in arr[1:]:
+         result = gcd(result, num)
+     return result
+     ```
+
+   - Folding a GCD is correct because `gcd(gcd(x, y), z) == gcd(x, y, z)` (associativity).
+
+4. **Why compute `gcd(min, max)` as a shortcut**
+
+   - If you know the smallest and largest element, `gcd(smallest, largest)` is still a divisor of every element iff the GCD of the array equals that divisor — but this is **not guaranteed** to equal the GCD of the entire array in all problem variants. In some problem statements (e.g., where array elements are multiples of the smallest), this gives a valid shortcut; the provided function simply demonstrates the operation on min and max.
+
+5. **Pairwise and stream examples**
+
+   - `pairwise_gcd(arr)` is a straightforward nested-loop enumeration of `(i, j)` pairs computed via `gcd`.
+   - `infinite_numbers` + `gcd_stream` show how to fold GCD over a stream / generator (useful when numbers are produced lazily).
+
+6. **Programming patterns used**
+
+   - Algorithmic: Euclidean algorithm (number theory / divide-and-conquer on remainders).
+   - Functional pattern: reduction/folding over a list (associative binary operation).
+   - Generator pattern: demonstrating streaming / lazy data handling.
+
+#### 2. Step-by-step walkthrough (concrete example)
+
+Use the concrete input `nums = [12, 18, 24]`. We will show:
+
+- `gcd(48, 18)` example from `__main__`,
+- `gcd_of_array(nums)`,
+- `gcd_of_array_smallest_and_largest(nums)`,
+- `pairwise_gcd(nums)`,
+- `gcd_stream` on the example generator.
+
+##### 2.1 `gcd(48, 18)` (Euclidean algorithm trace)
+
+| Step | a   | b   | a % b        | Next (a, b)          |
+| ---- | --- | --- | ------------ | -------------------- |
+| 0    | 48  | 18  | 48 % 18 = 12 | (18, 12)             |
+| 1    | 18  | 12  | 18 % 12 = 6  | (12, 6)              |
+| 2    | 12  | 6   | 12 % 6 = 0   | (6, 0)               |
+| End  | 6   | 0   | -            | return `abs(6)` -> 6 |
+
+Result: `gcd(48, 18) = 6`.
+
+##### 2.2 `gcd_of_array(nums = [12, 18, 24])`
+
+We fold `gcd` left-to-right:
+
+| Step | current result | next num | gcd(result, next num) |
+| ---- | -------------- | -------- | --------------------- |
+| init | 12             | —        | 12                    |
+| 1    | 12             | 18       | gcd(12,18) = 6        |
+| 2    | 6              | 24       | gcd(6,24) = 6         |
+| End  | 6              | —        | result = 6            |
+
+Result: `gcd_of_array([12,18,24]) = 6`.
+
+##### 2.3 `gcd_of_array_smallest_and_largest(nums)`
+
+- smallest = `12`, largest = `24`
+- `gcd(12,24) = 12` by Euclidean algorithm (quick trace: `24 % 12 = 0 -> gcd = 12`).
+- Note: This gives 12, which is **not** equal to the full-array GCD (which is 6) — this demonstrates that `gcd(min, max)` is a different computation (useful in some problem constraints, but not a general substitute for the array GCD).
+
+##### 2.4 `pairwise_gcd([12,18,24])`
+
+All unordered pairs `(i,j)` with `i < j`:
+
+| Pair     | gcd |
+| -------- | --- |
+| (12, 18) | 6   |
+| (12, 24) | 12  |
+| (18, 24) | 6   |
+
+Function returns `[((12,18),6), ((12,24),12), ((18,24),6)]`.
+
+##### 2.5 `infinite_numbers` + `gcd_stream` example (first 10 numbers)
+
+- Generator `infinite_numbers(start=12, step=6)` yields: 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, ...
+- `gcd_stream` folds GCD over the first `limit` values (limit=10 in `__main__`), starting with first value 12:
+
+  - gcd(12, 18) = 6
+  - gcd(6, 24) = 6
+  - gcd(6, 30) = 6
+  - ... continuing, the GCD remains 6 (since the set {12,18,24,...} all share factor 6)
+
+- The final printed result (first 10 elements) is `6`.
+
+#### 3. Correctness & Reasoning
+
+1. **Euclidean algorithm correctness**:
+
+   - Invariant: `gcd(a, b) == gcd(b, a % b)`. Repeated application reduces `b` until zero; then `a` is gcd. Proven in standard number theory texts.
+
+2. **Array fold correctness**:
+
+   - Because `gcd` is associative and commutative on integers (`gcd(gcd(x,y), z) == gcd(x,y,z)`), left-fold yields the GCD of all elements.
+
+3. **Caveat about `gcd(min, max)`**:
+
+   - `gcd(min, max)` is **not** generally equal to `gcd_of_array`. It is used sometimes when array constraints guarantee every element is a multiple of the smallest element or when problem statement indicates min and max capture the essential divisors. The code includes it as a utility but it must be used only in contexts where it makes sense.
+
+#### 4. Time & Space Complexity
+
+|                                  Function |   Time Complexity   | Space Complexity | Notes                                                                                                                |
+| ----------------------------------------: | :-----------------: | :--------------: | :------------------------------------------------------------------------------------------------------------------- |
+|                               `gcd(a, b)` | `O(log(min(a, b)))` |      `O(1)`      | Euclidean algorithm complexity (number of remainder steps).                                                          |
+|                       `gcd_of_array(arr)` |   `O(n * log M)`    |      `O(1)`      | `n = len(arr)`, `M` ~ magnitude of numbers; each gcd call is `O(log M)`. Folding uses constant extra space.          |
+| `gcd_of_array_smallest_and_largest(nums)` |     `O(log M)`      |      `O(1)`      | Only compares min/max and runs one gcd. Finding min/max costs `O(n)` if not precomputed — so overall `O(n + log M)`. |
+|                       `pairwise_gcd(arr)` |  `O(n^2 * log M)`   |     `O(n^2)`     | Nested loops for all pairs produce `O(n^2)` gcd computations and `O(n^2)` output size.                               |
+|            `gcd_stream(generator, limit)` | `O(limit * log M)`  |      `O(1)`      | Fold over `limit` values from a stream; constant extra memory.                                                       |
+
+---
+
+---

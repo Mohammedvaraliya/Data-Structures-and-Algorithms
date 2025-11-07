@@ -166,6 +166,7 @@
 | 32  | Majority Element                                      | [Solution](./Arrays/32_find_majority_elem.py)                                 |
 | 33  | Rotate Array                                          | [Solution](./Arrays/33_rotate_array.py)                                       |
 | 34  | Two Sum II - Input Array Is Sorted                    | [Solution](./Arrays/34_two_sum_2.py)                                          |
+| 35  | Find Greatest Common Divisor of Array                 | [Solution](./Arrays/35_gcd_problem.py)                                        |
 | 00  | Readme                                                | [Problem Statements with Explanations](./Arrays/README.md)                    |
 
 ## Backtracking
